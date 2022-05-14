@@ -8,6 +8,8 @@ const app = express()
 // Uses mongodb
 const mongoose = require('mongoose');
 
+//Test
+
 // Connects to the mongodb server
 mongoose.connect('mongodb+srv://elanadevteam:elanateam1@cluster0.lpz6r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 
