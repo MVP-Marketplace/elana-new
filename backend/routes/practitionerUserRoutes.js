@@ -1,10 +1,14 @@
 const express = require('express')
-const router = express.Router()
-const {getPractitionerUsers, createPractitionerUser, updatePractitionerUser, deletePractitionerUser } = require('../controllers/practitionerUserController')
+const router =  express.Router()
+const { 
+    registerPractitionerUser, 
+    loginPractitionerUser, 
+    getMe 
+} = require('../controllers/practitionerUserController')
+const { protect } = require('../middleware/authMiddleware')
 
-// GET and POST Routes
-router.route('/').get(getPractitionerUsers).post(createPractitionerUser)
-// PUT and DELETE Routes
-router.route('/:id').put(updatePractitionerUser).delete(deletePractitionerUser)
+router.post('/', registerPractitionerUser)
+router.post('/login', loginPractitionerUser)
+router.get('/me', protect, getMe)
 
 module.exports = router

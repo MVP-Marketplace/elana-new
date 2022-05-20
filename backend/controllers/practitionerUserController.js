@@ -1,71 +1,125 @@
+const jwt = require('jsonwebtoken')
+const bcrypt = require('bcryptjs')
 const asyncHandler = require('express-async-handler')
 const PractitionerUser = require('../models/practitionerUserModel')
 
-// Description: Get practitioner users
-// Route:       GET /api/practitionerUsers
-// Access:      Private
-const getPractitionerUsers = asyncHandler(async (req, res) => {
-    const practitionerUsers = await PractitionerUser.find()
-    res.status(200).json(practitionerUsers)
-})
-
-// Description: Create a practitioner user
+// Description: Register a practitioner user
 // Route:       POST /api/practitionerUsers
-// Access:      Private
-const createPractitionerUser = asyncHandler(async (req, res) => {
-    if(!req.body){
-        req.status(400)
-        throw new Error('Please add a json object')
+// Access:      Public
+const registerPractitionerUser = asyncHandler(async (req,res) => {
+    const { 
+        firstName,
+        lastName, 
+        practiceName, 
+        practiceNumber, 
+        email, 
+        password, 
+        licensingCredentials, 
+        areaOfSpecialty 
+    } = req.body
+
+    if ( 
+        !firstName || 
+        !lastName || 
+        !practiceName || 
+        !practiceNumber || 
+        !email || 
+        !password || 
+        !licensingCredentials || 
+        !areaOfSpecialty 
+        ) {
+        res.status(400)
+        throw new Error('Please add all fields')
     }
 
+    //Check if practitioner user exists
+    const practitionerUserExists = await PractitionerUser.findOne({email})
+
+    if(practitionerUserExists) {
+        res.status(400)
+        throw new Error('Practitioner user already existys')
+    }
+
+     //Hash Password
+     const salt = await bcrypt.genSalt(10)
+     const hashedPassword = await bcrypt.hash(password, salt)
+
+    //Create a practitioner User
     const practitionerUser = await PractitionerUser.create({
-        firstName: req.body.firstName,
-        lastName: req.body.lastName, 
-        practiceName: req.body.practiceName, 
-        practiceNumber: req.body.practiceNumber, 
-        email: req.body.email, 
-        password: req.body.password, 
-        licensingCredentials: req.body.licensingCredentials, 
-        areaOfSpecialty: req.body.areaOfSpecialty 
-    })
-    res.status(200).json(practitionerUser)
-})
-
-// Description: Update a practitioner user
-// Route:       PUT /api/practitionerUsers/:id
-// Access:      Private
-const updatePractitionerUser = asyncHandler(async (req, res) => {
-    const practitionerUser = await PractitionerUser.findById(req.params.id)
-    
-    if(!practitionerUser){
-        res.status(400)
-        throw new Error('Practitioner user not found')
-    }
-
-    const updatedPractitionerUser = await PractitionerUser.findByIdAndUpdate(req.params.id, req.body, {
-        new: true,
+        firstName,
+        lastName,
+        practiceName,
+        practiceNumber, 
+        email,
+        areaOfSpecialty,
+        licensingCredentials,
+        password: hashedPassword
     })
 
-    res.status(200).json(updatedPractitionerUser)
-})
-
-// Description: Delete a practitioner user
-// Route:       DELETE /api/practitionerUsers/:id
-// Access:      Private
-const deletePractitionerUser = asyncHandler(async (req, res) => {
-    const practitionerUser = await PractitionerUser.findById(req.params.id)
-    
-    if(!practitionerUser){
+    if(practitionerUser){
+        res.status(201).json({
+            _id: practitionerUser.id,
+            firstName: practitionerUser.firstName,
+            lastName: practitionerUser.lastName,
+            email: practitionerUser.email,
+            token: generateToken(practitionerUser._id)
+        })
+    } else {
         res.status(400)
-        throw new Error('Practitioner user not found')
+        throw new Error('Invalid practitioner user data')
     }
 
-    await practitionerUser.remove()
-
-    res.status(200).json({id: req.params.id})
 })
 
+// Description: Authenticate a practitioner user
+// Route:       POST /api/practitionerUsers/login
+// Access:      Public
+const loginPractitionerUser = asyncHandler(async (req,res) => {
+    const { 
+        email, 
+        password, 
+    } = req.body
 
-module.exports = {
-    getPractitionerUsers, createPractitionerUser, updatePractitionerUser, deletePractitionerUser
+    //Check for a practitioner user email
+    const practitionerUser = await PractitionerUser.findOne({email})
+
+    if (practitionerUser && (await bcrypt.compare(password, practitionerUser.password))) {
+        res.json({
+            _id: practitionerUser.id,
+            firstName: practitionerUser.firstName,
+            lastName: practitionerUser.lastName,
+            email: practitionerUser.email,
+            token: generateToken(practitionerUser._id)
+        })
+    } else {
+        res.status(400)
+        throw new Error('Invalid credentials')
+    }
+})
+
+// Description: Get a practitioner user
+// Route:       GET /api/practitionerUsers/me
+// Access:      Public
+const getMe = asyncHandler (async (req,res) => {
+    const {_id, firstName, lastName, email} = await PractitionerUser.findById(req.practitionerUser.id)
+    
+    res.status(200).json({
+        id: _id,
+        firstName,
+        lastName,
+        email,
+    })
+})  
+
+//Generate JWT
+const generateToken = (id) => {
+    return jwt.sign({ id }, process.env.JWT_SECRET, {
+        expiresIn: '30d',
+    })
+}
+
+module.exports ={
+    registerPractitionerUser, 
+    loginPractitionerUser, 
+    getMe
 }
