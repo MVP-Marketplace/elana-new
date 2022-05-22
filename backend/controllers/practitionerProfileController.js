@@ -52,16 +52,14 @@ const updatePractitionerProfile = asyncHandler(async (req, res) => {
         throw new Error('Practitioner not found')
     }
 
-    const practitionerUser = await PractitionerUser.findById(req.practitionerUser.id)
-
     // Chekc for practitioner user
-    if(!practitionerUser){
+    if(!req.practitionerUser){
         res.status(401)
         throw new Error('Practitioner user not found')
     }
 
     //Make sure the logged in practitioner user matches the practitioner profile
-    if(practitionerProfile.practitionerUser.toString() !== practitionerUser.id) {
+    if(practitionerProfile.practitionerUser.toString() !== req.practitionerUser.id) {
         res.status(401)
         throw new Error('Practitioner user not authorized')
     }
@@ -84,16 +82,14 @@ const deletePractitionerProfile = asyncHandler(async (req, res) => {
         throw new Error('PractitionerProfile not found')
     }
 
-    const practitionerUser = await PractitionerUser.findById(req.practitionerUser.id)
-
     // Chekc for practitioner user
-    if(!practitionerUser){
+    if(!req.practitionerUser){
         res.status(401)
         throw new Error('Practitioner user not found')
     }
 
     //Make sure the logged in practitioner user matches the practitioner profile
-    if(practitionerProfile.practitionerUser.toString() !== practitionerUser.id) {
+    if(practitionerProfile.practitionerUser.toString() !== req.practitionerUser.id) {
         res.status(401)
         throw new Error('Practitioner user not authorized')
     }

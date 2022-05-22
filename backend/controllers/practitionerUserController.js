@@ -101,14 +101,7 @@ const loginPractitionerUser = asyncHandler(async (req,res) => {
 // Route:       GET /api/practitionerUsers/me
 // Access:      Public
 const getMe = asyncHandler (async (req,res) => {
-    const {_id, firstName, lastName, email} = await PractitionerUser.findById(req.practitionerUser.id)
-    
-    res.status(200).json({
-        id: _id,
-        firstName,
-        lastName,
-        email,
-    })
+    res.status(200).json(req.practitionerUser)
 })  
 
 //Generate JWT
