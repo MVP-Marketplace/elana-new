@@ -15,8 +15,34 @@ const createPractitionerProfile = async (practitionerProfileData, token) => {
     return response.data
 }
 
+// Get practitioner profile
+const getPractitionerProfiles = async (token) => {
+    const config = {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    }
+
+    const response = await axios.get(API_URL, config)
+
+    return response.data
+}
+
+// Update a practitioner profile
+const updatePractitionerProfile = async (practitionerProfileId, token) => {
+    const config = {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    }
+
+    const response = await axios.put(API_URL + practitionerProfileId, config)
+
+    return response.data
+}
+
 const practitionerProfileService = {
-    createPractitionerProfile,
+    createPractitionerProfile, getPractitionerProfiles, updatePractitionerProfile
 }
 
 export default practitionerProfileService
