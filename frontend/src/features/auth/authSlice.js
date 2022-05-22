@@ -13,7 +13,7 @@ const initialState = {
 }
 
 // Login user
-export const login = createAsyncThunk('auth/login', async (user, thunkAPI) => {
+export const login = createAsyncThunk('auth/login', async (practitionerUser, thunkAPI) => {
     try{
         return await authService.login(practitionerUser)
     } catch (error){
