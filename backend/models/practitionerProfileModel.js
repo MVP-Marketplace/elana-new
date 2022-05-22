@@ -19,7 +19,7 @@ const practitionerProfileSchema = mongoose.Schema({
         required: true
     },
     certifications: {
-        type: [],
+        type: String,
         required: true
     },
     availability: {
