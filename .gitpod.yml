@@ -3,7 +3,7 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - init: npm i -D nodemon && cd frontend && npm install && cd ..
+  - init: npm i -D nodemon && cd frontend && npm install && npm i mdb-react-ui-kit --legacy-peer-deps && cd .. && npm run dev
 
 
 #"proxy": "http://localhost:5000",
