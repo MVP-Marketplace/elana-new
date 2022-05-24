@@ -1,0 +1,8 @@
+.profilePage{
+    box-sizing: border-box;
+    position: relative;
+    width: 1440px;
+    height: 1445px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+}

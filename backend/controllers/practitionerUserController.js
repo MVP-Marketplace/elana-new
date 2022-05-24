@@ -72,7 +72,7 @@ const registerPractitionerUser = asyncHandler(async (req,res) => {
 })
 
 // Description: Authenticate a practitioner user
-// Route:       POST /api/practitionerUsers/login
+// Route:       POST /api/practitionerUsers/practitionerLogin
 // Access:      Public
 const loginPractitionerUser = asyncHandler(async (req,res) => {
     const { 

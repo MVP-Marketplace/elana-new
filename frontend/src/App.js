@@ -1,10 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import Dashboard from './pages/Dashboard';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Navbar from './components/navbar';
+import {ChoosingACategory} from './pages/FindingAPractitioner/ChoosingACategory';
+import {PractitionerListing} from './pages/FindingAPractitioner/PractitionerListing';
+import {Homescreen} from './pages/HomePage/Homescreen';
+import {AboutPage} from './pages/HomePage/AboutPage';
+import {IndividualPage} from './pages/HomePage/IndividualPage';
+import {PractitionerPage } from './pages/HomePage/PractitionerPage';
+import {PractitionerLogin} from './pages/Practitioner/PractitionerLogin';
+import {PractitionerProfile} from './pages/Practitioner/PractitionerProfile';
+import {PractitionerSignUp} from './pages/Practitioner/PractitionerSignUp';
+import {PrivacyPolicy} from './pages/Others/PrivacyPolicy'
+import {Terms} from './pages/Others/Terms'
+import {Navbar} from './components/Navbar';
 
 function App() {
   return (
@@ -13,9 +21,17 @@ function App() {
         <div className='container'>
           <Navbar/>
           <Routes>
-            <Route path='/' element={<Dashboard/>}/>
-            <Route path='/login' element={<Login/>}/>
-            <Route path='/register' element={<Register/>}/>
+            <Route path='/' element={<Homescreen/>}/>
+            <Route path='/aboutPage' element={<AboutPage/>}/>
+            <Route path='/individualPage' element={<IndividualPage/>}/>
+            <Route path='/practitionerPage' element={<PractitionerPage/>}/>
+            <Route path='/privacyPolicy' element={<PrivacyPolicy/>}/>
+            <Route path='/terms' element={<Terms/>}/>
+            <Route path='/choosingACategory' element={<ChoosingACategory/>}/>
+            <Route path='/practitionerListing' element={<PractitionerListing/>}/>
+            <Route path='/practitionerLogin' element={<PractitionerLogin/>}/>
+            <Route path='/practitionerProfile' element={<PractitionerProfile/>}/>
+            <Route path='/practitionerSignUp' element={<PractitionerSignUp/>}/>
           </Routes>
         </div>
       </Router>

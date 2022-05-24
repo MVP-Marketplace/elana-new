@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import { register, reset } from '../features/auth/authSlice'
-import Spinner from '../components/spinner'
+import { register, reset } from '../../features/auth/authSlice'
+import Spinner from '../../components/spinner'
 
-function Register() {
+export function PractitionerSignUp() {
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -109,5 +109,3 @@ function Register() {
         </>
     )
 }
-
-export default Register
