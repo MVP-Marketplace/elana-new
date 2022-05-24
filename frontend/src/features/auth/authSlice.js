@@ -13,7 +13,7 @@ const initialState = {
 }
 
 // Login user
-export const login = createAsyncThunk('auth/login', async (practitionerUser, thunkAPI) => {
+export const login = createAsyncThunk('auth/PractitionerLogin', async (practitionerUser, thunkAPI) => {
     try{
         return await authService.login(practitionerUser)
     } catch (error){
@@ -23,7 +23,7 @@ export const login = createAsyncThunk('auth/login', async (practitionerUser, thu
 })
 
 // Register user
-export const register = createAsyncThunk('auth/register', async (user, thunkAPI) => {
+export const register = createAsyncThunk('auth/PractitionerSignUp', async (user, thunkAPI) => {
     try{
         return await authService.register(practitionerUser)
     } catch (error){
