@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import { register, reset } from '../../features/auth/authSlice'
 import Spinner from '../../components/spinner'
+import { register } from '../../features/auth/authSlice'
+import {reset} from'../../features/practitionerProfiles/practitionerProfileSlice'
 
 export function PractitionerSignUp() {
     const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ export function PractitionerSignUp() {
         }
 
         if(isSuccess || practitionerUser){
-            navigate('/')
+            navigate('/practitionerCreateProfile')
         }
 
         dispatch(reset())
@@ -72,7 +73,7 @@ export function PractitionerSignUp() {
     return (
         <>
             <section className='heading'>
-                <h1>Register</h1>
+                <h1>Sign Up</h1>
                 <p>Please create an account</p>
             </section>
             <section className='form'>
