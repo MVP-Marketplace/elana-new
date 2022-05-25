@@ -26,7 +26,7 @@ export function PractitionerLogin() {
         }
 
         if (isSuccess || practitionerUser) {
-            navigate('/')
+            navigate('/practitionerProfile')
         }
 
         dispatch(reset())

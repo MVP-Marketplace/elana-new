@@ -4,7 +4,7 @@ const API_URL = '/api/practitionerUsers/'
 
 // Login user
 const login = async (practitionerUserData) => {
-    const response = await axios.post(API_URL + 'login', practitionerUserData)
+    const response = await axios.post(API_URL + 'practitionerLogin', practitionerUserData)
 
     if(response.data) {
         localStorage.setItem('practitionerUser', JSON.stringify(response.data))
