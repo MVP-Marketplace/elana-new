@@ -1,18 +1,25 @@
-Commands to push code:
+# Commands to push code into makeimvp repo directly (Do this first):
 
-# git checkout Paola
-# git add.
-# git commit -m "name of my commit"
-# git push -u origin Paola
+ git checkout Paola
+ git add.
+ git commit -m "name of my commit" 
+ git push -u origin Paola
 
-Commands to start front and back end:
+# Commands to push code into local repo:
 
-# npm run dev
+ git checkout main
+ git add.
+ git commit -m "name of my commit" git push
 
-Command to start front end only:
 
-# npm run client
+# Commands to start front and back end:
 
-Command to start backend only:
+ npm run dev
 
-# npm run server
+#Command to start front end only:
+
+ npm run client
+
+# Command to start backend only:
+
+ npm run server
