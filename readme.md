@@ -2,7 +2,8 @@
 
  git checkout Paola
  git add.
- git commit -m "name of my commit" git push -u origin Paola
+ git commit -m "name of my commit" 
+ git push -u origin Paola
 
 # Commands to push code into local repo:
 
