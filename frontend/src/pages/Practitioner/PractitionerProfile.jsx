@@ -1,6 +1,7 @@
 import { Link } from 'react'
 import Spinner from '../../components/spinner'
 import { useSelector } from 'react-redux'
+import './PractitionerProfileStyles.css'
 
 export function PractitionerProfile() {
 
