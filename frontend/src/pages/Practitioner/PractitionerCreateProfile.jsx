@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import {createPractitionerProfile} from '../features/practitionerProfiles/practitionerProfileSlice'
+import { createPractitionerProfile } from '../../features/practitionerProfiles/practitionerProfileSlice'
+import { Link } from "react-router-dom";
 
-function PractitionerProfileForm() {
+export function PractitionerCreateProfile() {
     const [formData, setFormData] = useState({
         aboutMe: '',
         howCanIHelp: '',
@@ -55,7 +56,6 @@ function PractitionerProfileForm() {
 
         setFormData(practitionerProfileData)
     }
-
 
     return (
         <>
@@ -118,14 +118,14 @@ function PractitionerProfileForm() {
                         <input type='text' name='telehealthProvided' id='telehealthProvided' value={telehealthProvided} onChange={onChange} />
                     </div>
                     <div className='form-group'>
-                        <button className='btn btn-block' type='submit'>
-                            Save Profile
-                        </button>
+                        <Link to='/PractitonerProfile'>
+                            <button className='btn btn-block' type='submit'>
+                                Save Profile
+                            </button>
+                        </Link>
                     </div>
                 </form>
             </section>
         </>
     )
 }
-
-export default PractitionerProfileForm
