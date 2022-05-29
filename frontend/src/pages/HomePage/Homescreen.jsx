@@ -7,7 +7,7 @@ export function Homescreen() {
     return (
         <div className="container">
             <h2>Homescreen</h2>
-            <h5>Click on the Elana link to come back to the index</h5>
+            <h5>Click on the Elana logo to come back to the index</h5>
             <ul>
                 <li><Link to='/choosingACategory'>ChoosingACategory</Link></li>
                 <li><Link to='/practitionerListing'>PractitionerListing</Link></li>
