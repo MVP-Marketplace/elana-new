@@ -4,8 +4,10 @@ import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import Spinner from '../../components/spinner'
 import { register } from '../../features/auth/authSlice'
-import {reset} from'../../features/practitionerProfiles/practitionerProfileSlice'
+import { reset } from '../../features/practitionerProfiles/practitionerProfileSlice'
 import '../../index.css'
+import Logo from "../../img/LogoName.png";
+import { MDBInput } from 'mdb-react-ui-kit';
 
 export function PractitionerSignUp() {
     const [formData, setFormData] = useState({
@@ -26,12 +28,12 @@ export function PractitionerSignUp() {
 
     const { practitionerUser, isLoading, isError, isSuccess, message } = useSelector((state) => state.auth)
 
-    useEffect(()=>{
-        if(isError){
+    useEffect(() => {
+        if (isError) {
             toast.error(message)
         }
 
-        if(isSuccess || practitionerUser){
+        if (isSuccess || practitionerUser) {
             navigate('/practitionerCreateProfile')
         }
 
@@ -49,7 +51,7 @@ export function PractitionerSignUp() {
     const onSubmit = (e) => {
         e.preventDefault()
 
-        if(password.length <= 8){
+        if (password.length <= 8) {
             toast.error('Password does not meet requirements')
         } else {
             const practitionerUserData = {
@@ -62,52 +64,76 @@ export function PractitionerSignUp() {
                 licensingCredentials,
                 areaOfSpecialty
             }
-    
+
             dispatch(register(practitionerUserData))
         }
     }
 
-    if(isLoading){
-        return <Spinner/>
+    if (isLoading) {
+        return <Spinner />
     }
 
     return (
-        <>
-            <section className='heading'>
-                <h1>Sign Up</h1>
-                <p>Please create an account</p>
-            </section>
-            <section className='form'>
-                <form onSubmit={onSubmit}>
-                    <div className='form-group'>
-                        <input type="text" className="form-control" id="firstName" name="firstName" value={firstName} placeholder="Enter your first Name" onChange={onChange} />
+        <div className='signupGradient'>
+            <div className='bgwhite2'>
+                {/* /////// first part logo and icon*/}
+                <div className="p-3">
+                    <img src={Logo} className="logosingup" alt='Elana Logo'></img>
+                </div>
+
+                {/* /////// second part titles*/}
+
+                <div className="text-center">
+                    <h2 className="titlesingup">Practitioner Sign Up</h2>
+                </div>
+
+                <div className="d-grid justify-content-center m-1">
+                    <div>
+                        <label className="labelsingup text-muted">Label</label>
+                        <MDBInput type="text" className="form-control" id="form1" name="firstName" value={firstName} placeholder="Enter your first Name" onChange={onChange} />
                     </div>
-                    <div className='form-group'>
-                        <input type="text" className="form-control" id="lastName" name="lastName" value={lastName} placeholder="Enter your last Name" onChange={onChange} />
+
+                    <div>
+                        <label className="labelsingup text-muted">Label</label>
+                        <MDBInput type="text" className="form-control" id="form1" name="lastName" value={lastName} placeholder="Enter your last Name" onChange={onChange} />
                     </div>
-                    <div className='form-group'>
-                        <input type="text" className="form-control" id="practiceName" name="practiceName" value={practiceName} placeholder="Enter your practiceName" onChange={onChange} />
+
+                    <div>
+                        <label className="labelsingup text-muted">Label</label>
+                        <MDBInput type="text" className="form-control" id="form1" name="practiceName" value={practiceName} placeholder="Enter your practiceName" onChange={onChange} />
                     </div>
-                    <div className='form-group'>
-                        <input type="text" className="form-control" id="practiceNumber" name="practiceNumber" value={practiceNumber} placeholder="Enter your practiceNumber" onChange={onChange} />
+
+                    <div>
+                        <label className="labelsingup text-muted">Label</label>
+                        <MDBInput type="text" className="form-control" id="form1" name="practiceNumber" value={practiceNumber} placeholder="Enter your practiceNumber" onChange={onChange} />
                     </div>
-                    <div className='form-group'>
-                        <input type="text" className="form-control" id="email" name="email" value={email} placeholder="Enter your email" onChange={onChange} />
+
+                    <div>
+                        <label className="labelsingup text-muted">Label</label>
+                        <MDBInput type="text" className="form-control" id="form1" name="email" value={email} placeholder="Enter your email" onChange={onChange} />
                     </div>
-                    <div className='form-group'>
-                        <input type="text" className="form-control" id="password" name="password" value={password} placeholder="Enter your password" onChange={onChange} />
+
+                    <div>
+                        <label className="labelsingup text-muted">Label</label>
+                        <MDBInput type="text" className="form-control" id="form1" name="password" value={password} placeholder="Enter your password" onChange={onChange} />
                     </div>
-                    <div className='form-group'>
-                        <input type="text" className="form-control" id="licensingCredentials" name="licensingCredentials" value={licensingCredentials} placeholder="Enter your licensingCredentials" onChange={onChange} />
+
+                    <div>
+                        <label className="labelsingup text-muted">Label</label>
+                        <MDBInput type="text" className="form-control" id="form1" name="licensingCredentials" value={licensingCredentials} placeholder="Enter your licensingCredentials" onChange={onChange} />
                     </div>
-                    <div className='form-group'>
-                        <input type="text" className="form-control" id="areaOfSpecialty" name="areaOfSpecialty" value={areaOfSpecialty} placeholder="Enter your areaOfSpecialty" onChange={onChange} />
+
+                    <div>
+                        <label className="labelsingup text-muted">Label</label>
+                        <MDBInput type="text" className="form-control" id="form1" name="areaOfSpecialty" value={areaOfSpecialty} placeholder="Enter your areaOfSpecialty" onChange={onChange} />
                     </div>
-                    <div className='form-group'>
-                        <button type='submit' className='btn btn-block'>Submit</button>
-                    </div>
-                </form>
-            </section>
-        </>
+
+                    <button className='buttonmainpage col-sm m-5' onClick={onSubmit}>
+                        LOG IN
+                    </button>
+                </div>
+            </div>
+
+        </div >
     )
 }
