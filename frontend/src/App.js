@@ -15,6 +15,7 @@ import {PractitionerSignUp} from './pages/Practitioner/PractitionerSignUp';
 import {PrivacyPolicy} from './pages/Others/PrivacyPolicy'
 import {Terms} from './pages/Others/Terms'
 import {Navbar} from './components/Navbar';
+import {Footer} from './components/Footer';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <Footer/>
       <ToastContainer/>
     </>
   );

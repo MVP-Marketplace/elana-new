@@ -4,7 +4,8 @@ import {
   MDBNavbar
 } from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
-import Logo from "../img/NavbarLogo.png";
+import Logo from "../img/LogoName.png";
+import '../index.css'
 
 export const Navbar = () => {
 

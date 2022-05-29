@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { login, reset } from '../../features/auth/authSlice'
 import Spinner from '../../components/spinner'
+import { MDBInput } from 'mdb-react-ui-kit';
+import Logo from "../../img/LogoName.png";
+import '../../index.css'
 
 export function PractitionerLogin() {
     const [formData, setFormData] = useState({
@@ -55,45 +58,54 @@ export function PractitionerLogin() {
     }
 
     return (
-        <>
-            <section className='heading'>
-                <h1>
-                    Practitioner Login
-                </h1>
-            </section>
+        <div className="signupGradient">
+            {/* /////// singUpGradient control padding */}
+            <div className="bgwhite2">
 
-            <section className='form'>
-                <form onSubmit={onSubmit}>
-                    <div className='form-group'>
-                        <input
+                {/* /////// first part logo and icon*/}
+                <div className="p-3">
+                    <img src={Logo} className="logosingup" alt='Elana Logo'></img>
+                </div>
+
+                {/* /////// second part titles*/}
+
+                <div className="text-center">
+                    <h2 className="titlesingup">Practitioner Log In</h2>
+                    <p className="titlesingup">Don`t have an account? Click here to Sign Up</p>
+                </div>
+
+                {/* /////// third part inputs*/}
+
+                <div className="d-grid justify-content-center m-1">
+                    <div>
+                        <label className="labelsingup text-muted">Username</label>
+                        <MDBInput 
+                            id='form1' 
                             type='email'
                             className='form-control'
-                            id='email'
                             name='email'
                             value={email}
                             placeholder='Enter your email'
-                            onChange={onChange}
-                        />
+                            onChange={onChange} />
                     </div>
-                    <div className='form-group'>
-                        <input
-                            type='password'
+
+                    <div>
+                        <label className="labelsingup text-muted">Password</label>
+                        <MDBInput 
+                            id='form1' 
+                            type='Password'
                             className='form-control'
-                            id='password'
                             name='password'
                             value={password}
                             placeholder='Enter password'
-                            onChange={onChange}
-                        />
+                            onChange={onChange} />
                     </div>
 
-                    <div className='form-group'>
-                        <button type='submit' className='btn btn-block'>
-                            Submit
-                        </button>
+                    <button className='buttonmainpage col-sm m-5' onClick={onSubmit}>
+                        LOG IN
+                    </button>
                     </div>
-                </form>
-            </section>
-        </>
-    )
+                </div>
+            </div>
+            )
 }

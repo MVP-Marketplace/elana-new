@@ -14,8 +14,8 @@
 
 .missionContainer {
   width: 1150px;
-height: 157px;
-margin: 0 auto;
+  height: 157px;
+  margin: 0 auto;
 }
 
 .missionText {
@@ -23,14 +23,14 @@ margin: 0 auto;
   font-weight: 800;
   font-size: 40px;
   line-height: 47px;
-align-items: center;
-text-align: center;
-font-family: 'Abhaya Libre ExtraBold';
-position: absolute ;
-width: 1150px;
-height: 157px;
- /* left: 175px; */
-top: 195px; 
+  align-items: center;
+  text-align: center;
+  font-family: 'Abhaya Libre ExtraBold';
+  position: absolute;
+  width: 1150px;
+  height: 157px;
+  /* left: 175px; */
+  top: 195px;
 }
 
 .headerText2 {
@@ -42,45 +42,45 @@ top: 195px;
   line-height: 57px;
   align-items: center;
   text-align: center;
-/* position: absolute;
+  /* position: absolute;
 left: 670px;
 top: 440px; */
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
   padding-top: 25px;
 }
 
 .ourStoryText {
   font-family: 'Abhaya Libre ExtraBold';
-font-style: normal;
-font-weight: 800;
-font-size: 32px;
-line-height: 38px;
-align-items: center;
-text-align: center;
-/* position: absolute;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38px;
+  align-items: center;
+  text-align: center;
+  /* position: absolute;
 left: 350px;
 top: 527px; */
-display: flex;
-justify-content: center;
-padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .ourStoryText2 {
   font-family: 'Abhaya Libre';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
-/* justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  /* justify-content: center;
 display: flex; */
-/* position: absolute;
+  /* position: absolute;
 left: 180px;
 top: 620px; */
-margin: 0 auto;
-width: 1149px;
-height: 348px;
+  margin: 0 auto;
+  width: 1149px;
+  height: 348px;
 }
 
 .OurStoryContainer {
@@ -89,7 +89,7 @@ height: 348px;
   height: 565px;
   /* border: 1px dotted red; */
   margin: 150px 0;
-  
+
 }
 
 .meetTheTeamHeader {
@@ -105,7 +105,7 @@ height: 348px;
   justify-content: center;
   /* padding-bottom: 80px;
   margin-top: 40px; */
- /* position: absolute;
+  /* position: absolute;
  left: 625px;
 top: 1030px; */
   /* padding-bottom: 90px; */
@@ -120,10 +120,10 @@ top: 1030px; */
 
 
 
-.teamPics  {
+.teamPics {
   /* width: 230px;
 height: 217px; */
-margin: 100px auto;
+  margin: 100px auto;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
@@ -131,14 +131,17 @@ margin: 100px auto;
 
 }
 
-.pic1 , .pic2, .pic3, .pic4 {
+.pic1,
+.pic2,
+.pic3,
+.pic4 {
   border-radius: 24px;
   border: 0.25px solid rgba(87, 85, 85, 0.9);
   width: 230px;
-height: 217px;
+  height: 217px;
 }
 
-.names  {
+.names {
 
   font-family: 'Abhaya Libre ExtraBold 800';
   font-style: normal;
@@ -165,38 +168,40 @@ height: 217px;
 /* About Page CSS  ******************************************************/
 /* NavBar Page CSS  ******************************************************/
 
-.logo{
- position: absolute;
- left: 112px;
-top: 35px;
+.logo {
+  position: absolute;
+  left: 112px;
+  top: 35px;
 
 }
-.link{
-  color: #7F6FEA ;
+
+.link {
+  color: #7F6FEA;
   margin-left: 20px;
   margin-top: 15px;
   font-family: 'Karla', sans-serif;
 
 }
-.form{
+
+.form {
   margin-right: 50px;
 }
 
 .nav {
-display: flex;
-justify-content: flex-end;
-align-items: center;
-/* border-bottom:#7F6FEA 0.25px solid; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border-bottom:#7F6FEA 0.25px solid; */
 }
 
 
 /* NavBar Page CSS  ******************************************************/
 
 
- /*Listing Page CSS  ******************************************************/
+/*Listing Page CSS  ******************************************************/
 
 
- .listingButton {
+.listingButton {
   position: absolute;
   width: 52px;
   height: 20px;
@@ -218,12 +223,12 @@ span {
   font-size: 48px;
   line-height: 57px;
   /* identical to box height */
-  
+
   display: flex;
   align-items: flex-end;
-  
+
   /* 7F6FEA - Brand (Purple) */
-  
+
   color: #7F6FEA;
 
 }
@@ -231,91 +236,90 @@ span {
 .listingContainer {
 
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
 
-position: absolute;
-width: 1216px;
-height: 138px;
-left: 212px;
-top: 246px;
+  position: absolute;
+  width: 1216px;
+  height: 138px;
+  left: 212px;
+  top: 246px;
 
 }
 
 .listingText1 {
   font-family: 'Karla';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
-display: flex;
-align-items: center;
-letter-spacing: -0.02em;
-width: 1216px;
-height: 30px;
-justify-content:flex-start
-
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  width: 1216px;
+  height: 30px;
+  justify-content: flex-start
 }
 
 .listingText2 {
 
   width: 1216px;
-height: 30px;
+  height: 30px;
 
-/* Karla/Regular/P - 16 */
+  /* Karla/Regular/P - 16 */
 
-font-family: 'Karla';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-display: flex;
-align-items: center;
-letter-spacing: -0.02em;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
 }
 
 .filterByContainer {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
 
-/* Filter By Menu */
-position: absolute;
-width: 280px;
-height: 330px;
-left: 212px;
-top: 550px;
+  /* Filter By Menu */
+  position: absolute;
+  width: 280px;
+  height: 330px;
+  left: 212px;
+  top: 550px;
 }
 
 .filterDataContainer {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
 
-position: absolute;
-width: 792px;
-height: 943px;
-left: 628px;
-top: 575px;
+  position: absolute;
+  width: 792px;
+  height: 943px;
+  left: 628px;
+  top: 575px;
 }
 
 .person {
   width: 792px;
-height: 226px;
+  height: 226px;
 
 
-/* Inside auto layout */
+  /* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
-background-color: rgba(234, 232, 251, 1);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: rgba(234, 232, 251, 1);
 }
 
 /* .x {
@@ -326,11 +330,11 @@ background-color: rgba(234, 232, 251, 1);
 } */
 
 .resourcesContainer {
-position: absolute;
-width: 1440px;
-height: 480px;
-left: 0px;
-top: 1696px;
+  position: absolute;
+  width: 1440px;
+  height: 480px;
+  left: 0px;
+  top: 1696px;
 }
 
 .resourcesText {
@@ -346,7 +350,7 @@ top: 1696px;
   align-items: center;
   padding: 0px;
   gap: 8px;
-  
+
   position: absolute;
   width: 110px;
   height: 20px;
@@ -355,48 +359,51 @@ top: 1696px;
 }
 
 .bottomContainer {
-  
-position: absolute;
-width: 1316px;
-height: 190px;
-left: 130px;
-right: 55px;
-top: 101px;
-/* border: solid 1px black; */
+
+  position: absolute;
+  width: 1316px;
+  height: 190px;
+  left: 130px;
+  right: 55px;
+  top: 101px;
+  /* border: solid 1px black; */
 }
 
 .purple {
   display: flex;
   justify-content: space-around;
-flex-direction: row;
-align-items: flex-start;
-list-style-type: none;
+  flex-direction: row;
+  align-items: flex-start;
+  list-style-type: none;
 
 }
 
-.purpleBox1, .purpleBox2, .purpleBox3, .purpleBox4  {
+.purpleBox1,
+.purpleBox2,
+.purpleBox3,
+.purpleBox4 {
   width: 280px;
   height: 190px;
   background: #BCB5E8;
-border-radius: 8px;
+  border-radius: 8px;
 
 }
 
 
 .ARh3 {
 
-font-family: 'Abhaya Libre ExtraBold';
-font-style: normal;
-font-weight: 800;
-font-size: 24px;
-line-height: 28px;
-display: flex;
-align-items: center;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
 
-/* 252A2E - Soft Black */
+  /* 252A2E - Soft Black */
 
-color: #252A2E;
-  
+  color: #252A2E;
+
 }
 
 .ARp {
@@ -406,16 +413,244 @@ color: #252A2E;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.02em;
-  
+
   /* 252A2E - Soft Black */
-  
+
   color: #252A2E;
 
   flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
 
- /*Listing Page CSS  ******************************************************/
+/*Listing Page CSS  ******************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+/* /////navbar */
+.logo {
+  width: auto;
+  margin-left: 50px;
+}
+
+.link {
+  color: #7F6FEA;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-family: 'Karla', sans-serif;
+
+}
+
+.form {
+  margin-right: 50px;
+}
+
+/* /////PatienLandingPage */
+
+.bgpurple {
+  background-color: #EAE8FB;
+  width: 100%;
+  height: 210px;
+  margin-top: 0px;
+
+
+}
+
+.intro {
+  text-align: center;
+  font-family: 'Abhaya Libre', serif;
+  color: black;
+}
+
+.title1 {
+  font-family: 'Abhaya Libre', serif;
+  color: black;
+  margin-right: 100px;
+}
+
+.bggrey {
+  background-color: #E3E2E8;
+  width: 100%;
+  height: 230px;
+}
+
+.list {
+  font-family: 'Karla', sans-serif;
+}
+
+.buttonmainpage {
+  background-color: #7F6FEA;
+  border: 1px solid #7F6FEA;
+  border-radius: 3px;
+  height: 35px;
+  margin: auto;
+  width: auto;
+  color: white;
+}
+
+/* //////////////footer */
+.buttonfooter {
+  background-color: #EAE8FB;
+  border: 1px solid #EAE8FB;
+  border-radius: 3px;
+  height: 35px;
+  margin: auto;
+  width: auto;
+}
+
+.footer {
+  background-color: #7F6FEA;
+
+}
+
+.footerlinks {
+  display: flex;
+  font-size: 15px;
+  white-space: nowrap;
+  padding-top: 30px;
+
+}
+
+.textfoot {
+  white-space: nowrap;
+}
+
+.footerlink {
+  color: white;
+  margin-right: 20px;
+  margin-left: 50px;
+
+}
+
+.icon {
+  color: white;
+  font-size: 35px;
+  align-items: baseline;
+}
+
+
+/* //////////singup */
+.signupGradient {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to left top, #2ACDFA, #E927D3, #7F6FEA);
+  position: relative;
+
+}
+
+.bgwhite {
+  background-color: white;
+  max-width: 600px;
+  border-radius: 14px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 600px;
+
+}
+
+.bgwhite2 {
+  background-color: white;
+  border-radius: 14px;
+  height: auto;
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.checkbox-round {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid #7F6FEA;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: #7F6FEA;
+}
+
+.titlesingup {
+  font-family: 'Abhaya Libre', serif;
+}
+
+.labelsingup {
+  font-family: 'Karla', sans-serif;
+  font-size: 10px;
+}
+
+/* .model{
+     font-family: 'Karla', sans-serif;
+ } */
+.checkbox {
+  font-family: 'Karla', sans-serif;
+  font-size: 10px;
+}
+
+.inputsingup {
+  width: 220px;
+}
+
+.inputdrop {
+  width: 490px;
+  margin-left: auto;
+  margin-right: 45px;
+  font-family: 'Karla', sans-serif;
+}
+
+/* /////Browser PractitionerCategories */
+
+.purpleboxes {
+  background-color: #EAE8FB;
+  width: 270px;
+  height: 120px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 14px;
+}
+
+.titlebox {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Abhaya Libre', serif;
+  margin-left: 15px;
+}
+
+.paragraphbox {
+  font-size: 10px;
+  font-family: 'Karla', sans-serif;
+  margin-left: 15px;
+}
+
+.purplecards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.iconback {
+  color: #7F6FEA;
+}
+
+.titlepractitioner {
+  font-family: 'Abhaya Libre', serif;
+}
+
+.textpractitioner {
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+}

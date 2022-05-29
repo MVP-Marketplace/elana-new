@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { createPractitionerProfile } from '../../features/practitionerProfiles/practitionerProfileSlice'
 import { Link } from "react-router-dom";
+import '../../index.css'
 
 export function PractitionerCreateProfile() {
     const [formData, setFormData] = useState({
