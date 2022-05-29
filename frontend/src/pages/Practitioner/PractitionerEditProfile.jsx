@@ -3,6 +3,7 @@ import { useState, Link } from 'react'
 import Spinner from '../../components/spinner'
 import { updatePractitionerProfile } from '../../features/practitionerProfiles/practitionerProfileSlice'
 import { useParams } from "react-router-dom";
+import "../../index.css"
 
 export function PractitionerEditProfile() {
 

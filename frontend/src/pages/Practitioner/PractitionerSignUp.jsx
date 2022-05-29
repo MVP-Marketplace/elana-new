@@ -5,6 +5,7 @@ import { toast } from 'react-toastify'
 import Spinner from '../../components/spinner'
 import { register } from '../../features/auth/authSlice'
 import {reset} from'../../features/practitionerProfiles/practitionerProfileSlice'
+import '../../index.css'
 
 export function PractitionerSignUp() {
     const [formData, setFormData] = useState({
