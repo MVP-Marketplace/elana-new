@@ -1,0 +1,41 @@
+h2 {
+    font-family: "Abhaya Libre ExtraBold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+.smalldisclaimer2 {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    position: absolute;
+    width: 716px;
+    height: 38px;
+    left: 362px;
+    top: 4661px;
+}
+
+.pcontent {
+    position: absolute;
+    width: 1216px;
+    height: 2767px;
+    left: 112px;
+    top: 166px;
+}
+
+.container2 {
+    position: absolute;
+    width: 1216px;
+    height: 2767px;
+    left: 112px;
+    top: 166px;
+}
