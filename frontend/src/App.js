@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className='container'>
+        
           <Navbar/>
           <Routes>
             <Route path='/' element={<Homescreen/>}/>
@@ -38,7 +38,7 @@ function App() {
             <Route path='/practitionerEditProfile/:id' element={<PractitionerEditProfile/>}/>
             <Route path='/practitionerSignUp' element={<PractitionerSignUp/>}/>
           </Routes>
-        </div>
+        
       </Router>
       <Footer/>
       <ToastContainer/>

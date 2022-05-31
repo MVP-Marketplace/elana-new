@@ -74,11 +74,13 @@ h5 {
 }
 
 .smalldisclaimer {
-    position: absolute;
+    
     width: 716px;
     height: 38px;
-    left: 362px;
+    margin-top: 89px;
     top: 4661px;
+    margin-left: 265px;
+    margin-bottom: 100px;
 
     /* Karla/Regular/P - 16 */
 

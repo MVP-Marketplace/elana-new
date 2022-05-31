@@ -17,15 +17,17 @@ h2 {
     text-align: center;
     letter-spacing: -0.02em;
 
-    position: absolute;
+    
     width: 716px;
     height: 38px;
-    left: 362px;
+    margin-top: 89px;
     top: 4661px;
+    margin-left: 265px;
+    margin-bottom: 100px;
 }
 
 .pcontent {
-    position: absolute;
+    
     width: 1216px;
     height: 2767px;
     left: 112px;
@@ -33,7 +35,7 @@ h2 {
 }
 
 .container2 {
-    position: absolute;
+margin:auto;
     width: 1216px;
     height: 2767px;
     left: 112px;

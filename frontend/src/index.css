@@ -169,10 +169,10 @@ height: 217px; */
 /* NavBar Page CSS  ******************************************************/
 
 .logo {
-  position: absolute;
+  /* position: absolute; */
   left: 112px;
   top: 35px;
-
+  height:
 }
 
 .link {
@@ -192,6 +192,13 @@ height: 217px; */
   justify-content: flex-end;
   align-items: center;
   /* border-bottom:#7F6FEA 0.25px solid; */
+}
+
+.navWrapper{
+  
+  box-shadow: 0px 5px #EAE8FB ;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 
@@ -433,7 +440,7 @@ span {
 /* /////navbar */
 .logo {
   width: auto;
-  margin-left: 50px;
+  margin-left: 112px;
 }
 
 .link {
@@ -445,7 +452,7 @@ span {
 }
 
 .form {
-  margin-right: 50px;
+  margin-right: 112px;
 }
 
 /* /////PatienLandingPage */
