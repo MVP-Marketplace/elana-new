@@ -26,13 +26,7 @@ h2 {
     margin-bottom: 100px;
 }
 
-.pcontent {
-    
-    width: 1216px;
-    height: 2767px;
-    left: 112px;
-    top: 166px;
-}
+
 
 .container2 {
 margin:auto;
@@ -40,4 +34,12 @@ margin:auto;
     height: 2767px;
     left: 112px;
     top: 166px;
+    
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+
 }

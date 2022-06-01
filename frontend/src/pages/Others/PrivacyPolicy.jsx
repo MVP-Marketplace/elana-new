@@ -155,8 +155,7 @@ export const PrivacyPolicy = () => {
                 If you have any questions about this Privacy Policy, please contact us.
                 <br />
                 <br />
-                <br />
-                <br />
+        
             </p>
             <p className="smalldisclaimer2">
                 Disclaimer: The information provided through Elana Health website and services is not intended or<br />
