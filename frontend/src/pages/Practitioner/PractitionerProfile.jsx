@@ -74,7 +74,7 @@ export function PractitionerProfile() {
                     </div>
                     <div className="ppPayment">
                         <div className="ppMethodsbox">
-                            <h4>Payment</h4>
+                            <h4>Payment Methods</h4>
                             <button className="ppPaymentButton">+</button>
                         </div>
                     </div>
