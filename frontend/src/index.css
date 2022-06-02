@@ -169,10 +169,10 @@ height: 217px; */
 /* NavBar Page CSS  ******************************************************/
 
 .logo {
-  position: absolute;
+  /* position: absolute; */
   left: 112px;
   top: 35px;
-
+  
 }
 
 .link {
@@ -180,6 +180,7 @@ height: 217px; */
   margin-left: 20px;
   margin-top: 15px;
   font-family: 'Karla', sans-serif;
+  text-decoration: none;
 
 }
 
@@ -193,6 +194,13 @@ height: 217px; */
   align-items: center;
   /* border-bottom:#7F6FEA 0.25px solid; */
 }
+
+/* .navWrapper{
+  
+  box-shadow: 0px 5px #EAE8FB ;
+  margin-bottom: 20px;
+  padding-top: 20px;
+} */
 
 
 /* NavBar Page CSS  ******************************************************/
@@ -433,7 +441,7 @@ span {
 /* /////navbar */
 .logo {
   width: auto;
-  margin-left: 50px;
+  margin-left: 112px;
 }
 
 .link {
@@ -445,7 +453,7 @@ span {
 }
 
 .form {
-  margin-right: 50px;
+  margin-right: 112px;
 }
 
 /* /////PatienLandingPage */
@@ -543,7 +551,7 @@ span {
 
 .bgwhite {
   background-color: white;
-  max-width: 600px;
+  max-width: 680px;
   border-radius: 14px;
   height: auto;
   position: absolute;
@@ -555,12 +563,16 @@ span {
   height: 600px;
 
 }
+.inputlogin{
+  width: 280px;
+  height: 40px;
+}
 
 .bgwhite2 {
   background-color: white;
   border-radius: 14px;
   height: auto;
-  width: 600px;
+  width: 700px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -591,7 +603,7 @@ span {
 
 .labelsingup {
   font-family: 'Karla', sans-serif;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 /* .model{
@@ -609,8 +621,11 @@ span {
 .inputdrop {
   width: 490px;
   margin-left: auto;
-  margin-right: 45px;
+  margin-right: 85px;
   font-family: 'Karla', sans-serif;
+}
+span{
+  color:#7F6FEA
 }
 
 /* /////Browser PractitionerCategories */
