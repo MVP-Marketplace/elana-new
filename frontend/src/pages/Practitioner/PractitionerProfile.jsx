@@ -17,10 +17,6 @@ export function PractitionerProfile() {
                     <div className="ppImageBox">
                         <div className="ppd">
                             <p className="ppText">Upload photo and video file</p>
-                            {/* <form action="/action_page.php">
-                                <input type="file" id="myFile" name="filename" />
-                                <input type="submit" />
-                            </form> */}
                         </div>
                     </div>
                     <div className="ppProfile">
