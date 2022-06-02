@@ -70,8 +70,8 @@ export function PractitionerLogin() {
                 {/* /////// second part titles*/}
 
                 <div className="text-center">
-                    <h2 className="titlesingup">Practitioner Log In</h2>
-                    <p className="titlesingup">Don`t have an account? Click here to Sign Up</p>
+                    <h2 className="titlesingup text-center">Practitioner Log In</h2>
+                    <p className="labelsingup">Don`t have an account? Click <span>here</span> to Sign Up</p>
                 </div>
 
                 {/* /////// third part inputs*/}
@@ -82,10 +82,9 @@ export function PractitionerLogin() {
                         <MDBInput 
                             id='form1' 
                             type='email'
-                            className='form-control'
+                            className='form-control inputlogin'
                             name='email'
                             value={email}
-                            placeholder='Enter your email'
                             onChange={onChange} />
                     </div>
 
@@ -94,10 +93,9 @@ export function PractitionerLogin() {
                         <MDBInput 
                             id='form1' 
                             type='Password'
-                            className='form-control'
+                            className='form-control inputlogin'
                             name='password'
                             value={password}
-                            placeholder='Enter password'
                             onChange={onChange} />
                     </div>
 

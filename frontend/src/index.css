@@ -172,7 +172,7 @@ height: 217px; */
   /* position: absolute; */
   left: 112px;
   top: 35px;
-  height:
+  
 }
 
 .link {
@@ -180,6 +180,7 @@ height: 217px; */
   margin-left: 20px;
   margin-top: 15px;
   font-family: 'Karla', sans-serif;
+  text-decoration: none;
 
 }
 
@@ -194,12 +195,12 @@ height: 217px; */
   /* border-bottom:#7F6FEA 0.25px solid; */
 }
 
-.navWrapper{
+/* .navWrapper{
   
   box-shadow: 0px 5px #EAE8FB ;
   margin-bottom: 20px;
   padding-top: 20px;
-}
+} */
 
 
 /* NavBar Page CSS  ******************************************************/
@@ -550,7 +551,7 @@ span {
 
 .bgwhite {
   background-color: white;
-  max-width: 600px;
+  max-width: 680px;
   border-radius: 14px;
   height: auto;
   position: absolute;
@@ -562,12 +563,16 @@ span {
   height: 600px;
 
 }
+.inputlogin{
+  width: 280px;
+  height: 40px;
+}
 
 .bgwhite2 {
   background-color: white;
   border-radius: 14px;
   height: auto;
-  width: 600px;
+  width: 700px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -598,7 +603,7 @@ span {
 
 .labelsingup {
   font-family: 'Karla', sans-serif;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 /* .model{
@@ -616,8 +621,11 @@ span {
 .inputdrop {
   width: 490px;
   margin-left: auto;
-  margin-right: 45px;
+  margin-right: 85px;
   font-family: 'Karla', sans-serif;
+}
+span{
+  color:#7F6FEA
 }
 
 /* /////Browser PractitionerCategories */
@@ -661,3 +669,134 @@ span {
   font-family: 'Karla', sans-serif;
   font-size: 15px;
 }
+
+
+
+/* /////PROFILE */
+
+.boximage {
+  background-color: aquamarine;
+  width: 230px;
+  height: 631px;
+  margin: 10px;
+  border-radius: 8px;
+}
+.imageprofile {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.editprofile {
+  width: 544px;
+  height: 183px;
+  border-radius: 8px;
+  background-color: aquamarine;
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+textarea {
+  width: 350px;
+  height: 100px;
+  border-radius: 8px;
+  margin-bottom: 70px;
+}
+.special {
+  height: auto;
+  margin-top: 25px;
+}
+.editprofilecertification {
+  width: 544px;
+  height: 111px;
+  border-radius: 8px;
+  background-color: aquamarine;
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.availability {
+  width: 280px;
+  height: 292px;
+  border-radius: 8px;
+  background-color: #b4e197;
+  margin-left: 128px;
+  margin-top: 10px;
+}
+.cancelation {
+  width: 280px;
+  height: 183px;
+  border-radius: 8px;
+  background-color: #b4e197;
+  margin-left: 128px;
+  margin-top: 10px;
+}
+.payment {
+  width: 280px;
+  height: 111px;
+  border-radius: 8px;
+  background-color: #b4e197;
+  margin-left: 128px;
+  margin-top: 10px;
+}
+.sectionprofile {
+  display: grid;
+  align-items: stretch;
+}
+
+.text1 {
+  display: grid;
+  margin-top: 170px;
+  margin-left: 100px;
+}
+.image1 {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+/* /////PROFILE */
+/* /////listening*/
+
+.arrow{
+ width: 15px;
+ height:15px;
+ justify-content: baseline;
+ margin-left: 55px;
+}
+
+
+.checkbox{
+  width: 2em;
+  height: 2em;
+  background-color: white;
+  vertical-align: middle;
+  border: 2px solid #7F6FEA;
+  border-radius: 3px;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.checkbox:checked {
+  background-color: #7F6FEA;
+}
+.imageface{
+border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////// */

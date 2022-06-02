@@ -10,7 +10,7 @@ import '../index.css'
 export const Navbar = () => {
 
   return (
-    <MDBNavbar light bgColor='light' className="d-flex navWrapper">
+    <MDBNavbar  className="d-flex navWrapper">
       <MDBContainer fluid>
         <Link to="/"><img src={Logo} className="logo" alt="Elana Logo" /></Link>
         <form className='d-flex w-auto form nav'>
