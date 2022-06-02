@@ -20,7 +20,7 @@ export function PractitionerProfile() {
                         </div>
                     </div>
                     <div className="ppProfile">
-                        <p><b>Dr. Jessica Smith</b></p>
+                        <p><b>Dr Jessica Smith</b></p>
                         <p>Practice Name</p>
                         <p>Specialty</p>
                         <p>Sub specialties</p>
