@@ -71,6 +71,10 @@
     font-size: 16px
 }
 
+.w-35 {
+    width: 35%;
+}
+
 .main-button {
     padding: 16px 144px 16px 144px
 }

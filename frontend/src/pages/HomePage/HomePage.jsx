@@ -145,13 +145,15 @@ export const HomePage = () => {
                 </div>
             </div>
 
-            <div className="homepage-banner-6">
+            <div className="homepage-banner-6 p-5">
                 <h1 className="px-5 text-center text-al fs-24">Stay in the know with our newsletter.</h1>
-                <h5 className="px-5 text-center text-al fs-24">Get updates and the latest on pelvic care delivered to your inbox.</h5>
-                <MDBInputGroup className='mx-auto mb-3 w-25'>
-                    <input className='form-control' placeholder="Enter your email" type='text' />
-                    <MDBBtn outline>Stay in the know</MDBBtn>
+                <h3 className="px-5 text-center text-al fs-24">Get updates and the latest on pelvic care delivered to your inbox.</h3>
+                <MDBInputGroup className='mx-auto mb-3 w-35 p-4'>
+                    <input className='text-ka form-control p-2' placeholder="Enter your email" type='text' />
+                    <MDBBtn className="brand-bg-purple p-2">Stay in the know</MDBBtn>
                 </MDBInputGroup>
+                <h5 className="px-5 text-center text-ka fs-16 fw-lighter">Disclaimer: The information provided through Elana Health website and services is not intended<br/>or implied to be a substitute for professional medical advice, diagnosis or treatment.</h5>
+
             </div>
 
         </div>
