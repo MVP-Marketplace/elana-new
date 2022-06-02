@@ -16,7 +16,7 @@ export function PractitionerProfile() {
                 <div className="ppPerson">
                     <div className="ppImageBox">
                         <div className="ppd">
-                            <p className="ppText">Upload photo and video file</p>
+                            <p className="ppText">Upload photo and video file..</p>
                         </div>
                     </div>
                     <div className="ppProfile">
