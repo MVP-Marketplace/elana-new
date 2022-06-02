@@ -654,3 +654,367 @@ span {
   font-family: 'Karla', sans-serif;
   font-size: 15px;
 }
+
+
+
+/* 
+CSS PractitionerProfilePage--------------------**********/
+.pp {
+  margin: 0 auto;
+  width: 1440px;
+  height: 1080px;
+}
+.ppConainer {
+  margin: 0 auto;
+  width: 1440px;
+  height: 1080px;
+  display: flex;
+flex-direction: row;
+justify-content: space-around;
+position: absolute;
+top: 280px;
+}
+
+.ppHeader {
+display: flex;
+justify-content: flex-start;
+margin: 100px 50px;
+/* padding-top: 50px; */
+position: absolute;
+font-family: 'Abhaya Libre ExtraBold';
+font-style: normal;
+font-weight: 800;
+font-size: 48px;
+line-height: 57px;
+}
+
+.ppPerson {
+  width: 280px;;
+  height: 631px;
+  /* display: flex;
+  flex-direction: row;
+  align-items: flex-start; */
+  background-color: #EAE8FB;
+  border-radius: 10px;
+  /* border: solid 1px black; */
+  /* position: absolute;
+  top: 300px; */
+}
+
+.ppAbout {
+  width: 544px;
+height: 756px;
+/* display: flex;
+flex-direction: column;
+align-items: flex-start; */
+background-color: #EAE8FB;
+/* border: solid 1px black; */
+/* position: absolute;
+left: 548px;
+top: 300px; */
+
+}
+
+.ppAvailability {
+
+  width: 280px;
+height: 650px;
+background-color: #EAE8FB;
+/* border: solid 1px black; */
+/* display: flex;
+flex-direction: column;
+align-items: flex-start;
+position: absolute;
+left: 1148px;
+top: 300px; */
+}
+
+.ppButton {
+  display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+margin: 110px 50px;
+/* position: absolute; */
+float:right;
+/* left: 800px; */
+cursor: pointer;
+border: none;
+color: #7F6FEA;
+background-color: white;
+}
+
+
+.ppImageBox {
+width: 200px;
+height: 200px;
+flex: none;
+order: 0;
+flex-grow: 0;
+border: solid 1px black;
+margin: 20px auto;
+}
+
+.ppProfile {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+float: right;
+padding: 0px;
+/* gap: 16px; */
+
+width: 236px;
+height: 349px;
+/* border: solid 1px black; */
+
+/* Inside auto layout */
+/* margin: 0 auto; */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.ppAbout {
+  
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+/* gap: 8px; */
+
+width: 544px;
+height: 183px;
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+/* border: solid 1px black; */
+}
+
+.ppAboutA {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  margin: 25px auto;
+  width: 544px;
+  height: 183px;
+  border-radius: 10px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  /* border: solid 1px black; */
+  background-color: #EAE8FB;
+}
+
+.ppAboutB {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  border-radius: 10px;
+  width: 544px;
+  height: 183px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  /* border: solid 1px black; */
+  background-color: #EAE8FB;
+  margin: 5px auto;
+}
+
+.ppAbout2 {
+  
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+margin: 20px auto;
+width: 544px;
+height: 111px;
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+/* border: solid 1px black; */
+background-color: #EAE8FB;
+}
+
+.ppAboutbox {
+  width:470px;
+  height: 150px;
+  margin: 5px auto;
+  /* border: solid 1px black; */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ppAboutbox2 {
+  width:470px;
+  height: 50px;
+  margin: 0 auto;
+  /* border: solid 1px black; */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.ppMethodsbox {
+  width:225px;
+  height: 50px;
+  margin: 0 auto;
+  /* border: solid 1px black; */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.ppCancelationbox2 {
+  width:220px;
+  height: 150px;
+  margin: 5px auto;
+  /* border: solid 1px black; */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ppInput3 {
+  width: 213px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.ppCertificationButton {
+    margin-left: 330px;
+    background-color: #EAE8FB;
+    border: none;
+    cursor: pointer;
+}
+
+.ppPaymentButton {
+  margin-left: 65px;
+  background-color: #EAE8FB;
+  border: none;
+  cursor: pointer;
+}
+
+.ppInput {
+  width: 462px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.ppAvailability {
+  /* bio/Variant3 */
+
+
+width: 280px;
+height: 282px;
+text-align: left;
+border-radius: 10px;
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.ppAbox {
+  width:225px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.ppApointmentCalender {
+
+width:225px;
+height: 180px;
+/* display: flex; */
+margin: 10px auto;
+/* justify-content: center; */
+border: solid 1px black;
+/* align-items: center; */
+}
+
+.ppCancellation {
+  /* Card */
+
+border-radius: 10px;
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+margin: 20px auto;
+width: 280px;
+height: 183px;
+background-color: #EAE8FB;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.ppPayment {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+padding: 0px;
+gap: 10px;
+border-radius: 10px;
+width: 280px;
+height: 111px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+background-color: #EAE8FB;
+}
+
+.ppText {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ppd {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+}
+
+/* 
+CSS PractitionerProfilePage--------------------**********/
