@@ -17,8 +17,22 @@
     background-color: #EAE8FB
 }
 
+.homepage-banner-4 {
+    background-color: #FFFFFF
+}
+
+.homepage-banner-5 {
+    background-color:#E3E2E8;
+
+}
+
+
 .brand-purple {
     color: #7F6FEA;
+}
+
+.border-purple {
+    border-color:#7F6FEA;
 }
 
 .brand-bg-purple {
@@ -51,6 +65,10 @@
 
 .fs-24 {
     font-size: 24px
+}
+
+.fs-16 {
+    font-size: 16px
 }
 
 .main-button {
