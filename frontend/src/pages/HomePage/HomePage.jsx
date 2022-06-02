@@ -26,33 +26,72 @@ export const HomePage = () => {
                     <MDBCard className="brand-bg-purple-2 rounded-circle" style={{ maxWidth: '10rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
                             <MDBCardText className="text-center">
-                                1 in 6<br/>women suffer from<br/>painful sex
+                                1 in 6<br />women suffer from<br />painful sex
                             </MDBCardText>
                         </MDBCardBody>
                     </MDBCard>
                     <MDBCard className="brand-bg-purple-2 rounded-circle" style={{ maxWidth: '10rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
                             <MDBCardText className="text-center">
-                                1 in 3<br/>women experience<br/>urinary incontinence
+                                1 in 3<br />women experience<br />urinary incontinence
                             </MDBCardText>
                         </MDBCardBody>
                     </MDBCard>
                     <MDBCard className="brand-bg-purple-2 rounded-circle" style={{ maxWidth: '10rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
                             <MDBCardText className="text-center">
-                                50%<br/>postmenopausal women<br/>have vaginal atrophy
+                                50%<br />postmenopausal women<br />have vaginal atrophy
                             </MDBCardText>
                         </MDBCardBody >
                     </MDBCard>
                     <MDBCard className="brand-bg-purple-2 rounded-circle" style={{ maxWidth: '10rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
                             <MDBCardText className="text-center">
-                                7 Years<br/>average amount of<br/>time to be diagnosed
+                                7 Years<br />average amount of<br />time to be diagnosed
                             </MDBCardText>
                         </MDBCardBody>
                     </MDBCard>
                 </div>
                 <h3 className="pt-4 pb-5 text-center fs-32 text-al">Pain is never normal. Many women suffer in silence.</h3>
+            </div>
+
+            <div className="homepage-banner-3">
+                <h1 className="text-center text-al fs-40 pt-5">Take control of your pelvic wellbeing</h1>
+                <h3 className="text-center text-al fs-24 p-3 fw-lighter">Issues or not - finding the right care for your pelvic wellness isn’t always easy.<br />Elana works with you to prevent or help treat pelvic challenges you may be facing. </h3>
+                <div className="p-5 d-flex justify-content-evenly">
+                    <MDBCard className="border-curve-8" style={{ height: '15rem', width: '15rem' }}>
+                        <MDBCardBody className="d-flex align-items-center justify-content-center">
+                            <MDBCardTitle className="text-center fs-24">Pelvic Care</MDBCardTitle>
+                        </MDBCardBody>
+                    </MDBCard>
+                    <MDBCard className="border-curve-8" style={{ height: '15rem', width: '15rem' }}>
+                        <MDBCardBody className="d-flex align-items-center justify-content-center">
+                            <MDBCardTitle className="text-center fs-24">Relief from<br/>Painful sex</MDBCardTitle>
+                        </MDBCardBody>
+                    </MDBCard>
+                    <MDBCard className="border-curve-8" style={{ height: '15rem', width: '15rem' }}>
+                        <MDBCardBody className="d-flex align-items-center justify-content-center">
+                            <MDBCardTitle className="text-center fs-24">Bladder control</MDBCardTitle>
+                        </MDBCardBody>
+                    </MDBCard>
+                </div>
+                <div className="p-5 d-flex justify-content-evenly">
+                    <MDBCard className="border-curve-8" style={{ height: '15rem', width: '15rem' }}>
+                        <MDBCardBody className="d-flex align-items-center justify-content-center">
+                            <MDBCardTitle className="text-center fs-24">Postpartum care</MDBCardTitle>
+                        </MDBCardBody>
+                    </MDBCard>
+                    <MDBCard className="border-curve-8" style={{ height: '15rem', width: '15rem' }}>
+                        <MDBCardBody className="d-flex align-items-center justify-content-center">
+                            <MDBCardTitle className="text-center fs-24">Mental health &<br/>Sex coaching</MDBCardTitle>
+                        </MDBCardBody>
+                    </MDBCard>
+                    <MDBCard className="border-curve-8" style={{ height: '15rem', width: '15rem' }}>
+                        <MDBCardBody className="d-flex align-items-center justify-content-center">
+                            <MDBCardTitle className="text-center fs-24">Perimenopause</MDBCardTitle>
+                        </MDBCardBody>
+                    </MDBCard>
+                </div>
             </div>
 
         </div>
