@@ -16,15 +16,16 @@ import {PrivacyPolicy} from './pages/Others/PrivacyPolicy'
 import {Terms} from './pages/Others/Terms'
 import {Navbar} from './components/Navbar';
 import {Footer} from './components/Footer';
+import { HomePage } from './pages/HomePage/HomePage';
 
 function App() {
   return (
     <>
       <Router>
-        
           <Navbar/>
           <Routes>
             <Route path='/' element={<Homescreen/>}/>
+            <Route path='/homePage' element={<HomePage/>} />
             <Route path='/aboutPage' element={<AboutPage/>}/>
             <Route path='/individualPage' element={<IndividualPage/>}/>
             <Route path='/practitionerPage' element={<PractitionerPage/>}/>
@@ -38,7 +39,6 @@ function App() {
             <Route path='/practitionerEditProfile/:id' element={<PractitionerEditProfile/>}/>
             <Route path='/practitionerSignUp' element={<PractitionerSignUp/>}/>
           </Routes>
-        
       </Router>
       <Footer/>
       <ToastContainer/>

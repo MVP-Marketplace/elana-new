@@ -1,0 +1,90 @@
+/* Homepage CSS Styles */
+
+/* General Styling */
+
+/* Class Styling */
+
+.homepage-banner-1 {
+    background-color: #EAE8FB;
+    height: 75vh;
+}
+
+.homepage-banner-2 {
+    background-color: #FFFFFF;
+}
+
+.homepage-banner-3 {
+    background-color: #EAE8FB
+}
+
+.homepage-banner-4 {
+    background-color: #FFFFFF
+}
+
+.homepage-banner-5 {
+    background-color:#E3E2E8;
+
+}
+
+
+.brand-purple {
+    color: #7F6FEA;
+}
+
+.border-purple {
+    border-color:#7F6FEA;
+}
+
+.brand-bg-purple {
+    background: #7F6FEA;
+}
+
+.brand-bg-purple-2 {
+    background: #BCB5E8;
+    ;
+}
+
+.text-al {
+    font-family: 'Abhaya Libre', serif; 
+}
+
+.text-ka {
+    font-family: 'Karla', sans-serif;  
+}
+
+.fs-58 {
+    font-size: 58px
+}
+.fs-40 {
+    font-size: 40px
+}
+
+.fs-32 {
+    font-size: 32px
+}
+
+.fs-24 {
+    font-size: 24px
+}
+
+.fs-16 {
+    font-size: 16px
+}
+
+.main-button {
+    padding: 16px 144px 16px 144px
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.img-fit {
+    max-width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.border-curve-8 {
+    border-radius: 8px;
+}
