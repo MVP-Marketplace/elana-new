@@ -12,7 +12,7 @@ export const HomePage = () => {
                     <h1 className="px-5 text-end brand-purple text-al fs-58">Elana is your partner<br />in pelvic care</h1>
                     <h5 className="px-5 text-end brand-purple text-ka fs-24 fw-lighter">We connect you to pelvic care, so you<br />feel confident from the inside out.</h5>
                     <div className="px-5 text-end">
-                        <MDBBtn className="brand-bg-purple">Learn More</MDBBtn>
+                        <MDBBtn className="brand-bg-purple border-0 mx-2 w-50">LEARN MORE</MDBBtn>
                     </div>
                 </div>
                 <div className="w-50">
@@ -25,29 +25,29 @@ export const HomePage = () => {
                 <div className="p-4 d-flex justify-content-evenly">
                     <MDBCard className="brand-bg-purple-2 rounded-circle" style={{ maxWidth: '10.5rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
-                            <MDBCardText className="text-center text-al">
-                                <span className="fs-32">1 in 6</span><br /><span className="fs-16">women suffer from<br />painful sex</span>
+                            <MDBCardText className="text-center text-al ">
+                                <span className="fs-32 text-dark">1 in 6</span><br /><span className="fs-16 text-dark">women suffer from<br />painful sex</span>
                             </MDBCardText>
                         </MDBCardBody>
                     </MDBCard>
                     <MDBCard className="brand-bg-purple-2 rounded-circle" style={{ maxWidth: '10.5rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
                             <MDBCardText className="text-center text-al">
-                                <span className="fs-32">1 in 3</span><br /><span className="fs-16">women experience<br />urinary incontinence</span>
+                                <span className="fs-32 text-dark">1 in 3</span><br /><span className="fs-16 text-dark">women experience<br />urinary incontinence</span>
                             </MDBCardText>
                         </MDBCardBody>
                     </MDBCard>
                     <MDBCard className="brand-bg-purple-2 rounded-circle" style={{ maxWidth: '10.5rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
                             <MDBCardText className="text-center text-al">
-                                <span className="fs-32">50%</span><br /><span className="fs-16">postmenopausal women<br />have vaginal atrophy</span>
+                                <span className="fs-32 text-dark">50%</span><br /><span className="fs-16 text-dark">postmenopausal women<br />have vaginal atrophy</span>
                             </MDBCardText>
                         </MDBCardBody >
                     </MDBCard>
                     <MDBCard className="brand-bg-purple-2 rounded-circle" style={{ maxWidth: '10.5rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
                             <MDBCardText className="text-center text-al">
-                                <span className="fs-32">7 Years</span><br /><span className="fs-16">average amount of<br />time to be diagnosed</span>
+                                <span className="fs-32 text-dark">7 Years</span><br /><span className="fs-16 text-dark">average amount of<br />time to be diagnosed</span>
                             </MDBCardText>
                         </MDBCardBody>
                     </MDBCard>
@@ -75,7 +75,7 @@ export const HomePage = () => {
                         </MDBCardBody>
                     </MDBCard>
                 </div>
-                <div className="p-5 d-flex justify-content-evenly">
+                <div className="pt-5 px-5 d-flex justify-content-evenly">
                     <MDBCard className="border-curve-8" style={{ height: '15rem', width: '15rem' }}>
                         <MDBCardBody className="d-flex align-items-center justify-content-center">
                             <MDBCardTitle className="text-center fs-24">Postpartum care</MDBCardTitle>
@@ -92,33 +92,36 @@ export const HomePage = () => {
                         </MDBCardBody>
                     </MDBCard>
                 </div>
+                <div className="p-5 d-flex justify-content-center">
+                <MDBBtn className='text-center brand-bg-purple px-5 w-50 border-0'>Browse Practicioner Categories</MDBBtn>
+                </div>
             </div>
 
             <div className="homepage-banner-4">
                 <h3 className="text-al fs-23 pt-5 pb-4 text-center">Features coming soon to Elana:</h3>
                 <div className="pt-4 pb-5 d-flex justify-content-evenly">
-                    <MDBCard className="rounded-circle border-purple" style={{ maxWidth: '14rem' }}>
+                    <MDBCard className="rounded-circle border-purple p-2" style={{ maxWidth: '10.5rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
                             <MDBCardText className="text-center p-2 brand-purple">
                                 Track your<br />Symptoms
                             </MDBCardText>
                         </MDBCardBody>
                     </MDBCard>
-                    <MDBCard className="rounded-circle border-purple" style={{ maxWidth: '14rem' }}>
+                    <MDBCard className="rounded-circle border-purple p-2" style={{ maxWidth: '10.5rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
                             <MDBCardText className="text-center p-2 brand-purple">
                                 Shopping for<br />Pelvic Health
                             </MDBCardText>
                         </MDBCardBody>
                     </MDBCard>
-                    <MDBCard className="rounded-circle border-purple" style={{ maxWidth: '14rem' }}>
+                    <MDBCard className="rounded-circle border-purple p-2" style={{ maxWidth: '10.5rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
                             <MDBCardText className="text-center p-2 brand-purple">
                                 Telehealth<br />Services
                             </MDBCardText>
                         </MDBCardBody >
                     </MDBCard>
-                    <MDBCard className="rounded-circle border-purple" style={{ maxWidth: '14rem' }}>
+                    <MDBCard className="rounded-circle border-purple p-2" style={{ maxWidth: '10.5rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
                             <MDBCardText className="text-center p-2 brand-purple">
                                 Community<br />Content
