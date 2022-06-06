@@ -32,7 +32,7 @@ export const Footer = () => (
 				</div>
 			</div>
 			<div className="">
-				<div className="m-0 p-0">
+				{/* <div className="m-0 p-0">
 					<p className="text-white p-0 m-0">Conect with us</p>
 
 					<div className="icon d-flex">
@@ -41,7 +41,7 @@ export const Footer = () => (
 						<div className="me-3"><i className="fab fa-pinterest"></i></div>
 						<div className="me-3"><i className="fab fa-instagram"></i></div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 	</footer>
 )

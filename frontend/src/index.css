@@ -573,12 +573,18 @@ span {
   border-radius: 14px;
   height: auto;
   width: 700px;
+  max-width: 800px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 
 }
+/* @media (max-width: 800px) {
+  .bgwhite2 {
+    flex-direction: column;
+  }
+} */
 
 .checkbox-round {
   width: 1.3em;
@@ -1033,3 +1039,5 @@ background-color: #EAE8FB;
 
 /* 
 CSS PractitionerProfilePage--------------------**********/
+input{
+  resize: vertical;}

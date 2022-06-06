@@ -98,7 +98,7 @@ export function PractitionerSignUp() {
 
   return (
     <div className="signupGradient">
-      <div className="bgwhite p-2">
+      <div className="bgwhite p-2 row">
         {/* /////// first part logo and icon*/}
         <div className="d-flex justify-content-between">
           <img src={Logo} className="logosingup" alt="Elana Logo"></img>
@@ -175,7 +175,7 @@ export function PractitionerSignUp() {
               type="text"
               className="form-control"
               id="form1"
-              name="practiceName"
+              name="email"
               value={email}
               onChange={onChange}
             />
@@ -184,10 +184,10 @@ export function PractitionerSignUp() {
           <div>
             <label className="labelsingup text-muted">password</label>
             <MDBInput
-              type="text"
+              type="password"
               className="form-control"
               id="form1"
-              name="practiceNumber"
+              name="password"
               value={password}
               onChange={onChange}
             />
@@ -195,7 +195,7 @@ export function PractitionerSignUp() {
         </div>
 
         <div className="inputdrop">
-          <label className="labelsingup text-muted">Label</label>
+          <label className="labelsingup text-muted">licensing Credentials</label>
           <MDBInput
             type="text"
             className="form-control"
