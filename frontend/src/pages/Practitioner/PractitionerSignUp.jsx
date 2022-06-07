@@ -115,13 +115,15 @@ export function PractitionerSignUp() {
             Already have an account? Click <span>here</span> to login
           </p>
         </div>
+    
 
-        <div className="d-flex justify-content-evenly m-1">
-          <div>
+    <div className="">
+        <div className="d-flex justify-content-evenly m-1 row">
+          <div className="col-sm ms-5">
             <label className="labelsingup text-muted">First Name</label>
             <MDBInput
               type="text"
-              className="form-control"
+              className="form-control mdb"
               id="form1"
               name="firstName"
               value={firstName}
@@ -129,11 +131,11 @@ export function PractitionerSignUp() {
             />
           </div>
 
-          <div>
+          <div className="col-sm ms-5">
             <label className="labelsingup text-muted">Last Name</label>
             <MDBInput
               type="text"
-              className="form-control"
+              className="form-control mdb"
               id="form1"
               name="lastName"
               value={lastName}
@@ -142,12 +144,12 @@ export function PractitionerSignUp() {
           </div>
         </div>
 
-        <div className="d-flex justify-content-evenly m-1">
-          <div>
+        <div className="d-flex justify-content-evenly m-1 row">
+          <div className="col-sm ms-5">
             <label className="labelsingup text-muted">Practice Name</label>
             <MDBInput
               type="text"
-              className="form-control"
+              className="form-control mdb"
               id="form1"
               name="practiceName"
               value={practiceName}
@@ -155,11 +157,11 @@ export function PractitionerSignUp() {
             />
           </div>
 
-          <div>
+          <div className="col-sm ms-5">
             <label className="labelsingup text-muted">Practice Number</label>
             <MDBInput
               type="text"
-              className="form-control"
+              className="form-control mdb"
               id="form1"
               name="practiceNumber"
               value={practiceNumber}
@@ -168,12 +170,12 @@ export function PractitionerSignUp() {
           </div>
         </div>
 
-        <div className="d-flex justify-content-evenly m-1">
-          <div>
+        <div className="d-flex justify-content-evenly m-1 row">
+          <div className="col-sm ms-5">
             <label className="labelsingup text-muted">Email</label>
             <MDBInput
               type="text"
-              className="form-control"
+              className="form-control col-sm mdb"
               id="form1"
               name="email"
               value={email}
@@ -181,11 +183,11 @@ export function PractitionerSignUp() {
             />
           </div>
 
-          <div>
+          <div className="col-sm ms-5">
             <label className="labelsingup text-muted">password</label>
             <MDBInput
               type="password"
-              className="form-control"
+              className="form- mdb"
               id="form1"
               name="password"
               value={password}
@@ -194,11 +196,13 @@ export function PractitionerSignUp() {
           </div>
         </div>
 
-        <div className="inputdrop">
+
+        <div className="row">
+        <div className="inputdrop col-sm col-md-12">
           <label className="labelsingup text-muted">licensing Credentials</label>
           <MDBInput
             type="text"
-            className="form-control"
+            className="form-control "
             id="form1"
             name="licensingCredentials"
             value={licensingCredentials}
@@ -206,7 +210,7 @@ export function PractitionerSignUp() {
           />
         </div>
 
-        <div className="inputdrop">
+        <div className="inputdrop col-sm col-md-12">
           <label className="labelsingup text-muted">Area of Specialty</label>
           <div class="input-group">
             <select
@@ -227,7 +231,10 @@ export function PractitionerSignUp() {
             </select>
           </div>
         </div>
+        </div>
+        </div>
 
+        
         <div className="m-3 text-center">
           <input type="checkbox" className="checkbox-round m-2"></input>
           <span>

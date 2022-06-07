@@ -76,8 +76,8 @@ export function PractitionerLogin() {
 
                 {/* /////// third part inputs*/}
 
-                <div className="d-grid justify-content-center m-1">
-                    <div>
+                <div className="d-grid justify-content-center m-1 row">
+                    <div className='col-sm'>
                         <label className="labelsingup text-muted">Username</label>
                         <MDBInput 
                             id='form1' 
@@ -88,7 +88,7 @@ export function PractitionerLogin() {
                             onChange={onChange} />
                     </div>
 
-                    <div>
+                    <div className='col-sm'>
                         <label className="labelsingup text-muted">Password</label>
                         <MDBInput 
                             id='form1' 

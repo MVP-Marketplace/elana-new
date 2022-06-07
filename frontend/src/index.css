@@ -549,6 +549,10 @@ span {
 
 }
 
+.mdb{
+  max-width: 200px;
+}
+
 .bgwhite {
   background-color: white;
   max-width: 680px;
@@ -572,12 +576,14 @@ span {
   background-color: white;
   border-radius: 14px;
   height: auto;
+  max-height: 2000px;
   width: 700px;
   max-width: 800px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background-size: cover;
 
 }
 /* @media (max-width: 800px) {
@@ -606,10 +612,22 @@ span {
 .titlesingup {
   font-family: 'Abhaya Libre', serif;
 }
+ @media (min-width: 1200px) {
+  .titlesingup {
+    font-size: 30px;
+  }
+} 
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .titlesingup {
+    font-size: 30px;
+  }
+} 
 
 .labelsingup {
   font-family: 'Karla', sans-serif;
   font-size: 15px;
+  max-width: 9000px;
 }
 
 /* .model{
@@ -625,8 +643,8 @@ span {
 }
 
 .inputdrop {
-  width: 490px;
-  margin-left: auto;
+  width: 540px;
+  margin-left: 65px;
   margin-right: 85px;
   font-family: 'Karla', sans-serif;
 }

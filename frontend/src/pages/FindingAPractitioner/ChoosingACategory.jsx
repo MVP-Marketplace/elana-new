@@ -52,7 +52,7 @@ export function ChoosingACategory() {
                 </MDBCol>
                 <MDBCol>
                     <div className="purpleboxes d-flex col-sm-12">
-                        <img src={image2} alt="image try"></img>
+                        <img src={image2} alt="imagetry"></img>
                         <div className="d-block information">
                             <h6 className="titlebox">Constipation</h6>
                             <p className="paragraphbox">Straining pain during <br /> bowel movements </p>
@@ -113,7 +113,7 @@ export function ChoosingACategory() {
                 </MDBCol>
                 <MDBCol>
                     <div className="purpleboxes d-flex col-sm">
-                        <img src={image7}></img>
+                        <img src={image7} alt=""></img>
                         <div className="d-block information">
                             <h6 className="titlebox">Postpartum <br /> Recovery</h6>
                             <p className="paragraphbox">Recovery period after<br /> pregnancy/childbirth </p>
