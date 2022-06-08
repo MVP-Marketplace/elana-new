@@ -489,6 +489,12 @@ span {
   font-family: 'Karla', sans-serif;
 }
 
+@media (max-width: 400px) {
+  .introtitle {
+    margin-top: 15px;
+  }
+}  
+
 .buttonmainpage {
   background-color: #7F6FEA;
   border: 1px solid #7F6FEA;
@@ -575,8 +581,7 @@ span {
 .bgwhite2 {
   background-color: white;
   border-radius: 14px;
-  height: auto;
-  max-height: 2000px;
+  /* height: auto; */
   width: 700px;
   max-width: 800px;
   position: absolute;
@@ -586,11 +591,11 @@ span {
   background-size: cover;
 
 }
-/* @media (max-width: 800px) {
+@media (max-height: 400px) {
   .bgwhite2 {
-    flex-direction: column;
+    height: 700px;
   }
-} */
+} 
 
 .checkbox-round {
   width: 1.3em;
@@ -648,6 +653,21 @@ span {
   margin-right: 85px;
   font-family: 'Karla', sans-serif;
 }
+
+
+@media (max-width: 600px) {
+  .inputdrop {
+    width: 230px;
+    margin-left: 37px;
+    margin-right: 85px;
+    font-family: 'Karla', sans-serif;
+  }
+} 
+
+
+
+
+
 span{
   color:#7F6FEA
 }
