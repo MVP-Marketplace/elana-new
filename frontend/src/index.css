@@ -461,10 +461,7 @@ span {
 .bgpurple {
   background-color: #EAE8FB;
   width: 100%;
-  height: 210px;
-  margin-top: 0px;
-
-
+  height: 220px;
 }
 
 .intro {
@@ -476,22 +473,46 @@ span {
 .title1 {
   font-family: 'Abhaya Libre', serif;
   color: black;
-  margin-right: 100px;
+  margin-left: 75px;
 }
-
+.title3{
+  font-family: 'Abhaya Libre', serif;
+  color: black;
+}
 .bggrey {
   background-color: #E3E2E8;
   width: 100%;
   height: 230px;
 }
+@media (max-width: 600px) {
+  .bggrey {
+    background-color: white;
+  }
+}  
 
 .list {
   font-family: 'Karla', sans-serif;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .introtitle {
-    margin-top: 15px;
+    margin-bottom: 65px;
+  
+  }
+}  
+@media (max-width: 500px) {
+  .title1 {
+    font-size: 20px;
+    white-space: nowrap;
+    
+  }
+}  
+@media (max-width: 500px) {
+  .title2 {
+    font-size: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
   }
 }  
 
@@ -504,7 +525,28 @@ span {
   width: auto;
   color: white;
 }
+.buttonmainpageindividual {
+  background-color: #7F6FEA;
+  border: 1px solid #7F6FEA;
+  border-radius: 3px;
+  height: 35px;
+  margin: auto;
+  width: auto;
+  color: white;
+}
+@media (max-width: 500px) {
+  .buttonmainpageindividual {
+    margin-bottom: 5px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}  
 
+.inputindividual{
+  max-width: 250px;
+  height: 36px;
+}
 /* //////////////footer */
 .buttonfooter {
   background-color: #EAE8FB;
@@ -665,12 +707,20 @@ span {
 } 
 
 
-
-
-
 span{
   color:#7F6FEA
 }
+
+
+/* @media (max-width: 500px) {
+  .logosingup {
+    background-image: url(../src/img/logoresponsive.png);
+    margin-left: 155px;
+    margin-top: 75px;
+    background-repeat: none;
+  }
+}  */
+
 
 /* /////Browser PractitionerCategories */
 

@@ -60,7 +60,7 @@ export function PractitionerLogin() {
     return (
         <div className="signupGradient">
             {/* /////// singUpGradient control padding */}
-            <div className="bgwhite2">
+            <div className="bgwhite2 row">
 
                 {/* /////// first part logo and icon*/}
                 <div className="p-3">
