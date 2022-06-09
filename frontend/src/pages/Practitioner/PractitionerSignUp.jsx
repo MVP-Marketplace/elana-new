@@ -97,8 +97,8 @@ export function PractitionerSignUp() {
   }
 
   return (
-    <div className="signupGradient">
-      <div className="bgwhite p-2 row">
+    <div className="signupGradient d-flex">
+      <div className="bgwhite p-2 row ">
         {/* /////// first part logo and icon*/}
         <div className="d-flex justify-content-between">
           <img src={Logo} className="logosingup" alt="Elana Logo"></img>
@@ -241,9 +241,6 @@ export function PractitionerSignUp() {
             By creating an account, you have read and agree to our{" "}
             <span>Terms</span> and <span>Privacy Policy</span>
           </span>
-        </div>
-
-
         <div className="text-center">
 					<button onClick={function (){toggleShow() ; onSubmit()}} className="buttonmainpage ">CONTINUE</button>
 
@@ -261,6 +258,9 @@ export function PractitionerSignUp() {
 						</MDBModalDialog>
 					</MDBModal>
 				</div>
+        </div>
+
+
 
       </div>
     </div>

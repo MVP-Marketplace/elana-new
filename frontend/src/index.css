@@ -603,17 +603,26 @@ span {
 
 .bgwhite {
   background-color: white;
-  max-width: 680px;
+  width: 670px;
   border-radius: 14px;
-  height: auto;
+  height: 600px;
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  height: 600px;
+  
+  
+  
+}
+/* .logosingup{
+  width: 200px;
+  height: 55px;
+} */
 
+@media only screen and (max-width: 479px){
+  .bgwhite { width: 90%; height: 100%; }
 }
 .inputlogin{
   width: 280px;
@@ -623,21 +632,19 @@ span {
 .bgwhite2 {
   background-color: white;
   border-radius: 14px;
-  /* height: auto; */
+   height: 400px; 
   width: 700px;
-  max-width: 800px;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-size: cover;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 
 }
-@media (max-height: 400px) {
-  .bgwhite2 {
-    height: 700px;
-  }
-} 
+@media only screen and (max-width: 479px){
+  .bgwhite2 { width: 90%; }
+}
 
 .checkbox-round {
   width: 1.3em;
