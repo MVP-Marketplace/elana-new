@@ -645,6 +645,13 @@ span {
 @media only screen and (max-width: 479px){
   .bgwhite2 { width: 90%; }
 }
+.Logores{
+  display: none;
+}
+@media only screen and (max-width: 479px){
+  .Logores { display: inline; }
+}
+
 
 .checkbox-round {
   width: 1.3em;
@@ -719,15 +726,19 @@ span{
 }
 
 
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
   .logosingup {
-    background-image: url(../src/img/logoresponsive.png);
-    margin-left: 155px;
-    margin-top: 75px;
-    background-repeat: none;
+    display: none;
   }
-}  */
-
+} 
+.responsivediv{
+  margin-left: 180px;
+}
+@media (max-width: 500px) {
+  .responsivediv {
+    margin-left: 0;
+  }
+} 
 
 /* /////Browser PractitionerCategories */
 
