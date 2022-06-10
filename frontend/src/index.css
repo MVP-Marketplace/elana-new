@@ -1151,6 +1151,16 @@ background-color: #EAE8FB;
   margin: 80px auto;
 }
 
+.bgmodal{
+  background-color: #EAE8FB ;
+}
+.boxmodal{
+  border-radius: 25px;
+}
+/* .iconmodal{
+  width: 40px;
+  height: 31px;
+} */
 /* 
 CSS PractitionerProfilePage--------------------**********/
 input{
