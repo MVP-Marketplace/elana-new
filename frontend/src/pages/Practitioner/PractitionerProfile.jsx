@@ -17,63 +17,90 @@ import {
   MDBModalTitle,
   MDBModalBody,
   MDBModalFooter,
+  MDBInput,
 } from "mdb-react-ui-kit";
 
 export function PractitionerProfile() {
   const [basicModal, setBasicModal] = useState(false);
+  const [basicModaltwo, setBasicModaltwo] = useState(false);
 
   const toggleShow = () => setBasicModal(!basicModal);
+  const toggleShowtwo = () => setBasicModaltwo(!basicModaltwo);
 
   return (
-    <div className="pp row">
+    <div className="pp">
       {" "}
       <h1 className="ppHeader">Hello, Jessica Smith</h1>
       <button className="ppButton">Log Out</button>
-      <div className="ppConainer row">
-        <div className="ppPerson">
-          <div className="ppImageBox col-sm">
-          <img alt="" src={pen} onClick={toggleShow} className="m-auto"></img>
-                <MDBModal
-                  show={basicModal}
-                  setShow={setBasicModal}
-                  tabIndex="-1"
-                >
-                  <MDBModalDialog className="boxmodal modal-lg" >
-                    <MDBModalContent className="bgmodal">
-                      <MDBModalHeader>
-                        <MDBModalTitle>Upload Photo & Video Bio</MDBModalTitle>
-                        <MDBBtn
-                          className="btn-close"
-                          color="none"
+      <div className="ppConainer ">
+        <div className="ppPerson row">
+          <div className="ppImageBox ">
+            <img
+              alt=""
+              src={pen}
+              onClick={toggleShow}
+              className="m-auto "
+            ></img>
+            <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
+              <MDBModalDialog className="boxmodal modal-lg">
+                <MDBModalContent className="bgmodal">
+                  <MDBModalHeader>
+                    <MDBModalTitle>Upload Photo & Video Bio</MDBModalTitle>
+                    <MDBBtn
+                      className="btn-close"
+                      color="none"
+                      onClick={toggleShow}
+                    ></MDBBtn>
+                  </MDBModalHeader>
+                  <MDBModalBody>
+                    <p className="text-center">
+                      Please include a photograph and video biography (if
+                      necessary).
+                    </p>
+                    <div className="d-flex justify-content-center mt-2">
+                      <div>
+                        <img
+                          alt=""
+                          src={camera}
                           onClick={toggleShow}
-                        ></MDBBtn>
-                      </MDBModalHeader>
-                      <MDBModalBody>
-                          <p className="text-center">Please include a photograph and video biography (if necessary).</p>
-                          <div className="d-flex justify-content-center mt-2">
-                              <div>
-                              <img alt="" src={camera} onClick={toggleShow} className="m-5 iconmodal"></img>
-                              </div>
-                              <div>
-                              <img alt="" src={pen} onClick={toggleShow} className="m-5 iconmodal"></img>
-                              </div>
-                              <div>
-                              <img alt="" src={trash} onClick={toggleShow} className="m-5 iconmodal"></img>
-                              </div>
-                              
-                              <div>
-                              <img alt="" src={videocamera} onClick={toggleShow} className="m-5 iconmodal"></img>
-                              </div>
-                          </div>
-                          <br></br>
-                      </MDBModalBody>
-                        
-                      
-                        <MDBBtn className="buttonmainpage me-5 mb-5 p-2 px-5">Save</MDBBtn>
-                      
-                    </MDBModalContent>
-                  </MDBModalDialog>
-                </MDBModal>
+                          className="m-5 iconmodal"
+                        ></img>
+                      </div>
+                      <div>
+                        <img
+                          alt=""
+                          src={pen}
+                          onClick={toggleShow}
+                          className="m-5 iconmodal"
+                        ></img>
+                      </div>
+                      <div>
+                        <img
+                          alt=""
+                          src={trash}
+                          onClick={toggleShow}
+                          className="m-5 iconmodal"
+                        ></img>
+                      </div>
+
+                      <div>
+                        <img
+                          alt=""
+                          src={videocamera}
+                          onClick={toggleShow}
+                          className="m-5 iconmodal"
+                        ></img>
+                      </div>
+                    </div>
+                    <br></br>
+                  </MDBModalBody>
+
+                  <MDBBtn className="buttonmainpage me-5 mb-5 p-2 px-5">
+                    Save
+                  </MDBBtn>
+                </MDBModalContent>
+              </MDBModalDialog>
+            </MDBModal>
             <div className="ppd">
               <p className="ppText">Upload photo and video file</p>
             </div>
@@ -86,41 +113,147 @@ export function PractitionerProfile() {
                 </p>
               </div>
               <div>
-                {/* <img alt="" src={pen} onClick={toggleShow} className="ms-5"></img>
+                <img
+                  alt=""
+                  src={pen}
+                  onClick={toggleShowtwo}
+                  className="ms-5"
+                ></img>
                 <MDBModal
-                  show={basicModal}
-                  setShow={setBasicModal}
+                  show={basicModaltwo}
+                  setShow={setBasicModaltwo}
                   tabIndex="-1"
                 >
-                  <MDBModalDialog>
-                    <MDBModalContent>
+                  <MDBModalDialog className="boxmodal modal-lg">
+                    <MDBModalContent className="bgmodal">
                       <MDBModalHeader>
-                        <MDBModalTitle></MDBModalTitle>
+                        <MDBModalTitle>Edit Credentials</MDBModalTitle>
                         <MDBBtn
                           className="btn-close"
                           color="none"
-                          onClick={toggleShow}
+                          onClick={toggleShowtwo}
                         ></MDBBtn>
                       </MDBModalHeader>
-                      <MDBModalBody>...</MDBModalBody>
+                      <MDBModalBody>
+                        <div>
+                        <div className="d-flex justify-content-evenly m-1 row">
+                          <div className="col-sm ms-5">
+                            <label className="labelsingup text-muted">
+                            Your Name
+                            </label>
+                            <MDBInput
+                              type="text"
+                              className="form-control mdb"
+                              id="form1"
+                              name="firstName"
+                              value=""
+                              // onChange={onChange}
+                            />
+                          </div>
 
-                      <MDBModalFooter>
-                        <MDBBtn color="secondary" onClick={toggleShow}>
-                          Close
+                          <div className="col-sm ms-5">
+                            <label className="labelsingup text-muted">
+                            Your Practice’s Name
+                            </label>
+                            <MDBInput
+                              type="text"
+                              className="form-control mdb"
+                              id="form1"
+                              name="lastName"
+                              value=""
+                              // onChange={onChange}
+                            />
+                          </div>
+                        </div>
+                        <div className="d-flex justify-content-evenly m-1 row">
+                          <div className="col-sm ms-5">
+                            <label className="labelsingup text-muted">
+                            Your Specialty
+                            </label>
+                            <MDBInput
+                              type="text"
+                              className="form-control mdb"
+                              id="form1"
+                              name="firstName"
+                              value=""
+                              // onChange={onChange}
+                            />
+                          </div>
+
+                          <div className="col-sm ms-5">
+                            <label className="labelsingup text-muted">
+                            Sub-Specialties
+                            </label>
+                            <MDBInput
+                              type="text"
+                              className="form-control mdb"
+                              id="form1"
+                              name="lastName"
+                              value=""
+                              // onChange={onChange}
+                            />
+                          </div>
+                        </div>
+                        <div className="d-flex justify-content-evenly m-1 row">
+                          <div className="col-sm ms-5">
+                            <label className="labelsingup text-muted">
+                            Years of Experience
+                            </label>
+                            <MDBInput
+                              type="text"
+                              className="form-control mdb"
+                              id="form1"
+                              name="firstName"
+                              value=""
+                              // onChange={onChange}
+                            />
+                          </div>
+
+                          <div className="col-sm ms-5">
+                            <label className="labelsingup text-muted">
+                            Education
+                            </label>
+                            <MDBInput
+                              type="text"
+                              className="form-control mdb"
+                              id="form1"
+                              name="lastName"
+                              value=""
+                              // onChange={onChange}
+                            />
+                          </div>
+                        </div>
+                        <p className="ms-5">Do you provide telehealth services?</p>
+                        <div className="d-flex ms-5">
+                          <div className="">
+                          <label>yes</label>
+                          <input type="checkbox" className="checkbox-round m-2"></input>
+                          </div>
+                          <div>
+                          <label>no</label>
+                          <input type="checkbox" className="checkbox-round m-2"></input>
+                          </div>
+                        </div>
+                        </div>
+                      </MDBModalBody>
+
+                      
+                        <MDBBtn className="buttonmainpage mb-3 me-5" onClick={toggleShowtwo}>
+                        Save
                         </MDBBtn>
-                        <MDBBtn>Save changes</MDBBtn>
-                      </MDBModalFooter>
                     </MDBModalContent>
                   </MDBModalDialog>
-                </MDBModal> */}
+                </MDBModal>
               </div>
             </div>
-            <p>Practice Name</p>
-            <p>Specialty</p>
-            <p>Sub specialties</p>
-            <p>Years of Experience</p>
-            <p>Education</p>
-            <p>Telehealth Services:</p>
+            <div>
+              <p>Practice Name</p>
+              <p>Specialty</p>
+              <p>Sub specialties</p>
+              <p>Years of Experience</p>
+              <p>Education</p>
+              <p>Telehealth Services:</p>
+            </div>
           </div>
         </div>
         <div className="ppAbout col-sm">
