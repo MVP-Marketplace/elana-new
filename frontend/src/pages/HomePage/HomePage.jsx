@@ -10,7 +10,7 @@ export const HomePage = () => {
             <div className="homepage-banner-1 d-flex align-items-center">
                 <div className="w-50">
                     <h1 className="px-5 text-end brand-purple text-al fs-58">Elana is your partner<br />in pelvic care</h1>
-                    <h5 className="px-5 text-end brand-purple text-ka fs-24 fw-lighter">We connect you to pelvic care, so you<br />feel confident from the inside out.</h5>
+                    <h5 className="px-5 text-end brand-purple text-ka fs-24 fw-lighter">We connect you to pelvic care options, so you<br />feel confident from the inside out.</h5>
                     <div className="px-5 text-end">
                         <MDBBtn className="brand-bg-purple border-0 mx-2 w-50">LEARN MORE</MDBBtn>
                     </div>
@@ -56,12 +56,12 @@ export const HomePage = () => {
             </div>
 
             <div className="homepage-banner-3">
-                <h1 className="text-center text-al fs-40 pt-5">Take control of your pelvic wellbeing</h1>
-                <h3 className="text-center text-al fs-24 p-3 fw-lighter">Issues or not - finding the right care for your pelvic wellness isn’t always easy.<br />Elana works with you to prevent or help treat pelvic challenges you may be facing. </h3>
+                <h1 className="text-center text-al fs-40 pt-5">Embrace your Pelvic Power</h1>
+                <h3 className="text-center text-al fs-24 p-3 fw-lighter">Elana makes it easy to find the right treatment or simply optimise your pelvic health.<br />Your partner in pelvic care.</h3>
                 <div className="p-5 d-flex justify-content-evenly">
                     <MDBCard className="border-curve-8" style={{ height: '15rem', width: '15rem' }}>
                         <MDBCardBody className="d-flex align-items-center justify-content-center">
-                            <MDBCardTitle className="text-center fs-24">Pelvic Care</MDBCardTitle>
+                            <MDBCardTitle className="text-center fs-24">Optimise my<br/>Pelvic health</MDBCardTitle>
                         </MDBCardBody>
                     </MDBCard>
                     <MDBCard className="border-curve-8" style={{ height: '15rem', width: '15rem' }}>
@@ -98,7 +98,7 @@ export const HomePage = () => {
             </div>
 
             <div className="homepage-banner-4">
-                <h3 className="text-al fs-23 pt-5 pb-4 text-center">Features coming soon to Elana:</h3>
+                <h3 className="text-al fs-32 pt-5 pb-4 text-center">Coming soon to ELANA:</h3>
                 <div className="pt-4 pb-5 d-flex justify-content-evenly">
                     <MDBCard className="rounded-circle border-purple p-2" style={{ maxWidth: '10.5rem' }}>
                         <MDBCardBody className="d-flex align-items-center">
@@ -140,17 +140,17 @@ export const HomePage = () => {
 
             <div className="homepage-banner-5 d-flex align-items-center">
                 <div className="w-50">
-                    <h1 className="px-5 text-end text-al fs-24">We’d love to hear from you! Send us your comments at:</h1>
+                    <h1 className="px-5 text-end text-al fs-24">We’d love to hear from you! You can reach our team at:</h1>
                     <h5 className="px-5 text-end text-al fs-32">hello@elana.health</h5>
                 </div>
-                <div className="w-50">
-                    <img className="img-fluid h-50" src="https://s3-alpha-sig.figma.com/img/1da9/d4c1/5e11fd13ad6ce83f40f464a0fc9f51da?Expires=1655078400&Signature=IrGz0ai7uxYHoNkNrdbiYjcyDtBnHFLstEzP92sVL6iHZ7xWNqZw~~dQ5vDRE2Kc7t6l3m8CsorG-3799m5kePLVtH-e8Ioa1X4TuhzY7vpX9WDyqYEjeJeBb~7KX4KRCHqT1KKyLKUtcjmPYcE12BGLW7W99uY~pGk9VSybhne5ybnDFHUndnfYwTwgsBfw8x9QnKKBtOId42E4HG6QvdA50ryV7ESqGrGjjUJkFOq7kEp6PeWOMCoqhHYzZrecX0EKgJuDIx6glfbQM6VZhBGhIJ0BVJ0pfU9omDnfy~P~INbnX8CVjxgtakKzzfxdMLXiuUOVnG6vbMdwRZimcg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="women-health" />
+                <div className="w-50 ">
+                    <img className="img-fluid h-50 " src="https://static.wixstatic.com/media/8f59bb_69b581d17c8547b39a130bc7fda35f5b~mv2.jpg/v1/crop/x_2067,y_0,w_3057,h_3332/fill/w_394,h_426,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Beautiful%20woman%20at%20home%20sitting%20casual%20on%20her%20patio%20relaxing%20and%20enjoying%20leisure%20time%20alo.jpg" alt="women-health" />
                 </div>
             </div>
 
             <div className="homepage-banner-6 p-5">
-                <h1 className="px-5 text-center text-al fs-24">Stay in the know with our newsletter.</h1>
-                <h3 className="px-5 text-center text-al fs-24">Get updates and the latest on pelvic care delivered to your inbox.</h3>
+                <h1 className="px-5 text-center text-al fs-24">Connect with the ELANA community, we’ll only send you the important stuff.</h1>
+                <h3 className="px-5 text-center text-al fs-24">Get updates and the latest info on pelvic care delivered to your inbox.</h3>
                 <MDBInputGroup className='mx-auto mb-3 w-35 p-4'>
                     <input className='text-ka form-control p-2' placeholder="Enter your email" type='text' />
                     <MDBBtn className="brand-bg-purple p-2">Stay in the know</MDBBtn>

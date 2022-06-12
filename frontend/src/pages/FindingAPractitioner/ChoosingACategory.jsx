@@ -19,7 +19,7 @@ export function ChoosingACategory() {
         <div className="p-4 iconback"><i className="fas fa-angle-left"></i><span className="p-2">back</span></div>
        
         <div className="text-center row">
-            <h2 className="titlepractitioner col-sm-12 text-center">Browse Practitioner Categories</h2>
+            <h2 className="titlepractitioner col-sm-12 text-center">Browse Pelvic Health</h2>
             <p className="textpractitioner col-sm-12">Choose a category from below that best matches your current symptoms and needs. <br />
                 This will assist you in finding a provider who can help you.  </p>
         </div>
