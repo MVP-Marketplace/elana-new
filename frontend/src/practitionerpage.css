@@ -1,0 +1,90 @@
+
+/*  Class Styling  */
+
+.practitioner-page-banner-1 {
+    background: #EAE8FB;
+    
+}
+
+.practitioner-page-banner-2 {
+    background: #ffffff;
+    
+}
+.practitioner-page-banner-3 {
+    background: #E3E2E8
+    
+}
+
+.brand-purple {
+    color: #7F6FEA;
+}
+
+.border-purple {
+    border-color:#7F6FEA;
+}
+
+.brand-bg-purple {
+    background: #7F6FEA;
+}
+
+.border-radius-8 {
+    border-radius: 8px;
+}
+.border-radius-9 {
+    border-radius: 9px;
+}
+
+.brand-bg-purple-2 {
+    background: #BCB5E8;
+    ;
+}
+
+.text-al {
+    font-family: 'Abhaya Libre', serif; 
+}
+
+.text-ka {
+    font-family: 'Karla', sans-serif;  
+}
+
+.fs-58 {
+    font-size: 58px
+}
+.fs-48 {
+    font-size: 48px
+}
+.fs-40 {
+    font-size: 40px
+}
+
+.fs-32 {
+    font-size: 32px
+}
+
+.fs-24 {
+    font-size: 24px
+}
+.fs-20 {
+    font-size: 20px
+}
+
+.fs-16 {
+    font-size: 16px
+}
+.fs-12 {
+    font-size: 12px
+}
+
+.me-8 {
+    margin-right: 8rem
+}
+
+/* .main-button {
+    padding: 16px 25px 16px 25px
+} */
+
+.img-fit {
+    max-width: 100%;
+    height: 100%;
+    object-fit:fill;
+}

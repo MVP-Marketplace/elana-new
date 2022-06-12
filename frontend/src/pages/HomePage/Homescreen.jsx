@@ -14,6 +14,7 @@ export function Homescreen() {
                 <li><Link to='/aboutPage'>AboutPage</Link></li>
                 <li><Link to='/homePage'>HomePage</Link></li>
                 <li><Link to='/individualPage'>IndividualPage</Link></li>
+                <li><Link to='/practitionerPage'>PractitionerPage</Link></li>
                 <li><Link to='/terms'>Terms</Link></li>
                 <li><Link to='/privacyPolicy'>PrivacyPolicy</Link></li>
                 <li><Link to='/practitionerSignUp'>PractitionerSignUp</Link></li>
