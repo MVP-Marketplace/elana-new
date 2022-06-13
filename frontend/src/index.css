@@ -811,7 +811,9 @@ justify-content: space-around;
 position: absolute;
 top: 280px;
 }
-
+.whitespace {
+  white-space: nowrap;
+}
 .ppHeader {
 display: flex;
 justify-content: flex-start;

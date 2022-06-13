@@ -23,18 +23,29 @@ import {
 export function PractitionerProfile() {
   const [basicModal, setBasicModal] = useState(false);
   const [basicModaltwo, setBasicModaltwo] = useState(false);
+  const [firstProfile, setFirstProfile] = useState({ firstName: "", PracticesName: "", YourSpecialty: "", SubSpecialties:"", YearsOfExperience: "", education: ""  });
+  const [secondProfile, setSecondProfileProfile] = useState({ AboutMe: "", HowICanHelp: "", ServicesOffered: "" });
 
   const toggleShow = () => setBasicModal(!basicModal);
   const toggleShowtwo = () => setBasicModaltwo(!basicModaltwo);
 
+  const handleChange = e => {
+		setFirstProfile({ ...firstProfile, [e.target.name]: e.target.value });
+		console.log(firstProfile);
+	};
+  const handleChangeTwo = e => {
+		setSecondProfileProfile({ ...secondProfile, [e.target.name]: e.target.value });
+		console.log(firstProfile);
+	};
+
   return (
-    <div className="pp">
+    <div className="pp row ">
       {" "}
       <h1 className="ppHeader">Hello, Jessica Smith</h1>
       <button className="ppButton">Log Out</button>
       <div className="ppConainer ">
-        <div className="ppPerson row">
-          <div className="ppImageBox ">
+        <div className="ppPerson ">
+          <div className="ppImageBox col-sm">
             <img
               alt=""
               src={pen}
@@ -106,7 +117,7 @@ export function PractitionerProfile() {
             </div>
           </div>
           <div className="ppProfile col-sm">
-            <div className="d-flex">
+            <div className="d-flex ms-5 whitespace">
               <div>
                 <p>
                   <b>Dr. Jessica Smith</b>
@@ -136,7 +147,7 @@ export function PractitionerProfile() {
                       </MDBModalHeader>
                       <MDBModalBody>
                         <div>
-                        <div className="d-flex justify-content-evenly m-1 row">
+                        <div className="d-flex justify-content-evenly m-1">
                           <div className="col-sm ms-5">
                             <label className="labelsingup text-muted">
                             Your Name
@@ -146,8 +157,8 @@ export function PractitionerProfile() {
                               className="form-control mdb"
                               id="form1"
                               name="firstName"
-                              value=""
-                              // onChange={onChange}
+                              value={firstProfile.firstName}
+                              onChange={handleChange}
                             />
                           </div>
 
@@ -159,13 +170,13 @@ export function PractitionerProfile() {
                               type="text"
                               className="form-control mdb"
                               id="form1"
-                              name="lastName"
-                              value=""
-                              // onChange={onChange}
+                              name="PracticesName"
+                              value={firstProfile.PracticesName}
+                              onChange={handleChange}
                             />
                           </div>
                         </div>
-                        <div className="d-flex justify-content-evenly m-1 row">
+                        <div className="d-flex justify-content-evenly m-1">
                           <div className="col-sm ms-5">
                             <label className="labelsingup text-muted">
                             Your Specialty
@@ -174,9 +185,9 @@ export function PractitionerProfile() {
                               type="text"
                               className="form-control mdb"
                               id="form1"
-                              name="firstName"
-                              value=""
-                              // onChange={onChange}
+                              name="YourSpecialty"
+                              value={firstProfile.YourSpecialty}
+                              onChange={handleChange}
                             />
                           </div>
 
@@ -188,13 +199,13 @@ export function PractitionerProfile() {
                               type="text"
                               className="form-control mdb"
                               id="form1"
-                              name="lastName"
-                              value=""
-                              // onChange={onChange}
+                              name="SubSpecialties"
+                              value={firstProfile.SubSpecialties}
+                              onChange={handleChange}
                             />
                           </div>
                         </div>
-                        <div className="d-flex justify-content-evenly m-1 row">
+                        <div className="d-flex justify-content-evenly m-1">
                           <div className="col-sm ms-5">
                             <label className="labelsingup text-muted">
                             Years of Experience
@@ -203,9 +214,9 @@ export function PractitionerProfile() {
                               type="text"
                               className="form-control mdb"
                               id="form1"
-                              name="firstName"
-                              value=""
-                              // onChange={onChange}
+                              name="YearsOfExperience"
+                              value={firstProfile.YearsOfExperience}
+                              onChange={handleChange}
                             />
                           </div>
 
@@ -217,9 +228,9 @@ export function PractitionerProfile() {
                               type="text"
                               className="form-control mdb"
                               id="form1"
-                              name="lastName"
-                              value=""
-                              // onChange={onChange}
+                              name="education"
+                              value={firstProfile.education}
+                              onChange={handleChange}
                             />
                           </div>
                         </div>
@@ -247,33 +258,39 @@ export function PractitionerProfile() {
               </div>
             </div>
             <div>
-              <p>Practice Name</p>
-              <p>Specialty</p>
-              <p>Sub specialties</p>
-              <p>Years of Experience</p>
-              <p>Education</p>
-              <p>Telehealth Services:</p>
+              <p className="ms-5">Practice Name</p>
+              <p className="ms-5">Specialty</p>
+              <p className="ms-5">Sub specialties</p>
+              <p className="ms-5">Years of Experience</p>
+              <p className="ms-5">Education</p>
+              <p className="ms-5">Telehealth Services:</p>
             </div>
           </div>
         </div>
         <div className="ppAbout col-sm">
-          <div className="ppAbout">
-            <div className="ppAboutbox">
-              <h4>About Me</h4>
+          <div className="ppAbout row">
+            <div className="ppAboutbox col-sm">
+              <h4 className="">About Me</h4>
               <input
                 type="text"
                 placeholder="Body text goes here"
                 className="ppInput"
+                name="AboutMe"
+                value={secondProfile.AboutMe}
+                onChange={handleChangeTwo}
               />
             </div>
           </div>
           <div className="ppAboutA">
-            <div className="ppAboutbox">
+            <div className="ppAboutbox col-sm">
               <h4>How I can Help</h4>
               <input
                 type="text"
                 placeholder="Body text goes here"
-                className="ppInput"
+                className="ppInput "
+                name="HowICanHelp"
+                value={secondProfile.HowICanHelp}
+                onChange={handleChangeTwo}
               />
             </div>
           </div>
@@ -284,6 +301,9 @@ export function PractitionerProfile() {
                 type="text"
                 placeholder="Body text goes here"
                 className="ppInput"
+                name="ServicesOffered"
+                value={secondProfile.ServicesOffered}
+                onChange={handleChangeTwo}
               />
             </div>
           </div>
