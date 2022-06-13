@@ -5,90 +5,129 @@
   background: #F2F2F2;
 box-shadow: 25px 25px 40px rgba(0, 0, 0, 0.25); 
 } */
-/* .container {
-  position: absolute;
-  width: 1216px;
-  height: 4406px;
-  left: 112px;
-  top: 166px;
-} */
+.container {
+  margin-top: 50px;
+  justify-content: center;
+}
 h2 {
-    font-family: "Abhaya Libre", serif;
-    font-style: regular;
-    font-size: 40px;
-    line-height: 47px;
-    line-height: 100%;
-    text-align: left;
-    vertical-align: top;
-    font-weight: 800;
+  font-family: "Abhaya Libre", serif;
+  font-style: regular;
+  font-size: 40px;
+  line-height: 47px;
+  line-height: 100%;
+  text-align: left;
+  vertical-align: top;
+  font-weight: 800;
 }
 
 .sect1 {
-    font-family: "Karla";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: -0.02em;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
 }
 
 h5 {
-    font-family: "Abhaya Libre ExtraBold";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 28px;
+  font-family: "Abhaya Libre ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .sect2 {
-    font-family: "Karla";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: -0.02em;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
 }
 
 .smallprnt1 {
-    font-family: "Karla";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .smallprnt2 {
-    font-family: "Karla";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .smallprnt3 {
-    font-family: "Karla";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .smalldisclaimer {
-    
-    width: 716px;
-    height: 38px;
-    margin-top: 89px;
-    top: 4661px;
-    margin-left: 265px;
-    margin-bottom: 100px;
+  width: 716px;
+  height: 38px;
+  margin-top: 89px;
+  top: 4661px;
+  margin-left: 265px;
+  margin-bottom: 100px;
 
-    /* Karla/Regular/P - 16 */
+  /* Karla/Regular/P - 16 */
 
-    font-family: 'Karla';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: -0.02em;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.titlesconditions {
+  font-size: 40px;
+}
+@media only screen and (max-width: 500px) {
+  h5 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .servicedescription {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sect1 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sect2 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .smalldisclaimer {
+    font-size: 12px;
+    margin-right: 220px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    margin: auto;
+  
+    left: 28px;
+    top: 104px;
+  }
 }

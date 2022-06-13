@@ -9,7 +9,7 @@ export const PrivacyPolicy = () => {
             <br></br>
             <br></br>
             <p>
-                Last updated: September 3, 2021
+                <span className="smallprnt">Last updated: September 3, 2021</span>
                 <br></br>
                 <br></br>
                 Elana, Inc. (“Elana”, “us”, “we”, or “our”) operates the http://elana.health website (the “Service”).<br />

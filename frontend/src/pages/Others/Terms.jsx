@@ -4,8 +4,8 @@ import './terms.css';
 export const Terms = () => {
 	return (
 		
-			<div className="container pt-5">
-				<h2>Terms & Conditions</h2>
+			<div className="container row pt-5">
+				<div className="col-sm "><h2 className="titlesconditions">Terms & Conditions</h2></div>
 				<br></br>
 				<br></br>
 
@@ -65,6 +65,7 @@ export const Terms = () => {
 					<h5>SERVICE DESCRIPTION</h5>
 					<br />
 					<br /> 
+					<div className="servicedescription">
 					The service provides individuals (“Members”) accessing it with general educational information on a variety of health and wellness related 
 					topics (“Content”), personalized matches to women’s health specialists (“Providers”), access to book appointments with Providers, and the 
 					ability to track symptoms depending on Member’s subscription plan. The service contains sections that are only available to registered 
@@ -73,6 +74,7 @@ export const Terms = () => {
 					practicing independently of the service with a range of credentials. We do not practice medicine or any other licensed profession, and do 
 					not interfere with the practice of medicine or any other licensed or not-licensed profession by Providers, each of whom is responsible for his 
 					or her services and compliance with the requirements applicable to his or her profession and license.
+					</div>
 					<br></br>
 					<br />
 					<h5>PRIVACY</h5>
