@@ -284,8 +284,8 @@ export function PractitionerProfile() {
                 value={secondProfile.AboutMe}
                 onChange={handleChangeTwo}
               />
-            {showbuttons && <button className="buttonmainpage me-2">Save</button>}
-            {showbuttons && <button className="buttonmainpage me-1 d-flex">Cancel</button>}
+            {showbuttons && <div className="d-flex"><button className="buttonmainpage me-1">save</button><button className="buttonmainpage me-1 ">Cancel</button></div>}
+            
             </div>
           </div>
           <div className="ppAboutA">
