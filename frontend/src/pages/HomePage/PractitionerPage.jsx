@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, MDBInputGroup } from 'mdb-react-ui-kit';
 import '../../practitionerpage.css'
+import { Link } from "react-router-dom";
 
 export const PractitionerPage = () => {
 
@@ -12,7 +13,7 @@ export const PractitionerPage = () => {
                 <h1 className="text-center text-al fs-48 fw-bolder">Grow your Practice with Elana</h1>
                 <h3 className="text-center text-al fs-40 fw-bolder">Together we can transform women's health</h3>
                 <div className="d-flex justify-content-center p-3">
-                    <button className="brand-bg-purple text-white text-ka px-5 py-3 border border-0 border-radius-8">REGISTER NOW</button>
+                <Link to='/practitionerSignUp' className="link"><button className="brand-bg-purple text-white text-ka px-5 py-3 border border-0 border-radius-8">REGISTER NOW</button></Link>
                 </div>
             </div>
 
@@ -66,7 +67,7 @@ export const PractitionerPage = () => {
                             </ul>
                         </div>
                         <div className="d-flex justify-content-center">
-                        <button className="brand-bg-purple text-white text-ka px-5 py-3 border border-0 border-radius-8">REGISTER NOW</button>
+                        <Link to='/practitionerSignUp' className="link"><button className="brand-bg-purple text-white text-ka px-5 py-3 border border-0 border-radius-8">REGISTER NOW</button></Link>
                         </div>
                     </div>
                     <div className="w-50">

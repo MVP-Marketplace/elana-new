@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "../../img/Image.png";
 import '../../index.css'
+import { Link } from "react-router-dom";
 
 export function IndividualPage() {
 
@@ -33,9 +34,9 @@ export function IndividualPage() {
                         </ul>
                         <div>
 
-                            <button className='buttonmainpageindividual col-sm ms-4'>
+                        <Link to='/ChoosingACategory' className="link"><button className='buttonmainpageindividual col-sm ms-4'>
                                 BROWSE PRACTITIONERS
-                            </button>
+                            </button></Link> 
                         </div>
                     </div>
                 </div>

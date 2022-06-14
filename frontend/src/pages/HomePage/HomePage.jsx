@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, MDBInputGroup } from 'mdb-react-ui-kit';
 import '../../homepage.css'
+import { Link } from "react-router-dom";
 
 export const HomePage = () => {
 
@@ -12,7 +13,7 @@ export const HomePage = () => {
                     <h1 className="px-5 text-end brand-purple text-al fs-58">Elana is your partner<br />in pelvic care</h1>
                     <h5 className="px-5 text-end brand-purple text-ka fs-24 fw-lighter">We connect you to pelvic care options, so you<br />feel confident from the inside out.</h5>
                     <div className="px-5 text-end">
-                        <MDBBtn className="brand-bg-purple border-0 mx-2 w-50">LEARN MORE</MDBBtn>
+                    <Link to='/IndividualPage' className="link"><MDBBtn className="brand-bg-purple border-0 mx-2 w-50">LEARN MORE</MDBBtn></Link>
                     </div>
                 </div>
                 <div className="w-50">
