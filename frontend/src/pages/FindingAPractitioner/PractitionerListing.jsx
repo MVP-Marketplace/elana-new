@@ -14,17 +14,17 @@ export function PractitionerListing() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col">
-          <div className="listingContainer">
-            <h1 className="listingHeader titleresponsive">Endometriosis</h1>
-            <p className="textresponsive ">
+        <div className="">
+          <div className="listingContainer ">
+            <h1 className="listingHeader col-sm">Endometriosis</h1>
+            <p className="textresponsive col-sm">
               <span>Endometriosis (en-doe-me-tree-O-sis) </span>is an often painful disorder
               in which tissue similar to the tissue that normally lines the
               inside of your uterus (the endometrium) grows outside your uterus.
               Endometriosis commonly involves your ovaries, fallopian tubes and
               the tissue lining your pelvis.{" "}
             </p>
-            <p className="textresponsive">
+            <p className="textresponsive col-sm">
               Common signs and symptoms of endometriosis include<span> painful periods
               (dysmenorrhea), pain with intercourse, pain with bowel movements
               or urination, excessive bleeding </span>, and <span>infertility</span>. Other signs and
@@ -34,7 +34,7 @@ export function PractitionerListing() {
           </div>
           <div className="filterByContainer">
             <MDBDropdown>
-              <MDBDropdownToggle  color='shadow-0'>
+              <MDBDropdownToggle  color='shadow-0' className="col-sm">
                 
                 <div className="d-flex">
                   <div className="">
@@ -45,7 +45,7 @@ export function PractitionerListing() {
                   </div>
                 </div>
               </MDBDropdownToggle>
-              <MDBDropdownMenu>
+              <MDBDropdownMenu className="col-sm">
                 <MDBDropdownItem>
                   <MDBDropdownLink href="#">
                     <input type="checkbox" className="checkbox"></input>
@@ -80,8 +80,8 @@ export function PractitionerListing() {
             </MDBDropdown>
 
 
-            <MDBDropdown>
-              <MDBDropdownToggle  color='shadow-0'>
+            <MDBDropdown className="col-sm">
+              <MDBDropdownToggle  color='shadow-0' >
                 
                 <div className="d-flex">
                   <div className="">
@@ -153,7 +153,7 @@ export function PractitionerListing() {
                     </div>
                 </div>
             </div>
-            <div className="person">
+            <div className="person col-sm">
             <div className="d-flex">
                     <div>
                         <img src={imageface} alt="more" className="imageface mt-4 ms-3"></img>

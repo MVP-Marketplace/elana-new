@@ -225,20 +225,19 @@ span {
 
 /* .textresponsive {
  font-size: clamp(1.3rem,  1.2vh + 1rem, 5.5rem);
-}
+} */
+
+
 
 @media (max-width: 600px) {
   .textresponsive {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
     font-size: 1.2vw;
   }
 }  
-.titleresponsive{
-  font-size: 3vw;
-} */
-
 .listingHeader {
 
   font-family: 'Abhaya Libre ExtraBold';
@@ -271,6 +270,9 @@ span {
   left: 212px;
   top: 246px;
 
+}
+@media(max-width: 579px){
+  .listingContainer { width: 90%; margin-top: 200px; margin-left: 0px; margin-right: 100px;}
 }
 
 .listingText1 {
