@@ -223,6 +223,22 @@ span {
   content: "\2039";
 }
 
+/* .textresponsive {
+ font-size: clamp(1.3rem,  1.2vh + 1rem, 5.5rem);
+}
+
+@media (max-width: 600px) {
+  .textresponsive {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1.2vw;
+  }
+}  
+.titleresponsive{
+  font-size: 3vw;
+} */
+
 .listingHeader {
 
   font-family: 'Abhaya Libre ExtraBold';

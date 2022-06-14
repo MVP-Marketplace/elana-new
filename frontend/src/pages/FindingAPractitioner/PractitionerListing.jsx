@@ -16,15 +16,15 @@ export function PractitionerListing() {
       <div className="row">
         <div className="col">
           <div className="listingContainer">
-            <h1 className="listingHeader">Endometriosis</h1>
-            <p className="">
+            <h1 className="listingHeader titleresponsive">Endometriosis</h1>
+            <p className="textresponsive ">
               <span>Endometriosis (en-doe-me-tree-O-sis) </span>is an often painful disorder
               in which tissue similar to the tissue that normally lines the
               inside of your uterus (the endometrium) grows outside your uterus.
               Endometriosis commonly involves your ovaries, fallopian tubes and
               the tissue lining your pelvis.{" "}
             </p>
-            <p className="">
+            <p className="textresponsive">
               Common signs and symptoms of endometriosis include<span> painful periods
               (dysmenorrhea), pain with intercourse, pain with bowel movements
               or urination, excessive bleeding </span>, and <span>infertility</span>. Other signs and
@@ -186,7 +186,8 @@ export function PractitionerListing() {
                         <h6>Nurse Practitioner (ARNP)</h6>
                         <p>I’m a registerd nurse that has helped countless number of women navigate a wide variety of their pelvic health issues, including endometriosis, menopause, and separated abs. I also give advice for best methods to actively take care of the pelvic floor. </p>
                     </div>
-                </div></div>
+                </div>
+              </div>
           </div>
 
 

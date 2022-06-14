@@ -27,7 +27,7 @@ export function PractitionerProfile() {
   const [secondProfile, setSecondProfileProfile] = useState({ AboutMe: "", HowICanHelp: "", ServicesOffered: "" });
   const [showbuttons, setShowButtons] = useState(false);
   const [showbuttonstwo, setShowButtonsTwo] = useState(false);
-  const [showbuttonsthree, setShowButtonsThree] = useState(false);
+  const [showbuttonsthree, setShowButtonsThree] = useState(false)
 
 
   const toggleShow = () => setBasicModal(!basicModal);
@@ -285,7 +285,7 @@ export function PractitionerProfile() {
                 onChange={handleChangeTwo}
               />
             {showbuttons && <button className="buttonmainpage me-2">Save</button>}
-            {showbuttons && <button className="buttonmainpage me-1">Cancel</button>}
+            {showbuttons && <button className="buttonmainpage me-1 d-flex">Cancel</button>}
             </div>
           </div>
           <div className="ppAboutA">
