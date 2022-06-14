@@ -10,8 +10,8 @@ export const Footer = () => (
 			<div className="footerlink"><p>Contact us</p></div>
 			<div className="footerlink"><p>Login</p></div>
 			<div className="footerlink"><p>About</p></div>
-			<div className="footerlink"><p>Privacy Policy</p></div>
-			<div className="footerlink"><p>Terms</p></div>
+			<div className="footerlink"><Link to="/terms" className="text-decoration-none text-white"><p>Terms</p></Link></div>
+			<div className="footerlink"><Link to="/privacyPolicy" className="text-decoration-none text-white"><p>Privacy Policy</p></Link></div>
 		</div>
 		
 			{/* <div className="input-group md-form form-sm form-2 pl-0 me-5">

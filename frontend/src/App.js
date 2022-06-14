@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import {ChoosingACategory} from './pages/FindingAPractitioner/ChoosingACategory';
 import {PractitionerListing} from './pages/FindingAPractitioner/PractitionerListing';
@@ -39,9 +38,8 @@ function App() {
             <Route path='/practitionerEditProfile/:id' element={<PractitionerEditProfile/>}/>
             <Route path='/practitionerSignUp' element={<PractitionerSignUp/>}/>
           </Routes>
-      </Router>
       <Footer/>
-      <ToastContainer/>
+      </Router>
     </>
   );
 }
