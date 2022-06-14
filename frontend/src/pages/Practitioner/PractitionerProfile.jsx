@@ -25,6 +25,10 @@ export function PractitionerProfile() {
   const [basicModaltwo, setBasicModaltwo] = useState(false);
   const [firstProfile, setFirstProfile] = useState({ firstName: "", PracticesName: "", YourSpecialty: "", SubSpecialties:"", YearsOfExperience: "", education: ""  });
   const [secondProfile, setSecondProfileProfile] = useState({ AboutMe: "", HowICanHelp: "", ServicesOffered: "" });
+  const [showbuttons, setShowButtons] = useState(false);
+  const [showbuttonstwo, setShowButtonsTwo] = useState(false);
+  const [showbuttonsthree, setShowButtonsThree] = useState(false);
+
 
   const toggleShow = () => setBasicModal(!basicModal);
   const toggleShowtwo = () => setBasicModaltwo(!basicModaltwo);
@@ -272,6 +276,7 @@ export function PractitionerProfile() {
             <div className="ppAboutbox col-sm">
               <h4 className="">About Me</h4>
               <input
+               onClick={()=>setShowButtons(!showbuttons)}
                 type="text"
                 placeholder="Body text goes here"
                 className="ppInput"
@@ -279,12 +284,15 @@ export function PractitionerProfile() {
                 value={secondProfile.AboutMe}
                 onChange={handleChangeTwo}
               />
+            {showbuttons && <button className="buttonmainpage me-2">Save</button>}
+            {showbuttons && <button className="buttonmainpage me-1">Cancel</button>}
             </div>
           </div>
           <div className="ppAboutA">
             <div className="ppAboutbox col-sm">
               <h4>How I can Help</h4>
               <input
+              onClick={()=>setShowButtonsTwo(!showbuttonstwo)}
                 type="text"
                 placeholder="Body text goes here"
                 className="ppInput "
@@ -292,12 +300,15 @@ export function PractitionerProfile() {
                 value={secondProfile.HowICanHelp}
                 onChange={handleChangeTwo}
               />
+            {showbuttonstwo && <button className="buttonmainpage me-2">Save</button>}
+            {showbuttonstwo && <button className="buttonmainpage me-1">Cancel</button>}
             </div>
           </div>
           <div className="ppAboutB">
             <div className="ppAboutbox">
               <h4>Services Offered</h4>
               <input
+              onClick={()=>setShowButtonsThree(!showbuttonsthree)}
                 type="text"
                 placeholder="Body text goes here"
                 className="ppInput"
@@ -305,6 +316,8 @@ export function PractitionerProfile() {
                 value={secondProfile.ServicesOffered}
                 onChange={handleChangeTwo}
               />
+            {showbuttonsthree && <button className="buttonmainpage me-2">Save</button>}
+            {showbuttonsthree && <button className="buttonmainpage me-1">Cancel</button>}
             </div>
           </div>
           <div className="ppAbout2">
