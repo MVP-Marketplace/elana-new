@@ -1,5 +1,6 @@
 import React from "react";
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, MDBInputGroup } from 'mdb-react-ui-kit';
+import Group from "../../img/HomepageBanner5.png";
 import '../../homepage.css'
 
 export const HomePage = () => {
@@ -144,7 +145,7 @@ export const HomePage = () => {
                     <h5 className="px-5 text-end text-al fs-32">hello@elana.health</h5>
                 </div>
                 <div className="w-50 ">
-                    <img className="img-fluid h-50 " src="https://static.wixstatic.com/media/8f59bb_69b581d17c8547b39a130bc7fda35f5b~mv2.jpg/v1/crop/x_2067,y_0,w_3057,h_3332/fill/w_394,h_426,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Beautiful%20woman%20at%20home%20sitting%20casual%20on%20her%20patio%20relaxing%20and%20enjoying%20leisure%20time%20alo.jpg" alt="women-health" />
+                    <img className="img-fluid h-50 " src={Group} alt="women-health" />
                 </div>
             </div>
 
