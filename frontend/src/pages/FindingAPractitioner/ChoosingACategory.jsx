@@ -66,7 +66,7 @@ export function ChoosingACategory() {
             <div class="d-flex align-items-center justify-content-center row">
                 <MDBCol>
 
-                    <div className="purpleboxes d-flex col-sm">
+                <div className="purpleboxes d-flex col-sm">
                         <img src={image3} alt=""></img>
                         <div className="d-block information">
                             <h6 className="titlebox">Endometriosis</h6>

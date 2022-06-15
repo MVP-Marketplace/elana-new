@@ -59,7 +59,7 @@ export function PractitionerLogin() {
     }
 
     return (
-        <div className="signupGradient">
+        <div className="signupGradientbg2">
             {/* /////// singUpGradient control padding */}
             <div className="bgwhite2 row">
 
@@ -114,6 +114,7 @@ export function PractitionerLogin() {
                     </button>
                     </div>
                 </div>
+
             </div>
             )
 }

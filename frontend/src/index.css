@@ -223,6 +223,21 @@ span {
   content: "\2039";
 }
 
+/* .textresponsive {
+ font-size: clamp(1.3rem,  1.2vh + 1rem, 5.5rem);
+} */
+
+
+
+@media (max-width: 600px) {
+  .textresponsive {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2vw;
+  }
+}  
 .listingHeader {
 
   font-family: 'Abhaya Libre ExtraBold';
@@ -255,6 +270,9 @@ span {
   left: 212px;
   top: 246px;
 
+}
+@media(max-width: 579px){
+  .listingContainer { width: 90%; margin-top: 200px; margin-left: 0px; margin-right: 100px;}
 }
 
 .listingText1 {
@@ -590,6 +608,17 @@ span {
 
 /* //////////singup */
 .signupGradient {
+  /* width: 100%;
+  height: 100vh; */
+  background-image: linear-gradient(to left top, #2ACDFA, #E927D3, #7F6FEA);
+  /* position: relative;
+  padding: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.signupGradientbg2 {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(to left top, #2ACDFA, #E927D3, #7F6FEA);
@@ -605,16 +634,13 @@ span {
   background-color: white;
   width: 670px;
   border-radius: 14px;
-  height: 600px;
-  position: absolute;
+  height: 700px;
+  /* position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
-  
-  
-  
+  margin: auto; */
 }
 /* .logosingup{
   width: 200px;
@@ -740,6 +766,8 @@ span{
   }
 } 
 
+
+
 /* /////Browser PractitionerCategories */
 
 .purpleboxes {
@@ -801,7 +829,9 @@ justify-content: space-around;
 position: absolute;
 top: 280px;
 }
-
+.whitespace {
+  white-space: nowrap;
+}
 .ppHeader {
 display: flex;
 justify-content: flex-start;
@@ -1143,6 +1173,16 @@ background-color: #EAE8FB;
   margin: 80px auto;
 }
 
+.bgmodal{
+  background-color: #EAE8FB ;
+}
+.boxmodal{
+  border-radius: 25px;
+}
+/* .iconmodal{
+  width: 40px;
+  height: 31px;
+} */
 /* 
 CSS PractitionerProfilePage--------------------**********/
 input{

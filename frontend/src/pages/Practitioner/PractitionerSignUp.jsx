@@ -7,7 +7,7 @@ import { register } from "../../features/auth/authSlice";
 import { reset } from "../../features/practitionerProfiles/practitionerProfileSlice";
 import "../../index.css";
 import Logo from "../../img/LogoName.png";
-import vec from "../../img/vector.png";
+import vec from "../../img/vectormodal.png";
 import {
   MDBInput,
  
@@ -248,11 +248,11 @@ export function PractitionerSignUp() {
 						<MDBModalDialog centered>
 							<MDBModalContent>
 								<MDBModalBody className="text-center">
-									<img src={vec} className="logosingup" alt="keep"></img>
+									<img src={vec} className="" alt="keep"></img>
 									<h1>Woohoo</h1>
 									<p>Your registration is complete. Please, check your email for confirmation information.</p>
 									<p>Next, let’s set up your profile.</p>
-									<button className="buttonmainpage">CREATE PROFILE</button>
+									<Link to="/PractitionerProfile"><button className="buttonmainpage">CREATE PROFILE</button></Link>
 								</MDBModalBody>
 							</MDBModalContent>
 						</MDBModalDialog>
