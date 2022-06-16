@@ -18,7 +18,7 @@ export const Navbar = () => {
             <Link to='/PractitionerPage' className="link"><p>Practitioner</p></Link>
             <Link to='/aboutPage' className="link"><p>About</p></Link>
 
-            <Link to='/' className="link"><p>Browse</p></Link>
+            <Link to='/ChoosingACategory' className="link"><p>Browse</p></Link>
             <a className="link" href="https://www.elana.health/blog" target="_blank" rel="noreferrer"><p>Blog</p></a>
             <a className="link" href="https://www.elana.health/post/what-is-pelvic-wellness-and-why-does-it-matter" target="_blank" rel="noreferrer"><p>What is pelvic health?</p></a>
 
