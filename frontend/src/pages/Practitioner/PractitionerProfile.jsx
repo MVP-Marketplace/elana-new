@@ -287,7 +287,7 @@ export function PractitionerProfile() {
                 value={secondProfile.AboutMe}
                 onChange={handleChangeTwo}
               />
-            {showbuttons && <div className="d-flex"><button className="buttonmainpage me-1">save</button><button className="buttonmainpage me-1 ">Cancel</button></div>}
+            {showbuttons && <div className="d-flex moveR"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
             
             </div>
           </div>
@@ -295,7 +295,7 @@ export function PractitionerProfile() {
             <div className="ppAboutbox">
               <h4>How I can Help</h4>
               <input
-              onClick={()=>setShowButtonsTwo(!showbuttonstwo)}
+              onClick={()=>setShowButtonsTwo === (showbuttonstwo)? (!showbuttonstwo):(showbuttonstwo)}
                 type="text"
                 placeholder="Body text goes here"
                 className="ppInput "
@@ -303,8 +303,7 @@ export function PractitionerProfile() {
                 value={secondProfile.HowICanHelp}
                 onChange={handleChangeTwo}
               />
-            {showbuttonstwo && <button className="buttonmainpage me-2">Save</button>}
-            {showbuttonstwo && <button className="buttonmainpage me-1">Cancel</button>}
+              {showbuttonstwo && <div className="d-flex moveR"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
             </div>
           </div>
           <div className="ppAboutB">
@@ -319,8 +318,7 @@ export function PractitionerProfile() {
                 value={secondProfile.ServicesOffered}
                 onChange={handleChangeTwo}
               />
-            {showbuttonsthree && <button className="buttonmainpage me-2">Save</button>}
-            {showbuttonsthree && <button className="buttonmainpage me-1">Cancel</button>}
+            {showbuttonsthree && <div className="d-flex moveR"><button className="buttonmodal me-1">save!!!</button><button className="buttonmodal me-1 ">Cancel</button></div>}
             </div>
           </div>
           <div className="ppAbout2">

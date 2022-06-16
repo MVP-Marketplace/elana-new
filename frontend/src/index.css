@@ -854,6 +854,19 @@ top: 280px;
   margin:100px;
  } 
  }
+ .moveR{
+   margin-left: 210px;
+   margin-top: 10px;
+ }
+ .buttonmodal{
+   background-color: #7F6FEA;
+  border: 1px solid #7F6FEA;
+  border-radius: 3px;
+  height: 40px;
+  margin: auto;
+  width: 125px;
+  color: white;
+ }
 .whitespace {
   white-space: nowrap;
 }
