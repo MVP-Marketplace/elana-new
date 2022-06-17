@@ -830,30 +830,7 @@ position: absolute;
 top: 280px;
 }
 
-@media only screen and (max-width: 667px) {
-  .pp div{
-     display: table-row;
-     vertical-align: top;
-     text-align:center;
-     padding: 20px;
-     padding-left: 100px;
-    
-  }
- .ppProfile{
-   margin-right: 450px;
-  
- }
- .name-responsive{
-  padding-right: 1350px;
- 
-}
-.icon-responsive{
-  padding-right: 100px;
-}
- .ppAbout{
-  margin-bottom:100px;
- } 
- }
+
  .moveR{
    margin-left: 210px;
    margin-top: 10px;
@@ -1073,6 +1050,7 @@ background-color: #EAE8FB;
   flex-direction: row;
 }
 
+
 .ppMethodsbox {
   width:225px;
   height: 50px;
@@ -1217,11 +1195,68 @@ background-color: #EAE8FB;
 .boxmodal{
   border-radius: 25px;
 }
+@media only screen and (max-width: 679px){
+  .pp { width: 100%; height:100%; display:grid;}
+}
+@media only screen and (max-width: 667px) {
+  .pp .ppConainer{
+     display: table-row;
+     vertical-align: top;
+     text-align:center;
+     padding: 20px;
+     padding-left: 100px;
+     padding-top: 20px;
+    }
+    .ppPerson{
+      margin-bottom: 25px;
+      width: 300px;
+    }
+
+ }
+ @media only screen and (max-width: 667px) {
+
+
+  .ppAbout{
+    width: 300px;
+  }
+  .ppAboutA{
+    width: 300px;
+  }
+  .ppAboutB{
+    width: 300px;
+  }
+  .ppAbout2{
+    width: 300px;
+  }
+  .ppInput{
+    width: 280px;
+  }
+ 
+  .ppAvailability{
+    margin-top: 580px;
+    width: 300px;
+  }
+  .ppCancellation{
+    width: 300px;
+  }
+  .ppPayment{
+    width: 300px;
+  }
+  .resmodal{
+    width: 300px;
+    
+  }
+  .iconmodal{
+    display: block;
+  }
+ }
 /* .iconmodal{
   width: 40px;
   height: 31px;
 } */
 /* 
+
+
 CSS PractitionerProfilePage--------------------**********/
 input{
   resize: vertical;}

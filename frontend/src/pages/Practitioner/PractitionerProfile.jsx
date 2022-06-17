@@ -70,13 +70,13 @@ export function PractitionerProfile() {
                       onClick={toggleShow}
                     ></MDBBtn>
                   </MDBModalHeader>
-                  <MDBModalBody>
+                  <MDBModalBody className="resmodal">
                     <p className="text-center">
                       Please include a photograph and video biography (if
                       necessary).
                     </p>
-                    <div className="d-flex justify-content-center mt-2">
-                      <div>
+                    <div className="d-flex justify-content-center mt-2 iconres">
+                      <div className="">
                         <img
                           alt=""
                           src={camera}
