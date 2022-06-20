@@ -17,7 +17,10 @@ import {
   MDBModalTitle,
   MDBModalBody,
   MDBModalFooter,
-  MDBInput,
+  MDBInput, 
+  MDBContainer,
+   MDBRow, 
+   MDBCol
 } from "mdb-react-ui-kit";
 
 export function PractitionerProfile() {
@@ -43,13 +46,13 @@ export function PractitionerProfile() {
 	};
 
   return (
-    <div className="pp row ">
+    <div className="pp ">
       {" "}
       <h1 className="ppHeader">Hello, Jessica Smith</h1>
       <button className="ppButton">Log Out</button>
       <div className="ppConainer ">
-        <div className="ppPerson ">
-          <div className="ppImageBox col-sm">
+        <div className="ppPerson">
+          <div className="ppImageBox">
             <img
               alt=""
               src={pen}
@@ -67,13 +70,13 @@ export function PractitionerProfile() {
                       onClick={toggleShow}
                     ></MDBBtn>
                   </MDBModalHeader>
-                  <MDBModalBody>
+                  <MDBModalBody className="resmodal">
                     <p className="text-center">
                       Please include a photograph and video biography (if
                       necessary).
                     </p>
-                    <div className="d-flex justify-content-center mt-2">
-                      <div>
+                    <div className="d-flex justify-content-center mt-2 iconres">
+                      <div className="">
                         <img
                           alt=""
                           src={camera}
@@ -120,14 +123,14 @@ export function PractitionerProfile() {
               <p className="ppText">Upload photo and video file</p>
             </div>
           </div>
-          <div className="ppProfile col-sm">
-            <div className="d-flex ms-5 whitespace">
-              <div>
+          <div className="ppProfile ">
+            <div className="d-flex ms-3 whitespace">
+              <div className="name-responsive">
                 <p>
                   <b>Dr. Jessica Smith</b>
                 </p>
               </div>
-              <div>
+              <div className="icon-responsive">
                 <img
                   alt=""
                   src={pen}
@@ -261,19 +264,19 @@ export function PractitionerProfile() {
                 </MDBModal>
               </div>
             </div>
-            <div>
-              <p className="ms-5">Practice Name</p>
-              <p className="ms-5">Specialty</p>
-              <p className="ms-5">Sub specialties</p>
-              <p className="ms-5">Years of Experience</p>
-              <p className="ms-5">Education</p>
-              <p className="ms-5">Telehealth Services:</p>
+            <div className="p-responsive">
+              <p className="ms-3">Practice Name</p>
+              <p className="ms-3">Specialty</p>
+              <p className="ms-3">Sub specialties</p>
+              <p className="ms-3">Years of Experience</p>
+              <p className="ms-3">Education</p>
+              <p className="ms-3">Telehealth Services:</p>
             </div>
           </div>
         </div>
-        <div className="ppAbout col-sm">
-          <div className="ppAbout row">
-            <div className="ppAboutbox col-sm">
+        <div className="ppAbout allcolum">
+          <div className="ppAbout ">
+            <div className="ppAboutbox">
               <h4 className="">About Me</h4>
               <input
                onClick={()=>setShowButtons(!showbuttons)}
@@ -284,15 +287,15 @@ export function PractitionerProfile() {
                 value={secondProfile.AboutMe}
                 onChange={handleChangeTwo}
               />
-            {showbuttons && <div className="d-flex"><button className="buttonmainpage me-1">save</button><button className="buttonmainpage me-1 ">Cancel</button></div>}
+            {showbuttons && <div className="d-flex moveR"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
             
             </div>
           </div>
           <div className="ppAboutA">
-            <div className="ppAboutbox col-sm">
+            <div className="ppAboutbox">
               <h4>How I can Help</h4>
               <input
-              onClick={()=>setShowButtonsTwo(!showbuttonstwo)}
+              onClick={()=>setShowButtonsTwo === (showbuttonstwo)? (!showbuttonstwo):(showbuttonstwo)}
                 type="text"
                 placeholder="Body text goes here"
                 className="ppInput "
@@ -300,8 +303,7 @@ export function PractitionerProfile() {
                 value={secondProfile.HowICanHelp}
                 onChange={handleChangeTwo}
               />
-            {showbuttonstwo && <button className="buttonmainpage me-2">Save</button>}
-            {showbuttonstwo && <button className="buttonmainpage me-1">Cancel</button>}
+              {showbuttonstwo && <div className="d-flex moveR"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
             </div>
           </div>
           <div className="ppAboutB">
@@ -316,8 +318,7 @@ export function PractitionerProfile() {
                 value={secondProfile.ServicesOffered}
                 onChange={handleChangeTwo}
               />
-            {showbuttonsthree && <button className="buttonmainpage me-2">Save</button>}
-            {showbuttonsthree && <button className="buttonmainpage me-1">Cancel</button>}
+            {showbuttonsthree && <div className="d-flex moveR"><button className="buttonmodal me-1">save!!!</button><button className="buttonmodal me-1 ">Cancel</button></div>}
             </div>
           </div>
           <div className="ppAbout2">
@@ -327,7 +328,7 @@ export function PractitionerProfile() {
             </div>
           </div>
         </div>
-        <div className="ppAvailability col-sm">
+        <div className="ppAvailability allcolum">
           <div className="ppAvailability">
             <div className="ppAbox">
               <h4>Availability</h4>

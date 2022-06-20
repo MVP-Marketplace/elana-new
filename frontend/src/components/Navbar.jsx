@@ -20,6 +20,7 @@ export const Navbar = () => {
   return (
     <MDBNavbar expand="lg" className="d-flex navWrapper py-4 border-bottom">
       <MDBContainer fluid>
+
         <Link to="/">
           <MDBNavbarBrand>
             <img src={Logo} className="logo" alt="Elana Logo" />
@@ -104,6 +105,7 @@ export const Navbar = () => {
             </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>
+
       </MDBContainer>
     </MDBNavbar>
   );

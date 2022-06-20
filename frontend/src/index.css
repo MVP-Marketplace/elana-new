@@ -620,6 +620,10 @@ span {
   align-items: baseline;
 }
 
+@media only screen and (max-width: 579px){
+  .footer { margin-top: 2000px; }
+}
+
 
 /* //////////singup */
 .signupGradient {
@@ -832,7 +836,8 @@ CSS PractitionerProfilePage--------------------**********/
 .pp {
   margin: 0 auto;
   width: 1440px;
-  height: 1080px;
+  height: 100vh ;
+  margin-bottom: 300px;
 }
 .ppConainer {
   margin: 0 auto;
@@ -844,6 +849,21 @@ justify-content: space-around;
 position: absolute;
 top: 280px;
 }
+
+
+ .moveR{
+   margin-left: 210px;
+   margin-top: 10px;
+ }
+ .buttonmodal{
+   background-color: #7F6FEA;
+  border: 1px solid #7F6FEA;
+  border-radius: 3px;
+  height: 40px;
+  margin: auto;
+  width: 125px;
+  color: white;
+ }
 .whitespace {
   white-space: nowrap;
 }
@@ -874,7 +894,7 @@ line-height: 57px;
 }
 
 .ppAbout {
-  width: 544px;
+width: 544px;
 height: 756px;
 /* display: flex;
 flex-direction: column;
@@ -1050,6 +1070,7 @@ background-color: #EAE8FB;
   flex-direction: row;
 }
 
+
 .ppMethodsbox {
   width:225px;
   height: 50px;
@@ -1194,11 +1215,74 @@ background-color: #EAE8FB;
 .boxmodal{
   border-radius: 25px;
 }
+::-webkit-input-placeholder {
+  margin: 50px;
+}
+@media only screen and (max-width: 679px){
+  .pp { width: 100%; height:100%;}
+}
+@media only screen and (max-width: 667px) {
+  .pp .ppConainer{
+     display: table-row;
+     vertical-align: top;
+     text-align:center;
+     padding: 20px;
+     padding-left: 100px;
+     padding-top: 20px;
+    }
+    .ppPerson{
+      margin-bottom: 25px;
+      width: 300px;
+    }
+
+ }
+ @media only screen and (max-width: 667px) {
+
+
+  .ppAbout{
+    width: 300px;
+  }
+  .ppAboutA{
+    width: 300px;
+  }
+  .ppAboutB{
+    width: 300px;
+  }
+  .ppAbout2{
+    width: 300px;
+  }
+  .ppInput{
+    width: 280px;
+  }
+ 
+  .ppAvailability{
+    margin-top: 580px;
+    width: 300px;
+  }
+  .ppCancellation{
+    width: 300px;
+  }
+  .ppPayment{
+    width: 300px;
+  }
+  .resmodal{
+    width: 300px;
+    
+  }
+  .iconmodal{
+    display: block;
+  }
+  .ppHeader{
+    margin-bottom: 1000px;
+  }
+ }
 /* .iconmodal{
   width: 40px;
   height: 31px;
 } */
 /* 
+
+
 CSS PractitionerProfilePage--------------------**********/
 input{
   resize: vertical;}
