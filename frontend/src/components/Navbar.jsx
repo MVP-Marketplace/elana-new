@@ -60,7 +60,7 @@ export const Navbar = () => {
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
-                <Link to="/" className="link">
+                <Link to="/choosingACategory" className="link">
                   <p>Browse</p>
                 </Link>
               </MDBNavbarLink>

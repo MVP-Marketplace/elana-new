@@ -23,8 +23,8 @@ function App() {
       <Router>
           <Navbar/>
           <Routes>
-            <Route path='/' element={<Homescreen/>}/>
-            <Route path='/homePage' element={<HomePage/>} />
+            <Route path='/homeScreen' element={<Homescreen/>}/>
+            <Route path='/' element={<HomePage/>} />
             <Route path='/aboutPage' element={<AboutPage/>}/>
             <Route path='/individualPage' element={<IndividualPage/>}/>
             <Route path='/practitionerPage' element={<PractitionerPage/>}/>
