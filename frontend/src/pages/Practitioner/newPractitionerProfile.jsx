@@ -46,11 +46,13 @@ export function NewPractitionerProfile() {
   return (
     <div className="pp ">
       <div className="">
-        <div
+      <MDBRow  className="d-flex align-items-start mt-4"
+          style={{ height: "100px" }}>
+        {/* <div
           className="d-flex align-items-start mb-3"
           style={{ height: "100px" }}
-        >
-          <MDBCol className="profile-photo-bg" size='4' sm='12'>
+        > */}
+          <MDBCol className="profile-photo-bg" md='3' sm="12">
             <div className="profile-photo-bg">
               <div className="ppImageBox">
                 <img
@@ -161,7 +163,7 @@ export function NewPractitionerProfile() {
                         <MDBModalBody>
                           <div>
                             <div className="d-flex justify-content-evenly m-1">
-                              <div className="col-sm ms-5">
+                              <div className="ms-5">
                                 <label className="labelsingup text-muted">
                                   Your Name
                                 </label>
@@ -175,7 +177,7 @@ export function NewPractitionerProfile() {
                                 />
                               </div>
 
-                              <div className="col-sm ms-5">
+                              <div className="ms-5">
                                 <label className="labelsingup text-muted">
                                   Your Practice’s Name
                                 </label>
@@ -190,7 +192,7 @@ export function NewPractitionerProfile() {
                               </div>
                             </div>
                             <div className="d-flex justify-content-evenly m-1">
-                              <div className="col-sm ms-5">
+                              <div className="ms-5">
                                 <label className="labelsingup text-muted">
                                   Your Specialty
                                 </label>
@@ -204,7 +206,7 @@ export function NewPractitionerProfile() {
                                 />
                               </div>
 
-                              <div className="col-sm ms-5">
+                              <div className="ms-5">
                                 <label className="labelsingup text-muted">
                                   Sub-Specialties
                                 </label>
@@ -219,7 +221,7 @@ export function NewPractitionerProfile() {
                               </div>
                             </div>
                             <div className="d-flex justify-content-evenly m-1">
-                              <div className="col-sm ms-5">
+                              <div className="ms-5">
                                 <label className="labelsingup text-muted">
                                   Years of Experience
                                 </label>
@@ -233,7 +235,7 @@ export function NewPractitionerProfile() {
                                 />
                               </div>
 
-                              <div className="col-sm ms-5">
+                              <div className="ms-5">
                                 <label className="labelsingup text-muted">
                                   Education
                                 </label>
@@ -294,10 +296,10 @@ export function NewPractitionerProfile() {
 
            
           </MDBCol>
-          <MDBCol className="" size='4' sm='12'>
+          <MDBCol className="" md='6' sm="12">
 
-          <div className="ppAbout allcolum">
-          <div className="ppAbout ">
+          <div className="mb-1">
+          <div className="ppAboutA ">
             <div className="ppAboutbox">
               <h4 className="">About Me</h4>
               <input
@@ -328,7 +330,7 @@ export function NewPractitionerProfile() {
               {showbuttonstwo && <div className="d-flex moveR"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
             </div>
           </div>
-          <div className="ppAboutB">
+          <div className="ppAboutA">
             <div className="ppAboutbox">
               <h4>Services Offered</h4>
               <input
@@ -343,16 +345,46 @@ export function NewPractitionerProfile() {
             {showbuttonsthree && <div className="d-flex moveR"><button className="buttonmodal me-1">save!!!</button><button className="buttonmodal me-1 ">Cancel</button></div>}
             </div>
           </div>
-          <div className="ppAbout2">
+          <div className="ppAboutA">
             <div className="ppAboutbox2">
               <h4>Certifications</h4>
-              <button className="ppCertificationButton">+</button>
+              <button className="ppPaymentButton">+</button>
             </div>
           </div>
         </div>
           </MDBCol>
-          <MDBCol className="" size='4' sm=''>One of three columns</MDBCol>
+          <MDBCol className="" md='3' sm='12'>
+          <div className="ppAvailability allcolum">
+          <div className="ppAvailability">
+            <div className="ppAbox">
+              <h4>Availability</h4>
+            </div>
+            <div className="ppApointmentCalender">
+              <div className="ppd">
+                <p className="ppText">Appointment booking calander</p>
+              </div>
+            </div>
+          </div>
+          <div className="ppCancellation">
+            <div className="ppCancelationbox2">
+              <h4>Cancelation Policy</h4>
+              <input
+                type="text"
+                placeholder="Body text goes here"
+                className="ppInput3"
+              />
+            </div>
+          </div>
+          <div className="ppPayment">
+            <div className="ppMethodsbox">
+              <h4>Payment Methods</h4>
+              <button className="ppPaymentButton">+</button>
+            </div>
+          </div>
         </div>
+          </MDBCol>
+        {/* </div> */}
+        </MDBRow>
       </div>
     </div>
   );
