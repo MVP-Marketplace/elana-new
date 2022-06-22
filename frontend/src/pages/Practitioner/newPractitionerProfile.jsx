@@ -26,7 +26,6 @@ import {
 export function NewPractitionerProfile() {
 
   return (
-    <div>
       <MDBContainer>
       <MDBRow>
         <MDBCol>
@@ -107,6 +106,5 @@ export function NewPractitionerProfile() {
         </MDBCol>
       </MDBRow>
     </MDBContainer>
-    </div>
   );
 }

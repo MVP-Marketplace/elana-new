@@ -587,25 +587,28 @@ span {
   height: 36px;
 }
 /* //////////////footer */
-.buttonfooter {
+/* .buttonfooter {
   background-color: #EAE8FB;
   border: 1px solid #EAE8FB;
   border-radius: 3px;
   height: 35px;
   margin: auto;
   width: auto;
-}
-
-.footer {
+} */
+.footer-ori{
   background-color: #7F6FEA;
-
+  width: 100%;
+  align-items: baseline;
+}
+.footer1 {
+ 
+  align-items: baseline;
 }
 
 .footerlinks {
   display: flex;
   font-size: 15px;
   white-space: nowrap;
-  padding-top: 30px;
 
 }
 
@@ -615,8 +618,8 @@ span {
 
 .footerlink {
   color: white;
-  margin-right: 20px;
-  margin-left: 50px;
+  margin-right: 15px;
+  align-items: baseline;
 
 }
 
@@ -626,9 +629,23 @@ span {
   align-items: baseline;
 }
 
-@media only screen and (max-width: 579px){
-  .footer { margin-top: 2000px; }
-}
+ @media (max-width: 579px){
+  .footer-res{
+    padding-left: 45px;
+  }
+  .icon{
+    padding-left: 45px;
+  }
+  .footerlinks{
+    display: grid;
+    padding-top: 25px;
+
+  }
+  .contact-res{
+    margin-left: 95px;
+  }
+} 
+
 
 
 /* //////////singup */
