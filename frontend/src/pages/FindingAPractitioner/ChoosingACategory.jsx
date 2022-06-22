@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBCol } from 'mdb-react-ui-kit';
+import { MDBCol, MDBRow } from 'mdb-react-ui-kit';
 import '../../index.css'
 import Categories from "../../img/Categories.png";
 import image1 from "../../img/image1.png";
@@ -28,8 +28,8 @@ export function ChoosingACategory() {
 
         <div className="purplecards d-flex align-items-center justify-content-center center-res mb-5">
             {/* fisrt card here */}
-            <div class="d-flex align-items-center justify-content-center row">
-                <MDBCol className="">
+            <MDBRow>
+                <MDBCol className="d-flex justify-content-center">
 
                     <div className="purpleboxes d-flex col-sm-12">
                         <img src={image1} alt="more"></img>
@@ -40,7 +40,7 @@ export function ChoosingACategory() {
                     </div>
 
                 </MDBCol>
-                <MDBCol>
+                <MDBCol className="d-flex justify-content-center">
                     <div className="purpleboxes d-flex col-sm-12">
                         <img src={Categories} alt="try"></img>
                         <div className="d-block information">
@@ -50,7 +50,7 @@ export function ChoosingACategory() {
                     </div>
 
                 </MDBCol>
-                <MDBCol>
+                <MDBCol className="d-flex justify-content-center">
                     <div className="purpleboxes d-flex col-sm-12">
                         <img src={image2} alt="imagetry"></img>
                         <div className="d-block information">
@@ -59,12 +59,12 @@ export function ChoosingACategory() {
                         </div>
                     </div>
                 </MDBCol>
-            </div>
+            </MDBRow>
 
             {/* /////////////////// */}
 
-            <div class="d-flex align-items-center justify-content-center row">
-                <MDBCol>
+            <MDBRow class="d-flex align-items-center justify-content-center row">
+                <MDBCol className="d-flex justify-content-center">
 
                 <div className="purpleboxes d-flex col-sm">
                         <img src={image3} alt=""></img>
@@ -75,7 +75,7 @@ export function ChoosingACategory() {
                     </div>
 
                 </MDBCol>
-                <MDBCol>
+                <MDBCol className="d-flex justify-content-center">
                     <div className="purpleboxes d-flex col-sm">
                         <img src={image4} alt=""></img>
                         <div className="d-block information">
@@ -85,7 +85,7 @@ export function ChoosingACategory() {
                     </div>
 
                 </MDBCol>
-                <MDBCol>
+                <MDBCol className="d-flex justify-content-center">
 
                     <div className="purpleboxes d-flex col-sm">
                         <img src={image5} alt=""></img>
@@ -95,12 +95,12 @@ export function ChoosingACategory() {
                         </div>
                     </div>
                 </MDBCol>
-            </div>
+            </MDBRow>
 
             {/* /////////////////// */}
 
-            <div class="d-flex align-items-center justify-content-center row">
-                <MDBCol>
+            <MDBRow class="d-flex align-items-center justify-content-center row">
+                <MDBCol className="d-flex justify-content-center">
 
                     <div className="purpleboxes d-flex col-sm">
                         <img src={image6} alt=""></img>
@@ -111,7 +111,7 @@ export function ChoosingACategory() {
                     </div>
 
                 </MDBCol>
-                <MDBCol>
+                <MDBCol className="d-flex justify-content-center">
                     <div className="purpleboxes d-flex col-sm">
                         <img src={image7} alt=""></img>
                         <div className="d-block information">
@@ -121,7 +121,7 @@ export function ChoosingACategory() {
                     </div>
 
                 </MDBCol>
-                <MDBCol>
+                <MDBCol className="d-flex justify-content-center">
 
                     <div className="purpleboxes d-flex col-sm">
                         <img src={image8} alt=""></img>
@@ -131,7 +131,7 @@ export function ChoosingACategory() {
                         </div>
                     </div>
                 </MDBCol>
-            </div>
+            </MDBRow>
 
         </div>
     </div>

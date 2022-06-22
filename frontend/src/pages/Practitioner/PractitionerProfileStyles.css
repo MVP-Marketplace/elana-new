@@ -97,15 +97,21 @@ margin-left: 45px;
   .availability{
     width: 300px;
     margin-right: 95px;
+    margin-left: 85px;
   }
   .policy{
     width: 300px;
+    margin-left:85px;
   }
   .certification{
     width: 300px;
+    margin-left: 85px;
   }
   .container-profile{
     flex-direction: column;
     align-items: center;
+  }
+  .second-secction-profile{
+    margin-right: 0px;
   }
 }
