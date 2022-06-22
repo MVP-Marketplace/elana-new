@@ -851,7 +851,15 @@ span{
   font-family: 'Karla', sans-serif;
   font-size: 15px;
 }
-
+@media(max-width: 568px){
+  .conta-responsive-browser{
+    margin-left: 45px;
+  }
+  .center-res{
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
 /* 

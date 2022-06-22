@@ -26,11 +26,14 @@ import {
 export function NewPractitionerProfile() {
 
   return (
-      <MDBContainer>
+      <MDBContainer className="container-profile">
       <MDBRow>
         <MDBCol>
-          <div className="fisrt-secction-profile">
-            <div className="photo-secction"></div>
+          <div className="fisrt-secction-profile ">
+            <div className="mt-2">
+            <div className="photo-secction mb-2"></div>
+            </div>
+            
 
             <div>
               <div className="name-profile ms-4">
@@ -60,7 +63,7 @@ export function NewPractitionerProfile() {
           </MDBCol>
 
 
-        <MDBCol order='' className="second-secction-profile">
+        <MDBCol order='' className="second-secction-profile ">
          <div className="bg-profile-input">
           <h4 className="m-3 pt-2">About me</h4>
           <input className="input-profile"></input>

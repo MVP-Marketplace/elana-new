@@ -27,8 +27,8 @@ export const Footer = () => {
 							<div className="footerlink contact-res"><Link to="/privacyPolicy" className="text-decoration-none text-white"><p>Privacy Policy</p></Link></div>
 						</div>
 
-						{/* <div className="footerlink"><Link to="/newPractitionerProfile" className="text-decoration-none text-white"><p>newprofile</p></Link></div>
-			<div className="footerlink"><Link to="/practitionerListing" className="text-decoration-none text-white"><p>listening</p></Link></div> */}
+						 <div className="footerlink"><Link to="/newPractitionerProfile" className="text-decoration-none text-white"><p>newprofile</p></Link></div>
+			{/* <div className="footerlink"><Link to="/practitionerListing" className="text-decoration-none text-white"><p>listening</p></Link></div>  */}
 					</MDBCol>
 
 					<MDBCol lg='3' md='3' sm='2' className=''>

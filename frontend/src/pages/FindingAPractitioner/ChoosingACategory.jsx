@@ -26,10 +26,10 @@ export function ChoosingACategory() {
         
 
 
-        <div className="purplecards d-flex align-items-center justify-content-center mb-5">
+        <div className="purplecards d-flex align-items-center justify-content-center center-res mb-5">
             {/* fisrt card here */}
             <div class="d-flex align-items-center justify-content-center row">
-                <MDBCol>
+                <MDBCol className="">
 
                     <div className="purpleboxes d-flex col-sm-12">
                         <img src={image1} alt="more"></img>

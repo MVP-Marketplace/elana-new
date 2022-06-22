@@ -3,7 +3,7 @@
     height: 630px;
     width: 250px;
     border-radius: 15px;
-    padding-top: 10px;
+    padding: 1px;
 }
 .photo-secction{
     width: 200px;
@@ -11,6 +11,9 @@
     border: solid 1px black;
     border-radius: 8px;
     margin: 25px auto;
+}
+.second-secction-profile{
+  margin-right: 85px;
 }
 .name-profile{
     display: flex;
@@ -41,7 +44,7 @@ margin-left: 45px;
     background-color: #EAE8FB;
     width: 270px;
     height: 282px;
-    margin-left: 95px;
+    /* margin-left: 95px; */
     border-radius: 15px;
 }
 .availability-box{
@@ -56,7 +59,7 @@ margin-left: 45px;
     background-color: #EAE8FB;
     width: 270px;
     height: 180px;
-    margin-left: 95px;
+    /* margin-left: 95px; */
     border-radius: 15px;
 }
 .input-policy{
@@ -67,7 +70,7 @@ margin-left: 45px;
 }
 .certification{
     background-color: #EAE8FB;
-    margin-left: 95px;
+    /* margin-left: 95px; */
     border-radius: 15px;
     width: 270px;
     height: 100px;
@@ -78,18 +81,18 @@ margin-left: 45px;
 @media screen and (max-width: 600px) {
   .fisrt-secction-profile {
     width: 300px;
-    margin-left: 95px;
+    /* margin-left: 95px; */
   }
   .bg-profile-input{
     width: 300px;
-    margin-left: 95px;
+    /* margin-left: 95px; */
   }
   .input-profile{
     width: 220px;
   }
   .bg-profile-input-certifications{
     width: 300px;
-    margin-left: 95px;
+    /* margin-left: 95px; */
   }
   .availability{
     width: 300px;
@@ -100,5 +103,9 @@ margin-left: 45px;
   }
   .certification{
     width: 300px;
+  }
+  .container-profile{
+    flex-direction: column;
+    align-items: center;
   }
 }
