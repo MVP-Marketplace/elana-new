@@ -40,7 +40,7 @@ function App() {
             <Route path='/practitionerEditProfile/:id' element={<PractitionerEditProfile/>}/>
             <Route path='/practitionerSignUp' element={<PractitionerSignUp/>}/>
           </Routes>
-      {/* <Footer/> */}
+      <Footer/>
       </Router>
     </>
   );

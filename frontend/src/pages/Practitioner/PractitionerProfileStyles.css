@@ -1,9 +1,104 @@
-.profile-photo-bg{
+.fisrt-secction-profile{
     background-color: #EAE8FB;
-    height: auto;
-    width: auto;
+    height: 630px;
+    width: 250px;
+    border-radius: 15px;
+    padding-top: 10px;
+}
+.photo-secction{
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    border-radius: 8px;
+    margin: 25px auto;
+}
+.name-profile{
+    display: flex;
+}
+.bg-profile-input{
+    width: 500px;
+    height: 160px;
+    background-color: #EAE8FB;
     border-radius: 15px;
 }
-/* .secondcolum{
-margin-left: 105px;
-} */
+.bg-profile-input-certifications{
+    width: 500px;
+    height: 120px;
+    background-color: #EAE8FB;
+    border-radius: 15px;
+}
+.input-profile{
+width: 400px;
+height: 80px;
+border-radius: 10px;
+margin-left: 45px;
+}
+.icon-plus{
+    display: flex;
+    justify-content: space-between;
+}
+.availability{
+    background-color: #EAE8FB;
+    width: 270px;
+    height: 282px;
+    margin-left: 95px;
+    border-radius: 15px;
+}
+.availability-box{
+    width: 210px;
+    height: 170px;
+    border: 1px solid black;
+    margin:auto;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+.policy{
+    background-color: #EAE8FB;
+    width: 270px;
+    height: 180px;
+    margin-left: 95px;
+    border-radius: 15px;
+}
+.input-policy{
+    width: 200px;
+    height: 60px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+.certification{
+    background-color: #EAE8FB;
+    margin-left: 95px;
+    border-radius: 15px;
+    width: 270px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+/* //////////////////////////// media queries */
+@media screen and (max-width: 600px) {
+  .fisrt-secction-profile {
+    width: 300px;
+    margin-left: 95px;
+  }
+  .bg-profile-input{
+    width: 300px;
+    margin-left: 95px;
+  }
+  .input-profile{
+    width: 220px;
+  }
+  .bg-profile-input-certifications{
+    width: 300px;
+    margin-left: 95px;
+  }
+  .availability{
+    width: 300px;
+    margin-right: 95px;
+  }
+  .policy{
+    width: 300px;
+  }
+  .certification{
+    width: 300px;
+  }
+}
