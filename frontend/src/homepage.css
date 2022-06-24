@@ -1,0 +1,314 @@
+/* Homepage CSS Styles */
+
+/* General Styling */
+
+/* Class Styling */
+
+/* Homepage Banners */
+
+.homepage-banner-1 {
+    background-color: #EAE8FB;
+
+}
+
+.homepage-banner-2 {
+    background-color: #FFFFFF;
+}
+@media(max-width: 768px){
+    .homepage-banner-2 {
+        background-color: #E3E2E8;
+    }
+}
+
+.homepage-banner-3 {
+    background-color: #EAE8FB
+}
+@media(max-width: 768px){
+    .homepage-banner-3 {
+        background-color: #FFFFFF
+    }
+}
+
+.homepage-banner-4 {
+    background-color: #FFFFFF
+}
+
+.homepage-banner-5 {
+    background-color:#E3E2E8;
+
+}
+.homepage-banner-6 {
+    background-color:#FFFFFF;
+
+}
+
+.homepage-banner-7 {
+    display: none;
+}
+@media(max-width: 768px){
+    .homepage-banner-7 {
+        display: block;
+        padding: 2.5rem;
+    }
+}
+
+/* Text Banners */
+
+.banner-1-h1 {
+    font-family: 'Abhaya Libre', serif; 
+    font-size: 58px;
+    color: #7F6FEA;
+}
+@media(max-width: 768px){
+    .banner-1-h1 {
+        font-family: 'Abhaya Libre', serif; 
+        font-size: 40px;
+        color: #7F6FEA;
+    }
+}
+
+.banner-1-h3 {
+    font-family: 'Abhaya Libre', serif; 
+    font-size: 24px;
+    color: #7F6FEA;
+}
+@media(max-width: 768px){
+    .banner-1-h3 {
+        font-family: 'Abhaya Libre', serif; 
+        font-size: 20px;
+        color: #7F6FEA;
+    }
+}
+
+.banner-2-h1 {
+    font-family: 'Abhaya Libre', serif; 
+    font-size: 40px
+}
+@media(max-width: 768px){
+    .banner-2-h1 {
+        font-family: 'Abhaya Libre', serif; 
+        font-size: 24px
+    }
+}
+
+
+/* Background Colors and Text Colors */
+
+.brand-purple {
+    color: #7F6FEA;
+}
+
+.border-purple {
+    border-color:#7F6FEA;
+}
+
+.brand-bg-purple {
+    background: #7F6FEA;
+}
+.brand-bg-purple-1 {
+    background: #7F6FEA;
+    width: 250px;
+}
+
+.brand-bg-purple-2 {
+    background: #BCB5E8;
+}
+
+/* Text Styling */
+
+.text-al {
+    font-family: 'Abhaya Libre', serif; 
+}
+
+.text-ka {
+    font-family: 'Karla', sans-serif;  
+}
+
+.text-position {
+    margin-left: auto;
+}
+@media (max-width: 768px) {
+    .text-position {
+        margin: auto;
+    }
+}
+
+.text-bold {
+    font-weight: bolder;
+}
+
+/* Font Size */
+.fs-58 {
+    font-size: 58px
+}
+.fs-40 {
+    font-size: 40px
+}
+
+.fs-32 {
+    font-size: 32px
+}
+
+.fs-24 {
+    font-size: 24px
+}
+
+.fs-16 {
+    font-size: 16px
+}
+
+/* Others */
+
+.w-35 {
+    width: 35%;
+}
+
+.text-position {
+    text-align: end;
+}
+@media(max-width:768px) {
+    .text-position {
+        text-align: center;
+    }
+}
+
+.div-position {
+    justify-content: end;
+}
+@media(max-width:768px) {
+    .div-position {
+        justify-content: center;
+    }
+}
+
+.new-button {
+    background-color: #7F6FEA;
+    padding: 10px 0px 10px 0px;
+    width: 25%
+}
+@media(max-width:768px) {
+    .new-button {
+        background-color: #7F6FEA;
+        padding: 10px 0px 10px 0px;
+        width: 50%
+    }
+}
+
+.button-6 {
+    background-color: #7F6FEA;
+    padding: 10px 15px 10px 15px;
+}
+
+.main-button {
+    background-color: #7F6FEA;
+    padding: 16px 120px 16px 120px;
+}
+.main-button:hover {
+    background-color: #0b5ed7;
+}
+@media(max-width:768px) {
+    .main-button{
+        display: none;
+    }
+}
+
+.homepage-cards {
+    background-color: #FFFFFF;
+}
+@media(max-width: 768px){
+    .homepage-cards {
+        background-color: #EAE8FB;
+        ;
+    }
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.img-fit {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.border-curve-6 {
+    border-radius: 6px;
+}
+.border-curve-7 {
+    border-radius: 7px;
+}
+
+.border-curve-10 {
+    border-radius: 10px;
+}
+
+.banner-2-circle-1 {
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .banner-2-circle-1 {
+        justify-content: flex-start;
+        margin-left: 10%;
+    }
+}
+
+.banner-2-circle-2 {
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .banner-2-circle-2 {
+        justify-content: flex-end;
+        margin-right: 10%;
+    }
+}
+
+.banner-2-circle-3 {
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .banner-2-circle-3 {
+        justify-content: flex-start;
+        margin-left: 10%;
+    }
+}
+
+.banner-2-circle-4 {
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .banner-2-circle-4 {
+        justify-content: flex-end;
+        margin-right: 10%;
+    }
+}
+
+.hidden {
+    display: block;
+}
+@media(max-width: 768px){
+    .hidden {
+        display: none;
+    }
+}
+
+.email-width {
+    width: 40%;
+}
+@media(max-width: 768px){
+    .email-width {
+        width: 90%;
+    }
+}
+
+.perfect-circle {
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+}
+
+.perfect-circle-2 {
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+}

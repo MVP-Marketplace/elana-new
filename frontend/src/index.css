@@ -168,18 +168,12 @@ height: 217px; */
 /* About Page CSS  ******************************************************/
 /* NavBar Page CSS  ******************************************************/
 
-.logo {
-  position: absolute;
-  left: 112px;
-  top: 35px;
-
-}
-
 .link {
   color: #7F6FEA;
   margin-left: 20px;
   margin-top: 15px;
   font-family: 'Karla', sans-serif;
+  text-decoration: none;
 
 }
 
@@ -193,6 +187,13 @@ height: 217px; */
   align-items: center;
   /* border-bottom:#7F6FEA 0.25px solid; */
 }
+
+/* .navWrapper{
+  
+  box-shadow: 0px 5px #EAE8FB ;
+  margin-bottom: 20px;
+  padding-top: 20px;
+} */
 
 
 /* NavBar Page CSS  ******************************************************/
@@ -215,6 +216,21 @@ span {
   content: "\2039";
 }
 
+/* .textresponsive {
+ font-size: clamp(1.3rem,  1.2vh + 1rem, 5.5rem);
+} */
+
+
+
+@media (max-width: 600px) {
+  .textresponsive {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2vw;
+  }
+}  
 .listingHeader {
 
   font-family: 'Abhaya Libre ExtraBold';
@@ -247,6 +263,9 @@ span {
   left: 212px;
   top: 246px;
 
+}
+@media(max-width: 579px){
+  .listingContainer { width: 90%; margin-top: 200px; margin-left: 0px; margin-right: 100px;}
 }
 
 .listingText1 {
@@ -433,8 +452,30 @@ span {
 /* /////navbar */
 .logo {
   width: auto;
-  margin-left: 50px;
+  margin-left: 112px;
 }
+.last-nav-item {
+  margin-right: 112px
+}
+@media(max-width:1100px) {
+  .logo {
+    width: auto;
+    margin-left: 20px;
+  }
+  .last-nav-item {
+    margin-right: 20px
+  }
+}
+@media(max-width:991px) {
+  .logo {
+    width: auto;
+    margin-left: 0px;
+  }
+  .last-nav-item {
+    margin-right: 0px
+  }
+}
+
 
 .link {
   color: #7F6FEA;
@@ -445,7 +486,7 @@ span {
 }
 
 .form {
-  margin-right: 50px;
+  margin-right: 112px;
 }
 
 /* /////PatienLandingPage */
@@ -453,10 +494,7 @@ span {
 .bgpurple {
   background-color: #EAE8FB;
   width: 100%;
-  height: 210px;
-  margin-top: 0px;
-
-
+  height: 220px;
 }
 
 .intro {
@@ -468,18 +506,48 @@ span {
 .title1 {
   font-family: 'Abhaya Libre', serif;
   color: black;
-  margin-right: 100px;
+  margin-left: 75px;
 }
-
+.title3{
+  font-family: 'Abhaya Libre', serif;
+  color: black;
+}
 .bggrey {
   background-color: #E3E2E8;
   width: 100%;
   height: 230px;
 }
+@media (max-width: 600px) {
+  .bggrey {
+    background-color: white;
+  }
+}  
 
 .list {
   font-family: 'Karla', sans-serif;
 }
+
+@media (max-width: 500px) {
+  .introtitle {
+    margin-bottom: 65px;
+  
+  }
+}  
+@media (max-width: 500px) {
+  .title1 {
+    font-size: 20px;
+    white-space: nowrap;
+    
+  }
+}  
+@media (max-width: 500px) {
+  .title2 {
+    font-size: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}  
 
 .buttonmainpage {
   background-color: #7F6FEA;
@@ -490,7 +558,28 @@ span {
   width: auto;
   color: white;
 }
+.buttonmainpageindividual {
+  background-color: #7F6FEA;
+  border: 1px solid #7F6FEA;
+  border-radius: 3px;
+  height: 35px;
+  margin: auto;
+  width: auto;
+  color: white;
+}
+@media (max-width: 500px) {
+  .buttonmainpageindividual {
+    margin-bottom: 5px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}  
 
+.inputindividual{
+  max-width: 250px;
+  height: 36px;
+}
 /* //////////////footer */
 .buttonfooter {
   background-color: #EAE8FB;
@@ -531,9 +620,24 @@ span {
   align-items: baseline;
 }
 
+@media only screen and (max-width: 579px){
+  .footer { margin-top: 2000px; }
+}
+
 
 /* //////////singup */
 .signupGradient {
+  /* width: 100%;
+  height: 100vh; */
+  background-image: linear-gradient(to left top, #2ACDFA, #E927D3, #7F6FEA);
+  /* position: relative;
+  padding: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.signupGradientbg2 {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(to left top, #2ACDFA, #E927D3, #7F6FEA);
@@ -541,32 +645,58 @@ span {
 
 }
 
+.mdb{
+  max-width: 200px;
+}
+
 .bgwhite {
   background-color: white;
-  max-width: 600px;
+  width: 670px;
   border-radius: 14px;
-  height: auto;
+  height: 700px;
+  /* position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; */
+}
+/* .logosingup{
+  width: 200px;
+  height: 55px;
+} */
+
+@media only screen and (max-width: 479px){
+  .bgwhite { width: 90%; height: 100%; }
+}
+.inputlogin{
+  width: 280px;
+  height: 40px;
+}
+
+.bgwhite2 {
+  background-color: white;
+  border-radius: 14px;
+   height: 400px; 
+  width: 700px;
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  height: 600px;
 
 }
-
-.bgwhite2 {
-  background-color: white;
-  border-radius: 14px;
-  height: auto;
-  width: 600px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
+@media only screen and (max-width: 479px){
+  .bgwhite2 { width: 90%; }
 }
+.Logores{
+  display: none;
+}
+@media only screen and (max-width: 479px){
+  .Logores { display: inline; }
+}
+
 
 .checkbox-round {
   width: 1.3em;
@@ -588,10 +718,22 @@ span {
 .titlesingup {
   font-family: 'Abhaya Libre', serif;
 }
+ @media (min-width: 1200px) {
+  .titlesingup {
+    font-size: 30px;
+  }
+} 
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .titlesingup {
+    font-size: 30px;
+  }
+} 
 
 .labelsingup {
   font-family: 'Karla', sans-serif;
-  font-size: 10px;
+  font-size: 15px;
+  max-width: 9000px;
 }
 
 /* .model{
@@ -607,11 +749,43 @@ span {
 }
 
 .inputdrop {
-  width: 490px;
-  margin-left: auto;
-  margin-right: 45px;
+  width: 540px;
+  margin-left: 65px;
+  margin-right: 85px;
   font-family: 'Karla', sans-serif;
 }
+
+
+@media (max-width: 600px) {
+  .inputdrop {
+    width: 230px;
+    margin-left: 37px;
+    margin-right: 85px;
+    font-family: 'Karla', sans-serif;
+  }
+} 
+
+
+span{
+  color:#7F6FEA
+}
+
+
+@media (max-width: 500px) {
+  .logosingup {
+    display: none;
+  }
+} 
+.responsivediv{
+  margin-left: 180px;
+}
+@media (max-width: 500px) {
+  .responsivediv {
+    margin-left: 0;
+  }
+} 
+
+
 
 /* /////Browser PractitionerCategories */
 
@@ -662,7 +836,8 @@ CSS PractitionerProfilePage--------------------**********/
 .pp {
   margin: 0 auto;
   width: 1440px;
-  height: 1080px;
+  height: 100vh ;
+  margin-bottom: 300px;
 }
 .ppConainer {
   margin: 0 auto;
@@ -675,6 +850,23 @@ position: absolute;
 top: 280px;
 }
 
+
+ .moveR{
+   margin-left: 210px;
+   margin-top: 10px;
+ }
+ .buttonmodal{
+   background-color: #7F6FEA;
+  border: 1px solid #7F6FEA;
+  border-radius: 3px;
+  height: 40px;
+  margin: auto;
+  width: 125px;
+  color: white;
+ }
+.whitespace {
+  white-space: nowrap;
+}
 .ppHeader {
 display: flex;
 justify-content: flex-start;
@@ -702,7 +894,7 @@ line-height: 57px;
 }
 
 .ppAbout {
-  width: 544px;
+width: 544px;
 height: 756px;
 /* display: flex;
 flex-direction: column;
@@ -878,6 +1070,7 @@ background-color: #EAE8FB;
   flex-direction: row;
 }
 
+
 .ppMethodsbox {
   width:225px;
   height: 50px;
@@ -1016,5 +1209,80 @@ background-color: #EAE8FB;
   margin: 80px auto;
 }
 
+.bgmodal{
+  background-color: #EAE8FB ;
+}
+.boxmodal{
+  border-radius: 25px;
+}
+::-webkit-input-placeholder {
+  margin: 50px;
+}
+@media only screen and (max-width: 679px){
+  .pp { width: 100%; height:100%;}
+}
+@media only screen and (max-width: 667px) {
+  .pp .ppConainer{
+     display: table-row;
+     vertical-align: top;
+     text-align:center;
+     padding: 20px;
+     padding-left: 100px;
+     padding-top: 20px;
+    }
+    .ppPerson{
+      margin-bottom: 25px;
+      width: 300px;
+    }
+
+ }
+ @media only screen and (max-width: 667px) {
+
+
+  .ppAbout{
+    width: 300px;
+  }
+  .ppAboutA{
+    width: 300px;
+  }
+  .ppAboutB{
+    width: 300px;
+  }
+  .ppAbout2{
+    width: 300px;
+  }
+  .ppInput{
+    width: 280px;
+  }
+ 
+  .ppAvailability{
+    margin-top: 580px;
+    width: 300px;
+  }
+  .ppCancellation{
+    width: 300px;
+  }
+  .ppPayment{
+    width: 300px;
+  }
+  .resmodal{
+    width: 300px;
+    
+  }
+  .iconmodal{
+    display: block;
+  }
+  .ppHeader{
+    margin-bottom: 1000px;
+  }
+ }
+/* .iconmodal{
+  width: 40px;
+  height: 31px;
+} */
 /* 
+
+
 CSS PractitionerProfilePage--------------------**********/
+input{
+  resize: vertical;}
