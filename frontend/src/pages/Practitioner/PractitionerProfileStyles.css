@@ -115,3 +115,21 @@ margin-left: 45px;
     margin-right: 0px;
   }
 }
+.checkbox-squer{
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 4px;
+  vertical-align: middle;
+  border: 2px solid #7F6FEA;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.checkbox-squer:checked {
+  background-color: #7F6FEA;
+}
+.bg-purple-modal{
+  background-color: #EAE8FB;
+}
