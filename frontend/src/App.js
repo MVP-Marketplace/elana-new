@@ -16,6 +16,7 @@ import {Terms} from './pages/Others/Terms'
 import {Navbar} from './components/Navbar';
 import {Footer} from './components/Footer';
 import { HomePage } from './pages/HomePage/HomePage';
+import { NewPractitionerProfile} from './pages/Practitioner/newPractitionerProfile';
 
 function App() {
   return (
@@ -23,8 +24,8 @@ function App() {
       <Router>
           <Navbar/>
           <Routes>
-            <Route path='/' element={<Homescreen/>}/>
-            <Route path='/homePage' element={<HomePage/>} />
+            <Route path='/homeScreen' element={<Homescreen/>}/>
+            <Route path='/' element={<HomePage/>} />
             <Route path='/aboutPage' element={<AboutPage/>}/>
             <Route path='/individualPage' element={<IndividualPage/>}/>
             <Route path='/practitionerPage' element={<PractitionerPage/>}/>
@@ -35,6 +36,7 @@ function App() {
             <Route path='/practitionerLogin' element={<PractitionerLogin/>}/>
             <Route path='/practitionerCreateProfile' element={<PractitionerCreateProfile/>}/>
             <Route path='/practitionerProfile' element={<PractitionerProfile/>}/>
+            <Route path='/newPractitionerProfile' element={<NewPractitionerProfile/>}/>
             <Route path='/practitionerEditProfile/:id' element={<PractitionerEditProfile/>}/>
             <Route path='/practitionerSignUp' element={<PractitionerSignUp/>}/>
           </Routes>

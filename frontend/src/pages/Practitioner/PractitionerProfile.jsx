@@ -17,16 +17,16 @@ import {
   MDBModalTitle,
   MDBModalBody,
   MDBModalFooter,
-  MDBInput, 
+  MDBInput,
   MDBContainer,
-   MDBRow, 
-   MDBCol
+  MDBRow,
+  MDBCol
 } from "mdb-react-ui-kit";
 
 export function PractitionerProfile() {
   const [basicModal, setBasicModal] = useState(false);
   const [basicModaltwo, setBasicModaltwo] = useState(false);
-  const [firstProfile, setFirstProfile] = useState({ firstName: "", PracticesName: "", YourSpecialty: "", SubSpecialties:"", YearsOfExperience: "", education: ""  });
+  const [firstProfile, setFirstProfile] = useState({ firstName: "", PracticesName: "", YourSpecialty: "", SubSpecialties: "", YearsOfExperience: "", education: "" });
   const [secondProfile, setSecondProfileProfile] = useState({ AboutMe: "", HowICanHelp: "", ServicesOffered: "" });
   const [showbuttons, setShowButtons] = useState(false);
   const [showbuttonstwo, setShowButtonsTwo] = useState(false);
@@ -37,13 +37,13 @@ export function PractitionerProfile() {
   const toggleShowtwo = () => setBasicModaltwo(!basicModaltwo);
 
   const handleChange = e => {
-		setFirstProfile({ ...firstProfile, [e.target.name]: e.target.value });
-		console.log(firstProfile);
-	};
+    setFirstProfile({ ...firstProfile, [e.target.name]: e.target.value });
+    console.log(firstProfile);
+  };
   const handleChangeTwo = e => {
-		setSecondProfileProfile({ ...secondProfile, [e.target.name]: e.target.value });
-		console.log(firstProfile);
-	};
+    setSecondProfileProfile({ ...secondProfile, [e.target.name]: e.target.value });
+    console.log(firstProfile);
+  };
 
   return (
     <div className="pp ">
@@ -154,111 +154,111 @@ export function PractitionerProfile() {
                       </MDBModalHeader>
                       <MDBModalBody>
                         <div>
-                        <div className="d-flex justify-content-evenly m-1">
-                          <div className="col-sm ms-5">
-                            <label className="labelsingup text-muted">
-                            Your Name
-                            </label>
-                            <MDBInput
-                              type="text"
-                              className="form-control mdb"
-                              id="form1"
-                              name="firstName"
-                              value={firstProfile.firstName}
-                              onChange={handleChange}
-                            />
-                          </div>
+                          <div className="d-flex justify-content-evenly m-1">
+                            <div className="col-sm ms-5">
+                              <label className="labelsingup text-muted">
+                                Your Name
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb"
+                                id="form1"
+                                name="firstName"
+                                value={firstProfile.firstName}
+                                onChange={handleChange}
+                              />
+                            </div>
 
-                          <div className="col-sm ms-5">
-                            <label className="labelsingup text-muted">
-                            Your Practice’s Name
-                            </label>
-                            <MDBInput
-                              type="text"
-                              className="form-control mdb"
-                              id="form1"
-                              name="PracticesName"
-                              value={firstProfile.PracticesName}
-                              onChange={handleChange}
-                            />
+                            <div className="col-sm ms-5">
+                              <label className="labelsingup text-muted">
+                                Your Practice’s Name
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb"
+                                id="form1"
+                                name="PracticesName"
+                                value={firstProfile.PracticesName}
+                                onChange={handleChange}
+                              />
+                            </div>
                           </div>
-                        </div>
-                        <div className="d-flex justify-content-evenly m-1">
-                          <div className="col-sm ms-5">
-                            <label className="labelsingup text-muted">
-                            Your Specialty
-                            </label>
-                            <MDBInput
-                              type="text"
-                              className="form-control mdb"
-                              id="form1"
-                              name="YourSpecialty"
-                              value={firstProfile.YourSpecialty}
-                              onChange={handleChange}
-                            />
-                          </div>
+                          <div className="d-flex justify-content-evenly m-1">
+                            <div className="col-sm ms-5">
+                              <label className="labelsingup text-muted">
+                                Your Specialty
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb"
+                                id="form1"
+                                name="YourSpecialty"
+                                value={firstProfile.YourSpecialty}
+                                onChange={handleChange}
+                              />
+                            </div>
 
-                          <div className="col-sm ms-5">
-                            <label className="labelsingup text-muted">
-                            Sub-Specialties
-                            </label>
-                            <MDBInput
-                              type="text"
-                              className="form-control mdb"
-                              id="form1"
-                              name="SubSpecialties"
-                              value={firstProfile.SubSpecialties}
-                              onChange={handleChange}
-                            />
+                            <div className="col-sm ms-5">
+                              <label className="labelsingup text-muted">
+                                Sub-Specialties
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb"
+                                id="form1"
+                                name="SubSpecialties"
+                                value={firstProfile.SubSpecialties}
+                                onChange={handleChange}
+                              />
+                            </div>
                           </div>
-                        </div>
-                        <div className="d-flex justify-content-evenly m-1">
-                          <div className="col-sm ms-5">
-                            <label className="labelsingup text-muted">
-                            Years of Experience
-                            </label>
-                            <MDBInput
-                              type="text"
-                              className="form-control mdb"
-                              id="form1"
-                              name="YearsOfExperience"
-                              value={firstProfile.YearsOfExperience}
-                              onChange={handleChange}
-                            />
-                          </div>
+                          <div className="d-flex justify-content-evenly m-1">
+                            <div className="col-sm ms-5">
+                              <label className="labelsingup text-muted">
+                                Years of Experience
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb"
+                                id="form1"
+                                name="YearsOfExperience"
+                                value={firstProfile.YearsOfExperience}
+                                onChange={handleChange}
+                              />
+                            </div>
 
-                          <div className="col-sm ms-5">
-                            <label className="labelsingup text-muted">
-                            Education
-                            </label>
-                            <MDBInput
-                              type="text"
-                              className="form-control mdb"
-                              id="form1"
-                              name="education"
-                              value={firstProfile.education}
-                              onChange={handleChange}
-                            />
+                            <div className="col-sm ms-5">
+                              <label className="labelsingup text-muted">
+                                Education
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb"
+                                id="form1"
+                                name="education"
+                                value={firstProfile.education}
+                                onChange={handleChange}
+                              />
+                            </div>
                           </div>
-                        </div>
-                        <p className="ms-5">Do you provide telehealth services?</p>
-                        <div className="d-flex ms-5">
-                          <div className="">
-                          <label>yes</label>
-                          <input type="checkbox" className="checkbox-round m-2"></input>
+                          <p className="ms-5">Do you provide telehealth services?</p>
+                          <div className="d-flex ms-5">
+                            <div className="">
+                              <label>yes</label>
+                              <input type="checkbox" className="checkbox-round m-2"></input>
+                            </div>
+                            <div>
+                              <label>no</label>
+                              <input type="checkbox" className="checkbox-round m-2"></input>
+                            </div>
                           </div>
-                          <div>
-                          <label>no</label>
-                          <input type="checkbox" className="checkbox-round m-2"></input>
-                          </div>
-                        </div>
                         </div>
                       </MDBModalBody>
 
-                      
-                        <MDBBtn className="buttonmainpage mb-3 me-5" onClick={toggleShowtwo}>
+
+                      <MDBBtn className="buttonmainpage mb-3 me-5" onClick={toggleShowtwo}>
                         Save
-                        </MDBBtn>
+                      </MDBBtn>
                     </MDBModalContent>
                   </MDBModalDialog>
                 </MDBModal>
@@ -279,7 +279,7 @@ export function PractitionerProfile() {
             <div className="ppAboutbox">
               <h4 className="">About Me</h4>
               <input
-               onClick={()=>setShowButtons(!showbuttons)}
+                onClick={() => setShowButtons(!showbuttons)}
                 type="text"
                 placeholder="Body text goes here"
                 className="ppInput"
@@ -287,15 +287,15 @@ export function PractitionerProfile() {
                 value={secondProfile.AboutMe}
                 onChange={handleChangeTwo}
               />
-            {showbuttons && <div className="d-flex moveR"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
-            
+              {showbuttons && <div className="d-flex moveR"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
+
             </div>
           </div>
           <div className="ppAboutA">
             <div className="ppAboutbox">
               <h4>How I can Help</h4>
               <input
-              onClick={()=>setShowButtonsTwo === (showbuttonstwo)? (!showbuttonstwo):(showbuttonstwo)}
+                onClick={() => setShowButtonsTwo === (showbuttonstwo) ? (!showbuttonstwo) : (showbuttonstwo)}
                 type="text"
                 placeholder="Body text goes here"
                 className="ppInput "
@@ -310,7 +310,7 @@ export function PractitionerProfile() {
             <div className="ppAboutbox">
               <h4>Services Offered</h4>
               <input
-              onClick={()=>setShowButtonsThree(!showbuttonsthree)}
+                onClick={() => setShowButtonsThree(!showbuttonsthree)}
                 type="text"
                 placeholder="Body text goes here"
                 className="ppInput"
@@ -318,13 +318,29 @@ export function PractitionerProfile() {
                 value={secondProfile.ServicesOffered}
                 onChange={handleChangeTwo}
               />
-            {showbuttonsthree && <div className="d-flex moveR"><button className="buttonmodal me-1">save!!!</button><button className="buttonmodal me-1 ">Cancel</button></div>}
+              {showbuttonsthree && <div className="d-flex moveR"><button className="buttonmodal me-1">save!!!</button><button className="buttonmodal me-1 ">Cancel</button></div>}
             </div>
           </div>
           <div className="ppAbout2">
             <div className="ppAboutbox2">
               <h4>Certifications</h4>
-              <button className="ppCertificationButton">+</button>
+              <MDBBtn className="ppCertificationButton" onClick={toggleShow}>+</MDBBtn>
+              <MDBModal show={basicModal} setShow={setBasicModal} tabIndex='-1'>
+                <MDBModalDialog>
+                  <MDBModalContent>
+                    <MDBModalHeader>
+                      <MDBModalTitle>Edit certification</MDBModalTitle>
+                      <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
+                    </MDBModalHeader>
+                    <MDBModalBody>
+                      hola
+                    </MDBModalBody>
+
+                    
+                      <MDBBtn>Save changes</MDBBtn>
+                  </MDBModalContent>
+                </MDBModalDialog>
+              </MDBModal>
             </div>
           </div>
         </div>
