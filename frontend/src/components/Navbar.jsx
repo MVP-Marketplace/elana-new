@@ -40,28 +40,28 @@ export const Navbar = () => {
             <MDBNavbarItem>
               <MDBNavbarLink>
                 <Link to="/IndividualPage" className="link">
-                  <p>Individuals</p>
+                  <p onClick={() => setShowNav(!showNav)}>Individuals</p>
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
                 <Link to="/PractitionerPage" className="link">
-                  <p>Practitioner</p>
+                  <p onClick={() => setShowNav(!showNav)}>Practitioner</p>
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
-                <Link to="/aboutPage" className="link">
-                  <p>About</p>
+                <Link to="/about" className="link">
+                  <p onClick={() => setShowNav(!showNav)}>About</p>
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
                 <Link to="/choosingACategory" className="link">
-                  <p>Browse</p>
+                  <p onClick={() => setShowNav(!showNav)}>Browse</p>
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
@@ -72,8 +72,9 @@ export const Navbar = () => {
                   href="https://www.elana.health/blog"
                   target="_blank"
                   rel="noreferrer"
+                  
                 >
-                  <p>Blog</p>
+                  <p onClick={() => setShowNav(!showNav)}>Blog</p>
                 </a>
               </MDBNavbarLink>
             </MDBNavbarItem>
@@ -85,21 +86,21 @@ export const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <p>What is pelvic health?</p>
+                  <p onClick={() => setShowNav(!showNav)}>What is pelvic health?</p>
                 </a>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
                 <Link to="/practitionerSignUp" className="link">
-                  <p>Join</p>
+                  <p onClick={() => setShowNav(!showNav)}>Join</p>
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem className="last-nav-item">
               <MDBNavbarLink>
                 <Link to="/practitionerLogin" className="link">
-                  <p>Login</p>
+                  <p onClick={() => setShowNav(!showNav)}>Login</p>
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>

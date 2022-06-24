@@ -11,7 +11,7 @@ export function Homescreen() {
             <ul>
                 <li><Link to='/choosingACategory'>BrowsePelvicHealth</Link></li>
                 <li><Link to='/practitionerListing'>PractitionerListing</Link></li>
-                <li><Link to='/aboutPage'>AboutPage</Link></li>
+                <li><Link to='/about'>About</Link></li>
                 <li><Link to='/homePage'>HomePage</Link></li>
                 <li><Link to='/individualPage'>IndividualPage</Link></li>
                 <li><Link to='/practitionerPage'>PractitionerPage</Link></li>
@@ -19,9 +19,7 @@ export function Homescreen() {
                 <li><Link to='/privacyPolicy'>PrivacyPolicy</Link></li>
                 <li><Link to='/practitionerSignUp'>PractitionerSignUp</Link></li>
                 <li><Link to='/practitionerLogin'>PractitionerLogin</Link></li>
-                <li><Link to='/practitionerCreateProfile'>PractitionerCreateProfile</Link></li>
-                <li><Link to='/practitionerProfile'>PractitionerProfile</Link></li>
-                <li><Link to='/practitionerEditProfile'>PractitionerEditProfile</Link></li>
+                <li><Link to='/newPractitionerProfile'>New Practitioner Profile</Link></li>
             </ul>
         </div>
     )

@@ -312,3 +312,10 @@
     height: 150px;
     border-radius:50%;
 }
+
+.blue-hover {
+    background-color: #7F6FEA;
+}
+.blue-hover:hover {
+    background-color: #0D6EFD;
+}

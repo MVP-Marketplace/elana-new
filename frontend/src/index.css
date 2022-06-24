@@ -490,6 +490,10 @@ span {
   font-family: 'Karla', sans-serif;
 
 }
+.link-individual {
+  color: #7F6FEA;
+  font-family: 'Karla', sans-serif;
+}
 
 .form {
   margin-right: 112px;
@@ -512,7 +516,6 @@ span {
 .title1 {
   font-family: 'Abhaya Libre', serif;
   color: black;
-  margin-left: 75px;
 }
 .title3{
   font-family: 'Abhaya Libre', serif;
@@ -567,20 +570,27 @@ span {
 .buttonmainpageindividual {
   background-color: #7F6FEA;
   border: 1px solid #7F6FEA;
-  border-radius: 3px;
-  height: 35px;
-  margin: auto;
-  width: auto;
+  border-radius: 9px;
+  padding:12px;
   color: white;
+  justify-content: center;
+}
+.center-div-button {
+   display: block;
 }
 @media (max-width: 500px) {
-  .buttonmainpageindividual {
-    margin-bottom: 5px;
-    display: grid;
+  .center-div-button {
+    display: flex;
     justify-content: center;
-    align-items: center;
   }
 }  
+
+.blue-hover {
+  background-color: #7F6FEA;
+}
+.blue-hover:hover {
+  background-color: #0D6EFD;
+}
 
 .inputindividual{
   max-width: 250px;
@@ -1318,3 +1328,55 @@ background-color: #EAE8FB;
 CSS PractitionerProfilePage--------------------**********/
 input{
   resize: vertical;}
+
+/* Font Size */
+.fs-58 {
+  font-size: 58px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+/* Text Styling */
+
+.text-al {
+  font-family: 'Abhaya Libre', serif; 
+}
+
+.text-ka {
+  font-family: 'Karla', sans-serif;  
+}
+
+@media(max-width:800px){
+  ul {
+    text-align: center;
+  }
+  li {
+    display: grid
+  }
+}
+
+.center-text-responsive {
+  text-align: left;
+}
+@media(max-width:800px){
+  .center-text-responsive {
+    text-align: center;
+  }
+}
