@@ -20,6 +20,7 @@ export function Homescreen() {
                 <li><Link to='/practitionerSignUp'>PractitionerSignUp</Link></li>
                 <li><Link to='/practitionerLogin'>PractitionerLogin</Link></li>
                 <li><Link to='/newPractitionerProfile'>New Practitioner Profile</Link></li>
+                <li><Link to='/newPractitionerListing'>New Practitioner Listing</Link></li>
             </ul>
         </div>
     )

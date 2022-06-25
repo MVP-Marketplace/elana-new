@@ -34,10 +34,10 @@ export const Footer = () => {
 					<MDBCol lg='3' md='3' sm='2' className=''>
 						<div className="">
 							<div className="mb-1 icon d-flex">
-								<div className="me-3"><i className="fab fa-facebook-square"></i></div>
-								<div className="me-3"><i className="fab fa-linkedin"></i></div>
-								<div className="me-3"><i className="fab fa-pinterest"></i></div>
-								<div className="me-3"><i className="fab fa-instagram"></i></div>
+								<div className="me-3"><a href="https://www.facebook.com/helloelana/"><i className="fab fa-facebook-square"/></a></div>
+								<div className="me-3"><i className="fab fa-linkedin"/></div>
+								<div className="me-3"><i className="fab fa-pinterest"/></div>
+								<div className="me-3"><i className="fab fa-instagram"/></div>
 							</div>
 						</div>
 					</MDBCol>

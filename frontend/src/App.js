@@ -14,6 +14,7 @@ import {Footer} from './components/Footer';
 import { HomePage } from './pages/HomePage/HomePage';
 import { About } from './pages/HomePage/About';
 import { NewPractitionerProfile} from './pages/Practitioner/newPractitionerProfile';
+import { PractitionerListingNew } from './pages/FindingAPractitioner/PractitionerListingNew';
 
 function App() {
   return (
@@ -26,13 +27,14 @@ function App() {
             <Route path='/about' element={<About/>}/>
             <Route path='/individualPage' element={<IndividualPage/>}/>
             <Route path='/practitionerPage' element={<PractitionerPage/>}/>
-            <Route path='/privacyPolicy' element={<PrivacyPolicy/>}/>
             <Route path='/terms' element={<Terms/>}/>
+            <Route path='/privacyPolicy' element={<PrivacyPolicy/>}/>
             <Route path='/choosingACategory' element={<ChoosingACategory/>}/>
             <Route path='/practitionerListing' element={<PractitionerListing/>}/>
+            <Route path='/practitionerSignUp' element={<PractitionerSignUp/>}/>
             <Route path='/practitionerLogin' element={<PractitionerLogin/>}/>
             <Route path='/newPractitionerProfile' element={<NewPractitionerProfile/>}/>
-            <Route path='/practitionerSignUp' element={<PractitionerSignUp/>}/>
+            <Route path='/newPractitionerListing' element={<PractitionerListingNew/>}/>
           </Routes>
       <Footer/>
       </Router>
