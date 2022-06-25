@@ -3,6 +3,9 @@ import Spinner from "../../components/spinner";
 import { useSelector } from "react-redux";
 import "./PractitionerProfileStyles.css";
 import { Container, Image, Card } from "react-bootstrap";
+// import {logout, reset} from "../../features/auth/authSlice"
+// import {useNavigate} from "react-router-dom";
+// import {useDispatch} from "react-redux"
 import pen from "../../img/Edit.png";
 import camera from "../../img/camera.png";
 import trash from "../../img/trash.png";
@@ -43,8 +46,28 @@ export function NewPractitionerProfile() {
     console.log(firstProfile);
   };
 
+//   const navigate = useNavigate()
+//   const dispatch = useDispatch()
+ 
+//   const {user} = useSelector((state)=> state.auth)
+
+
+
+
+
+//   const onLogout = () => {
+//     dispatch(logout())
+//     dispatch(reset())
+//     navigate('/')
+// }
+
   return (
+    <div>
+    {/* {" "}
+    <h1 className="ppHeader">Hello, {user && `Dr. ${user.firstName} ${user.lastName}`}</h1>
+    <button className="ppButton" onClick={onLogout}>Log Out</button> */}
     <MDBContainer className="container-profile">
+ 
       <MDBRow>
         <MDBCol className="d-flex justify-content-center">
           <div className="fisrt-secction-profile ">
@@ -393,5 +416,6 @@ export function NewPractitionerProfile() {
         </MDBCol>
       </MDBRow>
     </MDBContainer>
+    </div>
   );
 }
