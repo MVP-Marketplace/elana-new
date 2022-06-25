@@ -16,9 +16,10 @@ a:hover {
 .listing-banner-1 {
     padding: 5%;
 }
+
 .listing-banner-2 {
-    padding-left: 5%; 
-    padding-right: 5%; 
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /* BACKGROUND COLORS AND TEXT COLORS */
@@ -28,12 +29,13 @@ a:hover {
 }
 
 .border-purple {
-    border-color:#7F6FEA;
+    border-color: #7F6FEA;
 }
 
 .brand-bg-purple {
     background: #7F6FEA;
 }
+
 .brand-bg-purple-1 {
     background: #7F6FEA;
     width: 250px;
@@ -43,14 +45,18 @@ a:hover {
     background: #BCB5E8;
 }
 
+.bg-purple-2 {
+    background: #BCB5E8;
+}
+
 /* TEXT STYLING */
 
 .text-al {
-    font-family: 'Abhaya Libre', serif; 
+    font-family: 'Abhaya Libre', serif;
 }
 
 .text-ka {
-    font-family: 'Karla', sans-serif;  
+    font-family: 'Karla', sans-serif;
 }
 
 /* TEXT SIZING */
@@ -62,7 +68,8 @@ a:hover {
 .fs-48-24 {
     font-size: 48px;
 }
-@media(max-width: 768px){
+
+@media(max-width: 768px) {
     .fs-48-24 {
         font-size: 24px;
     }
@@ -71,7 +78,8 @@ a:hover {
 .fs-16-12 {
     font-size: 16px;
 }
-@media(max-width: 768px){
+
+@media(max-width: 768px) {
     .fs-16-12 {
         font-size: 12px;
     }
@@ -96,8 +104,40 @@ a:hover {
 .text-center-mobile {
     text-align: left;
 }
+
 @media (max-width: 768px) {
     .text-center-mobile {
         text-align: center;
     }
+}
+
+/* CHECKBOX STYLING */
+
+.checkbox-squer {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 4px;
+    vertical-align: middle;
+    border: 2px solid #7F6FEA;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-squer:checked {
+    background-color: #7F6FEA;
+}
+
+.arrow-img {
+    width: 20px;
+    height: 20px;
+}
+
+/* LINKS */
+
+.link-categories {
+    text-decoration: none;
+    color: black;
 }

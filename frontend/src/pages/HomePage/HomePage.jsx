@@ -9,7 +9,7 @@ import {
   MDBRow,
   MDBCol,
 } from "mdb-react-ui-kit";
-import {Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import Group from "../../img/HomepageBanner5.png";
 import Photo from "../../img/elana-homepage-image.png";
 import "../../homepage.css";

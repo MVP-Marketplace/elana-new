@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import 'react-toastify/dist/ReactToastify.css'
 import {ChoosingACategory} from './pages/FindingAPractitioner/ChoosingACategory';
-import {PractitionerListing} from './pages/FindingAPractitioner/PractitionerListing';
 import {Homescreen} from './pages/HomePage/Homescreen';
 import {IndividualPage} from './pages/HomePage/IndividualPage';
 import {PractitionerPage } from './pages/HomePage/PractitionerPage';
@@ -14,7 +13,7 @@ import {Footer} from './components/Footer';
 import { HomePage } from './pages/HomePage/HomePage';
 import { About } from './pages/HomePage/About';
 import { NewPractitionerProfile} from './pages/Practitioner/newPractitionerProfile';
-import { PractitionerListingNew } from './pages/FindingAPractitioner/PractitionerListingNew';
+import { PractitionerListing } from './pages/FindingAPractitioner/PractitionerListing';
 
 function App() {
   return (
@@ -30,11 +29,10 @@ function App() {
             <Route path='/terms' element={<Terms/>}/>
             <Route path='/privacyPolicy' element={<PrivacyPolicy/>}/>
             <Route path='/choosingACategory' element={<ChoosingACategory/>}/>
-            <Route path='/practitionerListing' element={<PractitionerListing/>}/>
             <Route path='/practitionerSignUp' element={<PractitionerSignUp/>}/>
             <Route path='/practitionerLogin' element={<PractitionerLogin/>}/>
             <Route path='/newPractitionerProfile' element={<NewPractitionerProfile/>}/>
-            <Route path='/newPractitionerListing' element={<PractitionerListingNew/>}/>
+            <Route path='/practitionerListing/:id' element={<PractitionerListing/>}/>
           </Routes>
       <Footer/>
       </Router>
