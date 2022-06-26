@@ -3,9 +3,6 @@ import {
   MDBCard,
   MDBCardBody,
   MDBCardTitle,
-  MDBCardText,
-  MDBBtn,
-  MDBInputGroup,
   MDBRow,
   MDBCol,
 } from "mdb-react-ui-kit";
@@ -121,31 +118,31 @@ export const PractitionerPage = () => {
 
       {/* Practitioner Banner 3 */}
       <div className="practitioner-page-banner-3">
-        <div className="d-flex">
+        <div className="d-flex justify-center-responsive">
           <MDBRow>
             <MDBCol md="6">
               <div className="p-5">
                 <div className="d-flex justify-content-center p-2">
-                  <h1 className=" text-al fs-32">
+                  <h1 className="text-al fs-32 text-center">
                     Are you a practitioner passionate about
-                    <br />
+                    <br/>
                     women's pelvic health and wellness?
                   </h1>
                 </div>
                 <div className="d-flex justify-content-center">
-                  <h3 className=" text-al fs-32">
+                  <h3 className="text-al fs-32">
                     Joining Elana is simple and free.
                   </h3>
                 </div>
                 <div className="d-flex justify-content-center">
-                  <ul className="me-8">
-                    <li className="text-ka fs-20 p-2">
+                  <ul className="me-8 mx-auto">
+                    <li className="text-ka fs-20 p-2 text-start">
                       Fill out the online application
                     </li>
-                    <li className="text-ka fs-20 p-2">
+                    <li className="text-ka fs-20 p-2 text-start">
                       Provide us with your basic information
                     </li>
-                    <li className="text-ka fs-20 p-2">We will be in touch!</li>
+                    <li className="text-ka fs-20 p-2 text-start">We will be in touch!</li>
                   </ul>
                 </div>
                 <div className="d-flex justify-content-center">

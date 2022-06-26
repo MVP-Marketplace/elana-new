@@ -1,0 +1,120 @@
+
+/* Banners */
+
+.about-banner-1 {
+    background-color: #FFFFFF
+}
+.about-banner-2 {
+    background-color: #EAE8FB;
+}
+.about-banner-3 {
+    background-color: #FFFFFF;
+    margin: 60px 50px 75px 50px;
+}
+
+/* Text Styling */
+
+.text-al {
+    font-family: 'Abhaya Libre', serif; 
+}
+
+.text-ka {
+    font-family: 'Karla', sans-serif;  
+}
+
+.fs-58 {
+    font-size: 58px;
+}
+.fs-48 {
+    font-size: 48px;
+}
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-48-32 {
+    font-size: 48px
+}
+@media(max-width: 762px){
+    .fs-48-32 {
+        font-size: 32px
+    }
+}
+
+.fs-40-24 {
+    font-size: 32px
+}
+@media(max-width: 762px){
+    .fs-40-24 {
+        font-size: 28px
+    }
+}
+
+.fs-32-28 {
+    font-size: 32px
+}
+@media(max-width: 762px){
+    .fs-32-28 {
+        font-size: 28px
+    }
+}
+
+.fs-24-20 {
+    font-size: 24px
+}
+@media(max-width: 762px){
+    .fs-24-20 {
+        font-size: 20px
+    }
+}
+
+.fs-bold-1 {
+    font-weight: bold;
+}
+.fs-light-1 {
+    font-weight: lighter;
+}
+
+/* Background Colors and Text Colors */
+
+.brand-purple {
+    color: #7F6FEA;
+}
+
+.border-purple {
+    border-color:#7F6FEA;
+}
+
+.brand-bg-purple {
+    background: #7F6FEA;
+}
+.brand-bg-purple-1 {
+    background: #7F6FEA;
+    width: 250px;
+}
+
+.brand-bg-purple-2 {
+    background: #BCB5E8;
+}
+
+/* Borders */
+
+.curve-18 {
+    border-radius: 18px;
+}

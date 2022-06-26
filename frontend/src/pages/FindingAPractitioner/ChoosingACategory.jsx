@@ -1,5 +1,6 @@
 import React from "react";
-import { MDBCol } from 'mdb-react-ui-kit';
+import { Link } from "react-router-dom";
+import { MDBCol, MDBRow } from 'mdb-react-ui-kit';
 import '../../index.css'
 import Categories from "../../img/Categories.png";
 import image1 from "../../img/image1.png";
@@ -26,11 +27,12 @@ export function ChoosingACategory() {
         
 
 
-        <div className="purplecards d-flex align-items-center justify-content-center mb-5">
+        <div className="purplecards d-flex align-items-center justify-content-center center-res mb-5">
             {/* fisrt card here */}
-            <div class="d-flex align-items-center justify-content-center row">
-                <MDBCol>
+            <MDBRow>
+                <MDBCol className="d-flex justify-content-center">
 
+                <Link className="link-categories" to='/practitionerListing/0'>
                     <div className="purpleboxes d-flex col-sm-12">
                         <img src={image1} alt="more"></img>
                         <div className="d-block information">
@@ -38,9 +40,11 @@ export function ChoosingACategory() {
                             <p className="paragraphbox">Accidental leakage of <br /> bodily fluids and waste</p>
                         </div>
                     </div>
+                </Link>
 
                 </MDBCol>
-                <MDBCol>
+                <MDBCol className="d-flex justify-content-center">
+                <Link className="link-categories" to='/practitionerListing/1'>
                     <div className="purpleboxes d-flex col-sm-12">
                         <img src={Categories} alt="try"></img>
                         <div className="d-block information">
@@ -48,9 +52,11 @@ export function ChoosingACategory() {
                             <p className="paragraphbox">Pain or pressure in the <br />lower abdomen area and bladder</p>
                         </div>
                     </div>
+                </Link>
 
                 </MDBCol>
-                <MDBCol>
+                <MDBCol className="d-flex justify-content-center">
+                <Link className="link-categories" to='/practitionerListing/2'>
                     <div className="purpleboxes d-flex col-sm-12">
                         <img src={image2} alt="imagetry"></img>
                         <div className="d-block information">
@@ -58,14 +64,15 @@ export function ChoosingACategory() {
                             <p className="paragraphbox">Straining pain during <br /> bowel movements </p>
                         </div>
                     </div>
+                </Link>
                 </MDBCol>
-            </div>
+            </MDBRow>
 
             {/* /////////////////// */}
 
-            <div class="d-flex align-items-center justify-content-center row">
-                <MDBCol>
-
+            <MDBRow class="d-flex align-items-center justify-content-center row">
+                <MDBCol className="d-flex justify-content-center">
+                <Link className="link-categories" to='/practitionerListing/3'>
                 <div className="purpleboxes d-flex col-sm">
                         <img src={image3} alt=""></img>
                         <div className="d-block information">
@@ -73,9 +80,10 @@ export function ChoosingACategory() {
                             <p className="paragraphbox">Pain that occurs especially<br /> during menstrual periods</p>
                         </div>
                     </div>
-
+                </Link>
                 </MDBCol>
-                <MDBCol>
+                <MDBCol className="d-flex justify-content-center">
+                <Link className="link-categories" to='/practitionerListing/4'>
                     <div className="purpleboxes d-flex col-sm">
                         <img src={image4} alt=""></img>
                         <div className="d-block information">
@@ -83,10 +91,10 @@ export function ChoosingACategory() {
                             <p className="paragraphbox">Irregular or pause of <br />  menstrual cycles </p>
                         </div>
                     </div>
-
+                </Link>
                 </MDBCol>
-                <MDBCol>
-
+                <MDBCol className="d-flex justify-content-center">
+                <Link className="link-categories" to='/practitionerListing/5'>
                     <div className="purpleboxes d-flex col-sm">
                         <img src={image5} alt=""></img>
                         <div className="d-block information">
@@ -94,14 +102,15 @@ export function ChoosingACategory() {
                             <p className="paragraphbox">Recurrent genital pain that<br /> occurs just before, during, or after sex  </p>
                         </div>
                     </div>
+                    </Link>
                 </MDBCol>
-            </div>
+            </MDBRow>
 
             {/* /////////////////// */}
 
-            <div class="d-flex align-items-center justify-content-center row">
-                <MDBCol>
-
+            <MDBRow class="d-flex align-items-center justify-content-center row">
+                <MDBCol className="d-flex justify-content-center">
+                <Link className="link-categories" to='/practitionerListing/6'>
                     <div className="purpleboxes d-flex col-sm">
                         <img src={image6} alt=""></img>
                         <div className="d-block information">
@@ -109,9 +118,10 @@ export function ChoosingACategory() {
                             <p className="paragraphbox">Drooping of pelvic organs <br /> such as  the bladder, uterus, vagina, etc. </p>
                         </div>
                     </div>
-
+                    </Link>
                 </MDBCol>
-                <MDBCol>
+                <MDBCol className="d-flex justify-content-center">
+                <Link className="link-categories" to='/practitionerListing/7'>
                     <div className="purpleboxes d-flex col-sm">
                         <img src={image7} alt=""></img>
                         <div className="d-block information">
@@ -119,10 +129,10 @@ export function ChoosingACategory() {
                             <p className="paragraphbox">Recovery period after<br /> pregnancy/childbirth </p>
                         </div>
                     </div>
-
+                </Link>
                 </MDBCol>
-                <MDBCol>
-
+                <MDBCol className="d-flex justify-content-center">
+                <Link className="link-categories" to='/practitionerListing/8'>
                     <div className="purpleboxes d-flex col-sm">
                         <img src={image8} alt=""></img>
                         <div className="d-block information">
@@ -130,8 +140,9 @@ export function ChoosingACategory() {
                             <p className="paragraphbox">Methods to actively take <br /> care of your pelvic health </p>
                         </div>
                     </div>
+                </Link>
                 </MDBCol>
-            </div>
+            </MDBRow>
 
         </div>
     </div>

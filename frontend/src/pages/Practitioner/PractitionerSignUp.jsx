@@ -58,7 +58,7 @@ export function PractitionerSignUp() {
     }
 
     if (isSuccess || practitionerUser) {
-      navigate('/practitionerProfile');
+      navigate("/newPractitionerProfile");
     }
 
     dispatch(reset());
@@ -123,6 +123,7 @@ export function PractitionerSignUp() {
         <div className="d-flex justify-content-evenly m-1 row">
           <div className="col-sm ms-5">
             <label className="labelsingup text-muted">First Name</label>
+            
             <MDBInput
               type="text"
               className="form-control mdb"

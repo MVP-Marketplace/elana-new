@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-
+//API_URL needs to be whatver the server route is
 const API_URL = 'http://localhost:5000/api/practitionerUsers/'
 
 // Register user

@@ -9,7 +9,7 @@ import {
   MDBRow,
   MDBCol,
 } from "mdb-react-ui-kit";
-import {Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import Group from "../../img/HomepageBanner5.png";
 import Photo from "../../img/elana-homepage-image.png";
 import "../../homepage.css";
@@ -58,7 +58,7 @@ export const HomePage = () => {
         </h3>
         <div className="d-flex justify-content-center">
         <Link to='/IndividualPage'>
-          <button className="button-6 border-0 text-white border-curve-6 ">
+          <button className="button-6 border-0 text-white border-curve-6 blue-hover">
             LEARN MORE ABOUT INDIVIDUAL CARE
           </button>
           </Link>
@@ -365,7 +365,7 @@ export const HomePage = () => {
             placeholder="Enter your email"
             type="text"
           />
-          <MDBBtn className="brand-bg-purple p-2">Stay in the know</MDBBtn>
+          <button className="brand-bg-purple p-2 border-0 text-white rounded-end blue-hover">Stay in the know</button>
         </MDBInputGroup>
           </div>
         <h5 className="px-5 text-center text-ka fs-16 fw-lighter hidden">

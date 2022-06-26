@@ -1,3 +1,9 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
 /* About Page CSS  ********************************/
 
 .headerText {
@@ -484,6 +490,10 @@ span {
   font-family: 'Karla', sans-serif;
 
 }
+.link-individual {
+  color: #7F6FEA;
+  font-family: 'Karla', sans-serif;
+}
 
 .form {
   margin-right: 112px;
@@ -506,7 +516,6 @@ span {
 .title1 {
   font-family: 'Abhaya Libre', serif;
   color: black;
-  margin-left: 75px;
 }
 .title3{
   font-family: 'Abhaya Libre', serif;
@@ -561,45 +570,55 @@ span {
 .buttonmainpageindividual {
   background-color: #7F6FEA;
   border: 1px solid #7F6FEA;
-  border-radius: 3px;
-  height: 35px;
-  margin: auto;
-  width: auto;
+  border-radius: 9px;
+  padding:12px;
   color: white;
+  justify-content: center;
+}
+.center-div-button {
+   display: block;
 }
 @media (max-width: 500px) {
-  .buttonmainpageindividual {
-    margin-bottom: 5px;
-    display: grid;
+  .center-div-button {
+    display: flex;
     justify-content: center;
-    align-items: center;
   }
 }  
+
+.blue-hover {
+  background-color: #7F6FEA;
+}
+.blue-hover:hover {
+  background-color: #0D6EFD;
+}
 
 .inputindividual{
   max-width: 250px;
   height: 36px;
 }
 /* //////////////footer */
-.buttonfooter {
+/* .buttonfooter {
   background-color: #EAE8FB;
   border: 1px solid #EAE8FB;
   border-radius: 3px;
   height: 35px;
   margin: auto;
   width: auto;
-}
-
-.footer {
+} */
+.footer-ori{
   background-color: #7F6FEA;
-
+  width: 100%;
+  align-items: baseline;
+}
+.footer1 {
+ 
+  align-items: baseline;
 }
 
 .footerlinks {
   display: flex;
   font-size: 15px;
   white-space: nowrap;
-  padding-top: 30px;
 
 }
 
@@ -609,8 +628,8 @@ span {
 
 .footerlink {
   color: white;
-  margin-right: 20px;
-  margin-left: 50px;
+  margin-right: 15px;
+  align-items: baseline;
 
 }
 
@@ -620,9 +639,23 @@ span {
   align-items: baseline;
 }
 
-@media only screen and (max-width: 579px){
-  .footer { margin-top: 2000px; }
-}
+ @media (max-width: 579px){
+  .footer-res{
+    padding-left: 45px;
+  }
+  .icon{
+    padding-left: 45px;
+  }
+  .footerlinks{
+    display: grid;
+    padding-top: 25px;
+
+  }
+  .contact-res{
+    margin-left: 95px;
+  }
+} 
+
 
 
 /* //////////singup */
@@ -828,14 +861,22 @@ span{
   font-family: 'Karla', sans-serif;
   font-size: 15px;
 }
-
+@media(max-width: 568px){
+  .conta-responsive-browser{
+    margin-left: 45px;
+  }
+  .center-res{
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
 /* 
 CSS PractitionerProfilePage--------------------**********/
 .pp {
   margin: 0 auto;
-  width: 1440px;
+  width: 1440px; 
   height: 100vh ;
   margin-bottom: 300px;
 }
@@ -894,8 +935,8 @@ line-height: 57px;
 }
 
 .ppAbout {
-width: 544px;
-height: 756px;
+/* width: 544px;
+height: 756px; */
 /* display: flex;
 flex-direction: column;
 align-items: flex-start; */
@@ -1219,7 +1260,7 @@ background-color: #EAE8FB;
   margin: 50px;
 }
 @media only screen and (max-width: 679px){
-  .pp { width: 100%; height:100%;}
+  .ppConainer { width: 100%; }
 }
 @media only screen and (max-width: 667px) {
   .pp .ppConainer{
@@ -1253,6 +1294,7 @@ background-color: #EAE8FB;
   }
   .ppInput{
     width: 280px;
+    margin-left: 10px;
   }
  
   .ppAvailability{
@@ -1286,3 +1328,55 @@ background-color: #EAE8FB;
 CSS PractitionerProfilePage--------------------**********/
 input{
   resize: vertical;}
+
+/* Font Size */
+.fs-58 {
+  font-size: 58px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+/* Text Styling */
+
+.text-al {
+  font-family: 'Abhaya Libre', serif; 
+}
+
+.text-ka {
+  font-family: 'Karla', sans-serif;  
+}
+
+@media(max-width:800px){
+  ul {
+    text-align: center;
+  }
+  li {
+    display: grid
+  }
+}
+
+.center-text-responsive {
+  text-align: left;
+}
+@media(max-width:800px){
+  .center-text-responsive {
+    text-align: center;
+  }
+}
