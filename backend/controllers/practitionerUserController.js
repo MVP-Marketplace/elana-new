@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const asyncHandler = require('express-async-handler')
 const PractitionerUser = require('../models/practitionerUserModel')
+const { prependListener } = require('../models/practitionerUserModel')
 
 // Description: Register a practitioner user
 // Route:       POST /api/practitionerUsers
@@ -62,6 +63,9 @@ const registerPractitionerUser = asyncHandler(async (req,res) => {
             firstName: practitionerUser.firstName,
             lastName: practitionerUser.lastName,
             email: practitionerUser.email,
+            areaOfSpecialty: practitionerUser.areaOfSpecialty,
+            licensingCredentials: practitionerUser.licensingCredentials,
+            practiceName: practitionerUser.practiceName,
             token: generateToken(practitionerUser._id)
         })
     } else {
@@ -89,6 +93,9 @@ const loginPractitionerUser = asyncHandler(async (req,res) => {
             firstName: practitionerUser.firstName,
             lastName: practitionerUser.lastName,
             email: practitionerUser.email,
+            areaOfSpecialty: practitionerUser.areaOfSpecialty,
+            licensingCredentials: practitionerUser.licensingCredentials,
+            practiceName: practitionerUser.practiceName,
             token: generateToken(practitionerUser._id)
         })
     } else {

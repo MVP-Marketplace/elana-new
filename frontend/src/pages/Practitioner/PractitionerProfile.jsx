@@ -1,8 +1,11 @@
-import { Link, useState } from "react";
+import { Link, useState, useEffect } from "react";
 import Spinner from "../../components/spinner";
 import { useSelector } from "react-redux";
 import "./PractitionerProfileStyles.css";
 import { Container, Image, Card } from "react-bootstrap";
+import {logout, reset} from "../../features/auth/authSlice"
+import {useNavigate} from "react-router-dom";
+import {useDispatch} from "react-redux"
 import pen from "../../img/Edit.png";
 import camera from "../../img/camera.png";
 import trash from "../../img/trash.png";
@@ -45,11 +48,27 @@ export function PractitionerProfile() {
 		console.log(firstProfile);
 	};
 
+
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+ 
+  const {user} = useSelector((state)=> state.auth)
+
+
+
+
+
+  const onLogout = () => {
+    dispatch(logout())
+    dispatch(reset())
+    navigate('/')
+}
+
   return (
     <div className="pp ">
       {" "}
-      <h1 className="ppHeader">Hello, Jessica Smith</h1>
-      <button className="ppButton">Log Out</button>
+      <h1 className="ppHeader">Hello, {user && `Dr. ${user.firstName} ${user.lastName}`}</h1>
+      <button className="ppButton" onClick={onLogout}>Log Out</button>
       <div className="ppConainer ">
         <div className="ppPerson">
           <div className="ppImageBox">
@@ -127,7 +146,7 @@ export function PractitionerProfile() {
             <div className="d-flex ms-3 whitespace">
               <div className="name-responsive">
                 <p>
-                  <b>Dr. Jessica Smith</b>
+                  <b>Dr. {user && `${user.firstName} ${user.lastName}`}</b>
                 </p>
               </div>
               <div className="icon-responsive">
@@ -265,11 +284,11 @@ export function PractitionerProfile() {
               </div>
             </div>
             <div className="p-responsive">
-              <p className="ms-3">Practice Name</p>
-              <p className="ms-3">Specialty</p>
-              <p className="ms-3">Sub specialties</p>
-              <p className="ms-3">Years of Experience</p>
-              <p className="ms-3">Education</p>
+              <p className="ms-3">Practice Name: <strong>{user && user.practiceName}</strong></p>
+              <p className="ms-3">Specialty: <strong>{user && user.areaOfSpecialty}</strong></p>
+              <p className="ms-3">Sub specialties: <strong>{user && user.areaOfSpecialty}</strong></p>
+              <p className="ms-3">Years of Experience: </p>
+              <p className="ms-3">Education <strong></strong></p>
               <p className="ms-3">Telehealth Services:</p>
             </div>
           </div>

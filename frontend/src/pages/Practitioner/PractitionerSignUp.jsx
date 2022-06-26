@@ -58,7 +58,7 @@ export function PractitionerSignUp() {
     }
 
     if (isSuccess || practitionerUser) {
-      navigate("/practitionerCreateProfile");
+      navigate('/practitionerProfile');
     }
 
     dispatch(reset());
@@ -97,6 +97,8 @@ export function PractitionerSignUp() {
   }
 
   return (
+    <section className=''> 
+      <form onSubmit={onSubmit}>
     <div className="signupGradient d-flex">
       <div className="bgwhite p-2 row ">
         {/* /////// first part logo and icon*/}
@@ -242,7 +244,7 @@ export function PractitionerSignUp() {
             <span>Terms</span> and <span>Privacy Policy</span>
           </span>
         <div className="text-center">
-					<button onClick={function (){toggleShow() ; onSubmit()}} className="buttonmainpage ">CONTINUE</button>
+					<button onClick={function (){toggleShow()}} className="buttonmainpage" type='submit'>CONTINUE</button>
 
 					<MDBModal tabIndex='-1' show={centredModal} setShow={setCentredModal}>
 						<MDBModalDialog centered>
@@ -252,7 +254,7 @@ export function PractitionerSignUp() {
 									<h1>Woohoo</h1>
 									<p>Your registration is complete. Please, check your email for confirmation information.</p>
 									<p>Next, let’s set up your profile.</p>
-									<Link to="/PractitionerProfile"><button className="buttonmainpage">CREATE PROFILE</button></Link>
+						<Link to="/practitionerProfile">			<button className="buttonmainpage" type='submit'>CREATE PROFILE</button></Link>
 								</MDBModalBody>
 							</MDBModalContent>
 						</MDBModalDialog>
@@ -264,5 +266,8 @@ export function PractitionerSignUp() {
 
       </div>
     </div>
+    </form>
+    </section>
+
   );
 }
