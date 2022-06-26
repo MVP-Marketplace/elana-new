@@ -3,17 +3,16 @@
     height: 630px;
     width: 250px;
     border-radius: 15px;
-    padding: 1px;
 }
 .photo-secction{
     width: 200px;
     height: 200px;
     border: solid 1px black;
     border-radius: 8px;
-    margin: 25px auto;
+    margin: 25px;
 }
 .second-secction-profile{
-  margin-right: 85px;
+  /* margin-right: 85px; */
 }
 .name-profile{
     display: flex;
@@ -98,6 +97,7 @@ margin-left: 45px;
     width: 300px;
     margin-right: 95px;
     margin-left: 85px;
+    margin-top: 20px;
   }
   .policy{
     width: 300px;
@@ -132,4 +132,7 @@ margin-left: 45px;
 }
 .bg-purple-modal{
   background-color: #EAE8FB;
+}
+.plus-button:hover{
+  cursor: pointer;
 }

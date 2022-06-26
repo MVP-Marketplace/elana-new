@@ -67,12 +67,14 @@ export function NewPractitionerProfile() {
     <h1 className="ppHeader">Hello, {user && `Dr. ${user.firstName} ${user.lastName}`}</h1>
     <button className="ppButton" onClick={onLogout}>Log Out</button> */}
     <MDBContainer className="container-profile">
- 
+      <div className="container">
+    <h1 className="mb-5 ms-5 text-start">Hello Dr: Maria Juana</h1>
+    </div>
       <MDBRow>
-        <MDBCol className="d-flex justify-content-center">
+        <MDBCol className="mb-4 d-flex justify-content-center">
           <div className="fisrt-secction-profile ">
-            <div className="mt-2">
-              <div className="photo-secction mb-2">
+            <div className="">
+              <div className="photo-secction">
                 <img
                   alt=""
                   src={pen}
@@ -301,7 +303,7 @@ export function NewPractitionerProfile() {
         <MDBCol order='' className="second-secction-profile d-flex justify-content-center ">
           <div>
             <div className="bg-profile-input">
-              <h4 className="m-3 pt-2">About me</h4>
+              <h4 className="mx-3 mb-3 pt-2">About me</h4>
               <input className="input-profile" onClick={() => setShowButtons(!showbuttons)}></input>
               {showbuttons && <div className="d-flex moveR"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
             </div>
@@ -325,7 +327,7 @@ export function NewPractitionerProfile() {
             <div className="bg-profile-input-certifications">
               <div className="icon-plus">
                 <h4 className="m-3 pt-2">Certification</h4>
-                <span className="m-3 pt-2" onClick={toggleShowlast}>+</span>
+                <span className="m-3 pt-2 plus-button" onClick={toggleShowlast}>+</span>
                 <MDBModal show={basicModalLast} setShow={setBasicModalLast} tabIndex='-1'>
                   <MDBModalDialog className="boxmodal modal-lg">
                     <MDBModalContent className="bgmodal">
@@ -397,9 +399,9 @@ export function NewPractitionerProfile() {
 
 
         <MDBCol order='' className="d-flex justify-content-center">
-          <div>
-            <div className="availability">
-              <h4 className="m-3 pt-2">Availability</h4>
+          <div className="">
+            <div className="availability mb-4">
+              <h4 className="mx-3 mb-3 pt-2">Availability</h4>
               <div className="availability-box"></div>
             </div>
 
@@ -409,8 +411,8 @@ export function NewPractitionerProfile() {
             </div>
 
             <div className="certification mt-3">
-              <h4 className="m-3 pt-2">Certification</h4>
-              <span className="m-3 pt-2">+</span>
+              <h4 className="m-3 pt-2 whitespace">Payment Methods</h4>
+              <span className="m-3 pt-2 plus-button">+</span>
             </div>
           </div>
         </MDBCol>
