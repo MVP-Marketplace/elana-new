@@ -58,7 +58,7 @@ export function PractitionerSignUp() {
     }
 
     if (isSuccess || practitionerUser) {
-      navigate("/practitionerCreateProfile");
+      navigate("/newPractitionerProfile");
     }
 
     dispatch(reset());

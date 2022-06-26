@@ -13,9 +13,29 @@ import {
 import { Link } from "react-router-dom";
 import Logo from "../img/LogoName.png";
 import "../index.css";
+import {logout, reset} from "../features/auth/authSlice"
+import {useNavigate} from "react-router-dom";
+import {useDispatch} from "react-redux"
+import { useSelector } from "react-redux";
 
 export const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+ 
+  const {user} = useSelector((state)=> state.auth)
+
+
+
+
+
+  const onLogout = () => {
+    dispatch(logout())
+    dispatch(reset())
+    navigate('/')
+}
+
 
   return (
     <MDBNavbar expand="lg" className="d-flex navWrapper py-4 border-bottom">
@@ -100,7 +120,10 @@ export const Navbar = () => {
             <MDBNavbarItem className="last-nav-item">
               <MDBNavbarLink>
                 <Link to="/practitionerLogin" className="link">
-                  <p onClick={() => setShowNav(!showNav)}>Login</p>
+                {user ? <p onClick={() => {
+                    setShowNav(!showNav);
+                    onLogout()
+                  }}>Logout</p>: <p onClick={() => setShowNav(!showNav)}>Login</p>}
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-
-const API_URL = 'https://5000-paolacodes-elananew-9ui5q1jf1wv.ws-us47.gitpod.io/api/practitionerUsers/'
+//API_URL needs to be whatver the server route is
+const API_URL = 'http://localhost:5000/api/practitionerUsers/'
 
 // Register user
 const register = async (userData) => {

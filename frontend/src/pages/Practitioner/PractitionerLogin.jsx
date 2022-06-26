@@ -30,7 +30,7 @@ export function PractitionerLogin() {
         }
 
         if (isSuccess || practitionerUser) {
-            navigate('/practitionerProfile')
+            navigate('/newPractitionerProfile')
         }
 
         dispatch(reset())

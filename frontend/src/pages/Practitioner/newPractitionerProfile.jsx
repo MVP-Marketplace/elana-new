@@ -3,9 +3,9 @@ import Spinner from "../../components/spinner";
 import { useSelector } from "react-redux";
 import "./PractitionerProfileStyles.css";
 import { Container, Image, Card } from "react-bootstrap";
-// import {logout, reset} from "../../features/auth/authSlice"
-// import {useNavigate} from "react-router-dom";
-// import {useDispatch} from "react-redux"
+import {logout, reset} from "../../features/auth/authSlice"
+import {useNavigate} from "react-router-dom";
+import {useDispatch} from "react-redux"
 import pen from "../../img/Edit.png";
 import camera from "../../img/camera.png";
 import trash from "../../img/trash.png";
@@ -46,29 +46,26 @@ export function NewPractitionerProfile() {
     console.log(firstProfile);
   };
 
-//   const navigate = useNavigate()
-//   const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
  
-//   const {user} = useSelector((state)=> state.auth)
+  const {user} = useSelector((state)=> state.auth)
 
 
 
 
 
-//   const onLogout = () => {
-//     dispatch(logout())
-//     dispatch(reset())
-//     navigate('/')
-// }
+  const onLogout = () => {
+    dispatch(logout())
+    dispatch(reset())
+    navigate('/')
+}
 
   return (
     <div>
-    {/* {" "}
-    <h1 className="ppHeader">Hello, {user && `Dr. ${user.firstName} ${user.lastName}`}</h1>
-    <button className="ppButton" onClick={onLogout}>Log Out</button> */}
     <MDBContainer className="container-profile">
       <div className="container">
-    <h1 className="mb-5 ms-5 text-start">Hello Dr: Maria Juana</h1>
+    <h1 className="mb-5 ms-5 text-start">Hello, {user && `Dr. ${user.firstName} ${user.lastName}`}</h1>
     </div>
       <MDBRow>
         <MDBCol className="mb-4 d-flex justify-content-center">
