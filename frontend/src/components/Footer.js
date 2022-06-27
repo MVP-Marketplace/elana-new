@@ -11,7 +11,7 @@ import {
 export const Footer = () => {
 	return (
 		<MDBFooter className="footer-ori justify-content-between">
-			<MDBContainer className=''>
+			<MDBContainer className='m-0'>
 				<MDBRow className="footer1" >
 					<MDBCol lg='9' md='9' className='footerlinks'>
 						<div className="d-flex footer-res" sm=''>
