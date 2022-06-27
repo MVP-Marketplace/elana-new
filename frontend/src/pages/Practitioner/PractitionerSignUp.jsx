@@ -253,7 +253,7 @@ export function PractitionerSignUp() {
 									<h1>Woohoo</h1>
 									<p>Your registration is complete. Please, check your email for confirmation information.</p>
 									<p>Next, let’s set up your profile.</p>
-									<Link to="/PractitionerProfile"><button className="buttonmainpage">CREATE PROFILE</button></Link>
+									<Link to="/newPractitionerProfile"><button className="buttonmainpage">CREATE PROFILE</button></Link>
 								</MDBModalBody>
 							</MDBModalContent>
 						</MDBModalDialog>
