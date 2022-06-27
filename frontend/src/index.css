@@ -638,6 +638,9 @@ span {
   font-size: 35px;
   align-items: baseline;
 }
+.a-link-footer{
+  color: white;
+}
 
  @media (max-width: 579px){
   .footer-res{

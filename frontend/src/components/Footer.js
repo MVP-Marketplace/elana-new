@@ -11,7 +11,7 @@ import {
 export const Footer = () => {
 	return (
 		<MDBFooter className="footer-ori justify-content-between">
-			<MDBContainer className='m-0'>
+			<MDBContainer className='m-0 ms-5'>
 				<MDBRow className="footer1" >
 					<MDBCol lg='9' md='9' className='footerlinks'>
 						<div className="d-flex footer-res" sm=''>
@@ -34,10 +34,10 @@ export const Footer = () => {
 					<MDBCol lg='3' md='3' sm='2' className=''>
 						<div className="">
 							<div className="mb-1 icon d-flex">
-								<div className="me-3"><a href="https://www.facebook.com/helloelana/"><i className="fab fa-facebook-square"/></a></div>
-								<div className="me-3"><i className="fab fa-linkedin"/></div>
-								<div className="me-3"><i className="fab fa-pinterest"/></div>
-								<div className="me-3"><i className="fab fa-instagram"/></div>
+								<div className="me-3"><a className="a-link-footer" href="https://www.facebook.com/helloelana/"><i className="fab fa-facebook-square"/></a></div>
+								<div className="me-3"><a className="a-link-footer" href="https://www.linkedin.com/company/elanahealth/"><i className="fab fa-linkedin"/></a></div>
+								<div className="me-3"><a className="a-link-footer" href="https://www.pinterest.com/elanahealth/"><i className="fab fa-pinterest"/></a></div>
+								<div className="me-3"><a className="a-link-footer" href="https://www.instagram.com/elana.health/"><i className="fab fa-instagram"/></a></div>
 							</div>
 						</div>
 					</MDBCol>
