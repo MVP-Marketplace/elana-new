@@ -1,15 +1,13 @@
-import { Link, useState } from "react";
-import Spinner from "../../components/spinner";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import "./PractitionerProfileStyles.css";
-import { Container, Image, Card } from "react-bootstrap";
-import {logout, reset} from "../../features/auth/authSlice"
-import {useNavigate} from "react-router-dom";
-import {useDispatch} from "react-redux"
+// import {logout, reset} from "../../features/auth/authSlice"
+// import {useNavigate} from "react-router-dom";
+// import {useDispatch} from "react-redux"
 import pen from "../../img/Edit.png";
 import camera from "../../img/camera.png";
 import trash from "../../img/trash.png";
 import videocamera from "../../img/videocamera.png";
+import "./PractitionerProfileStyles.css";
 import "../../index.css";
 import {
   MDBBtn,
@@ -19,7 +17,6 @@ import {
   MDBModalHeader,
   MDBModalTitle,
   MDBModalBody,
-  MDBModalFooter,
   MDBInput,
   MDBContainer,
   MDBRow,
@@ -46,8 +43,8 @@ export function NewPractitionerProfile() {
     console.log(firstProfile);
   };
 
-  const navigate = useNavigate()
-  const dispatch = useDispatch()
+  // const navigate = useNavigate()
+  // const dispatch = useDispatch()
  
   const {user} = useSelector((state)=> state.auth)
 
@@ -55,11 +52,11 @@ export function NewPractitionerProfile() {
 
 
 
-  const onLogout = () => {
-    dispatch(logout())
-    dispatch(reset())
-    navigate('/')
-}
+//   const onLogout = () => {
+//     dispatch(logout())
+//     dispatch(reset())
+//     navigate('/')
+// }
 
   return (
     <div>
