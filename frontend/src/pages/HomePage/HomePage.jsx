@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect }from "react";
 import {
   MDBCard,
   MDBCardBody,
@@ -15,6 +15,26 @@ import Photo from "../../img/elana-homepage-image.png";
 import "../../homepage.css";
 
 export const HomePage = () => {
+
+  const getWindowDimensions = () => {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+  }
+
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+});
+
   return (
     <div>
       {/* Homepage Banner 1 - Main header with Picture */}
@@ -58,7 +78,7 @@ export const HomePage = () => {
         </h3>
         <div className="d-flex justify-content-center">
         <Link to='/IndividualPage'>
-          <button className="button-6 border-0 text-white border-curve-6 blue-hover">
+          <button className="button-6 border-0 text-white border-curve-6 blue-hover fs-12">
             LEARN MORE ABOUT INDIVIDUAL CARE
           </button>
           </Link>
@@ -67,7 +87,7 @@ export const HomePage = () => {
 
       {/* Homepage Banner 2 - Title with infocircles */}
       <div className="homepage-banner-2">
-        <h1 className="banner-2-h1 pt-5  text-center">
+        <h1 className="banner-2-h1 pt-5 px-1 text-center">
           Pelvic issues are way more common than you think
         </h1>
         <div className="py-5">
@@ -359,16 +379,16 @@ export const HomePage = () => {
           inbox.
         </h3>
             <div className="d-flex justify-content-center">
-        <MDBInputGroup className="email-width mb-3 p-4">
+        <MDBInputGroup className="email-width mt-3">
           <input
             className="text-ka form-control p-2"
             placeholder="Enter your email"
             type="text"
           />
-          <button className="brand-bg-purple p-2 border-0 text-white rounded-end blue-hover">Stay in the know</button>
+          {windowDimensions.width > 500 ? <button className="brand-bg-purple p-2 border-0 text-white rounded-end blue-hover">Stay in the know</button> : <button className="brand-bg-purple p-2 border-0 text-white rounded-end blue-hover px-4">Join</button>}
         </MDBInputGroup>
           </div>
-        <h5 className="px-5 text-center text-ka fs-16 fw-lighter hidden">
+        <h5 className="px-5 text-center text-ka fs-16 fw-lighter hidden mt-5">
           Disclaimer: The information provided through Elana Health website and
           services is not intended
           <br />
