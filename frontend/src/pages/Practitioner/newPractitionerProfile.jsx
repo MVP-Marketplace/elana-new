@@ -3,7 +3,6 @@ import Spinner from "../../components/spinner";
 import { useSelector } from "react-redux";
 import "./PractitionerProfileStyles.css";
 import { Container, Image, Card } from "react-bootstrap";
-import {logout, reset} from "../../features/auth/authSlice"
 import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux"
 import pen from "../../img/Edit.png";
@@ -46,8 +45,7 @@ export function NewPractitionerProfile() {
     console.log(firstProfile);
   };
 
-  const navigate = useNavigate()
-  const dispatch = useDispatch()
+
  
   const {user} = useSelector((state)=> state.auth)
 
@@ -55,11 +53,7 @@ export function NewPractitionerProfile() {
 
 
 
-  const onLogout = () => {
-    dispatch(logout())
-    dispatch(reset())
-    navigate('/')
-}
+
 
   return (
     <div>
@@ -145,7 +139,7 @@ export function NewPractitionerProfile() {
 
             <div>
               <div className="name-profile ms-4">
-                <h6>Dr. Jessica Smith</h6>
+                <h6>Practice Name: <bold>{user && user.practiceName}</bold></h6>
                 <img
                   alt=""
                   src={pen}

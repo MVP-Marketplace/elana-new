@@ -10,39 +10,36 @@ import {
 
 export const Footer = () => {
 	return (
-		<MDBFooter className="footer-ori justify-content-between">
-			<MDBContainer className=''>
-				<MDBRow className="footer1" >
-					<MDBCol lg='9' md='9' className='footerlinks'>
-						<div className="d-flex footer-res" sm=''>
-							<div className="footerlink"><p>Home</p></div>
-							<div className="footerlink contact-res"><p>Contact us</p></div>
+		<MDBFooter className="footer-ori p-3">
+			{/* <MDBContainer className='m-0 '> */}
+				<MDBRow className="d-flex justify-content-between px-5" >
+					<MDBCol lg='9' md='9' className='footerlinks '>
+						<div className="d-flex footer-res media-left" sm=''>
+							<div className="footerlink "><Link to="/" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Home</p></Link></div>
+							<div className="footerlink media-right"><Link to="/" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Contact us</p></Link></div>
 						</div>
-						<div className="d-flex footer-res" sm=''>
-							<div className="footerlink"><p>Login</p></div>
-							<div className="footerlink contact-res"><p>About</p></div>
+						<div className="d-flex footer-res media-left" sm=''>
+							<div className="footerlink "><Link to="/practitionerLogin" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Login</p></Link></div>
+							<div className="footerlink media-right"><Link to="/about" className="text-decoration-none text-white m-0 p-0"><p className="m-0">About</p></Link></div>
 						</div>
-						<div className="d-flex footer-res" sm=''>
-							<div className="footerlink"><Link to="/terms" className="text-decoration-none text-white"><p>Terms</p></Link></div>
-							<div className="footerlink contact-res"><Link to="/privacyPolicy" className="text-decoration-none text-white"><p>Privacy Policy</p></Link></div>
+						<div className="d-flex footer-res media-left" sm=''>
+							<div className="footerlink"><Link to="/terms" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Terms</p></Link></div>
+							<div className="footerlink media-right"><Link to="/privacyPolicy" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Privacy Policy</p></Link></div>
 						</div>
 
-						 <div className="footerlink"><Link to="/newPractitionerProfile" className="text-decoration-none text-white"><p>newprofile</p></Link></div>
-			{/* <div className="footerlink"><Link to="/practitionerListing" className="text-decoration-none text-white"><p>listening</p></Link></div>  */}
+			
 					</MDBCol>
 
-					<MDBCol lg='3' md='3' sm='2' className=''>
-						<div className="">
-							<div className="mb-1 icon d-flex">
-								<div className="me-3"><a href="https://www.facebook.com/helloelana/"><i className="fab fa-facebook-square"/></a></div>
-								<div className="me-3"><i className="fab fa-linkedin"/></div>
-								<div className="me-3"><i className="fab fa-pinterest"/></div>
-								<div className="me-3"><i className="fab fa-instagram"/></div>
-							</div>
-						</div>
+					<MDBCol lg='3' md='3' sm='2' className='d-flex icon'>
+							{/* <div className="mb-1 icon pt-2"> */}
+								<div className="me-3"><a className="a-link-footer" href="https://www.facebook.com/helloelana/"><i className="fab fa-facebook-square"/></a></div>
+								<div className="me-3"><a className="a-link-footer" href="https://www.linkedin.com/company/elanahealth/"><i className="fab fa-linkedin"/></a></div>
+								<div className="me-3"><a className="a-link-footer" href="https://www.pinterest.com/elanahealth/"><i className="fab fa-pinterest"/></a></div>
+								<div className="me-3"><a className="a-link-footer" href="https://www.instagram.com/elana.health/"><i className="fab fa-instagram"/></a></div>
+							{/* </div> */}
 					</MDBCol>
 				</MDBRow>
-			</MDBContainer>
+			{/* </MDBContainer> */}
 		</MDBFooter>
 
 	)
