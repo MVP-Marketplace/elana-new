@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const asyncHandler = require('express-async-handler')
 const PractitionerUser = require('../models/practitionerUserModel')
+const PractitionerProfile = require('../models/practitionerProfileModel')
 
 // Description: Register a practitioner user
 // Route:       POST /api/practitionerUsers
@@ -97,9 +98,20 @@ const loginPractitionerUser = asyncHandler(async (req,res) => {
     }
 })
 
+// Description: Get an array of practitionerUsers
+// Route:       GET /api/practitionerUsers/users
+// Access:      Public
+const getUsers = asyncHandler (async (req,res) => {
+    const practitionerUser = await PractitionerUser.find().populate({
+        path: 'profile'
+    })
+    console.log(practitionerUser)
+    res.status(200).json(practitionerUser)
+})  
+
 // Description: Get a practitioner user
 // Route:       GET /api/practitionerUsers/me
-// Access:      Public
+// Access:      Private
 const getMe = asyncHandler (async (req,res) => {
     res.status(200).json(req.practitionerUser)
 })  
@@ -114,5 +126,6 @@ const generateToken = (id) => {
 module.exports ={
     registerPractitionerUser, 
     loginPractitionerUser, 
+    getUsers,
     getMe
 }

@@ -261,7 +261,7 @@ export function PractitionerSignUp() {
                     -select one-
                   </option>
                   {practitionerTypes.map((type, index) => {
-                   return <option value={index+1} className="text-muted">
+                   return <option key={index} value={type} className="text-muted">
                       {type}
                     </option>
                   })}
