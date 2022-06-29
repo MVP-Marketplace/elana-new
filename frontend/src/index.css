@@ -1387,21 +1387,43 @@ background-color: #EAE8FB;
   }
   .resmodal{
     width: 300px;
-    
-  }
-  .iconmodal{
-    display: block;
   }
   .ppHeader{
     margin-bottom: 1000px;
   }
  }
-/* .iconmodal{
-  width: 40px;
-  height: 31px;
-} */
-/* 
 
+ .bg-responsive{
+  display: flex;
+  justify-content: center;
+ }
+@media(max-width:667px){
+  .bg-responsive{
+    display: grid;
+    align-items: center;
+   }
+   .boxmodal{
+    width: 320px;
+   }
+   .buttonmodalresponsive{
+    margin-right: 65px;
+   }
+}
+@media only screen and (max-width: 609px){
+  .boxmodalresponsive { width: 90%; height: 100vh;}
+}
+.div-grid{
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 609px){
+  .div-grid {display: grid; }
+}
+@media (max-width: 400px){
+  .bgmodal{
+    width: 350px;
+  }
+}
 
 CSS PractitionerProfilePage--------------------**********/
 input{

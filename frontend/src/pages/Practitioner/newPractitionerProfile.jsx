@@ -92,45 +92,45 @@ export function NewPractitionerProfile() {
                           Please include a photograph and video biography (if
                           necessary).
                         </p>
-                        <div className="d-flex justify-content-center mt-2 iconres">
-                          <div className="">
+                        <div className="mt-2 bg-responsive">
+                          <MDBCol className="" sm="">
                             <img
                               alt=""
                               src={camera}
                               onClick={toggleShow}
-                              className="m-5 iconmodal"
+                              className="m-5 "
                             ></img>
-                          </div>
-                          <div>
+                          </MDBCol>
+                           <MDBCol className="" sm="">
                             <img
                               alt=""
                               src={pen}
                               onClick={toggleShow}
-                              className="m-5 iconmodal"
+                              className="m-5 "
                             ></img>
-                          </div>
-                          <div>
+                          </MDBCol>
+                          <MDBCol sm="">
                             <img
                               alt=""
                               src={trash}
                               onClick={toggleShow}
-                              className="m-5 iconmodal"
+                              className="m-5 "
                             ></img>
-                          </div>
+                          </MDBCol>
 
-                          <div>
+                          <MDBCol sm="">
                             <img
                               alt=""
                               src={videocamera}
                               onClick={toggleShow}
-                              className="m-5 iconmodal"
+                              className="m-5 "
                             ></img>
-                          </div>
+                          </MDBCol>
                         </div>
                         <br></br>
                       </MDBModalBody>
 
-                      <MDBBtn className="buttonmainpage me-5 mb-5 p-2 px-5">
+                      <MDBBtn className="buttonmainpage me-5 mb-5 p-2 px-5 buttonmodalresponsive">
                         Save
                       </MDBBtn>
                     </MDBModalContent>
@@ -154,7 +154,7 @@ export function NewPractitionerProfile() {
                   setShow={setBasicModaltwo}
                   tabIndex="-1"
                 >
-                  <MDBModalDialog className="boxmodal modal-lg">
+                  <MDBModalDialog className="boxmodal modal-lg boxmodalresponsive">
                     <MDBModalContent className="bgmodal">
                       <MDBModalHeader>
                         <MDBModalTitle>Edit Credentials</MDBModalTitle>
@@ -165,9 +165,9 @@ export function NewPractitionerProfile() {
                         ></MDBBtn>
                       </MDBModalHeader>
                       <MDBModalBody>
-                        <div>
-                          <div className="d-flex justify-content-evenly m-1">
-                            <div className="col-sm ms-5">
+                        <div className="margin-left">
+                          <div className="m-1 div-grid">
+                            <div className="col-sm ">
                               <label className="labelsingup text-muted">
                                 Your Name
                               </label>
@@ -181,8 +181,8 @@ export function NewPractitionerProfile() {
                               />
                             </div>
 
-                            <div className="col-sm ms-5">
-                              <label className="labelsingup text-muted">
+                            <div className="col-sm ">
+                              <label className="labelsingup text-muted whitespace">
                                 Your Practice’s Name
                               </label>
                               <MDBInput
@@ -195,8 +195,8 @@ export function NewPractitionerProfile() {
                               />
                             </div>
                           </div>
-                          <div className="d-flex justify-content-evenly m-1">
-                            <div className="col-sm ms-5">
+                          <div className="div-grid m-1">
+                            <div className="col-sm ">
                               <label className="labelsingup text-muted">
                                 Your Specialty
                               </label>
@@ -210,8 +210,8 @@ export function NewPractitionerProfile() {
                               />
                             </div>
 
-                            <div className="col-sm ms-5">
-                              <label className="labelsingup text-muted">
+                            <div className="col-sm ">
+                              <label className="labelsingup text-muted whitespace">
                                 Sub-Specialties
                               </label>
                               <MDBInput
@@ -224,9 +224,9 @@ export function NewPractitionerProfile() {
                               />
                             </div>
                           </div>
-                          <div className="d-flex justify-content-evenly m-1">
-                            <div className="col-sm ms-5">
-                              <label className="labelsingup text-muted">
+                          <div className="div-grid m-1">
+                            <div className="col-sm ">
+                              <label className="labelsingup text-muted whitespace">
                                 Years of Experience
                               </label>
                               <MDBInput
@@ -239,8 +239,8 @@ export function NewPractitionerProfile() {
                               />
                             </div>
 
-                            <div className="col-sm ms-5">
-                              <label className="labelsingup text-muted">
+                            <div className="col-sm ">
+                              <label className="labelsingup text-muted whitespace">
                                 Education
                               </label>
                               <MDBInput
@@ -254,7 +254,7 @@ export function NewPractitionerProfile() {
                             </div>
                           </div>
                           <p className="ms-5">Do you provide telehealth services?</p>
-                          <div className="d-flex ms-5">
+                          <div className="d-flex ">
                             <div className="">
                               <label>yes</label>
                               <input type="checkbox" className="checkbox-squer m-2"></input>
@@ -296,24 +296,36 @@ export function NewPractitionerProfile() {
 
         <MDBCol order='' className="second-secction-profile d-flex justify-content-center ">
           <div>
-            <div className="bg-profile-input">
+            <div className="bg-profile-input mb-5">
               <h4 className="mx-3 mb-3 pt-2">About me</h4>
               <input className="input-profile" onClick={() => setShowButtons(!showbuttons)}></input>
-              {showbuttons && <div className="d-flex moveR"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
+              {showbuttons && 
+              <div className="d-flex bg-purple-modal">
+               <div> <button className="square_btn-modal margin-right-button me-2">save</button></div>
+                <div><button className="square_btn-modal ">Cancel</button></div>
+                </div>}
             </div>
 
-            <div className="bg-profile-input mb-4">
+            <div className="bg-profile-input mb-5">
+              <div>
               <h4 className="m-3 pt-2">How i can help</h4>
               <input className="input-profile" onClick={() => setShowButtonsTwo(!showbuttonstwo)}></input>
-              {showbuttonstwo && <div className="d-flex moveR"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
-
+              {showbuttonstwo && 
+                <div className="d-flex bg-purple-modal">
+                  
+                  <div> <button className="square_btn-modal margin-right-button me-2">save</button></div>
+                  <div> <button className="square_btn-modal ">Cancel</button> </div>
+                </div>}
+              </div>
             </div>
 
-            <div className="bg-profile-input mb-4">
+            <div className="bg-profile-input mb-5">
               <div className="">
                 <h4 className="m-3 pt-2">Services offered</h4>
                 <input className="input-profile" onClick={() => setShowButtonsThree(!showbuttonsthree)}></input>
-                {showbuttonsthree && <div className="d-flex bg-purple-modal"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
+                {showbuttonsthree && <div className="d-flex bg-purple-modal">
+                  <div><button className="square_btn-modal margin-right-button me-2">save</button></div>
+                  <div><button className="square_btn-modal ">Cancel</button></div></div>}
               </div>
                 
             </div>

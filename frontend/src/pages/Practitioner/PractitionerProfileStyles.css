@@ -132,7 +132,29 @@ margin-left: 45px;
 }
 .bg-purple-modal{
   background-color: #EAE8FB;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  justify-content: flex-end;
+padding-right: 55px;
 }
 .plus-button:hover{
   cursor: pointer;
+}
+
+
+.square_btn-modal {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #7F6FEA;
+  border: solid 2px #7F6FEA;
+  border-radius: 3px;
+  transition: .4s;
+  background: #EAE8FB;
+}
+
+.square_btn-modal:hover {
+  background: #7F6FEA;
+  color: white;
 }
