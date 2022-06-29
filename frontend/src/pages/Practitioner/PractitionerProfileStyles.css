@@ -126,6 +126,9 @@ margin-left: 45px;
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
+  margin-right: 3px;
+  margin-bottom: 35px;
+
 }
 .checkbox-squer:checked {
   background-color: #7F6FEA;
@@ -157,4 +160,45 @@ padding-right: 55px;
 .square_btn-modal:hover {
   background: #7F6FEA;
   color: white;
+}
+.responsive-grid-modal{
+  margin-right: 55px ;
+  }
+@media(max-width: 768px){
+
+  .responsive-grid-modal{
+  display: grid;
+  margin-right:0 ;
+  }
+}
+
+.checkbox-squer-diferent{
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 4px;
+  vertical-align: middle;
+  border: 2px solid #7F6FEA;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+
+}
+.checkbox-squer-diferent:checked {
+  background-color: #7F6FEA;
+}
+@media(max-width: 768px){
+
+  .checkbox-squer-diferent{
+  margin-right: 105px;
+  
+  }
+  .label-responsive{
+    font-size: 13px;
+  }
+  .checkbox-squer-margin{
+    margin-right: 45px;
+    margin-top: 15px;
+  }
 }
