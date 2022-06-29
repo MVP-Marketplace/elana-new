@@ -173,7 +173,7 @@ export function NewPractitionerProfile() {
                               </label>
                               <MDBInput
                                 type="text"
-                                className="form-control mdb"
+                                className="form-control mdb input-size"
                                 id="form1"
                                 name="firstName"
                                 value={firstProfile.firstName}
@@ -181,13 +181,13 @@ export function NewPractitionerProfile() {
                               />
                             </div>
 
-                            <div className="col-sm ">
+                            <div className="col-sm labelresponsive-right">
                               <label className="labelsingup text-muted whitespace">
                                 Your Practice’s Name
                               </label>
                               <MDBInput
                                 type="text"
-                                className="form-control mdb"
+                                className="form-control mdb  input-size"
                                 id="form1"
                                 name="PracticesName"
                                 value={firstProfile.PracticesName}
@@ -202,7 +202,7 @@ export function NewPractitionerProfile() {
                               </label>
                               <MDBInput
                                 type="text"
-                                className="form-control mdb"
+                                className="form-control mdb  input-size"
                                 id="form1"
                                 name="YourSpecialty"
                                 value={firstProfile.YourSpecialty}
@@ -210,13 +210,13 @@ export function NewPractitionerProfile() {
                               />
                             </div>
 
-                            <div className="col-sm ">
+                            <div className="col-sm labelresponsive-right">
                               <label className="labelsingup text-muted whitespace">
                                 Sub-Specialties
                               </label>
                               <MDBInput
                                 type="text"
-                                className="form-control mdb"
+                                className="form-control mdb  input-size"
                                 id="form1"
                                 name="SubSpecialties"
                                 value={firstProfile.SubSpecialties}
@@ -231,7 +231,7 @@ export function NewPractitionerProfile() {
                               </label>
                               <MDBInput
                                 type="text"
-                                className="form-control mdb"
+                                className="form-control mdb  input-size"
                                 id="form1"
                                 name="YearsOfExperience"
                                 value={firstProfile.YearsOfExperience}
@@ -239,13 +239,13 @@ export function NewPractitionerProfile() {
                               />
                             </div>
 
-                            <div className="col-sm ">
+                            <div className="col-sm labelresponsive-right">
                               <label className="labelsingup text-muted whitespace">
                                 Education
                               </label>
                               <MDBInput
                                 type="text"
-                                className="form-control mdb"
+                                className="form-control mdb  input-size"
                                 id="form1"
                                 name="education"
                                 value={firstProfile.education}

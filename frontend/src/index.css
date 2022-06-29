@@ -1425,6 +1425,18 @@ background-color: #EAE8FB;
   }
 }
 
+.input-size{
+width: 900px;
+}
+.labelresponsive-right{
+  margin-left: 150px;
+}
+@media (max-width: 709px){
+  .labelresponsive-right{
+    margin-left: 0px;
+  }
+}
+
 CSS PractitionerProfilePage--------------------**********/
 input{
   resize: vertical;}
