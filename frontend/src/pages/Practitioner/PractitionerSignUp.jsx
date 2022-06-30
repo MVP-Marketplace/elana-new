@@ -279,7 +279,7 @@ export function PractitionerSignUp() {
             <span>Terms</span> and <span>Privacy Policy</span>
           </span>
           <div className="text-center">
-            <button onClick={function () { toggleShow(); onSubmit() }} className="buttonmainpage ">CONTINUE</button>
+            <button onClick={function () { toggleShow(); onSubmit() }} className="buttonmainpage " disabled={password.length<1 && email.length<1 && firstName.length<1 && lastName.length<1 && licensingCredentials.length<1 && areaOfSpecialty.length<1}>CONTINUE</button>
 
             <MDBModal tabIndex='-1' show={centredModal} setShow={setCentredModal}>
               <MDBModalDialog centered>
