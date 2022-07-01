@@ -1,14 +1,13 @@
-import { Link, useState } from "react";
-import Spinner from "../../components/spinner";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import "./PractitionerProfileStyles.css";
-import { Container, Image, Card } from "react-bootstrap";
-import {useNavigate} from "react-router-dom";
-import {useDispatch} from "react-redux"
+// import {logout, reset} from "../../features/auth/authSlice"
+// import {useNavigate} from "react-router-dom";
+// import {useDispatch} from "react-redux"
 import pen from "../../img/Edit.png";
 import camera from "../../img/camera.png";
 import trash from "../../img/trash.png";
 import videocamera from "../../img/videocamera.png";
+import "./PractitionerProfileStyles.css";
 import "../../index.css";
 import {
   MDBBtn,
@@ -18,7 +17,6 @@ import {
   MDBModalHeader,
   MDBModalTitle,
   MDBModalBody,
-  MDBModalFooter,
   MDBInput,
   MDBContainer,
   MDBRow,
@@ -45,7 +43,8 @@ export function NewPractitionerProfile() {
     console.log(firstProfile);
   };
 
-
+  // const navigate = useNavigate()
+  // const dispatch = useDispatch()
  
   const {user} = useSelector((state)=> state.auth)
 
@@ -53,7 +52,11 @@ export function NewPractitionerProfile() {
 
 
 
-
+//   const onLogout = () => {
+//     dispatch(logout())
+//     dispatch(reset())
+//     navigate('/')
+// }
 
   return (
     <div>
@@ -89,45 +92,45 @@ export function NewPractitionerProfile() {
                           Please include a photograph and video biography (if
                           necessary).
                         </p>
-                        <div className="d-flex justify-content-center mt-2 iconres">
-                          <div className="">
+                        <div className="mt-2 bg-responsive">
+                          <MDBCol className="" sm="">
                             <img
                               alt=""
                               src={camera}
                               onClick={toggleShow}
-                              className="m-5 iconmodal"
+                              className="m-5 "
                             ></img>
-                          </div>
-                          <div>
+                          </MDBCol>
+                           <MDBCol className="" sm="">
                             <img
                               alt=""
                               src={pen}
                               onClick={toggleShow}
-                              className="m-5 iconmodal"
+                              className="m-5 "
                             ></img>
-                          </div>
-                          <div>
+                          </MDBCol>
+                          <MDBCol sm="">
                             <img
                               alt=""
                               src={trash}
                               onClick={toggleShow}
-                              className="m-5 iconmodal"
+                              className="m-5 "
                             ></img>
-                          </div>
+                          </MDBCol>
 
-                          <div>
+                          <MDBCol sm="">
                             <img
                               alt=""
                               src={videocamera}
                               onClick={toggleShow}
-                              className="m-5 iconmodal"
+                              className="m-5 "
                             ></img>
-                          </div>
+                          </MDBCol>
                         </div>
                         <br></br>
                       </MDBModalBody>
 
-                      <MDBBtn className="buttonmainpage me-5 mb-5 p-2 px-5">
+                      <MDBBtn className="buttonmainpage me-5 mb-5 p-2 px-5 buttonmodalresponsive">
                         Save
                       </MDBBtn>
                     </MDBModalContent>
@@ -151,7 +154,7 @@ export function NewPractitionerProfile() {
                   setShow={setBasicModaltwo}
                   tabIndex="-1"
                 >
-                  <MDBModalDialog className="boxmodal modal-lg">
+                  <MDBModalDialog className="boxmodal modal-lg boxmodalresponsive">
                     <MDBModalContent className="bgmodal">
                       <MDBModalHeader>
                         <MDBModalTitle>Edit Credentials</MDBModalTitle>
@@ -162,15 +165,15 @@ export function NewPractitionerProfile() {
                         ></MDBBtn>
                       </MDBModalHeader>
                       <MDBModalBody>
-                        <div>
-                          <div className="d-flex justify-content-evenly m-1">
-                            <div className="col-sm ms-5">
+                        <div className="margin-left">
+                          <div className="m-1 div-grid">
+                            <div className="col-sm ">
                               <label className="labelsingup text-muted">
                                 Your Name
                               </label>
                               <MDBInput
                                 type="text"
-                                className="form-control mdb"
+                                className="form-control mdb input-size"
                                 id="form1"
                                 name="firstName"
                                 value={firstProfile.firstName}
@@ -178,13 +181,13 @@ export function NewPractitionerProfile() {
                               />
                             </div>
 
-                            <div className="col-sm ms-5">
-                              <label className="labelsingup text-muted">
+                            <div className="col-sm labelresponsive-right">
+                              <label className="labelsingup text-muted whitespace">
                                 Your Practice’s Name
                               </label>
                               <MDBInput
                                 type="text"
-                                className="form-control mdb"
+                                className="form-control mdb  input-size"
                                 id="form1"
                                 name="PracticesName"
                                 value={firstProfile.PracticesName}
@@ -192,14 +195,14 @@ export function NewPractitionerProfile() {
                               />
                             </div>
                           </div>
-                          <div className="d-flex justify-content-evenly m-1">
-                            <div className="col-sm ms-5">
+                          <div className="div-grid m-1">
+                            <div className="col-sm ">
                               <label className="labelsingup text-muted">
                                 Your Specialty
                               </label>
                               <MDBInput
                                 type="text"
-                                className="form-control mdb"
+                                className="form-control mdb  input-size"
                                 id="form1"
                                 name="YourSpecialty"
                                 value={firstProfile.YourSpecialty}
@@ -207,13 +210,13 @@ export function NewPractitionerProfile() {
                               />
                             </div>
 
-                            <div className="col-sm ms-5">
-                              <label className="labelsingup text-muted">
+                            <div className="col-sm labelresponsive-right">
+                              <label className="labelsingup text-muted whitespace">
                                 Sub-Specialties
                               </label>
                               <MDBInput
                                 type="text"
-                                className="form-control mdb"
+                                className="form-control mdb  input-size"
                                 id="form1"
                                 name="SubSpecialties"
                                 value={firstProfile.SubSpecialties}
@@ -221,14 +224,14 @@ export function NewPractitionerProfile() {
                               />
                             </div>
                           </div>
-                          <div className="d-flex justify-content-evenly m-1">
-                            <div className="col-sm ms-5">
-                              <label className="labelsingup text-muted">
+                          <div className="div-grid m-1">
+                            <div className="col-sm ">
+                              <label className="labelsingup text-muted whitespace">
                                 Years of Experience
                               </label>
                               <MDBInput
                                 type="text"
-                                className="form-control mdb"
+                                className="form-control mdb  input-size"
                                 id="form1"
                                 name="YearsOfExperience"
                                 value={firstProfile.YearsOfExperience}
@@ -236,13 +239,13 @@ export function NewPractitionerProfile() {
                               />
                             </div>
 
-                            <div className="col-sm ms-5">
-                              <label className="labelsingup text-muted">
+                            <div className="col-sm labelresponsive-right">
+                              <label className="labelsingup text-muted whitespace">
                                 Education
                               </label>
                               <MDBInput
                                 type="text"
-                                className="form-control mdb"
+                                className="form-control mdb  input-size"
                                 id="form1"
                                 name="education"
                                 value={firstProfile.education}
@@ -251,7 +254,7 @@ export function NewPractitionerProfile() {
                             </div>
                           </div>
                           <p className="ms-5">Do you provide telehealth services?</p>
-                          <div className="d-flex ms-5">
+                          <div className="d-flex ">
                             <div className="">
                               <label>yes</label>
                               <input type="checkbox" className="checkbox-squer m-2"></input>
@@ -293,24 +296,36 @@ export function NewPractitionerProfile() {
 
         <MDBCol order='' className="second-secction-profile d-flex justify-content-center ">
           <div>
-            <div className="bg-profile-input">
+            <div className="bg-profile-input mb-5">
               <h4 className="mx-3 mb-3 pt-2">About me</h4>
               <input className="input-profile" onClick={() => setShowButtons(!showbuttons)}></input>
-              {showbuttons && <div className="d-flex moveR"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
+              {showbuttons && 
+              <div className="d-flex bg-purple-modal">
+               <div> <button className="square_btn-modal margin-right-button me-2">save</button></div>
+                <div><button className="square_btn-modal ">Cancel</button></div>
+                </div>}
             </div>
 
-            <div className="bg-profile-input mb-4">
+            <div className="bg-profile-input mb-5">
+              <div>
               <h4 className="m-3 pt-2">How i can help</h4>
               <input className="input-profile" onClick={() => setShowButtonsTwo(!showbuttonstwo)}></input>
-              {showbuttonstwo && <div className="d-flex moveR"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
-
+              {showbuttonstwo && 
+                <div className="d-flex bg-purple-modal">
+                  
+                  <div> <button className="square_btn-modal margin-right-button me-2">save</button></div>
+                  <div> <button className="square_btn-modal ">Cancel</button> </div>
+                </div>}
+              </div>
             </div>
 
-            <div className="bg-profile-input mb-4">
+            <div className="bg-profile-input mb-5">
               <div className="">
                 <h4 className="m-3 pt-2">Services offered</h4>
                 <input className="input-profile" onClick={() => setShowButtonsThree(!showbuttonsthree)}></input>
-                {showbuttonsthree && <div className="d-flex bg-purple-modal"><button className="buttonmodal me-1">save</button><button className="buttonmodal me-1 ">Cancel</button></div>}
+                {showbuttonsthree && <div className="d-flex bg-purple-modal">
+                  <div><button className="square_btn-modal margin-right-button me-2">save</button></div>
+                  <div><button className="square_btn-modal ">Cancel</button></div></div>}
               </div>
                 
             </div>
@@ -329,47 +344,49 @@ export function NewPractitionerProfile() {
                       <MDBModalBody>
 
 
-                        <MDBRow around>
-                          <MDBCol size='4' className="whitespace me-5">
-                            <input type='checkbox' className="checkbox-squer me-3 "></input>
-                            <label><br/>Board Certified</label>
+                        <MDBRow around className="responsive-grid-modal">
+                          <MDBCol size='4' className="whitespace ">
+                            <div className="control-div">
+                            <input type='checkbox' className="checkbox-squer-diferent  checkbox-squer-margin"></input>
+                            <label className="label-responsive">Board Certified</label>
+                            </div>
                           </MDBCol>
-                          <MDBCol size='4' className="whitespace me-5">
-                            <input type='checkbox' className="checkbox-squer me-3 mb-4"></input>
-                            <label>American Board of Pain Medicine<br/>(ABPM)</label>
-                          </MDBCol>
-                        </MDBRow>
-
-                        <MDBRow around>
-                          <MDBCol size='4' className="whitespace me-5">
-                          <input type='checkbox'  className="checkbox-squer me-3 mb-4"></input>
-                            <label>American Board of Physician Specialties <br/>(ABPS)</label>
-                          </MDBCol>
-                          <MDBCol size='4' className="whitespace me-5">
-                          <input type='checkbox'  className="checkbox-squer me-3 mb-4"></input>
-                            <label>American Board of Anesthesiology<br/> (ABA)</label>
+                          <MDBCol size='4' className="whitespace">
+                            <input type='checkbox' className="checkbox-squer  checkbox-squer-margin"></input>
+                            <label className="label-responsive">American Board of Pain Medicine<br/>(ABPM)</label>
                           </MDBCol>
                         </MDBRow>
 
-                        <MDBRow around>
-                          <MDBCol size='4' className="whitespace me-5">
-                          <input type='checkbox'  className="checkbox-squer me-3 mb-4"></input>
-                            <label>American Board of Medical Specialties<br/> (ABMS)</label>
+                        <MDBRow around className="responsive-grid-modal">
+                          <MDBCol size='4' className="whitespace">
+                          <input type='checkbox'  className="checkbox-squer  checkbox-squer-margin"></input>
+                            <label className="label-responsive">American Board of Physician Specialties <br/>(ABPS)</label>
                           </MDBCol>
-                          <MDBCol size='4' className="whitespace me-5">
-                          <input type='checkbox'  className="checkbox-squer me-3 mb-4"></input>
-                            <label>American Board of Family Medicine<br/> (ABFM)</label>
+                          <MDBCol size='4' className="whitespace">
+                          <input type='checkbox'  className="checkbox-squer  checkbox-squer-margin"></input>
+                            <label className="label-responsive">American Board of Anesthesiology<br/> (ABA)</label>
                           </MDBCol>
                         </MDBRow>
 
-                        <MDBRow around>
-                          <MDBCol size='4' className="whitespace me-5">
-                          <input type='checkbox'  className="checkbox-squer me-3 mb-4"></input>
-                            <label>American Board of Obstetrics and Gynecology<br/> (ABOG)</label>
+                        <MDBRow around className="responsive-grid-modal">
+                          <MDBCol size='4' className="whitespace">
+                          <input type='checkbox'  className="checkbox-squer  checkbox-squer-margin"></input>
+                            <label className="label-responsive">American Board of Medical Specialties<br/> (ABMS)</label>
                           </MDBCol>
-                          <MDBCol size='4' className="whitespace me-5">
-                          <input type='checkbox' className="checkbox-squer me-3 mb-4"></input>
-                            <label>American Board of Internal Medicine<br/> (ABIM)</label>
+                          <MDBCol size='4' className="whitespace">
+                          <input type='checkbox'  className="checkbox-squer  checkbox-squer-margin"></input>
+                            <label className="label-responsive">American Board of Family Medicine<br/> (ABFM)</label>
+                          </MDBCol>
+                        </MDBRow>
+
+                        <MDBRow around className="responsive-grid-modal">
+                          <MDBCol size='4' className="whitespace">
+                          <input type='checkbox'  className="checkbox-squer"></input>
+                            <label className="label-responsive">American Board of Obstetrics and Gynecology<br/> (ABOG)</label>
+                          </MDBCol>
+                          <MDBCol size='4' className="whitespace">
+                          <input type='checkbox' className="checkbox-squer"></input>
+                            <label className="label-responsive">American Board of Internal Medicine<br/> (ABIM)</label>
                           </MDBCol>
                         </MDBRow>
 

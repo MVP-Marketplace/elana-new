@@ -34,6 +34,11 @@ const practitionerUserSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    profile: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: false,
+        ref: 'PractitionerProfile'
+    }
 })
 
 module.exports = mongoose.model('PractitionerUser', practitionerUserSchema)

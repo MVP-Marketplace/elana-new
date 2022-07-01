@@ -505,6 +505,15 @@ span {
 
 /* /////PatienLandingPage */
 
+.individual-page-banner-3 {
+  background: #E3E2E8;
+}
+@media (max-width: 600px) {
+  .individual-page-banner-3 {
+    background-color: #FFFFFF;
+  }
+}  
+
 .bgpurple {
   background-color: #EAE8FB;
   width: 100%;
@@ -582,7 +591,7 @@ span {
 .center-div-button {
    display: block;
 }
-@media (max-width: 760px) {
+@media (max-width: 765px) {
   .center-div-button {
     display: flex;
     justify-content: center;
@@ -671,6 +680,17 @@ align-items: center;
   }
 } 
 
+.margin-list {
+  margin-left: 5%;
+  margin-top: 2%;
+}
+@media(max-width: 765px){
+  .margin-list {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
 
 
 /* //////////singup */
@@ -701,7 +721,7 @@ align-items: center;
   background-color: white;
   width: 670px;
   border-radius: 14px;
-  height: 700px;
+  height: 600px;
   /* position: absolute;
   left: 0;
   top: 0;
@@ -713,6 +733,14 @@ align-items: center;
   width: 200px;
   height: 55px;
 } */
+.smallLetters{
+  font-size: 10px;
+}
+
+.margin-left{
+  margin-left: 7%;
+  margin-right: 7%;
+}
 
 @media only screen and (max-width: 479px){
   .bgwhite { width: 90%; height: 100%; }
@@ -735,14 +763,33 @@ align-items: center;
   margin: auto;
 
 }
-@media only screen and (max-width: 479px){
+.no-bigscreen{
+  display: none;
+}
+@media only screen and (max-width: 600px){
   .bgwhite2 { width: 90%; }
 }
 .Logores{
   display: none;
 }
-@media only screen and (max-width: 479px){
+@media only screen and (max-width: 600px){
   .Logores { display: inline; }
+
+  .input-responsive{
+    margin-right: 15%;
+  }
+}
+@media (max-width:600px){
+  .no-responsive-view{
+    display: none;
+  }
+  .no-bigscreen{
+    display: block;
+  }
+  .input-responsive-new{
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 
@@ -765,24 +812,32 @@ align-items: center;
 
 .titlesingup {
   font-family: 'Abhaya Libre', serif;
+  
 }
  @media (min-width: 1200px) {
   .titlesingup {
     font-size: 30px;
   }
 } 
-/* If the screen size is smaller than 1200px, set the font-size to 80px */
-@media (max-width: 1199.98px) {
+@media (max-width: 600px) {
   .titlesingup {
-    font-size: 30px;
+    font-size: 20px;
   }
 } 
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+
+
 
 .labelsingup {
   font-family: 'Karla', sans-serif;
   font-size: 15px;
   max-width: 9000px;
 }
+@media (max-width: 600px) {
+  .labelsingup {
+    font-size: 15px;
+  }
+} 
 
 /* .model{
      font-family: 'Karla', sans-serif;
@@ -798,18 +853,26 @@ align-items: center;
 
 .inputdrop {
   width: 540px;
-  margin-left: 65px;
-  margin-right: 85px;
+  margin-left: 15px;
+
+  
   font-family: 'Karla', sans-serif;
 }
-
+.logonew{
+  width: 130px;
+  height: 30px;
+}
 
 @media (max-width: 600px) {
   .inputdrop {
-    width: 230px;
-    margin-left: 37px;
-    margin-right: 85px;
+    width: 210px;
     font-family: 'Karla', sans-serif;
+  }
+  .margin-left{
+    margin-left: 0;
+  }
+  .logonew{
+    display:none;
   }
 } 
 
@@ -819,7 +882,7 @@ span{
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .logosingup {
     display: none;
   }
@@ -827,7 +890,7 @@ span{
 .responsivediv{
   margin-left: 180px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .responsivediv {
     margin-left: 0;
   }
@@ -1324,21 +1387,55 @@ background-color: #EAE8FB;
   }
   .resmodal{
     width: 300px;
-    
-  }
-  .iconmodal{
-    display: block;
   }
   .ppHeader{
     margin-bottom: 1000px;
   }
  }
-/* .iconmodal{
-  width: 40px;
-  height: 31px;
-} */
-/* 
 
+ .bg-responsive{
+  display: flex;
+  justify-content: center;
+ }
+@media(max-width:667px){
+  .bg-responsive{
+    display: grid;
+    align-items: center;
+   }
+   .boxmodal{
+    width: 350px;
+   }
+   .buttonmodalresponsive{
+    margin-right: 65px;
+   }
+}
+@media only screen and (max-width: 609px){
+  .boxmodalresponsive { width: 90%; height: 100vh;}
+}
+.div-grid{
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 609px){
+  .div-grid {display: grid; }
+}
+@media (max-width: 400px){
+  .bgmodal{
+    width: 350px;
+  }
+}
+
+.input-size{
+width: 900px;
+}
+.labelresponsive-right{
+  margin-left: 150px;
+}
+@media (max-width: 709px){
+  .labelresponsive-right{
+    margin-left: 0px;
+  }
+}
 
 CSS PractitionerProfilePage--------------------**********/
 input{

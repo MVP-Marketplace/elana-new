@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import '../index.css'
 import {
 	MDBFooter,
-	MDBContainer,
 	MDBCol,
 	MDBRow
 } from 'mdb-react-ui-kit';

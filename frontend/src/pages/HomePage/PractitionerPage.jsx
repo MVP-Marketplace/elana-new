@@ -57,8 +57,8 @@ export const PractitionerPage = () => {
                   <div className="d-flex justify-content-center mb-2">
                     <img src={BlowHorn} alt="more" />
                   </div>
-                  <p className="fs-24 text-al">Reach more patients</p>
-                  <span className="fs-16 text-dark text-ka text-nowrap">
+                  <p className="fs-24-20 text-al">Reach more patients</p>
+                  <span className="fs-16-12 text-dark text-ka text-nowrap">
                     Fill up your patient load on your
                     <br />
                     terms with telehealth and in-
@@ -79,8 +79,8 @@ export const PractitionerPage = () => {
                   <div className="d-flex justify-content-center mb-2">
                     <img src={Calendar} alt="more" />
                   </div>
-                  <p className="fs-24 text-al">Connect with Practitioners</p>
-                  <span className="fs-16 text-dark text-ka text-nowrap">
+                  <p className="fs-24-20 text-al">Connect with Practitioners</p>
+                  <span className="fs-16-12 text-dark text-ka text-nowrap">
                     Collaborate with the other practitioners
                     <br />
                     and the Elana team to help us improve
@@ -101,8 +101,8 @@ export const PractitionerPage = () => {
                   <div className="d-flex justify-content-center mb-2">
                     <img src={LightBulb} alt="more" />
                   </div>
-                  <p className="fs-24 text-al">Generate Awareness</p>
-                  <span className="fs-16 text-dark text-ka text-nowrap">
+                  <p className="fs-24-20 text-al">Generate Awareness</p>
+                  <span className="fs-16-12 text-dark text-ka text-nowrap">
                     Reach more patients by offering
                     <br />
                     courses and content through
@@ -130,7 +130,7 @@ export const PractitionerPage = () => {
                   </h1>
                 </div>
                 <div className="d-flex justify-content-center">
-                  <h3 className="text-al fs-32">
+                  <h3 className="text-al fs-32 text-center">
                     Joining Elana is simple and free.
                   </h3>
                 </div>

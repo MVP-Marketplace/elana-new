@@ -8,9 +8,10 @@ import { reset } from "../../features/practitionerProfiles/practitionerProfileSl
 import "../../index.css";
 import Logo from "../../img/LogoName.png";
 import vec from "../../img/vectormodal.png";
+import Logores from "../../img/logoresponsive.png";
 import {
   MDBInput,
- 
+
   MDBModal,
   MDBModalDialog,
   MDBModalContent,
@@ -20,9 +21,29 @@ import {
 } from "mdb-react-ui-kit";
 
 export function PractitionerSignUp() {
+  const practitionerTypes = [
+    "Gyno-urology",
+    "Nurse Practitioner (ARNP)",
+    "Nutritionist",
+    "OBGYN",
+    "Occupational Therapist (OT)",
+    "Pain Management Doctor",
+    "Pain Management Doctor",
+    "Pain Management Psychologist",
+    "Pelvic Health Physical Therapist",
+    "Physical Therapist Assistant (PTA)",
+    "Physician (MD)",
+    "Pilates Instructor",
+    "Sex Coach / Therapist",
+    "Women's Health Coach",
+    "Women's Health Coach",
+    "Women's Health Psychologist",
+    "Women's Mental Health Therapist",
+    "Yoga Instructor",
+  ];
 
   const [centredModal, setCentredModal] = useState(false);
-	const toggleShow = () => setCentredModal(!centredModal);
+  const toggleShow = () => setCentredModal(!centredModal);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -103,164 +124,179 @@ export function PractitionerSignUp() {
       <div className="bgwhite p-2 row ">
         {/* /////// first part logo and icon*/}
         <div className="d-flex justify-content-between">
-          <img src={Logo} className="logosingup" alt="Elana Logo"></img>
-          <div>
+          <img src={Logo} className="logonew" alt="Elana Logo"></img>
+          {/* <div>
             <i class="fas fa-times"></i>
-          </div>
+          </div> */}
         </div>
 
         {/* /////// second part titles*/}
 
-        <div className="text-center">
-          <h2 className="titlesingup text-center">Welcome to Elana</h2>
-          <p className="">
-            Already have an account? Click <span>here</span> to login
+        <div className="text-center no-responsive-view">
+          <h2 className="titlesingup text-center m-0">Welcome to Elana</h2>
+          <p className="mb-2">
+            Already have an account? Click <a className="Link text-decoration-none" href="/practitionerLogin" target="_blank"><span>here</span></a> to login
           </p>
         </div>
-    
 
-    <div className="">
-        <div className="d-flex justify-content-evenly m-1 row">
-          <div className="col-sm ms-5">
-            <label className="labelsingup text-muted">First Name</label>
-            
-            <MDBInput
-              type="text"
-              className="form-control mdb"
-              id="form1"
-              name="firstName"
-              value={firstName}
-              onChange={onChange}
-            />
+        <div className="">
+          <div className='d-flex'>
+            <div className=''>
+              <img src={Logores} className="Logores" alt='Elana Logo'></img>
+            </div>
+            <div className='text-center no-bigscreen'>
+              <h2 className="titlesingup text-center">Welcome to Elana</h2>
+              <p className="labelsingup text-center"> Already have an account? Click <span>here</span> to login</p>
+            </div>
           </div>
 
-          <div className="col-sm ms-5">
-            <label className="labelsingup text-muted">Last Name</label>
-            <MDBInput
-              type="text"
-              className="form-control mdb"
-              id="form1"
-              name="lastName"
-              value={lastName}
-              onChange={onChange}
-            />
-          </div>
-        </div>
-
-        <div className="d-flex justify-content-evenly m-1 row">
-          <div className="col-sm ms-5">
-            <label className="labelsingup text-muted">Practice Name</label>
-            <MDBInput
-              type="text"
-              className="form-control mdb"
-              id="form1"
-              name="practiceName"
-              value={practiceName}
-              onChange={onChange}
-            />
-          </div>
-
-          <div className="col-sm ms-5">
-            <label className="labelsingup text-muted">Practice Number</label>
-            <MDBInput
-              type="text"
-              className="form-control mdb"
-              id="form1"
-              name="practiceNumber"
-              value={practiceNumber}
-              onChange={onChange}
-            />
-          </div>
-        </div>
-
-        <div className="d-flex justify-content-evenly m-1 row">
-          <div className="col-sm ms-5">
-            <label className="labelsingup text-muted">Email</label>
-            <MDBInput
-              type="text"
-              className="form-control col-sm mdb"
-              id="form1"
-              name="email"
-              value={email}
-              onChange={onChange}
-            />
-          </div>
-
-          <div className="col-sm ms-5">
-            <label className="labelsingup text-muted">password</label>
-            <MDBInput
-              type="password"
-              className="form- mdb"
-              id="form1"
-              name="password"
-              value={password}
-              onChange={onChange}
-            />
-          </div>
         </div>
 
 
-        <div className="row">
-        <div className="inputdrop col-sm col-md-12">
-          <label className="labelsingup text-muted">licensing Credentials</label>
-          <MDBInput
-            type="text"
-            className="form-control "
-            id="form1"
-            name="licensingCredentials"
-            value={licensingCredentials}
-            onChange={onChange}
-          />
-        </div>
 
-        <div className="inputdrop col-sm col-md-12">
-          <label className="labelsingup text-muted">Area of Specialty</label>
-          <div class="input-group">
-            <select
-              class="form-select"
-              id="inputGroupSelect04"
-              aria-label="Example select with button addon"
-              name="areaOfSpecialty"
-              value={areaOfSpecialty}
-              onChange={onChange}
-            >
-              <option value="1" className="text-muted">
-                -select one-
-              </option>
-              <option value="2">Occupational Therapist (OT)</option>
-              <option value="3">Pain Management Doctor</option>
-              <option value="4">Pain Management Psychologist</option>
-              <option value="5">Pelvic Health Physical Therapist</option>
-            </select>
+        <div className="margin-left">
+          <div className="d-flex justify-content-evenly m-1 row">
+            <div className="col-sm">
+              <label className="labelsingup text-muted">First Name</label>
+
+              <MDBInput
+                type="text"
+                className="form-control mdb"
+                id="form1"
+                name="firstName"
+                value={firstName}
+                onChange={onChange}
+              />
+            </div>
+
+            <div className="col-sm ">
+              <label className="labelsingup text-muted">Last Name</label>
+              <MDBInput
+                type="text"
+                className="form-control mdb"
+                id="form1"
+                name="lastName"
+                value={lastName}
+                onChange={onChange}
+              />
+            </div>
+          </div>
+
+          <div className="d-flex justify-content-evenly m-1 row">
+            <div className="col-sm ">
+              <label className="labelsingup text-muted">Practice Name</label>
+              <MDBInput
+                type="text"
+                className="form-control mdb"
+                id="form1"
+                name="practiceName"
+                value={practiceName}
+                onChange={onChange}
+              />
+            </div>
+
+            <div className="col-sm ">
+              <label className="labelsingup text-muted">Practice Number</label>
+              <MDBInput
+                type="text"
+                className="form-control mdb"
+                id="form1"
+                name="practiceNumber"
+                value={practiceNumber}
+                onChange={onChange}
+              />
+            </div>
+          </div>
+
+          <div className="d-flex justify-content-evenly m-1 row">
+            <div className="col-sm ">
+              <label className="labelsingup text-muted">Email</label>
+              <MDBInput
+                type="text"
+                className="form-control col-sm mdb"
+                id="form1"
+                name="email"
+                value={email}
+                onChange={onChange}
+              />
+            </div>
+
+            <div className="col-sm ">
+              <label className="labelsingup text-muted">Password <span className="smallLetters">(9 characters min.)</span></label>
+              <MDBInput
+                type="password"
+                className="form- mdb"
+                id="form1"
+                name="password"
+                value={password}
+                onChange={onChange}
+              />
+            </div>
+          </div>
+
+
+          <div className="row">
+            <div className="inputdrop col-sm col-md-12 ">
+              <label className="labelsingup text-muted">Licensing Credentials</label>
+              <MDBInput
+                type="text"
+                className="form-control input-responsive-new"
+                id="form1"
+                name="licensingCredentials"
+                value={licensingCredentials}
+                onChange={onChange}
+              />
+            </div>
+
+            <div className="inputdrop col-sm col-md-12">
+              <label className="labelsingup text-muted">Area of Specialty</label>
+              <div class="input-group">
+                <select
+                  class="form-select"
+                  id="inputGroupSelect04"
+                  aria-label="Example select with button addon"
+                  name="areaOfSpecialty"
+                  value={areaOfSpecialty}
+                  onChange={onChange}
+                >
+                  <option value="0" className="text-muted">
+                    -select one-
+                  </option>
+                  {practitionerTypes.map((type, index) => {
+                   return <option key={index} value={type} className="text-muted">
+                      {type}
+                    </option>
+                  })}
+                </select>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-        </div>
 
-        
-        <div className="m-3 text-center">
+
+        <div className="text-center center-responsive-checkbox">
           <input type="checkbox" className="checkbox-round m-2"></input>
           <span>
             By creating an account, you have read and agree to our{" "}
             <span>Terms</span> and <span>Privacy Policy</span>
           </span>
-        <div className="text-center">
-					<button onClick={function (){toggleShow()}} className="buttonmainpage" type='submit'>CONTINUE</button>
+          <div className="text-center">
+            <button onClick={function () { toggleShow(); onSubmit() }} className="buttonmainpage " disabled={password.length<1 && email.length<1 && firstName.length<1 && lastName.length<1 && licensingCredentials.length<1 && areaOfSpecialty.length<1}>CONTINUE</button>
 
-					<MDBModal tabIndex='-1' show={centredModal} setShow={setCentredModal}>
-						<MDBModalDialog centered>
-							<MDBModalContent>
-								<MDBModalBody className="text-center">
-									<img src={vec} className="" alt="keep"></img>
-									<h1>Woohoo</h1>
-									<p>Your registration is complete. Please, check your email for confirmation information.</p>
-									<p>Next, let’s set up your profile.</p>
-									<Link to="/newPractitionerProfile"><button className="buttonmainpage">CREATE PROFILE</button></Link>
-								</MDBModalBody>
-							</MDBModalContent>
-						</MDBModalDialog>
-					</MDBModal>
-				</div>
+            <MDBModal tabIndex='-1' show={centredModal} setShow={setCentredModal}>
+              <MDBModalDialog centered>
+                <MDBModalContent>
+                  <MDBModalBody className="text-center">
+                    <img src={vec} className="" alt="keep"></img>
+                    <h1>Woohoo</h1>
+                    <p>Your registration is complete. Please, check your email for confirmation information.</p>
+                    <p>Next, let’s set up your profile.</p>
+                    <Link to="/newPractitionerProfile"><button className="buttonmainpage">CREATE PROFILE</button></Link>
+                  </MDBModalBody>
+                </MDBModalContent>
+              </MDBModalDialog>
+            </MDBModal>
+          </div>
         </div>
 
 

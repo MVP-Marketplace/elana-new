@@ -29,14 +29,18 @@ const createPractitionerProfile = asyncHandler(async (req, res) => {
         availability: req.body.availability,
         cancellationPolicy: req.body.cancellationPolicy,
         paymentMethods: req.body.paymentMethods,
-        fullName: req.body.fullName,
-        practiceName: req.body.practiceName,
-        specialty: req.body.specialty,
         subSpecialites: req.body.subSpecialites,
         yearsOfExperience: req.body.yearsOfExperience,
         education: req.body.education,
         telehealthProvided: req.body.telehealthProvided
     })
+
+    // Connect practitionerUser to practitionerProfile
+    const selectedUser = await PractitionerUser.findById(req.practitionerUser.id)
+    selectedUser.profile = practitionerProfile._id
+    console.log('user', selectedUser)
+    await selectedUser.save()
+
 
     res.status(200).json(practitionerProfile)
 })
