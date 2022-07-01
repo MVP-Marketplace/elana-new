@@ -202,3 +202,18 @@ padding-right: 55px;
     margin-top: 15px;
   }
 }
+.control-div{
+  margin-top: 10px;
+}
+@media(max-width: 768px){
+  .control-div{
+    margin-top: 15px;
+    padding-right: 45px;
+  }
+}
+
+.button-disable{
+  background-color: lightgray;
+  padding: 10px;
+  color: white;
+}

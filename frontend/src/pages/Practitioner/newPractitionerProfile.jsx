@@ -346,8 +346,10 @@ export function NewPractitionerProfile() {
 
                         <MDBRow around className="responsive-grid-modal">
                           <MDBCol size='4' className="whitespace ">
+                            <div className="control-div">
                             <input type='checkbox' className="checkbox-squer-diferent  checkbox-squer-margin"></input>
-                            <label className="label-responsive"><br/>Board Certified</label>
+                            <label className="label-responsive">Board Certified</label>
+                            </div>
                           </MDBCol>
                           <MDBCol size='4' className="whitespace">
                             <input type='checkbox' className="checkbox-squer  checkbox-squer-margin"></input>
