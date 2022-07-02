@@ -126,8 +126,8 @@ margin-left: 45px;
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
-  margin-right: 3px;
-  margin-bottom: 35px;
+  /* margin-right: 3px;
+  margin-bottom: 35px; */
 
 }
 .checkbox-squer:checked {
@@ -195,7 +195,7 @@ padding-right: 55px;
   
   }
   .label-responsive{
-    font-size: 13px;
+    font-size: 10px;
   }
   .checkbox-squer-margin{
     margin-right: 45px;
@@ -208,12 +208,20 @@ padding-right: 55px;
 @media(max-width: 768px){
   .control-div{
     margin-top: 15px;
-    padding-right: 45px;
   }
 }
 
 .button-disable{
-  background-color: lightgray;
-  padding: 10px;
-  color: white;
+  background-color: #E3E2E8;
+  padding: 5px;
+  color: black;
+  border-radius: 8px;
+}
+.margin{
+  margin-left: 170px;
+}
+@media(max-width: 768px){
+  .margin{
+    margin-left: 0px;
+  }
 }

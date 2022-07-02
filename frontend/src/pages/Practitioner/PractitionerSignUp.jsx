@@ -44,6 +44,7 @@ export function PractitionerSignUp() {
 
   const [centredModal, setCentredModal] = useState(false);
   const toggleShow = () => setCentredModal(!centredModal);
+  const [done, setDone] = useState(false);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -85,6 +86,18 @@ export function PractitionerSignUp() {
     dispatch(reset());
   }, [practitionerUser, isError, isSuccess, message, navigate, dispatch]);
 
+  useEffect(()=>{
+    const checkdata = (data)=>{
+      if(data.password == "" || data.email == "" || data.firstName==""|| data.lastName == "" || data.licensingCredentials == "" || data.areaOfSpecialty == ""){
+        setDone(false) 
+      } else{
+        setDone(true)
+      }
+      
+        }
+        checkdata(formData)
+  }, [formData])
+
   const onChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
@@ -116,6 +129,8 @@ export function PractitionerSignUp() {
   if (isLoading) {
     return <Spinner />;
   }
+
+
 
   return (
     <div className="signupGradient d-flex">
@@ -164,6 +179,7 @@ export function PractitionerSignUp() {
                 name="firstName"
                 value={firstName}
                 onChange={onChange}
+                required
               />
             </div>
 
@@ -176,6 +192,7 @@ export function PractitionerSignUp() {
                 name="lastName"
                 value={lastName}
                 onChange={onChange}
+                required
               />
             </div>
           </div>
@@ -190,6 +207,7 @@ export function PractitionerSignUp() {
                 name="practiceName"
                 value={practiceName}
                 onChange={onChange}
+                required
               />
             </div>
 
@@ -202,6 +220,7 @@ export function PractitionerSignUp() {
                 name="practiceNumber"
                 value={practiceNumber}
                 onChange={onChange}
+                required
               />
             </div>
           </div>
@@ -216,6 +235,7 @@ export function PractitionerSignUp() {
                 name="email"
                 value={email}
                 onChange={onChange}
+                required
               />
             </div>
 
@@ -228,6 +248,7 @@ export function PractitionerSignUp() {
                 name="password"
                 value={password}
                 onChange={onChange}
+                required
               />
             </div>
           </div>
@@ -243,6 +264,7 @@ export function PractitionerSignUp() {
                 name="licensingCredentials"
                 value={licensingCredentials}
                 onChange={onChange}
+                required
               />
             </div>
 
@@ -256,6 +278,7 @@ export function PractitionerSignUp() {
                   name="areaOfSpecialty"
                   value={areaOfSpecialty}
                   onChange={onChange}
+                  required
                 >
                   <option value="0" className="text-muted">
                     -select one-
@@ -279,7 +302,7 @@ export function PractitionerSignUp() {
             <span>Terms</span> and <span>Privacy Policy</span>
           </span>
           <div className="text-center">
-            <button onClick={function () { toggleShow(); onSubmit() }} className="buttonmainpage " disabled={password.length<1 && email.length<1 && firstName.length<1 && lastName.length<1 && licensingCredentials.length<1 && areaOfSpecialty.length<1}>CONTINUE</button>
+            <button onClick={function () { toggleShow(); onSubmit() }} className={done ? "buttonmainpage": "button-disable"} disabled={!done}>CONTINUE</button>
 
             <MDBModal tabIndex='-1' show={centredModal} setShow={setCentredModal}>
               <MDBModalDialog centered>

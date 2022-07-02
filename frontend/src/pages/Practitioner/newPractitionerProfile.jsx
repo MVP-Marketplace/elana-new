@@ -344,49 +344,63 @@ export function NewPractitionerProfile() {
                       <MDBModalBody>
 
 
-                        <MDBRow around className="responsive-grid-modal">
-                          <MDBCol size='4' className="whitespace ">
-                            <div className="control-div">
-                            <input type='checkbox' className="checkbox-squer-diferent  checkbox-squer-margin"></input>
+                        <MDBRow  className="responsive-grid-modal">
+                          <MDBCol size='4'  className="whitespace d-flex justify-content-start mb-3">
+                            <div className="">
+                            <input type='checkbox' className="checkbox-squer  "></input>
                             <label className="label-responsive">Board Certified</label>
                             </div>
                           </MDBCol>
-                          <MDBCol size='4' className="whitespace">
-                            <input type='checkbox' className="checkbox-squer  checkbox-squer-margin"></input>
-                            <label className="label-responsive">American Board of Pain Medicine<br/>(ABPM)</label>
+                          <MDBCol size='4'  className="whitespace d-flex justify-content-start mb-3">
+                            <div  className="margin">
+                            <input type='checkbox' className="checkbox-squer  "></input>
+                            <label className="label-responsive">American Board of Pain Medicine(ABPM)</label>
+                            </div>
                           </MDBCol>
                         </MDBRow>
 
-                        <MDBRow around className="responsive-grid-modal">
-                          <MDBCol size='4' className="whitespace">
-                          <input type='checkbox'  className="checkbox-squer  checkbox-squer-margin"></input>
-                            <label className="label-responsive">American Board of Physician Specialties <br/>(ABPS)</label>
+                        <MDBRow className="responsive-grid-modal">
+                          <MDBCol size='4' className="whitespace d-flex justify-content-start mb-3">
+                            <div  className="">
+                          <input type='checkbox'  className="checkbox-squer  "></input>
+                            <label className="label-responsive">American Board of Physician Specialties (ABPS)</label>
+                            </div>
                           </MDBCol>
-                          <MDBCol size='4' className="whitespace">
-                          <input type='checkbox'  className="checkbox-squer  checkbox-squer-margin"></input>
-                            <label className="label-responsive">American Board of Anesthesiology<br/> (ABA)</label>
-                          </MDBCol>
-                        </MDBRow>
-
-                        <MDBRow around className="responsive-grid-modal">
-                          <MDBCol size='4' className="whitespace">
-                          <input type='checkbox'  className="checkbox-squer  checkbox-squer-margin"></input>
-                            <label className="label-responsive">American Board of Medical Specialties<br/> (ABMS)</label>
-                          </MDBCol>
-                          <MDBCol size='4' className="whitespace">
-                          <input type='checkbox'  className="checkbox-squer  checkbox-squer-margin"></input>
-                            <label className="label-responsive">American Board of Family Medicine<br/> (ABFM)</label>
+                          <MDBCol size='4' className="whitespace d-flex justify-content-start mb-3">
+                            <div  className="margin">
+                          <input type='checkbox'  className="checkbox-squer  "></input>
+                            <label className="label-responsive">American Board of Anesthesiology (ABA)</label>
+                            </div>
                           </MDBCol>
                         </MDBRow>
 
-                        <MDBRow around className="responsive-grid-modal">
-                          <MDBCol size='4' className="whitespace">
+                        <MDBRow  className="responsive-grid-modal">
+                          <MDBCol size='4' className="whitespace d-flex justify-content-start mb-3">
+                            <div  className="">
+                          <input type='checkbox'  className="checkbox-squer  "></input>
+                            <label className="label-responsive">American Board of Medical Specialties (ABMS)</label>
+                            </div>
+                          </MDBCol>
+                          <MDBCol size='4' className="whitespace d-flex justify-content-start mb-3">
+                            <div  className="margin">
+                          <input type='checkbox'  className="checkbox-squer  "></input>
+                            <label className="label-responsive">American Board of Family Medicine (ABFM)</label>
+                            </div>
+                          </MDBCol>
+                        </MDBRow>
+
+                        <MDBRow className="responsive-grid-modal ">
+                          <MDBCol size='4' className="whitespace d-flex justify-content-start mb-3">
+                            <div  className="">
                           <input type='checkbox'  className="checkbox-squer"></input>
-                            <label className="label-responsive">American Board of Obstetrics and Gynecology<br/> (ABOG)</label>
+                            <label className="label-responsive">American Board of Obstetrics and Gynecology (ABOG)</label>
+                            </div>
                           </MDBCol>
-                          <MDBCol size='4' className="whitespace">
+                          <MDBCol size='4' className="whitespace d-flex justify-content-start mb-3">
+                            <div  className="margin">
                           <input type='checkbox' className="checkbox-squer"></input>
-                            <label className="label-responsive">American Board of Internal Medicine<br/> (ABIM)</label>
+                            <label className="label-responsive">American Board of Internal Medicine (ABIM)</label>
+                            </div>
                           </MDBCol>
                         </MDBRow>
 
