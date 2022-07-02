@@ -133,6 +133,8 @@ export function PractitionerSignUp() {
 
 
   return (
+    <section className=''> 
+      <form onSubmit={onSubmit}>
     <div className="signupGradient d-flex">
       <div className="bgwhite p-2 row ">
         {/* /////// first part logo and icon*/}
@@ -324,5 +326,8 @@ export function PractitionerSignUp() {
 
       </div>
     </div>
+    </form>
+    </section>
+
   );
 }

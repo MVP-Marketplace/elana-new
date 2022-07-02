@@ -142,7 +142,7 @@ export function NewPractitionerProfile() {
 
             <div>
               <div className="name-profile ms-4">
-                <h6>Dr. Jessica Smith</h6>
+                <h6>Practice Name: <bold>{user && user.practiceName}</bold></h6>
                 <img
                   alt=""
                   src={pen}
