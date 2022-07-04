@@ -14,6 +14,7 @@ import { HomePage } from './pages/HomePage/HomePage';
 import { About } from './pages/HomePage/About';
 import { NewPractitionerProfile} from './pages/Practitioner/newPractitionerProfile';
 import { PractitionerListing } from './pages/FindingAPractitioner/PractitionerListing';
+import { PractitionerProfileUserView } from './pages/FindingAPractitioner/PractitionerProfileUserView';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path='/practitionerLogin' element={<PractitionerLogin/>}/>
             <Route path='/newPractitionerProfile' element={<NewPractitionerProfile/>}/>
             <Route path='/practitionerListing/:id' element={<PractitionerListing/>}/>
+            <Route path='/practitionerProfileUserView/:id' element={<PractitionerProfileUserView/>}/>
           </Routes>
       <Footer/>
       </Router>

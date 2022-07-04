@@ -1,14 +1,127 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+import { useSelector, useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import getPractitionerUsers from "../../features/practitionerUsers/practitionerUserSlice"
 import "../../practitionerlisting.css";
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 import DownArrow from "../../img/down-arrow.png";
 import UpArrow from "../../img/up-arrow.png";
 
+const fakeData = [
+  {
+      "_id": "62bcb44b0910f7e23a41b065",
+      "firstName": "Brandon",
+      "lastName": "Creed",
+      "practiceName": "Elana",
+      "practiceNumber": "Elana1",
+      "email": "brandon.creed@gmail.com",
+      "password": "$2a$10$Nj1usSvDaq7JDWxVeddkvOSwZdhQtL/YlPI9WyqtN3SfKlTuwy6x2",
+      "licensingCredentials": "Yoga Board License",
+      "areaOfSpecialty": "OBGYN",
+      "__v": 0,
+      "profile": {
+          "_id": "62bcdd0eefbafe07f52cd7db",
+          "practitionerUser": "62bcb44b0910f7e23a41b065",
+          "aboutMe": "I advocate for female health awareness",
+          "howCanIHelp": "I will make you feel heard and cared for",
+          "certifications": "OBYGYN MD",
+          "cancellationPolicy": "No refunds",
+          "subSpecialites": "Pediatrics",
+          "yearsOfExperience": "20",
+          "education": "UCF",
+          "telehealthProvided": "Yes",
+          "__v": 0
+      }
+    },
+  {
+      "_id": "62bcb44b0910f7e23a41b064",
+      "firstName": "Angelo",
+      "lastName": "Maiele",
+      "practiceName": "Hospital",
+      "practiceNumber": "Hospital1",
+      "email": "angelo@gmail.com",
+      "password": "$2a$10$Nj1usSvDaq7JDWxVeddkvOSwZdhQtL/YlPI9WyqtN3SfKlTuwy6x2",
+      "licensingCredentials": "Yoga Board License",
+      "areaOfSpecialty": "Nurse Practitioner (ARNP)",
+      "__v": 0,
+      "profile": {
+          "_id": "62bcdd0eefbafe07f52cd7db",
+          "practitionerUser": "62bcb44b0910f7e23a41b065",
+          "aboutMe": "I advocate for female health awareness",
+          "howCanIHelp": "I will make you feel heard and cared for",
+          "certifications": "OBYGYN MD",
+          "cancellationPolicy": "No refunds",
+          "subSpecialites": "Pediatrics",
+          "yearsOfExperience": "20",
+          "education": "UCF",
+          "telehealthProvided": "Yes",
+          "__v": 0
+      }
+    },
+  {
+      "_id": "62bcb44b0910f7e23a41b065",
+      "firstName": "Norbert",
+      "lastName": "Smith",
+      "practiceName": "Government",
+      "practiceNumber": "Government1",
+      "email": "norbert@gmail.com",
+      "password": "$2a$10$Nj1usSvDaq7JDWxVeddkvOSwZdhQtL/YlPI9WyqtN3SfKlTuwy6x2",
+      "licensingCredentials": "Yoga Board License",
+      "areaOfSpecialty": "OBGYN",
+      "__v": 0,
+      "profile": {
+          "_id": "62bcdd0eefbafe07f52cd7db",
+          "practitionerUser": "62bcb44b0910f7e23a41b065",
+          "aboutMe": "I advocate for female health awareness",
+          "howCanIHelp": "I will make you feel heard and cared for",
+          "certifications": "OBYGYN MD",
+          "cancellationPolicy": "No refunds",
+          "subSpecialites": "Pediatrics",
+          "yearsOfExperience": "20",
+          "education": "UCF",
+          "telehealthProvided": "Yes",
+          "__v": 0
+      }
+  }
+]
+
 export const PractitionerListing = (props) => {
   const [button1, setButton1] = useState(false);
   const [button2, setButton2] = useState(false);
   const [button3, setButton3] = useState(false);
+  const [filterPractitionerValue, setFilterPractitionerValue] = useState("")
+  const [filterAppointmentValue, setFilterAppointmentValue] = useState("")
+  console.log(filterPractitionerValue)
+ 
+
+  
+
+  const [practitioners, setPractitioners] = useState(fakeData)
+
+  useEffect(()=> {
+    if(filterPractitionerValue !== "" ){
+    let newArray = fakeData.filter((item, index) => item.areaOfSpecialty === filterPractitionerValue )
+    console.log(newArray)
+    setPractitioners(newArray)
+    } else {
+      setPractitioners(fakeData)
+    }
+  },[filterPractitionerValue])
+
+  // const dispatch = useDispatch()
+
+  // const { practitionerUsers, isLoading } = useSelector(
+  //     (state) => state.practitionerUsers
+  // )
+
+  // useEffect(() => {
+
+  //   dispatch(getPractitionerUsers())
+
+  // }, [dispatch])
+
+  // console.log("Practitioner Users #####: ", practitionerUsers)
 
   const params = useParams();
   const practitionerTypes = [
@@ -45,6 +158,7 @@ export const PractitionerListing = (props) => {
     "Vaginoplasty Prep & Recovery",
   ];
   const locations = ["Miami", "London", "New York", "Chicago"];
+
 
   return (
     <div>
@@ -92,7 +206,14 @@ export const PractitionerListing = (props) => {
                 {practitionerTypes.map((item, index) => {
                   return (
                     <div key={index} className="d-flex align-items-center p-2">
-                      <input type="checkbox" className="checkbox-squer" />
+                      <input type="checkbox" checked={filterPractitionerValue === item} className="checkbox-squer m-0" onChange={()=> {
+                        if(filterPractitionerValue !== item){
+                          setFilterPractitionerValue(item)
+                          setFilterAppointmentValue('')
+                        } else {
+                          setFilterPractitionerValue('')
+                        }
+                      }} />
                       <p className="m-0 ms-2">{item}</p>
                     </div>
                   );
@@ -100,7 +221,7 @@ export const PractitionerListing = (props) => {
               </div>
             )}
 
-            {/* APPOINTMENT TYPE */}
+            {/* APPOINTMENT TYPE
             <button
               onClick={() => setButton2(!button2)}
               type="button"
@@ -118,7 +239,14 @@ export const PractitionerListing = (props) => {
                 {appointmentTypes.map((item, index) => {
                   return (
                     <div key={index} className="d-flex align-items-center p-2">
-                      <input type="checkbox" className="checkbox-squer" />
+                      <input type="checkbox" checked={filterAppointmentValue === item} className="checkbox-squer m-0" onChange={()=> {
+                        if(filterAppointmentValue !== item){
+                          setFilterAppointmentValue(item)
+                          setFilterPractitionerValue('')
+                        } else {
+                          setFilterAppointmentValue('')
+                        }
+                      }}/>
                       <p className="m-0 ms-2">{item}</p>
                     </div>
                   );
@@ -126,7 +254,7 @@ export const PractitionerListing = (props) => {
               </div>
             )}
 
-            {/* LOCATION */}
+             LOCATION
             <button
               onClick={() => setButton3(!button3)}
               type="button"
@@ -144,51 +272,35 @@ export const PractitionerListing = (props) => {
                 {locations.map((item, index) => {
                   return (
                     <div key={index} className="d-flex align-items-center p-2">
-                      <input type="checkbox" className="checkbox-squer" />
+                      <input type="checkbox" className="checkbox-squer m-0" />
                       <p className="m-0 ms-2">{item}</p>
                     </div>
                   );
                 })}
               </div>
-            )}
+            )} */}
           </MDBCol>
           <MDBCol md="8">
-            <div className="bg-purple-2 d-flex border-9 mb-3">
-              <img
-                className="p-3 img-circle"
-                src="http://cdn.onlinewebfonts.com/svg/img_569204.png"
-                alt="practitioner"
-              />
-              <div>
-                <p>Hannah Miller</p>
-                <p>Nurse Practitioner (ARNP)</p>
-                <p>
-                  I’m a registerd nurse that has helped countless number of
-                  women navigate a wide variety of their pelvic health issues,
-                  including endometriosis, menopause, and separated abs. I also
-                  give advice for best methods to actively take care of the
-                  pelvic floor.
-                </p>
+            {practitioners.length > 0 ? practitioners.map((item, index) => {
+              return(
+                <Link to={`/practitionerProfileUserView/${index}`}>
+                <div key={index} className="brand-bg-purple-2 d-flex border-9 mb-3">
+                <img
+                  className="p-3 img-circle"
+                  src="http://cdn.onlinewebfonts.com/svg/img_569204.png"
+                  alt="practitioner"
+                />
+                <div>
+                  <p>{item.firstName} {item.lastName}</p>
+                  <p>{item.areaOfSpecialty}</p>
+                  <p>
+                    {item.profile.aboutMe}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="brand-bg-purple-2 d-flex border-9 mb-3">
-              <img
-                className="p-3 img-circle"
-                src="http://cdn.onlinewebfonts.com/svg/img_569204.png"
-                alt="practitioner"
-              />
-              <div>
-                <p>Hannah Miller</p>
-                <p>Nurse Practitioner (ARNP)</p>
-                <p>
-                  I’m a registerd nurse that has helped countless number of
-                  women navigate a wide variety of their pelvic health issues,
-                  including endometriosis, menopause, and separated abs. I also
-                  give advice for best methods to actively take care of the
-                  pelvic floor.
-                </p>
-              </div>
-            </div>
+              </Link>
+              )
+            }) : <h1>No Practitioners Found...</h1>}
           </MDBCol>
         </MDBRow>
       </div>
