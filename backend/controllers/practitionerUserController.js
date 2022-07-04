@@ -63,6 +63,9 @@ const registerPractitionerUser = asyncHandler(async (req,res) => {
             firstName: practitionerUser.firstName,
             lastName: practitionerUser.lastName,
             email: practitionerUser.email,
+            areaOfSpecialty: practitionerUser.areaOfSpecialty,
+            licensingCredentials: practitionerUser.licensingCredentials,
+            practiceName: practitionerUser.practiceName,
             token: generateToken(practitionerUser._id)
         })
     } else {
@@ -90,6 +93,9 @@ const loginPractitionerUser = asyncHandler(async (req,res) => {
             firstName: practitionerUser.firstName,
             lastName: practitionerUser.lastName,
             email: practitionerUser.email,
+            areaOfSpecialty: practitionerUser.areaOfSpecialty,
+            licensingCredentials: practitionerUser.licensingCredentials,
+            practiceName: practitionerUser.practiceName,
             token: generateToken(practitionerUser._id)
         })
     } else {
