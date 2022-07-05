@@ -6,16 +6,18 @@ const connectDB = require('./config/db')
 const port = process.env.PORT || 5000
 const cors = require("cors")
 
-
+// Connect to Mongo Database
 connectDB()
 
+// Create Express application
 const app = express()
 
+// Add dependencies to the Express Application
 app.use(cors());
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-
+// Adding routes to Express Application
 app.use('/api/practitionerUsers', require('./routes/practitionerUserRoutes'))
 app.use('/api/practitionerProfiles', require('./routes/practitionerProfileRoutes'))
 
