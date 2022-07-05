@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import getPractitionerUsers from "../../features/practitionerUsers/practitionerUserSlice"
 import "../../practitionerlisting.css";
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 import DownArrow from "../../img/down-arrow.png";
