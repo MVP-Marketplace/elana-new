@@ -278,7 +278,7 @@ export const PractitionerListing = (props) => {
           <MDBCol md="8">
             {practitioners.length > 0 ? practitioners.map((item, index) => {
               return(
-                <Link to={`/practitionerProfileUserView/${index}`}>
+                <Link className="text-decoration-none" to={`/practitionerProfileUserView/${index}`}>
                 <div key={index} className="brand-bg-purple-2 d-flex border-9 mb-3">
                 <img
                   className="p-3 img-circle"
@@ -286,9 +286,9 @@ export const PractitionerListing = (props) => {
                   alt="practitioner"
                 />
                 <div>
-                  <p>{item.firstName} {item.lastName}</p>
-                  <p>{item.areaOfSpecialty}</p>
-                  <p>
+                  <h5 className="dark-text  text-al mt-4">{item.firstName} {item.lastName}</h5>
+                  <p className="dark-text">{item.areaOfSpecialty}</p>
+                  <p className="dark-text">
                     {item.profile.aboutMe}
                   </p>
                 </div>
