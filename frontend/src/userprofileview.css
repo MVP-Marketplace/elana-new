@@ -1,0 +1,29 @@
+.text-center-profile-userview{
+    text-align: start;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+.bg-profile-input-two{
+    
+        width: 500px;
+        height: auto;
+        background-color: #EAE8FB;
+        border-radius: 15px;
+    
+}
+.text-ka {
+    font-family: 'Karla', sans-serif;
+}
+.text-al {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 24px;
+}
+
+.policy-user{
+    background-color: #EAE8FB;
+    width: 270px;
+    height: auto;
+    border-radius: 15px;
+}

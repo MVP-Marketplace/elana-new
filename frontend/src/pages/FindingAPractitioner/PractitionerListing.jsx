@@ -196,7 +196,7 @@ export const PractitionerListing = (props) => {
           <MDBCol md="8">
             {practitioners.length > 0 ? practitioners.map((item, index) => {
               return(
-                <Link to={`/practitionerProfileUserView/${index}`}>
+                <Link className="text-decoration-none" to={`/practitionerProfileUserView/${index}`}>
                 <div key={index} className="brand-bg-purple-2 d-flex border-9 mb-3">
                 <img
                   className="p-3 img-circle"
