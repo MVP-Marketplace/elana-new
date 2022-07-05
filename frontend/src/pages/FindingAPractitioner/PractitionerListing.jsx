@@ -1,125 +1,45 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
 import "../../practitionerlisting.css";
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 import DownArrow from "../../img/down-arrow.png";
 import UpArrow from "../../img/up-arrow.png";
-
-const fakeData = [
-  {
-      "_id": "62bcb44b0910f7e23a41b065",
-      "firstName": "Brandon",
-      "lastName": "Creed",
-      "practiceName": "Elana",
-      "practiceNumber": "Elana1",
-      "email": "brandon.creed@gmail.com",
-      "password": "$2a$10$Nj1usSvDaq7JDWxVeddkvOSwZdhQtL/YlPI9WyqtN3SfKlTuwy6x2",
-      "licensingCredentials": "Yoga Board License",
-      "areaOfSpecialty": "OBGYN",
-      "__v": 0,
-      "profile": {
-          "_id": "62bcdd0eefbafe07f52cd7db",
-          "practitionerUser": "62bcb44b0910f7e23a41b065",
-          "aboutMe": "I advocate for female health awareness",
-          "howCanIHelp": "I will make you feel heard and cared for",
-          "certifications": "OBYGYN MD",
-          "cancellationPolicy": "No refunds",
-          "subSpecialites": "Pediatrics",
-          "yearsOfExperience": "20",
-          "education": "UCF",
-          "telehealthProvided": "Yes",
-          "__v": 0
-      }
-    },
-  {
-      "_id": "62bcb44b0910f7e23a41b064",
-      "firstName": "Angelo",
-      "lastName": "Maiele",
-      "practiceName": "Hospital",
-      "practiceNumber": "Hospital1",
-      "email": "angelo@gmail.com",
-      "password": "$2a$10$Nj1usSvDaq7JDWxVeddkvOSwZdhQtL/YlPI9WyqtN3SfKlTuwy6x2",
-      "licensingCredentials": "Yoga Board License",
-      "areaOfSpecialty": "Nurse Practitioner (ARNP)",
-      "__v": 0,
-      "profile": {
-          "_id": "62bcdd0eefbafe07f52cd7db",
-          "practitionerUser": "62bcb44b0910f7e23a41b065",
-          "aboutMe": "I advocate for female health awareness",
-          "howCanIHelp": "I will make you feel heard and cared for",
-          "certifications": "OBYGYN MD",
-          "cancellationPolicy": "No refunds",
-          "subSpecialites": "Pediatrics",
-          "yearsOfExperience": "20",
-          "education": "UCF",
-          "telehealthProvided": "Yes",
-          "__v": 0
-      }
-    },
-  {
-      "_id": "62bcb44b0910f7e23a41b065",
-      "firstName": "Norbert",
-      "lastName": "Smith",
-      "practiceName": "Government",
-      "practiceNumber": "Government1",
-      "email": "norbert@gmail.com",
-      "password": "$2a$10$Nj1usSvDaq7JDWxVeddkvOSwZdhQtL/YlPI9WyqtN3SfKlTuwy6x2",
-      "licensingCredentials": "Yoga Board License",
-      "areaOfSpecialty": "OBGYN",
-      "__v": 0,
-      "profile": {
-          "_id": "62bcdd0eefbafe07f52cd7db",
-          "practitionerUser": "62bcb44b0910f7e23a41b065",
-          "aboutMe": "I advocate for female health awareness",
-          "howCanIHelp": "I will make you feel heard and cared for",
-          "certifications": "OBYGYN MD",
-          "cancellationPolicy": "No refunds",
-          "subSpecialites": "Pediatrics",
-          "yearsOfExperience": "20",
-          "education": "UCF",
-          "telehealthProvided": "Yes",
-          "__v": 0
-      }
-  }
-]
+import { getPractitionerUsers, reset } from "../../features/auth/authSlice";
 
 export const PractitionerListing = (props) => {
+  const { practitionerUsers } = useSelector((state) => state.auth)
+  const dispatch = useDispatch();
+  const params = useParams();
+ 
   const [button1, setButton1] = useState(false);
-  const [button2, setButton2] = useState(false);
-  const [button3, setButton3] = useState(false);
+  // const [button2, setButton2] = useState(false);
+  // const [button3, setButton3] = useState(false);
+
   const [filterPractitionerValue, setFilterPractitionerValue] = useState("")
   const [filterAppointmentValue, setFilterAppointmentValue] = useState("")
-  const [practitioners, setPractitioners] = useState(fakeData)
+  const [practitioners, setPractitioners] = useState([])
 
-  const params = useParams();
+  console.log(practitionerUsers)
 
   useEffect(()=> {
+    dispatch(getPractitionerUsers())
+  },[])
+
+  useEffect(()=> {
+    setPractitioners(practitionerUsers)
+  },[practitionerUsers])
+
+  // Filter functionality when choosing Category
+  useEffect(()=> {
     if(filterPractitionerValue !== "" ){
-    let newArray = fakeData.filter((item, index) => item.areaOfSpecialty === filterPractitionerValue )
-    console.log(newArray)
-    setPractitioners(newArray)
+      let newArray = practitionerUsers.filter((item, index) => item.areaOfSpecialty === filterPractitionerValue )
+      setPractitioners(newArray)
     } else {
-      setPractitioners(fakeData)
+      setPractitioners(practitionerUsers)
     }
   },[filterPractitionerValue])
 
-  // const dispatch = useDispatch()
-
-  // const { practitionerUsers, isLoading } = useSelector(
-  //     (state) => state.practitionerUsers
-  // )
-
-  // useEffect(() => {
-
-  //   dispatch(getPractitionerUsers())
-
-  // }, [dispatch])
-
-  // console.log("Practitioner Users #####: ", practitionerUsers)
-
-  
   const practitionerTypes = [
     "Gyno-urology",
     "Nurse Practitioner (ARNP)",
@@ -133,7 +53,6 @@ export const PractitionerListing = (props) => {
     "Physician (MD)",
     "Pilates Instructor",
     "Sex Coach / Therapist",
-    "Women's Health Coach",
     "Women's Health Coach",
     "Women's Health Psychologist",
     "Women's Mental Health Therapist",
@@ -152,7 +71,6 @@ export const PractitionerListing = (props) => {
     "Separated Abs",
     "Vaginoplasty Prep & Recovery",
   ];
-  const locations = ["Miami", "London", "New York", "Chicago"];
 
 
   return (
@@ -187,7 +105,7 @@ export const PractitionerListing = (props) => {
             <button
               onClick={() => setButton1(!button1)}
               type="button"
-              className="btn text-dark border-top border-bottom w-75 py-3 text-al fs-24"
+              className="btn text-dark border-top border-bottom w-75 py-3 mb-2 text-al fs-24"
             >
               Practitioner Type{" "}
               {button1 === false ? (
@@ -197,7 +115,7 @@ export const PractitionerListing = (props) => {
               )}
             </button>
             {button1 && (
-              <div>
+              <div className="mb-4">
                 {practitionerTypes.map((item, index) => {
                   return (
                     <div key={index} className="d-flex align-items-center p-2">
@@ -285,17 +203,18 @@ export const PractitionerListing = (props) => {
                   src="http://cdn.onlinewebfonts.com/svg/img_569204.png"
                   alt="practitioner"
                 />
-                <div>
-                  <p>{item.firstName} {item.lastName}</p>
-                  <p>{item.areaOfSpecialty}</p>
-                  <p>
-                    {item.profile.aboutMe}
-                  </p>
+                <div className="d-flex align-items-center">
+                  <div>
+                  <p className="m-0">{item.firstName} {item.lastName}</p>
+                  <p className="m-0">Specialty: {item.areaOfSpecialty}</p>
+                  <p className="m-0">Practice: {item.practiceName}</p>
+                  {item.profile?.aboutMe && <p className="m-0">About: {item.profile.aboutMe}</p>}
+                  </div>
                 </div>
               </div>
               </Link>
               )
-            }) : <h1>No Practitioners Found...</h1>}
+            }) : <h1 className="text-center m-5">No Practitioners Found...</h1>}
           </MDBCol>
         </MDBRow>
       </div>

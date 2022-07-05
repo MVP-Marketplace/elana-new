@@ -28,14 +28,12 @@ export function PractitionerSignUp() {
     "OBGYN",
     "Occupational Therapist (OT)",
     "Pain Management Doctor",
-    "Pain Management Doctor",
     "Pain Management Psychologist",
     "Pelvic Health Physical Therapist",
     "Physical Therapist Assistant (PTA)",
     "Physician (MD)",
     "Pilates Instructor",
     "Sex Coach / Therapist",
-    "Women's Health Coach",
     "Women's Health Coach",
     "Women's Health Psychologist",
     "Women's Mental Health Therapist",
@@ -71,7 +69,7 @@ export function PractitionerSignUp() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const { practitionerUser, isLoading, isError, isSuccess, message } =
+  const { user, isLoading, isError, isSuccess, message } =
     useSelector((state) => state.auth);
 
   useEffect(() => {
@@ -79,12 +77,12 @@ export function PractitionerSignUp() {
       toast.error(message);
     }
 
-    if (isSuccess || practitionerUser) {
+    if (user) {
       navigate("/newPractitionerProfile");
     }
 
     dispatch(reset());
-  }, [practitionerUser, isError, isSuccess, message, navigate, dispatch]);
+  }, [user, isError, isSuccess, message, navigate, dispatch]);
 
   useEffect(()=>{
     const checkdata = (data)=>{

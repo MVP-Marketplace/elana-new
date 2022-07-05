@@ -111,7 +111,6 @@ const getUsers = asyncHandler (async (req,res) => {
     const practitionerUser = await PractitionerUser.find().populate({
         path: 'profile'
     })
-    console.log(practitionerUser)
     res.status(200).json(practitionerUser)
 })  
 

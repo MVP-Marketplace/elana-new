@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 //API_URL needs to be whatver the server route is
-const API_URL = 'http://localhost:5000/api/practitionerUsers/'
+const API_URL = '/api/practitionerUsers/'
 
 // Register user
 const register = async (userData) => {
@@ -30,10 +30,17 @@ const logout = () => {
   localStorage.removeItem('user')
 }
 
+// Get all practitioners
+const getPractitionerUsers = async () => {
+  const response = await axios.get(API_URL + 'users')
+  return response.data
+}
+
 const authService = {
   register,
   logout,
   login,
+  getPractitionerUsers
 }
 
 export default authService

@@ -20,7 +20,7 @@ export function PractitionerLogin() {
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
-    const { practitionerUser, isLoading, isError, isSuccess, message } = useSelector(
+    const { user, isLoading, isError, isSuccess, message } = useSelector(
         (state) => state.auth
     )
 
@@ -29,12 +29,12 @@ export function PractitionerLogin() {
             toast.error(message)
         }
 
-        if (isSuccess || practitionerUser) {
+        if (user) {
             navigate('/newPractitionerProfile')
         }
 
         dispatch(reset())
-    }, [practitionerUser, isError, isSuccess, message, navigate, dispatch])
+    }, [user, isError, isSuccess, message, navigate, dispatch])
 
     const onChange = (e) => {
         setFormData((prevState) => ({
