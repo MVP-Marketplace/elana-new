@@ -148,7 +148,7 @@ export function PractitionerSignUp() {
         <div className="text-center no-responsive-view">
           <h2 className="titlesingup text-center m-0">Welcome to Elana</h2>
           <p className="mb-2">
-            Already have an account? Click <span onClick={()=> navigate('/practitionerLogin')}>here</span> to login
+            Already have an account? Click <span onClick={()=> navigate('/practitionerLogin')} className="pointer">here</span> to login
           </p>
         </div>
 
