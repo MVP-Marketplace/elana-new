@@ -34,7 +34,7 @@ function App() {
             <Route path='/practitionerLogin' element={<PractitionerLogin/>}/>
             <Route path='/newPractitionerProfile' element={<NewPractitionerProfile/>}/>
             <Route path='/practitionerListing/:id' element={<PractitionerListing/>}/>
-            <Route path='/practitionerProfileUserView/:id' element={<PractitionerProfileUserView/>}/>
+            <Route path='/practitionerProfileUserView/:practitioner_id' element={<PractitionerProfileUserView/>}/>
           </Routes>
       <Footer/>
       </Router>
