@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
 // import {logout, reset} from "../../features/auth/authSlice"
 // import {useNavigate} from "react-router-dom";
 // import {useDispatch} from "react-redux"
@@ -23,8 +24,10 @@ import {
   MDBRow,
   MDBCol,
 } from "mdb-react-ui-kit";
+import { useEffect } from "react";
 
 export function PractitionerProfileUserView() {
+  const {practitionerUsers} = useSelector((state)=> state.auth)
   const [basicModal, setBasicModal] = useState(false);
   const [basicModalLast, setBasicModalLast] = useState(false);
   const [basicModaltwo, setBasicModaltwo] = useState(false);
@@ -32,38 +35,21 @@ export function PractitionerProfileUserView() {
   const [showbuttons, setShowButtons] = useState(false);
   const [showbuttonstwo, setShowButtonsTwo] = useState(false);
   const [showbuttonsthree, setShowButtonsThree] = useState(false)
+  const [practitioner, setPractitioner] = useState(null)
+  console.log(practitioner)
 
+  const params = useParams();
 
-
-  const toggleShow = () => setBasicModal(!basicModal);
-  const toggleShowtwo = () => setBasicModaltwo(!basicModaltwo);
-  const toggleShowlast = () => setBasicModalLast(!basicModalLast);
-
-  const handleChange = e => {
-    setFirstProfile({ ...firstProfile, [e.target.name]: e.target.value });
-    console.log(firstProfile);
-  };
-
-  // const navigate = useNavigate()
-  // const dispatch = useDispatch()
- 
-  const {user} = useSelector((state)=> state.auth)
-
-
-
-
-
-//   const onLogout = () => {
-//     dispatch(logout())
-//     dispatch(reset())
-//     navigate('/')
-// }
+  useEffect(()=> {
+    let individual = practitionerUsers.find((item)=> item._id === params.practitioner_id)
+    setPractitioner(individual)
+  },[])
 
   return (
     <div>
     <MDBContainer className="container-profile">
       <div className="container">
-    <h1 className="mb-5 ms-5 text-start">Hello, {user && `Dr. ${user.firstName} ${user.lastName}`}</h1>
+    <h1 className="mb-5 ms-5 text-start">Hello, {practitioner && `Dr. ${practitioner.firstName} ${practitioner.lastName}`}</h1>
     </div>
       <MDBRow>
         <MDBCol className="mb-4 d-flex justify-content-center">
@@ -76,25 +62,25 @@ export function PractitionerProfileUserView() {
             </div>
 
 
-            <div>
+            {practitioner && <div>
               <div className="name-profile ms-4">
-                <h6>Dr. Jessica Smith</h6>
+                <h6>Dr. {practitioner.firstName} {practitioner.lastName}</h6>
                 
              
               </div>
               <div className="ms-4 mt-2">
                 <h6>Practice Name</h6>
-                <p>Smith & Associates</p>
-                <h6>Specialty</h6>
-                <p>Pain Management</p>
+                <p>{practitioner.practiceName}</p>
+                <h6>Specialty:</h6>
+                <p>{practitioner.areaOfSpeciality}</p>
                 <h6>Sub-Specialties</h6>
                 <p>Obstetrics, Gynecology</p>
                 <h6>25 Years </h6>
                 <p>area 1</p>
-                <h6>Education</h6>
+                <h6>Education: </h6>
                 <p>Johns Hopkins University</p>
               </div>
-            </div>
+            </div>}
 
 
           </div>

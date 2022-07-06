@@ -148,7 +148,7 @@ export function PractitionerSignUp() {
         <div className="text-center no-responsive-view">
           <h2 className="titlesingup text-center m-0">Welcome to Elana</h2>
           <p className="mb-2">
-            Already have an account? Click <a className="Link text-decoration-none" href="/practitionerLogin" target="_blank"><span>here</span></a> to login
+            Already have an account? Click <span onClick={()=> navigate('/practitionerLogin')}>here</span> to login
           </p>
         </div>
 
@@ -159,7 +159,7 @@ export function PractitionerSignUp() {
             </div>
             <div className='text-center no-bigscreen'>
               <h2 className="titlesingup text-center">Welcome to Elana</h2>
-              <p className="labelsingup text-center"> Already have an account? Click <span>here</span> to login</p>
+              <p className="labelsingup text-center"> Already have an account? Click <span onClick={()=> navigate('/practitionerLogin')}>here</span> to login</p>
             </div>
           </div>
 

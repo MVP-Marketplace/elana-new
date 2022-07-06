@@ -7,7 +7,7 @@ import DownArrow from "../../img/down-arrow.png";
 import UpArrow from "../../img/up-arrow.png";
 import { getPractitionerUsers, reset } from "../../features/auth/authSlice";
 
-export const PractitionerListing = (props) => {
+export const PractitionerListing = () => {
   const { practitionerUsers } = useSelector((state) => state.auth)
   const dispatch = useDispatch();
   const params = useParams();
@@ -15,6 +15,8 @@ export const PractitionerListing = (props) => {
   const [button1, setButton1] = useState(false);
   // const [button2, setButton2] = useState(false);
   // const [button3, setButton3] = useState(false);
+
+
 
   const [filterPractitionerValue, setFilterPractitionerValue] = useState("")
   const [filterAppointmentValue, setFilterAppointmentValue] = useState("")
@@ -196,7 +198,7 @@ export const PractitionerListing = (props) => {
           <MDBCol md="8">
             {practitioners.length > 0 ? practitioners.map((item, index) => {
               return(
-                <Link className="text-decoration-none" to={`/practitionerProfileUserView/${index}`}>
+                <Link className="text-decoration-none" to={`/practitionerProfileUserView/${item._id}`}>
                 <div key={index} className="brand-bg-purple-2 d-flex border-9 mb-3">
                 <img
                   className="p-3 img-circle"
