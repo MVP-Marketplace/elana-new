@@ -959,6 +959,15 @@ span{
   }
 }
 
+.see-all{
+ position: relative;
+}
+.see-all h2{
+  text-align: center;
+  position: relative;
+  top: 30%;
+  left: 50%;
+}
 
 /* 
 CSS PractitionerProfilePage--------------------**********/

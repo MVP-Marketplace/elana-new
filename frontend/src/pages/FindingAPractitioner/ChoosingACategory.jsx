@@ -11,6 +11,8 @@ import image5 from "../../img/image5.png";
 import image6 from "../../img/image6.png";
 import image7 from "../../img/image7.png";
 import image8 from "../../img/image8.png";
+import image9 from "../../img/image9.png";
+import image10 from "../../img/image10.png";
 
 
 export function ChoosingACategory() {
@@ -142,6 +144,44 @@ export function ChoosingACategory() {
                     </div>
                 </Link>
                 </MDBCol>
+
+                
+            </MDBRow>
+            <MDBRow class="d-flex align-items-center justify-content-center row">
+                <MDBCol className="d-flex justify-content-center">
+                <Link className="link-categories" to='/practitionerListing/9'>
+                    <div className="purpleboxes d-flex col-sm">
+                        <img src={image9} alt=""></img>
+                        <div className="d-block information">
+                            <h6 className="titlebox">Separated Abs</h6>
+                            <p className="paragraphbox">Condition when abdominal<br />  muscles separate during pregnancy   </p>
+                        </div>
+                    </div>
+                    </Link>
+                </MDBCol>
+                <MDBCol className="d-flex justify-content-center">
+                <Link className="link-categories" to='/practitionerListing/10'>
+                    <div className="purpleboxes d-flex col-sm">
+                        <img src={image10} alt=""></img>
+                        <div className="d-block information">
+                            <h6 className="titlebox">Vaginoplasty Prep <br /> & Recovery</h6>
+                            <p className="paragraphbox">Prepping and recovering <br /> from the repair of a vagina  </p>
+                        </div>
+                    </div>
+                </Link>
+                </MDBCol>
+                <MDBCol className="d-flex justify-content-center">
+                <Link className="link-categories" to='/practitionerListing/8'>
+                    <div className="purpleboxes d-flex col-sm">
+                        <div className="d-block information see-all">
+                            <h2 className="">See all</h2>
+                           
+                        </div>
+                    </div>
+                </Link>
+                </MDBCol>
+
+                
             </MDBRow>
 
         </div>
