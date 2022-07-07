@@ -896,6 +896,16 @@ span{
   }
 } 
 
+.pointer{
+  cursor: pointer;
+  color: black;
+}
+
+.pointer:hover{
+  cursor: pointer;
+  color: #7F6FEA;
+}
+
 
 
 /* /////Browser PractitionerCategories */

@@ -27,3 +27,35 @@
     height: auto;
     border-radius: 15px;
 }
+@media screen and (max-width: 600px) {
+    .fisrt-secction-profile {
+      width: 300px;
+      /* margin-left: 95px; */
+    }
+    .bg-profile-input-two{
+      width: 300px;
+      /* margin-left: 95px; */
+    }
+   
+    .availability{
+      width: 300px;
+      margin-right: 95px;
+      margin-left: 85px;
+      margin-top: 20px;
+    }
+    .policy-user{
+      width: 300px;
+      margin-left:85px;
+    }
+    .certification{
+      width: 300px;
+      margin-left: 85px;
+    }
+    .container-profile{
+      flex-direction: column;
+      align-items: center;
+    }
+    .second-secction-profile{
+      margin-right: 0px;
+    }
+  }

@@ -78,7 +78,7 @@ export function PractitionerLogin() {
                     </div>
                     <div className='text-center'>
                     <h2 className="titlesingup text-center">Practitioner Log In</h2>
-                    <p className="labelsingup text-center">Don`t have an account? Click <span onClick={()=> navigate("/practitionerSignUp")}>here</span> to Sign Up</p>
+                    <p className="labelsingup text-center">Don`t have an account? Click <span onClick={()=> navigate("/practitionerSignUp")} className="pointer">here</span> to Sign Up</p>
                     </div>
                     </div>
 
