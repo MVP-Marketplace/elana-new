@@ -30,7 +30,8 @@ export function PractitionerLogin() {
         }
 
         if (user) {
-            navigate('/newPractitionerProfile')
+            navigate('/newPractitionerProfile');
+            window.location.reload(false);
         }
 
         dispatch(reset())
@@ -51,7 +52,7 @@ export function PractitionerLogin() {
             password,
         }
 
-        dispatch(login(practitionerUserData))
+        dispatch(login(practitionerUserData));
     }
 
     if (isLoading) {
