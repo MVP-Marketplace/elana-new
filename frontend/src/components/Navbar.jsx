@@ -61,7 +61,7 @@ export const Navbar = () => {
           <MDBNavbarNav right fullWidth={false} >
             <MDBNavbarItem>
               <MDBNavbarLink>
-                <Link to="/IndividualPage" className="link link-responsive">
+                <Link to="/IndividualPage" className="link fix">
                   <div className="responsive-grey">
                   <p onClick={() => setShowNav(!showNav)} className="m-0">Individuals</p>
                   <img src={arrow} className="icon-responsive"></img>
@@ -70,8 +70,8 @@ export const Navbar = () => {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink>
-                <Link to="/PractitionerPage" className="link">
+              <MDBNavbarLink className="">
+                <Link to="/PractitionerPage" className="link fix">
                 <div className="responsive-grey">
                   <p onClick={() => setShowNav(!showNav)} className="m-0">Practitioner</p>
                   <img src={arrow} className="icon-responsive"></img>
@@ -81,7 +81,7 @@ export const Navbar = () => {
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
-                <Link to="/about" className="link">
+                <Link to="/about" className="link fix">
                 <div className="responsive-grey">
                   <p onClick={() => setShowNav(!showNav)} className="m-0">About</p>
                   <img src={arrow} className="icon-responsive"></img>
@@ -91,7 +91,7 @@ export const Navbar = () => {
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
-                <Link to="/choosingACategory" className="link">
+                <Link to="/choosingACategory" className="link fix">
                 <div className="responsive-grey">
                   <p onClick={() => setShowNav(!showNav)} className="m-0">Browse</p>
                   <img src={arrow} className="icon-responsive"></img>
@@ -103,7 +103,7 @@ export const Navbar = () => {
               <MDBNavbarLink>
               <div className="responsive-grey margin-top-responsive ">
                 <a
-                  className="link2"
+                  className="link2 d-flex align-items-center"
                   href="https://www.elana.health/blog"
                   target="_blank"
                   rel="noreferrer"
@@ -119,7 +119,7 @@ export const Navbar = () => {
               <MDBNavbarLink>
               <div className="responsive-grey margin-top-responsive">
                 <a
-                  className="link2"
+                  className="link2 d-flex align-items-center"
                   href="https://www.elana.health/post/what-is-pelvic-wellness-and-why-does-it-matter"
                   target="_blank"
                   rel="noreferrer"
@@ -132,7 +132,7 @@ export const Navbar = () => {
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
-                <Link to="/practitionerSignUp" className="link">
+                <Link to="/practitionerSignUp" className="link fix">
                 <div className="responsive-grey">
                   <p onClick={() => setShowNav(!showNav)} className="m-0">Join</p>
                   <img src={arrow} className="icon-responsive"></img>
@@ -142,7 +142,7 @@ export const Navbar = () => {
             </MDBNavbarItem>
             <MDBNavbarItem className="last-nav-item">
               <MDBNavbarLink>
-                <Link to="/practitionerLogin" className="link">
+                <Link to="/practitionerLogin" className="link fix">
                 <div className="responsive-grey">
                 {user ? <p onClick={() => {
                     setShowNav(!showNav);

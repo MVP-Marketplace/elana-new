@@ -212,6 +212,11 @@ height: 217px; */
   margin-bottom: 20px;
   padding-top: 20px;
 } */
+
+.fix{
+  display: flex; 
+  align-items: center;
+}
 .navWrapper {
   padding: 10px;
 
@@ -219,6 +224,10 @@ height: 217px; */
 @media (max-width: 600px) {
   .navWrapper {
   padding: 40px;
+  }
+  .fix{
+    display: block; 
+  
   }
 } 
 
@@ -485,6 +494,7 @@ span {
   justify-content: space-between;
   align-items: center;
   border: solid 1px #252A2E;
+  
 }
 .icon-responsive{
   display: block;
