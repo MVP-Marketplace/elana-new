@@ -186,6 +186,14 @@ height: 217px; */
   text-decoration: none;
 
 }
+.link2{
+  color: #7F6FEA;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+
+}
 
 .form {
   margin-right: 50px;
@@ -204,6 +212,15 @@ height: 217px; */
   margin-bottom: 20px;
   padding-top: 20px;
 } */
+.navWrapper {
+  padding: 10px;
+
+  }
+@media (max-width: 600px) {
+  .navWrapper {
+  padding: 40px;
+  }
+} 
 
 
 /* NavBar Page CSS  ******************************************************/
@@ -455,18 +472,30 @@ span {
 .icon-responsive{
   display: none;
 }
+.margin-top-responsive{
+  margin-top: 0;
+}
 
 @media(max-width: 579px){
   .responsive-grey{ background-color: #E3E2E8;
   color: #252A2E;
   border-radius: 15px;
-  padding: 5px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  border: solid 1px #252A2E;
 }
 .icon-responsive{
   display: block;
+}
+.margin-top-responsive{
+  margin-top: 25px;
+}
+.link2{
+  color: black;
+  margin-bottom: 10px;
+  margin: 0;
 }
 }
 

@@ -73,7 +73,7 @@ export const Navbar = () => {
               <MDBNavbarLink>
                 <Link to="/PractitionerPage" className="link">
                 <div className="responsive-grey">
-                  <p onClick={() => setShowNav(!showNav)} className="responsive-grey">Practitioner</p>
+                  <p onClick={() => setShowNav(!showNav)} className="m-0">Practitioner</p>
                   <img src={arrow} className="icon-responsive"></img>
                   </div>
                 </Link>
@@ -83,7 +83,7 @@ export const Navbar = () => {
               <MDBNavbarLink>
                 <Link to="/about" className="link">
                 <div className="responsive-grey">
-                  <p onClick={() => setShowNav(!showNav)} className="responsive-grey">About</p>
+                  <p onClick={() => setShowNav(!showNav)} className="m-0">About</p>
                   <img src={arrow} className="icon-responsive"></img>
                   </div>
                 </Link>
@@ -93,7 +93,7 @@ export const Navbar = () => {
               <MDBNavbarLink>
                 <Link to="/choosingACategory" className="link">
                 <div className="responsive-grey">
-                  <p onClick={() => setShowNav(!showNav)} className="responsive-grey">Browse</p>
+                  <p onClick={() => setShowNav(!showNav)} className="m-0">Browse</p>
                   <img src={arrow} className="icon-responsive"></img>
                   </div>
                 </Link>
@@ -101,43 +101,56 @@ export const Navbar = () => {
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
+              <div className="responsive-grey margin-top-responsive ">
                 <a
-                  className="link"
+                  className="link2"
                   href="https://www.elana.health/blog"
                   target="_blank"
                   rel="noreferrer"
                   
                 >
-                  <p onClick={() => setShowNav(!showNav)} className="responsive-grey">Blog</p>
+                  <p onClick={() => setShowNav(!showNav)} className="m-0">Blog</p>
                 </a>
+                <img src={arrow} className="icon-responsive"></img>
+                  </div>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
+              <div className="responsive-grey margin-top-responsive">
                 <a
-                  className="link"
+                  className="link2"
                   href="https://www.elana.health/post/what-is-pelvic-wellness-and-why-does-it-matter"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <p onClick={() => setShowNav(!showNav)}>What is pelvic health?</p>
+                  <p onClick={() => setShowNav(!showNav)} className="m-0">What is pelvic health?</p>
                 </a>
+                <img src={arrow} className="icon-responsive"></img>
+                  </div>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
                 <Link to="/practitionerSignUp" className="link">
-                  <p onClick={() => setShowNav(!showNav)}>Join</p>
+                <div className="responsive-grey">
+                  <p onClick={() => setShowNav(!showNav)} className="m-0">Join</p>
+                  <img src={arrow} className="icon-responsive"></img>
+                  </div>
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem className="last-nav-item">
               <MDBNavbarLink>
                 <Link to="/practitionerLogin" className="link">
+                <div className="responsive-grey">
                 {user ? <p onClick={() => {
                     setShowNav(!showNav);
                     onLogout()
-                  }}>Logout</p>: <p onClick={() => setShowNav(!showNav)}>Login</p>}
+                  }}>Logout</p>: <p onClick={() => setShowNav(!showNav)} className="m-0">Login</p>
+                  }
+                  <img src={arrow} className="icon-responsive"></img>
+                  </div>
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
