@@ -17,6 +17,8 @@ import {logout, reset} from "../features/auth/authSlice"
 import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux"
 import { useSelector } from "react-redux";
+import arrow from "../img/Link.png"
+// import  arrow  from "../../src/img/link.png"
 
 export const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -59,29 +61,41 @@ export const Navbar = () => {
           <MDBNavbarNav right fullWidth={false} >
             <MDBNavbarItem>
               <MDBNavbarLink>
-                <Link to="/IndividualPage" className="link">
-                  <p onClick={() => setShowNav(!showNav)}>Individuals</p>
+                <Link to="/IndividualPage" className="link link-responsive">
+                  <div className="responsive-grey">
+                  <p onClick={() => setShowNav(!showNav)} className="m-0">Individuals</p>
+                  <img src={arrow} className="icon-responsive"></img>
+                  </div>
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
                 <Link to="/PractitionerPage" className="link">
-                  <p onClick={() => setShowNav(!showNav)}>Practitioner</p>
+                <div className="responsive-grey">
+                  <p onClick={() => setShowNav(!showNav)} className="responsive-grey">Practitioner</p>
+                  <img src={arrow} className="icon-responsive"></img>
+                  </div>
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
                 <Link to="/about" className="link">
-                  <p onClick={() => setShowNav(!showNav)}>About</p>
+                <div className="responsive-grey">
+                  <p onClick={() => setShowNav(!showNav)} className="responsive-grey">About</p>
+                  <img src={arrow} className="icon-responsive"></img>
+                  </div>
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
                 <Link to="/choosingACategory" className="link">
-                  <p onClick={() => setShowNav(!showNav)}>Browse</p>
+                <div className="responsive-grey">
+                  <p onClick={() => setShowNav(!showNav)} className="responsive-grey">Browse</p>
+                  <img src={arrow} className="icon-responsive"></img>
+                  </div>
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
@@ -94,7 +108,7 @@ export const Navbar = () => {
                   rel="noreferrer"
                   
                 >
-                  <p onClick={() => setShowNav(!showNav)}>Blog</p>
+                  <p onClick={() => setShowNav(!showNav)} className="responsive-grey">Blog</p>
                 </a>
               </MDBNavbarLink>
             </MDBNavbarItem>

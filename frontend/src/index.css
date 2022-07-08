@@ -452,6 +452,24 @@ span {
   align-self: stretch;
   flex-grow: 0;
 }
+.icon-responsive{
+  display: none;
+}
+
+@media(max-width: 579px){
+  .responsive-grey{ background-color: #E3E2E8;
+  color: #252A2E;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.icon-responsive{
+  display: block;
+}
+}
+
 
 
 /*Listing Page CSS  ******************************************************/
