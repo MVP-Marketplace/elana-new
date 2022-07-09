@@ -171,17 +171,14 @@ export function ChoosingACategory() {
                 </Link>
                 </MDBCol>
                 <MDBCol className="d-flex justify-content-center">
-                <Link className="link-categories" to='/practitionerListing/8'>
+                <Link className="link-categories" to='/practitionerListing/general'>
                     <div className="purpleboxes d-flex col-sm">
                         <div className="d-block information see-all">
-                            <h2 className="">See all</h2>
-                           
+                            <h2 className="m-0">See all</h2>
                         </div>
                     </div>
                 </Link>
-                </MDBCol>
-
-                
+                </MDBCol>                
             </MDBRow>
 
         </div>
