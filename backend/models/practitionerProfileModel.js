@@ -5,22 +5,23 @@ const practitionerProfileSchema = mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: 'PractitionerUser'
+        
     },
     aboutMe: {
         type: String,
-        required: true
+        required: false
     },
     howCanIHelp: {
         type: String,
-        required: true
+        required: false
     },
     servicesOffered: {
         type: String,
-        required: true
+        required: false
     },
     certifications: {
         type: String,
-        required: true
+        required: false
     },
     availability: {
         type: String,
@@ -28,39 +29,27 @@ const practitionerProfileSchema = mongoose.Schema({
     },
     cancellationPolicy: {
         type: String,
-        required: true
+        required: false
     },
     paymentMethods: {
         type: String,
-        required: true
-    },
-    fullName: {
-        type: String,
-        required: true
-    },
-    practiceName: {
-        type: String,
-        required: true
-    },
-    specialty: {
-        type: String,
-        required: true
+        required: false
     },
     subSpecialites: {
         type: String,
-        required: true
+        required: false
     },
     yearsOfExperience: {
         type: String,
-        required: true
+        required: false
     },
     education: {
         type: String,
-        required: true
+        required: false
     },
     telehealthProvided: {
         type: String,
-        required: true
+        required: false
     },
 })
 
@@ -78,9 +67,6 @@ Example for Postman
     "availabilty": "Mon-Fri 9-5",
     "cancellationPolicy": "No refunds",
     "paymentMehtods": "Amex, VISA",
-    "fullName": "Annie Gomez",
-    "practiceName": "OBYGYNSuns",
-    "specialty": "Obstetrics",
     "subSpecialites": "Pediatrics",
     "yearsOfExperience": "20",
     "education": "UCF",

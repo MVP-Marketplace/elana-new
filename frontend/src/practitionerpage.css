@@ -75,6 +75,24 @@
     font-size: 12px
 }
 
+.fs-24-20 {
+    font-size: 24px
+}
+@media(max-width: 500px){
+    .fs-24-20 {
+        font-size: 20px
+    }
+}
+
+.fs-16-12 {
+    font-size: 16px
+}
+@media(max-width: 500px){
+    .fs-16-12 {
+        font-size: 12px
+    }
+}
+
 .me-8 {
     margin-right: 8rem
 }
@@ -100,4 +118,30 @@
 
 .text-nowrap {
     white-space: nowrap;
+}
+
+.justify-center-responsive {
+    justify-content: left;
+}
+@media(max-width: 768px){
+    .justify-center-responsive {
+        justify-content: center;
+    }
+}
+
+.br-active-responsive-only {
+    display:none;
+}
+@media(max-width: 768px){
+    .br-active-responsive-only {
+        display:block;
+    }
+}
+.br-active-desktop-only {
+    display:block;
+}
+@media(max-width: 768px){
+    .br-active-desktop-only {
+        display:none;
+    }
 }

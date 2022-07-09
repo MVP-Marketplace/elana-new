@@ -1,0 +1,155 @@
+/**** GENERAL STYLING ****/
+
+/**** CLASS STYLING ****/
+
+/* BANNER STYLING*/
+
+.listing-banner-1 {
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.listing-banner-2 {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* BACKGROUND COLORS AND TEXT COLORS */
+
+.brand-purple {
+    color: #7F6FEA;
+}
+
+.border-purple {
+    border-color: #7F6FEA;
+}
+
+.brand-bg-purple {
+    background: #7F6FEA;
+}
+
+.brand-bg-purple-1 {
+    background: #7F6FEA;
+    width: 250px;
+}
+
+.brand-bg-purple-2 {
+    background: #BCB5E8;
+}
+
+.bg-purple-2 {
+    background: #BCB5E8;
+}
+
+/* TEXT STYLING */
+
+.text-al {
+    font-family: 'Abhaya Libre', serif;
+}
+
+.text-ka {
+    font-family: 'Karla', sans-serif;
+}
+
+/* TEXT SIZING */
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.fs-54-36 {
+    font-size: 54px;
+}
+@media(max-width: 768px) {
+    .fs-54-36 {
+        font-size: 36px;
+    }
+}
+
+.fs-48-24 {
+    font-size: 48px;
+}
+@media(max-width: 768px) {
+    .fs-48-24 {
+        font-size: 24px;
+    }
+}
+
+.fs-16-12 {
+    font-size: 16px;
+}
+@media(max-width: 768px) {
+    .fs-16-12 {
+        font-size: 12px;
+    }
+}
+
+/* BORDER PROPERTIES */
+
+.border-9 {
+    border-radius: 9px
+}
+
+/* IMAGES */
+
+.img-circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* RESPONSIVE STYLING */
+
+.text-center-mobile {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .text-center-mobile {
+        text-align: center;
+    }
+}
+
+/* CHECKBOX STYLING */
+
+.checkbox-squer {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 4px;
+    vertical-align: middle;
+    border: 2px solid #7F6FEA;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-squer:checked {
+    background-color: #7F6FEA;
+}
+
+.arrow-img {
+    width: 40px;
+    height: 20px;
+    
+}
+
+/* LINKS */
+
+.link-categories {
+    text-decoration: none;
+    color: black;
+}
+.dark-text{
+    color: black;
+}
+
+/* Unordered List */
+
+.categories-ul {
+    list-style: none !important;
+    list-style-position: circle;
+}

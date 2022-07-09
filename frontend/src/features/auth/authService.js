@@ -1,36 +1,46 @@
 import axios from 'axios'
 
+//API_URL needs to be whatver the server route is
 const API_URL = '/api/practitionerUsers/'
 
-// Login user
-const login = async (practitionerUserData) => {
-    const response = await axios.post(API_URL + 'practitionerLogin', practitionerUserData)
-
-    if(response.data) {
-        localStorage.setItem('practitionerUser', JSON.stringify(response.data))
-    }
-
-    return response.data
-}
-
 // Register user
-const register = async (practitionerUserData) => {
-    const response = await axios.post(API_URL, practitionerUserData)
+const register = async (userData) => {
+  const response = await axios.post(API_URL, userData)
 
-    if(response.data) {
-        localStorage.setItem('practitionerUser', JSON.stringify(response.data))
-    }
+  if (response.data) {
+    localStorage.setItem('user', JSON.stringify(response.data))
+  }
 
-    return response.data
+  return response.data
 }
 
-// Logout User
+// Login user
+const login = async (userData) => {
+  const response = await axios.post(API_URL + 'practitionerLogin', userData)
+
+  if (response.data) {
+    localStorage.setItem('user', JSON.stringify(response.data))
+  }
+
+  return response.data
+}
+
+// Logout user
 const logout = () => {
-    localStorage.removeItem('practitionerUser')
+  localStorage.removeItem('user')
+}
+
+// Get all practitioners
+const getPractitionerUsers = async () => {
+  const response = await axios.get(API_URL + 'users')
+  return response.data
 }
 
 const authService = {
-    register, logout, login,
+  register,
+  logout,
+  login,
+  getPractitionerUsers
 }
 
 export default authService

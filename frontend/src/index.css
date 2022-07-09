@@ -1,3 +1,24 @@
+/* *{
+  border: 1px dotted red;
+} */
+
+/* General Styling */
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightslategray
+}
+
+
 /* About Page CSS  ********************************/
 
 .headerText {
@@ -176,6 +197,14 @@ height: 217px; */
   text-decoration: none;
 
 }
+.link2{
+  color: #7F6FEA;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+
+}
 
 .form {
   margin-right: 50px;
@@ -194,6 +223,26 @@ height: 217px; */
   margin-bottom: 20px;
   padding-top: 20px;
 } */
+
+.fix{
+  display: flex; 
+  align-items: center;
+}
+.navWrapper {
+  padding: 10px;
+
+  }
+@media (max-width: 600px) {
+  .navWrapper {
+  padding: 50px;
+  }
+  .fix{
+    display: block; 
+  
+  }
+ 
+
+} 
 
 
 /* NavBar Page CSS  ******************************************************/
@@ -442,6 +491,41 @@ span {
   align-self: stretch;
   flex-grow: 0;
 }
+.icon-responsive{
+  display: none;
+}
+.margin-top-responsive{
+  margin-top: 0;
+}
+
+@media(max-width: 579px){
+  .responsive-grey{ background-color: #E3E2E8;
+  color: #252A2E;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #252A2E;
+  width: 230px;
+  
+}
+.icon-responsive{
+  display: block;
+}
+.margin-top-responsive{
+  margin-top: 25px;
+}
+.link2{
+  color: black;
+  margin-bottom: 10px;
+  margin: 0;
+}
+.move-r{
+  margin-left: 17px;
+}
+}
+
 
 
 /*Listing Page CSS  ******************************************************/
@@ -484,12 +568,25 @@ span {
   font-family: 'Karla', sans-serif;
 
 }
+.link-individual {
+  color: #7F6FEA;
+  font-family: 'Karla', sans-serif;
+}
 
 .form {
   margin-right: 112px;
 }
 
 /* /////PatienLandingPage */
+
+.individual-page-banner-3 {
+  background: #E3E2E8;
+}
+@media (max-width: 600px) {
+  .individual-page-banner-3 {
+    background-color: #FFFFFF;
+  }
+}  
 
 .bgpurple {
   background-color: #EAE8FB;
@@ -506,7 +603,6 @@ span {
 .title1 {
   font-family: 'Abhaya Libre', serif;
   color: black;
-  margin-left: 75px;
 }
 .title3{
   font-family: 'Abhaya Libre', serif;
@@ -561,45 +657,51 @@ span {
 .buttonmainpageindividual {
   background-color: #7F6FEA;
   border: 1px solid #7F6FEA;
-  border-radius: 3px;
-  height: 35px;
-  margin: auto;
-  width: auto;
+  border-radius: 9px;
+  padding:12px;
   color: white;
+  justify-content: center;
 }
-@media (max-width: 500px) {
-  .buttonmainpageindividual {
-    margin-bottom: 5px;
-    display: grid;
+.center-div-button {
+   display: block;
+}
+@media (max-width: 765px) {
+  .center-div-button {
+    display: flex;
     justify-content: center;
-    align-items: center;
   }
 }  
+
+.blue-hover {
+  background-color: #7F6FEA;
+}
+.blue-hover:hover {
+  background-color: #0D6EFD;
+}
 
 .inputindividual{
   max-width: 250px;
   height: 36px;
 }
 /* //////////////footer */
-.buttonfooter {
+/* .buttonfooter {
   background-color: #EAE8FB;
   border: 1px solid #EAE8FB;
   border-radius: 3px;
   height: 35px;
   margin: auto;
   width: auto;
-}
-
-.footer {
+} */
+.footer-ori{
   background-color: #7F6FEA;
-
+  /* width: 100%; */
+  align-items: center;
 }
 
 .footerlinks {
   display: flex;
   font-size: 15px;
   white-space: nowrap;
-  padding-top: 30px;
 
 }
 
@@ -609,20 +711,60 @@ span {
 
 .footerlink {
   color: white;
-  margin-right: 20px;
-  margin-left: 50px;
+  margin-right: 15px;
+
 
 }
 
 .icon {
   color: white;
   font-size: 35px;
-  align-items: baseline;
+  justify-content: end;
+}
+.a-link-footer{
+  color: white;
+}
+.footer-res{
+  
+align-items: center;
 }
 
-@media only screen and (max-width: 579px){
-  .footer { margin-top: 2000px; }
+ @media (max-width: 579px){
+  .footer-res{
+     /* padding-left: 45px;  */
+    justify-content: space-evenly;
+  }
+  .icon{
+    justify-content: start;
+  }
+  .footerlinks{
+    display: grid;
+    padding-top: 25px;
+    margin-left: 10px;
+
+  }
+ .media-right{
+  margin-left: 25%;
+ }
+  .media-left{
+    justify-content: start;
+  }
+  .a-link-footer{
+    padding-left: 10px;
+  }
+} 
+
+.margin-list {
+  margin-left: 5%;
+  margin-top: 2%;
 }
+@media(max-width: 765px){
+  .margin-list {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
 
 
 /* //////////singup */
@@ -653,7 +795,7 @@ span {
   background-color: white;
   width: 670px;
   border-radius: 14px;
-  height: 700px;
+  height: 600px;
   /* position: absolute;
   left: 0;
   top: 0;
@@ -665,6 +807,14 @@ span {
   width: 200px;
   height: 55px;
 } */
+.smallLetters{
+  font-size: 10px;
+}
+
+.margin-left{
+  margin-left: 7%;
+  margin-right: 7%;
+}
 
 @media only screen and (max-width: 479px){
   .bgwhite { width: 90%; height: 100%; }
@@ -687,14 +837,33 @@ span {
   margin: auto;
 
 }
-@media only screen and (max-width: 479px){
+.no-bigscreen{
+  display: none;
+}
+@media only screen and (max-width: 600px){
   .bgwhite2 { width: 90%; }
 }
 .Logores{
   display: none;
 }
-@media only screen and (max-width: 479px){
+@media only screen and (max-width: 600px){
   .Logores { display: inline; }
+
+  .input-responsive{
+    margin-right: 15%;
+  }
+}
+@media (max-width:600px){
+  .no-responsive-view{
+    display: none;
+  }
+  .no-bigscreen{
+    display: block;
+  }
+  .input-responsive-new{
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 
@@ -717,24 +886,32 @@ span {
 
 .titlesingup {
   font-family: 'Abhaya Libre', serif;
+  
 }
  @media (min-width: 1200px) {
   .titlesingup {
     font-size: 30px;
   }
 } 
-/* If the screen size is smaller than 1200px, set the font-size to 80px */
-@media (max-width: 1199.98px) {
+@media (max-width: 600px) {
   .titlesingup {
-    font-size: 30px;
+    font-size: 20px;
   }
 } 
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+
+
 
 .labelsingup {
   font-family: 'Karla', sans-serif;
   font-size: 15px;
   max-width: 9000px;
 }
+@media (max-width: 600px) {
+  .labelsingup {
+    font-size: 15px;
+  }
+} 
 
 /* .model{
      font-family: 'Karla', sans-serif;
@@ -750,18 +927,26 @@ span {
 
 .inputdrop {
   width: 540px;
-  margin-left: 65px;
-  margin-right: 85px;
+  margin-left: 15px;
+
+  
   font-family: 'Karla', sans-serif;
 }
-
+.logonew{
+  width: 130px;
+  height: 30px;
+}
 
 @media (max-width: 600px) {
   .inputdrop {
-    width: 230px;
-    margin-left: 37px;
-    margin-right: 85px;
+    width: 210px;
     font-family: 'Karla', sans-serif;
+  }
+  .margin-left{
+    margin-left: 0;
+  }
+  .logonew{
+    display:none;
   }
 } 
 
@@ -771,7 +956,7 @@ span{
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .logosingup {
     display: none;
   }
@@ -779,11 +964,21 @@ span{
 .responsivediv{
   margin-left: 180px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .responsivediv {
     margin-left: 0;
   }
 } 
+
+.pointer{
+  cursor: pointer;
+  color: black;
+}
+
+.pointer:hover{
+  cursor: pointer;
+  color: #7F6FEA;
+}
 
 
 
@@ -828,14 +1023,31 @@ span{
   font-family: 'Karla', sans-serif;
   font-size: 15px;
 }
+@media(max-width: 568px){
+  .conta-responsive-browser{
+    margin-left: 45px;
+  }
+  .center-res{
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
-
+.see-all{
+ position: relative;
+}
+.see-all h2{
+  text-align: center;
+  position: relative;
+  top: 30%;
+  left: 50%;
+}
 
 /* 
 CSS PractitionerProfilePage--------------------**********/
 .pp {
   margin: 0 auto;
-  width: 1440px;
+  width: 1440px; 
   height: 100vh ;
   margin-bottom: 300px;
 }
@@ -894,8 +1106,8 @@ line-height: 57px;
 }
 
 .ppAbout {
-width: 544px;
-height: 756px;
+/* width: 544px;
+height: 756px; */
 /* display: flex;
 flex-direction: column;
 align-items: flex-start; */
@@ -1219,7 +1431,7 @@ background-color: #EAE8FB;
   margin: 50px;
 }
 @media only screen and (max-width: 679px){
-  .pp { width: 100%; height:100%;}
+  .ppConainer { width: 100%; }
 }
 @media only screen and (max-width: 667px) {
   .pp .ppConainer{
@@ -1253,6 +1465,7 @@ background-color: #EAE8FB;
   }
   .ppInput{
     width: 280px;
+    margin-left: 10px;
   }
  
   .ppAvailability{
@@ -1267,22 +1480,108 @@ background-color: #EAE8FB;
   }
   .resmodal{
     width: 300px;
-    
-  }
-  .iconmodal{
-    display: block;
   }
   .ppHeader{
     margin-bottom: 1000px;
   }
  }
-/* .iconmodal{
-  width: 40px;
-  height: 31px;
-} */
-/* 
 
+ .bg-responsive{
+  display: flex;
+  justify-content: center;
+ }
+@media(max-width:667px){
+  .bg-responsive{
+    display: grid;
+    align-items: center;
+   }
+   .boxmodal{
+    width: 350px;
+   }
+   .buttonmodalresponsive{
+    margin-right: 65px;
+   }
+}
+@media only screen and (max-width: 609px){
+  .boxmodalresponsive { width: 90%; height: 100vh;}
+}
+.div-grid{
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 609px){
+  .div-grid {display: grid; }
+}
+@media (max-width: 400px){
+  .bgmodal{
+    width: 350px;
+  }
+}
+
+.input-size{
+width: 900px;
+}
+.labelresponsive-right{
+  margin-left: 150px;
+}
+@media (max-width: 709px){
+  .labelresponsive-right{
+    margin-left: 0px;
+  }
+}
 
 CSS PractitionerProfilePage--------------------**********/
 input{
   resize: vertical;}
+
+/* Font Size */
+.fs-58 {
+  font-size: 58px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+/* Text Styling */
+
+.text-al {
+  font-family: 'Abhaya Libre', serif; 
+}
+
+.text-ka {
+  font-family: 'Karla', sans-serif;  
+}
+
+@media(max-width:800px){
+  ul {
+    text-align: center;
+  }
+  li {
+    display: grid
+  }
+}
+
+.center-text-responsive {
+  text-align: left;
+}
+@media(max-width:800px){
+  .center-text-responsive {
+    text-align: center;
+  }
+}

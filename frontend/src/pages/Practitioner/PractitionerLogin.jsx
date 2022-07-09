@@ -20,7 +20,7 @@ export function PractitionerLogin() {
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
-    const { practitionerUser, isLoading, isError, isSuccess, message } = useSelector(
+    const { user, isLoading, isError, isSuccess, message } = useSelector(
         (state) => state.auth
     )
 
@@ -29,12 +29,13 @@ export function PractitionerLogin() {
             toast.error(message)
         }
 
-        if (isSuccess || practitionerUser) {
-            navigate('/practitionerProfile')
+        if (user) {
+            navigate('/newPractitionerProfile');
+            window.location.reload(false);
         }
 
         dispatch(reset())
-    }, [practitionerUser, isError, isSuccess, message, navigate, dispatch])
+    }, [user, isError, isSuccess, message, navigate, dispatch])
 
     const onChange = (e) => {
         setFormData((prevState) => ({
@@ -51,7 +52,7 @@ export function PractitionerLogin() {
             password,
         }
 
-        dispatch(login(practitionerUserData))
+        dispatch(login(practitionerUserData));
     }
 
     if (isLoading) {
@@ -78,7 +79,7 @@ export function PractitionerLogin() {
                     </div>
                     <div className='text-center'>
                     <h2 className="titlesingup text-center">Practitioner Log In</h2>
-                    <p className="labelsingup text-center">Don`t have an account? Click <span>here</span> to Sign Up</p>
+                    <p className="labelsingup text-center">Don`t have an account? Click <span onClick={()=> navigate("/practitionerSignUp")} className="pointer">here</span> to Sign Up</p>
                     </div>
                     </div>
 

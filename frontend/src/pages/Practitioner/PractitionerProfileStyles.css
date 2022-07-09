@@ -1,8 +1,227 @@
-.profilePage{
-    box-sizing: border-box;
-    position: relative;
-    width: 1440px;
-    height: 1445px;
-    background: #FFFFFF;
-    border: 0.5px solid #000000;
+.fisrt-secction-profile{
+    background-color: #EAE8FB;
+    height: 630px;
+    width: 250px;
+    border-radius: 15px;
+}
+.photo-secction{
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    border-radius: 8px;
+    margin: 25px;
+}
+/* .second-secction-profile{
+   margin-right: 85px; 
+} */
+.name-profile{
+    display: flex;
+}
+.bg-profile-input{
+    width: 500px;
+    height: 160px;
+    background-color: #EAE8FB;
+    border-radius: 15px;
+}
+.bg-profile-input-certifications{
+    width: 500px;
+    height: 120px;
+    background-color: #EAE8FB;
+    border-radius: 15px;
+}
+.input-profile{
+width: 400px;
+height: 80px;
+border-radius: 10px;
+margin-left: 45px;
+}
+.icon-plus{
+    display: flex;
+    justify-content: space-between;
+}
+.availability{
+    background-color: #EAE8FB;
+    width: 270px;
+    height: 282px;
+    /* margin-left: 95px; */
+    border-radius: 15px;
+}
+.availability-box{
+    width: 210px;
+    height: 170px;
+    border: 1px solid black;
+    margin:auto;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+.policy{
+    background-color: #EAE8FB;
+    width: 270px;
+    height: 180px;
+    /* margin-left: 95px; */
+    border-radius: 15px;
+}
+.input-policy{
+    width: 200px;
+    height: 60px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+.certification{
+    background-color: #EAE8FB;
+    /* margin-left: 95px; */
+    border-radius: 15px;
+    width: 270px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+/* //////////////////////////// media queries */
+@media screen and (max-width: 600px) {
+  .fisrt-secction-profile {
+    width: 300px;
+    /* margin-left: 95px; */
+  }
+  .bg-profile-input{
+    width: 300px;
+    /* margin-left: 95px; */
+  }
+  .input-profile{
+    width: 220px;
+  }
+  .bg-profile-input-certifications{
+    width: 300px;
+    /* margin-left: 95px; */
+  }
+  .availability{
+    width: 300px;
+    margin-right: 95px;
+    margin-left: 85px;
+    margin-top: 20px;
+  }
+  .policy{
+    width: 300px;
+    margin-left:85px;
+  }
+  .certification{
+    width: 300px;
+    margin-left: 85px;
+  }
+  .container-profile{
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-secction-profile{
+    margin-right: 0px;
+  }
+}
+.checkbox-squer{
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 4px;
+  vertical-align: middle;
+  border: 2px solid #7F6FEA;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  /* margin-right: 3px;
+  margin-bottom: 35px; */
+
+}
+.checkbox-squer:checked {
+  background-color: #7F6FEA;
+}
+.bg-purple-modal{
+  background-color: #EAE8FB;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  justify-content: flex-end;
+padding-right: 55px;
+}
+.plus-button:hover{
+  cursor: pointer;
+}
+
+
+.square_btn-modal {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #7F6FEA;
+  border: solid 2px #7F6FEA;
+  border-radius: 3px;
+  transition: .4s;
+  background: #EAE8FB;
+}
+
+.square_btn-modal:hover {
+  background: #7F6FEA;
+  color: white;
+}
+.responsive-grid-modal{
+  margin-right: 55px ;
+  }
+@media(max-width: 768px){
+
+  .responsive-grid-modal{
+  display: grid;
+  margin-right:0 ;
+  }
+}
+
+.checkbox-squer-diferent{
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 4px;
+  vertical-align: middle;
+  border: 2px solid #7F6FEA;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+
+}
+.checkbox-squer-diferent:checked {
+  background-color: #7F6FEA;
+}
+@media(max-width: 768px){
+
+  .checkbox-squer-diferent{
+  margin-right: 105px;
+  
+  }
+  .label-responsive{
+    font-size: 10px;
+  }
+  .checkbox-squer-margin{
+    margin-right: 45px;
+    margin-top: 15px;
+  }
+}
+.control-div{
+  margin-top: 10px;
+}
+@media(max-width: 768px){
+  .control-div{
+    margin-top: 15px;
+  }
+}
+
+.button-disable{
+  background-color: #E3E2E8;
+  padding: 5px;
+  color: black;
+  border-radius: 8px;
+}
+.margin{
+  margin-left: 170px;
+}
+@media(max-width: 768px){
+  .margin{
+    margin-left: 0px;
+  }
 }

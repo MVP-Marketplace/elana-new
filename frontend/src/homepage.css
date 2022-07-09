@@ -156,6 +156,9 @@
 .fs-16 {
     font-size: 16px
 }
+.fs-12 {
+    font-size: 12px
+}
 
 /* Others */
 
@@ -295,9 +298,14 @@
 .email-width {
     width: 40%;
 }
-@media(max-width: 768px){
+@media(max-width: 932px){
     .email-width {
-        width: 90%;
+        width: 70%;
+    }
+}
+@media(max-width: 700px){
+    .email-width {
+        width: 100%;
     }
 }
 
@@ -311,4 +319,11 @@
     width: 150px;
     height: 150px;
     border-radius:50%;
+}
+
+.blue-hover {
+    background-color: #7F6FEA;
+}
+.blue-hover:hover {
+    background-color: #0D6EFD;
 }
