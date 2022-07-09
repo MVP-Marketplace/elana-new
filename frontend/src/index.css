@@ -1,21 +1,7 @@
-/* *{
-  border: 1px dotted red;
-} */
-
-/* General Styling */
 
 body{
   margin: 0;
   padding: 0;
-}
-
-a {
-  color: #000000;
-  text-decoration: none;
-}
-
-a:hover {
-  color: lightslategray
 }
 
 
@@ -50,7 +36,6 @@ a:hover {
   position: absolute;
   width: 1150px;
   height: 157px;
-  /* left: 175px; */
   top: 195px;
 }
 
@@ -63,9 +48,6 @@ a:hover {
   line-height: 57px;
   align-items: center;
   text-align: center;
-  /* position: absolute;
-left: 670px;
-top: 440px; */
   display: flex;
   justify-content: center;
   padding-top: 25px;
@@ -79,9 +61,6 @@ top: 440px; */
   line-height: 38px;
   align-items: center;
   text-align: center;
-  /* position: absolute;
-left: 350px;
-top: 527px; */
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
@@ -94,11 +73,6 @@ top: 527px; */
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  /* justify-content: center;
-display: flex; */
-  /* position: absolute;
-left: 180px;
-top: 620px; */
   margin: 0 auto;
   width: 1149px;
   height: 348px;
@@ -108,7 +82,6 @@ top: 620px; */
   background: #EAE8FB;
   width: 100%;
   height: 565px;
-  /* border: 1px dotted red; */
   margin: 150px 0;
 
 }
@@ -124,12 +97,6 @@ top: 620px; */
   text-align: center;
   display: flex;
   justify-content: center;
-  /* padding-bottom: 80px;
-  margin-top: 40px; */
-  /* position: absolute;
- left: 625px;
-top: 1030px; */
-  /* padding-bottom: 90px; */
   margin: -30px auto;
 }
 
@@ -138,18 +105,11 @@ top: 1030px; */
   height: 33%;
 }
 
-
-
-
 .teamPics {
-  /* width: 230px;
-height: 217px; */
   margin: 100px auto;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-
-
 }
 
 .pic1,
@@ -163,7 +123,6 @@ height: 217px; */
 }
 
 .names {
-
   font-family: 'Abhaya Libre ExtraBold 800';
   font-style: normal;
   font-weight: 800;
@@ -181,12 +140,6 @@ height: 217px; */
   text-align: center;
 }
 
-/* @media screen and (min-width: 1900px) {
-  .container {
-    width: 1870px;
-  }
-} */
-/* About Page CSS  ******************************************************/
 /* NavBar Page CSS  ******************************************************/
 
 .link {
@@ -214,15 +167,7 @@ height: 217px; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* border-bottom:#7F6FEA 0.25px solid; */
 }
-
-/* .navWrapper{
-  
-  box-shadow: 0px 5px #EAE8FB ;
-  margin-bottom: 20px;
-  padding-top: 20px;
-} */
 
 .fix{
   display: flex; 
@@ -240,16 +185,9 @@ height: 217px; */
     display: block; 
   
   }
- 
-
 } 
 
-
 /* NavBar Page CSS  ******************************************************/
-
-
-/*Listing Page CSS  ******************************************************/
-
 
 .listingButton {
   position: absolute;
@@ -265,12 +203,6 @@ span {
   content: "\2039";
 }
 
-/* .textresponsive {
- font-size: clamp(1.3rem,  1.2vh + 1rem, 5.5rem);
-} */
-
-
-
 @media (max-width: 600px) {
   .textresponsive {
     display: flex;
@@ -281,31 +213,22 @@ span {
   }
 }  
 .listingHeader {
-
   font-family: 'Abhaya Libre ExtraBold';
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
   line-height: 57px;
-  /* identical to box height */
-
   display: flex;
   align-items: flex-end;
-
-  /* 7F6FEA - Brand (Purple) */
-
   color: #7F6FEA;
-
 }
 
 .listingContainer {
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
-
   position: absolute;
   width: 1216px;
   height: 138px;
@@ -335,9 +258,6 @@ span {
 
   width: 1216px;
   height: 30px;
-
-  /* Karla/Regular/P - 16 */
-
   font-family: 'Karla';
   font-style: normal;
   font-weight: 400;
@@ -354,8 +274,6 @@ span {
   align-items: flex-start;
   padding: 0px;
   gap: 32px;
-
-  /* Filter By Menu */
   position: absolute;
   width: 280px;
   height: 330px;
@@ -369,7 +287,6 @@ span {
   align-items: flex-start;
   padding: 0px;
   gap: 32px;
-
   position: absolute;
   width: 792px;
   height: 943px;
@@ -380,22 +297,11 @@ span {
 .person {
   width: 792px;
   height: 226px;
-
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
   background-color: rgba(234, 232, 251, 1);
 }
-
-/* .x {
-  margin: 0 auto;
-  width: 1200px;
-  max-width: 100%;
-  border: solid 1px red;
-} */
 
 .resourcesContainer {
   position: absolute;
@@ -418,7 +324,6 @@ span {
   align-items: center;
   padding: 0px;
   gap: 8px;
-
   position: absolute;
   width: 110px;
   height: 20px;
@@ -427,14 +332,12 @@ span {
 }
 
 .bottomContainer {
-
   position: absolute;
   width: 1316px;
   height: 190px;
   left: 130px;
   right: 55px;
   top: 101px;
-  /* border: solid 1px black; */
 }
 
 .purple {
@@ -443,7 +346,6 @@ span {
   flex-direction: row;
   align-items: flex-start;
   list-style-type: none;
-
 }
 
 .purpleBox1,
@@ -454,12 +356,10 @@ span {
   height: 190px;
   background: #BCB5E8;
   border-radius: 8px;
-
 }
 
 
 .ARh3 {
-
   font-family: 'Abhaya Libre ExtraBold';
   font-style: normal;
   font-weight: 800;
@@ -467,11 +367,7 @@ span {
   line-height: 28px;
   display: flex;
   align-items: center;
-
-  /* 252A2E - Soft Black */
-
   color: #252A2E;
-
 }
 
 .ARp {
@@ -481,11 +377,7 @@ span {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.02em;
-
-  /* 252A2E - Soft Black */
-
   color: #252A2E;
-
   flex: none;
   order: 1;
   align-self: stretch;
@@ -508,22 +400,21 @@ span {
   align-items: center;
   border: solid 1px #252A2E;
   width: 230px;
-  
-}
-.icon-responsive{
-  display: block;
-}
-.margin-top-responsive{
-  margin-top: 25px;
-}
-.link2{
-  color: black;
-  margin-bottom: 10px;
-  margin: 0;
-}
-.move-r{
-  margin-left: 17px;
-}
+  }
+  .icon-responsive{
+    display: block;
+  }
+  .margin-top-responsive{
+    margin-top: 25px;
+  }
+  .link2{
+    color: black;
+    margin-bottom: 10px;
+    margin: 0;
+  }
+  .move-r{
+    margin-left: 17px;
+  }
 }
 
 
@@ -533,7 +424,6 @@ span {
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Ubuntu+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
 
-/* /////navbar */
 .logo {
   width: auto;
   margin-left: 112px;
@@ -577,7 +467,7 @@ span {
   margin-right: 112px;
 }
 
-/* /////PatienLandingPage */
+/* PatienLandingPage */
 
 .individual-page-banner-3 {
   background: #E3E2E8;
@@ -683,18 +573,11 @@ span {
   max-width: 250px;
   height: 36px;
 }
-/* //////////////footer */
-/* .buttonfooter {
-  background-color: #EAE8FB;
-  border: 1px solid #EAE8FB;
-  border-radius: 3px;
-  height: 35px;
-  margin: auto;
-  width: auto;
-} */
+
+/* footer */
+
 .footer-ori{
   background-color: #7F6FEA;
-  /* width: 100%; */
   align-items: center;
 }
 
@@ -702,7 +585,6 @@ span {
   display: flex;
   font-size: 15px;
   white-space: nowrap;
-
 }
 
 .textfoot {
@@ -712,8 +594,6 @@ span {
 .footerlink {
   color: white;
   margin-right: 15px;
-
-
 }
 
 .icon {
@@ -725,8 +605,7 @@ span {
   color: white;
 }
 .footer-res{
-  
-align-items: center;
+  align-items: center;
 }
 
  @media (max-width: 579px){
@@ -745,7 +624,7 @@ align-items: center;
   }
  .media-right{
   margin-left: 25%;
- }
+  }
   .media-left{
     justify-content: start;
   }
@@ -769,11 +648,7 @@ align-items: center;
 
 /* //////////singup */
 .signupGradient {
-  /* width: 100%;
-  height: 100vh; */
   background-image: linear-gradient(to left top, #2ACDFA, #E927D3, #7F6FEA);
-  /* position: relative;
-  padding: 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -784,7 +659,6 @@ align-items: center;
   height: 100vh;
   background-image: linear-gradient(to left top, #2ACDFA, #E927D3, #7F6FEA);
   position: relative;
-
 }
 
 .mdb{
@@ -796,17 +670,8 @@ align-items: center;
   width: 670px;
   border-radius: 14px;
   height: 600px;
-  /* position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto; */
 }
-/* .logosingup{
-  width: 200px;
-  height: 55px;
-} */
+
 .smallLetters{
   font-size: 10px;
 }
@@ -898,6 +763,7 @@ align-items: center;
     font-size: 20px;
   }
 } 
+
 /* If the screen size is smaller than 1200px, set the font-size to 80px */
 
 
@@ -913,9 +779,6 @@ align-items: center;
   }
 } 
 
-/* .model{
-     font-family: 'Karla', sans-serif;
- } */
 .checkbox {
   font-family: 'Karla', sans-serif;
   font-size: 10px;
@@ -928,8 +791,6 @@ align-items: center;
 .inputdrop {
   width: 540px;
   margin-left: 15px;
-
-  
   font-family: 'Karla', sans-serif;
 }
 .logonew{
@@ -1043,8 +904,7 @@ span{
   left: 50%;
 }
 
-/* 
-CSS PractitionerProfilePage--------------------**********/
+/* CSS PractitionerProfilePage--------------------**********/
 .pp {
   margin: 0 auto;
   width: 1440px; 
@@ -1083,7 +943,6 @@ top: 280px;
 display: flex;
 justify-content: flex-start;
 margin: 100px 50px;
-/* padding-top: 50px; */
 position: absolute;
 font-family: 'Abhaya Libre ExtraBold';
 font-style: normal;
@@ -1095,42 +954,18 @@ line-height: 57px;
 .ppPerson {
   width: 280px;;
   height: 631px;
-  /* display: flex;
-  flex-direction: row;
-  align-items: flex-start; */
   background-color: #EAE8FB;
   border-radius: 10px;
-  /* border: solid 1px black; */
-  /* position: absolute;
-  top: 300px; */
 }
 
 .ppAbout {
-/* width: 544px;
-height: 756px; */
-/* display: flex;
-flex-direction: column;
-align-items: flex-start; */
 background-color: #EAE8FB;
-/* border: solid 1px black; */
-/* position: absolute;
-left: 548px;
-top: 300px; */
-
 }
 
 .ppAvailability {
-
   width: 280px;
-height: 650px;
-background-color: #EAE8FB;
-/* border: solid 1px black; */
-/* display: flex;
-flex-direction: column;
-align-items: flex-start;
-position: absolute;
-left: 1148px;
-top: 300px; */
+  height: 650px;
+  background-color: #EAE8FB;
 }
 
 .ppButton {
@@ -1138,15 +973,12 @@ top: 300px; */
 justify-content: flex-end;
 align-items: flex-end;
 margin: 110px 50px;
-/* position: absolute; */
 float:right;
-/* left: 800px; */
 cursor: pointer;
 border: none;
 color: #7F6FEA;
 background-color: white;
 }
-
 
 .ppImageBox {
 width: 200px;
@@ -1165,14 +997,8 @@ align-items: flex-start;
 justify-content: flex-start;
 float: right;
 padding: 0px;
-/* gap: 16px; */
-
 width: 236px;
 height: 349px;
-/* border: solid 1px black; */
-
-/* Inside auto layout */
-/* margin: 0 auto; */
 flex: none;
 order: 1;
 flex-grow: 0;
@@ -1184,18 +1010,13 @@ flex-grow: 0;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px;
-/* gap: 8px; */
-
 width: 544px;
 height: 183px;
 border-radius: 10px;
-
 /* Inside auto layout */
-
 flex: none;
 order: 0;
 flex-grow: 0;
-/* border: solid 1px black; */
 }
 
 .ppAboutA {
@@ -1215,7 +1036,6 @@ flex-grow: 0;
   flex: none;
   order: 0;
   flex-grow: 0;
-  /* border: solid 1px black; */
   background-color: #EAE8FB;
 }
 
@@ -1235,37 +1055,31 @@ flex-grow: 0;
   flex: none;
   order: 0;
   flex-grow: 0;
-  /* border: solid 1px black; */
   background-color: #EAE8FB;
   margin: 5px auto;
 }
 
-.ppAbout2 {
-  
+.ppAbout2 {  
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 8px;
-margin: 20px auto;
-width: 544px;
-height: 111px;
-border-radius: 10px;
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-/* border: solid 1px black; */
-background-color: #EAE8FB;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  margin: 20px auto;
+  width: 544px;
+  height: 111px;
+  border-radius: 10px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: #EAE8FB;
 }
 
 .ppAboutbox {
   width:470px;
   height: 150px;
   margin: 5px auto;
-  /* border: solid 1px black; */
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -1276,7 +1090,6 @@ background-color: #EAE8FB;
   width:470px;
   height: 50px;
   margin: 0 auto;
-  /* border: solid 1px black; */
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -1287,7 +1100,6 @@ background-color: #EAE8FB;
   width:225px;
   height: 50px;
   margin: 0 auto;
-  /* border: solid 1px black; */
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -1297,7 +1109,6 @@ background-color: #EAE8FB;
   width:220px;
   height: 150px;
   margin: 5px auto;
-  /* border: solid 1px black; */
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -1331,9 +1142,6 @@ background-color: #EAE8FB;
 }
 
 .ppAvailability {
-  /* bio/Variant3 */
-
-
 width: 280px;
 height: 282px;
 text-align: left;
@@ -1355,11 +1163,8 @@ flex-grow: 0;
 
 width:225px;
 height: 180px;
-/* display: flex; */
 margin: 10px auto;
-/* justify-content: center; */
 border: solid 1px black;
-/* align-items: center; */
 }
 
 .ppCancellation {
@@ -1530,7 +1335,6 @@ width: 900px;
   }
 }
 
-CSS PractitionerProfilePage--------------------**********/
 input{
   resize: vertical;}
 
