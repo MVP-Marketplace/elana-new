@@ -1,19 +1,5 @@
 /**** GENERAL STYLING ****/
 
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover {
-    color: white
-}
-
-ul {
-    list-style: none !important;
-    list-style-position: circle;
-}
-
 /**** CLASS STYLING ****/
 
 /* BANNER STYLING*/
@@ -159,4 +145,11 @@ ul {
 }
 .dark-text{
     color: black;
+}
+
+/* Unordered List */
+
+.categories-ul {
+    list-style: none !important;
+    list-style-position: circle;
 }

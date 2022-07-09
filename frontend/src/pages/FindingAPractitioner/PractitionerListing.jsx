@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
 import "../../practitionerlisting.css";
-import { MDBRow, MDBCol } from "mdb-react-ui-kit";
+import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardTitle, MDBCardText } from "mdb-react-ui-kit";
 import DownArrow from "../../img/down-arrow.png";
 import UpArrow from "../../img/up-arrow.png";
 import { getPractitionerUsers, reset } from "../../features/auth/authSlice";
@@ -148,7 +148,7 @@ export const PractitionerListing = () => {
         {data.description1 && <p>{data.description1}</p>}
         {data.description2 && <p>{data.description2}</p>}
         {data.description3 && <p>{data.description3}</p>}
-        {data.infoArray && <ul>{data.infoArray.map((item, index) => {
+        {data.infoArray && <ul className="categories-ul">{data.infoArray.map((item, index) => {
           return(
             <li key={index} className="text-start">{item}</li>
           )
@@ -274,6 +274,54 @@ export const PractitionerListing = () => {
               </Link>
               )
             }) : <h1 className="text-center m-5">No Practitioners Found...</h1>}
+          </MDBCol>
+        </MDBRow>
+      </div>
+      <div className="listing-banner-3 p-5">
+        <div className="d-flex justify-content-between">
+          <h3>Additional Resources</h3>
+          <h3>Browse More</h3>
+        </div>
+        <MDBRow>
+          <MDBCol md="3" className="d-flex justify-content-center">
+            <MDBCard style={{ maxWidth: '22rem' }}>
+              <MDBCardBody>
+                <MDBCardTitle>How's Endometriosis Research Going?</MDBCardTitle>
+                <MDBCardText>
+                  A look at research happening all around the world
+                </MDBCardText>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="3" className="d-flex justify-content-center">
+            <MDBCard style={{ maxWidth: '22rem' }}>
+              <MDBCardBody>
+                <MDBCardTitle>Physical Therapy for Endometriosis?</MDBCardTitle>
+                <MDBCardText>
+                  An interview with an expert to answer all your questions
+                </MDBCardText>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="3" className="d-flex justify-content-center">
+            <MDBCard style={{ maxWidth: '22rem' }}>
+              <MDBCardBody>
+                <MDBCardTitle>Why is Endometriosis<br/>So Poorly<br/>Understood?</MDBCardTitle>
+                <MDBCardText>
+                  A deep dive look into why this is a serious issue
+                </MDBCardText>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="3" className="d-flex justify-content-center">
+            <MDBCard style={{ maxWidth: '22rem' }}>
+              <MDBCardBody>
+                <MDBCardTitle>Endometriosis Pain: Finding Relief</MDBCardTitle>
+                <MDBCardText>
+                  Some tips to care and provide relief to yourself at home
+                </MDBCardText>
+              </MDBCardBody>
+            </MDBCard>
           </MDBCol>
         </MDBRow>
       </div>

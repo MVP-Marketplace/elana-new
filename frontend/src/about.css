@@ -49,38 +49,33 @@
 }
 
 .fs-48-32 {
-    font-size: 48px
-}
-@media(max-width: 762px){
-    .fs-48-32 {
-        font-size: 32px
-    }
+    font-size: 48px !important;
 }
 
 .fs-40-24 {
-    font-size: 32px
-}
-@media(max-width: 762px){
-    .fs-40-24 {
-        font-size: 28px
-    }
+    font-size: 40px !important;
 }
 
 .fs-32-28 {
-    font-size: 32px
-}
-@media(max-width: 762px){
-    .fs-32-28 {
-        font-size: 28px
-    }
+    font-size: 32px !important;
 }
 
 .fs-24-20 {
-    font-size: 24px
+    font-size: 24px !important;
 }
+
 @media(max-width: 762px){
+    .fs-48-32 {
+        font-size: 32px !important;
+    }
+    .fs-40-24 {
+        font-size: 24px !important;
+    }
+    .fs-32-28 {
+        font-size: 28px !important;
+    }
     .fs-24-20 {
-        font-size: 20px
+        font-size: 20px !important;
     }
 }
 
