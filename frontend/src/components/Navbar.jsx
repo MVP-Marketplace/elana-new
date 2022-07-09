@@ -100,10 +100,10 @@ export const Navbar = () => {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink>
+              <MDBNavbarLink className="move-r">
               <div className="responsive-grey margin-top-responsive ">
                 <a
-                  className="link2 d-flex align-items-center"
+                  className="link2 fix"
                   href="https://www.elana.health/blog"
                   target="_blank"
                   rel="noreferrer"
@@ -116,10 +116,10 @@ export const Navbar = () => {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink>
+              <MDBNavbarLink className="move-r">
               <div className="responsive-grey margin-top-responsive">
                 <a
-                  className="link2 d-flex align-items-center"
+                  className="link2 d-flex align-items-center fix"
                   href="https://www.elana.health/post/what-is-pelvic-wellness-and-why-does-it-matter"
                   target="_blank"
                   rel="noreferrer"
