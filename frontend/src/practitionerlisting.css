@@ -9,6 +9,11 @@ a:hover {
     color: white
 }
 
+ul {
+    list-style: none !important;
+    list-style-position: circle;
+}
+
 /**** CLASS STYLING ****/
 
 /* BANNER STYLING*/

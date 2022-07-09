@@ -71,7 +71,7 @@ export const PractitionerListing = () => {
         name: "Bladder Pain",
         description1: "Have you been dealing with a nagging discomfort in your lower belly? The kind that shows up unannounced and does not follow a regular pattern? It may feel like period cramps, but you know it isn't because you just went through the menstrual phase of your menstrual cycle?",
         description2: "You may be dealing with painful bladder syndrome, if this pain is accompanied by the following:",
-        infoArray: ["frequently going to the bathroom", "the feeling you need to pee right away", "pressure-like sensation or tenderness in your pelvic region", "pain in your lower back", "pain during sex", "pain relieved after urinating"],
+        infoArray: ["- frequently going to the bathroom", "- the feeling you need to pee right away", "- pressure-like sensation or tenderness in your pelvic region", "- pain in your lower back", "- pain during sex", "- pain relieved after urinating"],
         description4: "Also known as interstitial cystitis, this condition is more common in women than men. Symptoms may flare up and go away on their own. But dealing with these flares of painful bladder syndrome significantly impacts one's quality of life. Yet that does not mean you can't deal with these symptoms and improve your life. There are ways to tackle painful bladder syndrome, and a health practitioner can guide you better. "
     },
     {
@@ -84,7 +84,7 @@ export const PractitionerListing = () => {
       name: "Endometriosis",
       description1: "Endometriosis is when the uterine lining (endometrium) starts to grow in other places outside of the uterus, such as the ovaries, bladder, or rectum. Endometriosis can affect women of any age and often goes undiagnosed because of its non-specific symptoms.",
       description2: "You may be dealing with endometriosis if you experience the following:",
-      infoArray: ["intense period pain that lasts throughout your cycle, radiating to your lower back and abdomen","pain during sex", "painful urination or bowel movements during your periods","heavy menstrual flow", "gut symptoms such as nausea, diarrhea, and constipation"],
+      infoArray: ["- intense period pain that lasts throughout your cycle, radiating to your lower back and abdomen","- pain during sex", "- painful urination or bowel movements during your periods","- heavy menstrual flow", "- gut symptoms such as nausea, diarrhea, and constipation"],
       description4: "Endometriosis can cause significant pelvic pain causing the muscles to spasm, those with Endometriosis are more likely to develop a pelvic floor disorder as a result. But help is out there to find the right support for you."
     },
     {
@@ -98,7 +98,7 @@ export const PractitionerListing = () => {
       description1: "Sex is fun. But the slightest ting of pain will raise some alarm bells and can ruin this pleasurable experience for all involved.",
       description2: "Also known as dyspareunia, there are many reasons why you could experience pain during sex, ranging from physical problems (such as an infection) to psychological issues.",
       description3: "Pain during sex may not be the same for every woman; but dyspareunia may feel like:",
-      infoArray: ["persistent or recurrent genital pain that occurs before, during, or after sex", "stinging, aching, tearing, or burning sensation", "anxiety at the thought of penetration", "pain felt at the entrance of the vagina during penetration", "deep pain (felt at the 'top' of the vagina)"],
+      infoArray: ["- persistent or recurrent genital pain that occurs before, during, or after sex", "- stinging, aching, tearing, or burning sensation", "- anxiety at the thought of penetration", "- pain felt at the entrance of the vagina during penetration", "- deep pain (felt at the 'top' of the vagina)"],
       description4: "If something constantly feels off during sex, do not dismiss it. Reach out to a pelvic or sexual health practitioner to explore why you are experiencing dyspareunia. Identifying the issue, both physical and emotional, and working on a solution will help you feel more relaxed and improve your overall sexual health."
     },
     {
@@ -130,7 +130,7 @@ export const PractitionerListing = () => {
       description1: "Preparing to undergo surgery requires a lot of strategic planning. And heading towards any surgery well-prepared will ascertain quick recovery.",
       description2: "Generally, vaginoplasty is a type of genitoplasty that repairs or constructs the vagina. And preparing for vaginoplasty depends on why you are opting for this surgery and your medical needs.",
       description3: "There is a long list of indications for this surgery. However, individuals who opt for this surgery are generally women:",
-      infoArray: ["who have gone through childbirth and are dealing with pelvic floor defects", "looking to correct pelvic organ prolapse (such as cystocele or rectocele)", "born with congenital abnormalities","who require vaginal reconstruction after undergoing surgery or radiation to remove a vaginal tumor", "undergoing gender affirmation surgery"],
+      infoArray: ["- who have gone through childbirth and are dealing with pelvic floor defects", "- looking to correct pelvic organ prolapse (such as cystocele or rectocele)", "- born with congenital abnormalities","- who require vaginal reconstruction after undergoing surgery or radiation to remove a vaginal tumor", "- undergoing gender affirmation surgery"],
       description4: "Before scheduling your surgery, talk to your health care practitioner about the procedure, how to prepare for it, what you need to do afterward, and any general concerns regarding vaginoplasty."
     }
   ];
@@ -150,7 +150,7 @@ export const PractitionerListing = () => {
         {data.description3 && <p>{data.description3}</p>}
         {data.infoArray && <ul>{data.infoArray.map((item, index) => {
           return(
-            <li key={index}>{item}</li>
+            <li key={index} className="text-start">{item}</li>
           )
         })}</ul>}
         {data.description4 && <p>{data.description4}</p>}
