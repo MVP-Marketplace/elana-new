@@ -612,14 +612,17 @@ span {
   .footer-res{
      /* padding-left: 45px;  */
     justify-content: space-evenly;
+    padding-top: 20px;
   }
   .icon{
     justify-content: start;
+    padding-top: 10px;
   }
   .footerlinks{
     display: grid;
     padding-top: 25px;
     margin-left: 10px;
+    padding-top: 25px;
 
   }
  .media-right{
