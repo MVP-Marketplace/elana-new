@@ -53,6 +53,8 @@ export function PractitionerSignUp() {
     password: "",
     licensingCredentials: "",
     areaOfSpecialty: "",
+    appointmentType: "",
+    location: "",
   });
 
   const {
@@ -64,6 +66,9 @@ export function PractitionerSignUp() {
     password,
     licensingCredentials,
     areaOfSpecialty,
+    appointmentType,
+    location
+
   } = formData;
 
   const navigate = useNavigate();
@@ -86,7 +91,7 @@ export function PractitionerSignUp() {
 
   useEffect(()=>{
     const checkdata = (data)=>{
-      if(data.password == "" || data.email == "" || data.firstName==""|| data.lastName == "" || data.licensingCredentials == "" || data.areaOfSpecialty == ""){
+      if(data.password == "" || data.email == "" || data.firstName==""|| data.lastName == "" || data.licensingCredentials == "" || data.areaOfSpecialty == "" || data.location=="" || data.appointmentType==""){
         setDone(false) 
       } else{
         setDone(true)
@@ -118,6 +123,8 @@ export function PractitionerSignUp() {
         password,
         licensingCredentials,
         areaOfSpecialty,
+        appointmentType,
+        location,
       };
 
       dispatch(register(practitionerUserData));
@@ -252,6 +259,36 @@ export function PractitionerSignUp() {
               />
             </div>
           </div>
+
+          <div className="d-flex justify-content-evenly m-1 row">
+            <div className="col-sm ">
+              <label className="labelsingup text-muted">Appointment Type</label>
+              <MDBInput
+                type="text"
+                className="form-control col-sm mdb"
+                id="form1"
+                name="appointmentType"
+                value={appointmentType}
+                onChange={onChange}
+                required
+              />
+            </div>
+
+            <div className="col-sm ">
+              <label className="labelsingup text-muted">Location </label>
+              <MDBInput
+                type="text"
+                className="form- mdb"
+                id="form1"
+                name="location"
+                value={location}
+                onChange={onChange}
+                required
+              />
+            </div>
+          </div>
+
+          
 
 
           <div className="row">

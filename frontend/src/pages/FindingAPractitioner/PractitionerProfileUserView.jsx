@@ -46,8 +46,8 @@ export function PractitionerProfileUserView() {
   },[])
 
   return (
-    <div>
-    <MDBContainer className="container-profile">
+    <div className="p-5">
+    <MDBContainer className="container-profile p-5">
       <div className="container">
     <h1 className="mb-5 ms-5 text-start">Hello, {practitioner && `Dr. ${practitioner.firstName} ${practitioner.lastName}`}</h1>
     </div>
@@ -56,8 +56,6 @@ export function PractitionerProfileUserView() {
           <div className="fisrt-secction-profile ">
             <div className="">
               <div className="photo-secction">
-                
-
               </div>
             </div>
 
@@ -111,7 +109,7 @@ export function PractitionerProfileUserView() {
 
             <div className="bg-profile-input-certifications">
               <div className="">
-                <h4 className="ps-2 pt-2 text-al ">Certification</h4>
+                <h4 className="ps-2 pt-2 text-al">Certification</h4>
                 <p className="text-center-profile-userview text-ka">Board Certified, ABPM, ABOG </p>
               </div>
 

@@ -74,7 +74,12 @@ export function NewPractitionerProfile() {
                   src={pen}
                   onClick={toggleShow}
                   className="m-auto "
-                ></img>
+                  ></img>
+                  <div className="center-p">
+
+                  <p className="comming-soon-text">Upload <br/> Photo  <br/> &  <br/> Video Bio</p>
+                  </div>
+
 
                 <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
                   <MDBModalDialog className="boxmodal modal-lg">
@@ -424,7 +429,10 @@ export function NewPractitionerProfile() {
           <div className="">
             <div className="availability mb-4">
               <h4 className="mx-3 mb-3 pt-2">Availability</h4>
-              <div className="availability-box"></div>
+              <div className="availability-box center-p">
+                <p className="text-maring">Appointment booking calendar</p>
+                <p className="comming-soon-text">coming soon!</p>
+              </div>
             </div>
 
             <div className="policy">
