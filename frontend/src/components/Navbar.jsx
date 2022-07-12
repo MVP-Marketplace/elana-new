@@ -22,19 +22,12 @@ import arrow from "../img/Link.png"
 
 export const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
-
-  const navigate = useNavigate()
   const dispatch = useDispatch()
  
   const {user} = useSelector((state)=> state.auth)
 
 
-  useEffect(()=> {
-    if(!user){
-      navigate('/practitionerLogin')
-    }
-  },[])
-
+ 
 
   const onLogout = () => {
     dispatch(logout())

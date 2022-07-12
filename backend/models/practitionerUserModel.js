@@ -34,6 +34,14 @@ const practitionerUserSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    subSpecialty: {
+        type: String,
+        required: true
+    },
+    location: {
+        type: String,
+        required: true
+    },
     profile: {
         type: mongoose.Schema.Types.ObjectId,
         required: false,

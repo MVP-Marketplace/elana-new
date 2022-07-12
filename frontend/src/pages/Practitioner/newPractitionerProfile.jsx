@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 // import {logout, reset} from "../../features/auth/authSlice"
 // import {useNavigate} from "react-router-dom";
 // import {useDispatch} from "react-redux"
@@ -47,16 +48,13 @@ export function NewPractitionerProfile() {
   // const dispatch = useDispatch()
  
   const {user} = useSelector((state)=> state.auth)
+  const navigate = useNavigate()
 
-
-
-
-
-//   const onLogout = () => {
-//     dispatch(logout())
-//     dispatch(reset())
-//     navigate('/')
-// }
+  useEffect(()=> {
+    if(!user){
+      navigate('/practitionerLogin')
+    }
+  },[])
 
   return (
     <div>

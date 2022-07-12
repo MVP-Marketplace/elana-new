@@ -16,7 +16,9 @@ const registerPractitionerUser = asyncHandler(async (req,res) => {
         email, 
         password, 
         licensingCredentials, 
-        areaOfSpecialty 
+        areaOfSpecialty,
+        subSpecialty,
+        location
     } = req.body
 
     if ( 
@@ -27,7 +29,9 @@ const registerPractitionerUser = asyncHandler(async (req,res) => {
         !email || 
         !password || 
         !licensingCredentials || 
-        !areaOfSpecialty 
+        !areaOfSpecialty ||
+        !subSpecialty ||
+        !location
         ) {
         res.status(400)
         throw new Error('Please add all fields')
@@ -54,6 +58,8 @@ const registerPractitionerUser = asyncHandler(async (req,res) => {
         email,
         areaOfSpecialty,
         licensingCredentials,
+        subSpecialty,
+        location,
         password: hashedPassword
     })
 
@@ -66,6 +72,8 @@ const registerPractitionerUser = asyncHandler(async (req,res) => {
             areaOfSpecialty: practitionerUser.areaOfSpecialty,
             licensingCredentials: practitionerUser.licensingCredentials,
             practiceName: practitionerUser.practiceName,
+            subSpecialty: practitionerUser.subSpecialty,
+            location: practitionerUser.location,
             token: generateToken(practitionerUser._id)
         })
     } else {
@@ -96,6 +104,8 @@ const loginPractitionerUser = asyncHandler(async (req,res) => {
             areaOfSpecialty: practitionerUser.areaOfSpecialty,
             licensingCredentials: practitionerUser.licensingCredentials,
             practiceName: practitionerUser.practiceName,
+            subSpecialty: practitionerUser.subSpecialty,
+            location: practitionerUser.location,
             token: generateToken(practitionerUser._id)
         })
     } else {

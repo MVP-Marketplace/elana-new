@@ -43,6 +43,7 @@ export function PractitionerSignUp() {
   const [centredModal, setCentredModal] = useState(false);
   const toggleShow = () => setCentredModal(!centredModal);
   const [done, setDone] = useState(false);
+  const [checked, setChecked] = useState (false);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -53,7 +54,7 @@ export function PractitionerSignUp() {
     password: "",
     licensingCredentials: "",
     areaOfSpecialty: "",
-    appointmentType: "",
+    subSpecialty: "",
     location: "",
   });
 
@@ -66,7 +67,7 @@ export function PractitionerSignUp() {
     password,
     licensingCredentials,
     areaOfSpecialty,
-    appointmentType,
+    subSpecialty,
     location
 
   } = formData;
@@ -91,15 +92,15 @@ export function PractitionerSignUp() {
 
   useEffect(()=>{
     const checkdata = (data)=>{
-      if(data.password == "" || data.email == "" || data.firstName==""|| data.lastName == "" || data.licensingCredentials == "" || data.areaOfSpecialty == "" || data.location=="" || data.appointmentType==""){
+      if(data.password === "" || data.email === "" || data.firstName === ""|| data.lastName === "" || data.licensingCredentials === "" || data.areaOfSpecialty === "" || data.location === "" || data.subSpecialty === "" || checked === false){
         setDone(false) 
       } else{
         setDone(true)
       }
       
         }
-        checkdata(formData)
-  }, [formData])
+      checkdata(formData)
+  }, [formData, checked])
 
   const onChange = (e) => {
     setFormData((prevState) => ({
@@ -123,7 +124,7 @@ export function PractitionerSignUp() {
         password,
         licensingCredentials,
         areaOfSpecialty,
-        appointmentType,
+        subSpecialty,
         location,
       };
 
@@ -267,8 +268,8 @@ export function PractitionerSignUp() {
                 type="text"
                 className="form-control col-sm mdb"
                 id="form1"
-                name="appointmentType"
-                value={appointmentType}
+                name="subSpecialty"
+                value={subSpecialty}
                 onChange={onChange}
                 required
               />
@@ -333,7 +334,7 @@ export function PractitionerSignUp() {
 
 
         <div className="text-center center-responsive-checkbox">
-          <input type="checkbox" className="checkbox-round m-2"></input>
+          <input type="checkbox" onChange={()=> setChecked(!checked)}className="checkbox-round m-2"></input>
           <span>
             By creating an account, you have read and agree to our{" "}
             <span>Terms</span> and <span>Privacy Policy</span>
