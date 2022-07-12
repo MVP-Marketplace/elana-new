@@ -40,6 +40,20 @@ export function PractitionerSignUp() {
     "Yoga Instructor",
   ];
 
+  const appointmentTypes = [
+    "Bladder & Bowel Incontinence",
+    "Bladder Pain",
+    "Constipation",
+    "Endometriosis",
+    "Menopause & Perimenopause",
+    "Painful Sex",
+    "Pelvic Organ Prolapse",
+    "Postpartum Recovery",
+    "Proactive Pelvic Care",
+    "Separated Abs",
+    "Vaginoplasty Prep and Recovery"
+  ]
+
   const [centredModal, setCentredModal] = useState(false);
   const toggleShow = () => setCentredModal(!centredModal);
   const [done, setDone] = useState(false);
@@ -263,13 +277,13 @@ export function PractitionerSignUp() {
 
           <div className="d-flex justify-content-evenly m-1 row">
             <div className="col-sm ">
-              <label className="labelsingup text-muted">Appointment Type</label>
+              <label className="labelsingup text-muted">Licensing Credentials</label>
               <MDBInput
                 type="text"
                 className="form-control col-sm mdb"
                 id="form1"
-                name="subSpecialty"
-                value={subSpecialty}
+                name="licensingCredentials"
+                value={licensingCredentials}
                 onChange={onChange}
                 required
               />
@@ -293,19 +307,18 @@ export function PractitionerSignUp() {
 
 
           <div className="row">
-            <div className="inputdrop col-sm col-md-12 ">
+            {/* <div className="inputdrop col-sm col-md-12 ">
               <label className="labelsingup text-muted">Licensing Credentials</label>
               <MDBInput
                 type="text"
                 className="form-control input-responsive-new"
                 id="form1"
-                name="licensingCredentials"
-                value={licensingCredentials}
+                name="subSpecialty"
+                value={subSpecialty}
                 onChange={onChange}
                 required
               />
-            </div>
-
+            </div> */}
             <div className="inputdrop col-sm col-md-12">
               <label className="labelsingup text-muted">Area of Specialty</label>
               <div class="input-group">
@@ -322,6 +335,30 @@ export function PractitionerSignUp() {
                     -select one-
                   </option>
                   {practitionerTypes.map((type, index) => {
+                   return <option key={index} value={type} className="text-muted">
+                      {type}
+                    </option>
+                  })}
+                </select>
+              </div>
+            </div>
+
+            <div className="inputdrop col-sm col-md-12">
+              <label className="labelsingup text-muted">Sub Specialty</label>
+              <div class="input-group">
+                <select
+                  class="form-select"
+                  id="inputGroupSelect04"
+                  aria-label="Example select with button addon"
+                  name="subSpecialty"
+                  value={subSpecialty}
+                  onChange={onChange}
+                  required
+                >
+                  <option value="0" className="text-muted">
+                    -select one-
+                  </option>
+                  {appointmentTypes.map((type, index) => {
                    return <option key={index} value={type} className="text-muted">
                       {type}
                     </option>
