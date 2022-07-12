@@ -836,12 +836,12 @@ span{
 
 .pointer{
   cursor: pointer;
-  color: black;
+  color: #7F6FEA;
 }
 
 .pointer:hover{
   cursor: pointer;
-  color: #7F6FEA;
+  color: #D3D3D3;
 }
 
 
