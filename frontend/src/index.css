@@ -383,9 +383,9 @@ span {
   align-self: stretch;
   flex-grow: 0;
 }
-.icon-responsive{
+ .icon-responsive{
   display: none;
-}
+} 
 .margin-top-responsive{
   margin-top: 0;
 }
@@ -401,9 +401,7 @@ span {
   border: solid 1px #252A2E;
   width: 230px;
   }
-  .icon-responsive{
-    display: block;
-  }
+ 
   .margin-top-responsive{
     margin-top: 25px;
   }
@@ -415,6 +413,9 @@ span {
   .move-r{
     margin-left: 17px;
   }
+  .icon-responsive{
+    display: block;
+  } 
 }
 
 
@@ -892,9 +893,7 @@ span{
 .iconback {
   color: #7F6FEA;
 }
-.icon-responsive{
- display: block;
-}
+
 
 .titlepractitioner {
   font-family: 'Abhaya Libre', serif;
@@ -932,7 +931,7 @@ span{
   .m-responsive{
     margin-left: 30px;
   }
-  .icon-responsive{
+  .icon-responsive3{
     width: 80px;
     height: 80px;
   }
