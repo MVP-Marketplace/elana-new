@@ -512,11 +512,25 @@ span {
 .list {
   font-family: 'Karla', sans-serif;
 }
+.w-res{
+  width: 100%;
+}
 
 @media (max-width: 500px) {
   .introtitle {
-    margin-bottom: 65px;
-  
+    margin-bottom: 35px;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .title-res{
+    font-size: 24px;
+  }
+  .bgpurple{
+    padding: 25px;
+    width: 100%;
+  }
+  .w-res{
+    width: 98%;
   }
 }  
 @media (max-width: 500px) {
@@ -878,6 +892,9 @@ span{
 .iconback {
   color: #7F6FEA;
 }
+.icon-responsive{
+ display: block;
+}
 
 .titlepractitioner {
   font-family: 'Abhaya Libre', serif;
@@ -885,7 +902,7 @@ span{
 
 .textpractitioner {
   font-family: 'Karla', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 @media(max-width: 568px){
   .conta-responsive-browser{
@@ -894,6 +911,35 @@ span{
   .center-res{
     flex-direction: column;
     align-items: center;
+  }
+  .titlepractitioner {
+   font-size: 24px;
+  }
+  .purpleboxes{
+    width: 350px;
+  }
+  .titlebox {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Abhaya Libre', serif;
+    margin-left: 15px;
+  }
+  .paragraphbox {
+    font-size: 12px;
+    font-family: 'Karla', sans-serif;
+    margin-left: 15px;
+  }
+  .m-responsive{
+    margin-left: 30px;
+  }
+  .icon-responsive{
+    width: 80px;
+    height: 80px;
+  }
+  .icon-responsive2{
+    width: 60px;
+    height: 70px;
+    margin-top: 5px;
   }
 }
 

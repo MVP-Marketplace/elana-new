@@ -29,8 +29,8 @@ export function IndividualPage() {
     <div className="">
       <div className="bgpurple">
         <div className="intro row d-grid">
-          <h1 className="p-4 col-sm">We’re so glad you’re here. </h1>
-          <h4 className="introtitle p-0 col-sm p-3">
+          <h1 className="p-3 col-sm title-res">We’re so glad you’re here. </h1>
+          <h4 className="introtitle p-1 col-sm ">
             Elana is changing a generation of women’s health, putting you in
             control <br />
             of managing your pelvic health, how, and when, it suits you.
@@ -39,11 +39,11 @@ export function IndividualPage() {
       </div>
       <div className="d-flex row">
         <div className="col-sm-12 col-md-6 p-0">
-          <img src={Image} className="w-100" alt=""></img>
+          <img src={Image} className="w-res" alt=""></img>
         </div>
         <div className="col-sm-12 col-md-6 pl-5 p-4">
         <div className="margin-list">
-          <h3 className="title-1 mb-3 text-al center-text-responsive">Health providers in Elana include:</h3>
+          <h3 className="title-1 mb-3 text-al center-text-responsive">Health providers on Elana include:</h3>
 
           <ul type="none" className="list col-sm p-0">
             <li className="fs-20 text-ka fw-lighter">Yoga Instructors</li>
