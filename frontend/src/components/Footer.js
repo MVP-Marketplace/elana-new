@@ -14,16 +14,20 @@ export const Footer = () => {
 				<MDBRow className="d-flex justify-content-between px-5" >
 					<MDBCol lg='9' md='9' className='footerlinks '>
 						<div className="d-flex footer-res media-left" sm=''>
-							<div className="footerlink "><Link to="/" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Home</p></Link></div>
-							<div className="footerlink media-right"><Link to="/" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Contact us</p></Link></div>
+							<div className="footerlink "><Link to="/individualPage" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Induvidual</p></Link></div>
+							<div className="footerlink media-right"><Link to="/" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Home</p></Link></div>
 						</div>
 						<div className="d-flex footer-res media-left" sm=''>
-							<div className="footerlink "><Link to="/practitionerLogin" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Login</p></Link></div>
-							<div className="footerlink media-right"><Link to="/about" className="text-decoration-none text-white m-0 p-0"><p className="m-0">About</p></Link></div>
+							<div className="footerlink "><Link to="/practitionerPage" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Practitioner</p></Link></div>
+							<div className="footerlink media-right1"><Link to="/about" className="text-decoration-none text-white m-0 p-0"><p className="m-0">About</p></Link></div>
 						</div>
 						<div className="d-flex footer-res media-left" sm=''>
-							<div className="footerlink"><Link to="/terms" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Terms</p></Link></div>
-							<div className="footerlink media-right"><Link to="/privacyPolicy" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Privacy Policy</p></Link></div>
+							<div className="footerlink"><Link to="/choosingACategory" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Browser</p></Link></div>
+							<div className="footerlink media-right3"><Link to="/terms" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Terms</p></Link></div>
+						</div>
+						<div className="d-flex footer-res media-left" sm=''>
+							<div className="footerlink"><Link to="/practitionerLogin" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Login</p></Link></div>
+							<div className="footerlink media-right4"><Link to="/privacyPolicy" className="text-decoration-none text-white m-0 p-0"><p className="m-0">Privacy Policy</p></Link></div>
 						</div>
 
 			
