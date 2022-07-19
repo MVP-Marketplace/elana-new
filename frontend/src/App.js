@@ -15,11 +15,13 @@ import { About } from './pages/HomePage/About';
 import { NewPractitionerProfile} from './pages/Practitioner/newPractitionerProfile';
 import { PractitionerListing } from './pages/FindingAPractitioner/PractitionerListing';
 import { PractitionerProfileUserView } from './pages/FindingAPractitioner/PractitionerProfileUserView';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop>
           <Navbar/>
           <Routes>
             <Route path='/homeScreen' element={<Homescreen/>}/>
@@ -37,6 +39,7 @@ function App() {
             <Route path='/practitionerProfileUserView/:practitioner_id' element={<PractitionerProfileUserView/>}/>
           </Routes>
       <Footer/>
+      </ScrollToTop>
       </Router>
     </>
   );

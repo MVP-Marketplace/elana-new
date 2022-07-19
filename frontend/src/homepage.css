@@ -62,7 +62,7 @@
 @media(max-width: 768px){
     .banner-1-h1 {
         font-family: 'Abhaya Libre', serif; 
-        font-size: 40px;
+        font-size: 30px;
         color: #7F6FEA;
     }
 }
@@ -75,8 +75,9 @@
 @media(max-width: 768px){
     .banner-1-h3 {
         font-family: 'Abhaya Libre', serif; 
-        font-size: 20px;
+        font-size: 16px;
         color: #7F6FEA;
+        line-height: normal;
     }
 }
 
@@ -87,7 +88,7 @@
 @media(max-width: 768px){
     .banner-2-h1 {
         font-family: 'Abhaya Libre', serif; 
-        font-size: 24px
+        font-size: 30px
     }
 }
 
@@ -139,25 +140,46 @@
 
 /* Font Size */
 .fs-58 {
-    font-size: 58px
+    font-size: 58px;
 }
 .fs-40 {
-    font-size: 40px
+    font-size: 40px;
 }
 
 .fs-32 {
-    font-size: 32px
+    font-size: 32px;
 }
 
 .fs-24 {
-    font-size: 24px
+    font-size: 24px;
 }
 
 .fs-16 {
-    font-size: 16px
+    font-size: 16px;
 }
 .fs-12 {
-    font-size: 12px
+    font-size: 12px;
+}
+
+.fs-58-32 {
+    font-size: 58px !important;
+}
+.fs-40-24 {
+    font-size: 40px !important;
+}
+.fs-24-20 {
+    font-size: 24px !important;
+}
+@media(max-width: 768px){
+    .fs-58-32 {
+        font-size: 32px !important;
+    }
+    .fs-40-24 {
+        font-size: 24px !important;
+    }
+    .fs-24-16 {
+        font-size: 20px !important;
+    }
 }
 
 /* Others */
@@ -217,11 +239,14 @@
 
 .homepage-cards {
     background-color: #FFFFFF;
+    height: 15rem;
+    width: 15rem;
 }
 @media(max-width: 768px){
     .homepage-cards {
         background-color: #EAE8FB;
-        ;
+        height: 11rem;
+        width: 11rem;
     }
 }
 
@@ -327,3 +352,45 @@
 .blue-hover:hover {
     background-color: #0D6EFD;
 }
+
+.desktop-view-hidden {
+    display: none;
+}
+.mobile-view-hidden {
+    display: block;
+}
+@media(max-width: 768px){
+    .desktop-view-hidden{
+        display: block;
+    }
+    .mobile-view-hidden{
+        display: none;
+    }
+    .line-height-normal {
+        line-height: 90%;
+    }
+}
+
+.category-cards {
+    padding: 1.5rem;
+}
+@media(max-width: 768px){
+    .category-cards {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+}
+
+/* INPUTS PLACEHOLDERS */
+
+input::-webkit-input-placeholder { /* Edge */
+    overflow: visible;
+  }
+  
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    overflow: visible;
+  }
+  
+input::placeholder {
+    overflow: visible;
+  }
