@@ -75,21 +75,23 @@ export const Navbar = () => {
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink>
-                <Link to="/about" className="link fix">
-                <div className="responsive-grey" onClick={() => setShowNav(!showNav)}>
-                  <p className="m-0">About</p>
-                  <img src={arrow} alt="arrow" className="icon-responsive"/>
-                  </div>
-                </Link>
-              </MDBNavbarLink>
-            </MDBNavbarItem>
+            
             <MDBNavbarItem>
               <MDBNavbarLink>
                 <Link to="/choosingACategory" className="link fix">
                 <div className="responsive-grey" onClick={() => setShowNav(!showNav)}>
                   <p className="m-0">Browse</p>
+                  <img src={arrow} alt="arrow" className="icon-responsive"/>
+                  </div>
+                </Link>
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+           
+            <MDBNavbarItem>
+              <MDBNavbarLink>
+                <Link to="/practitionerSignUp" className="link fix">
+                <div className="responsive-grey" onClick={() => setShowNav(!showNav)}>
+                  <p className="m-0">Join</p>
                   <img src={arrow} alt="arrow" className="icon-responsive"/>
                   </div>
                 </Link>
@@ -112,25 +114,10 @@ export const Navbar = () => {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink className="move-r">
-              <div className="responsive-grey margin-top-responsive" onClick={() => setShowNav(!showNav)}>
-                <a
-                  className="link2 d-flex align-items-center fix"
-                  href="https://www.elana.health/post/what-is-pelvic-wellness-and-why-does-it-matter"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <p className="m-0">What is pelvic health?</p>
-                </a>
-                <img src={arrow} alt="arrow" className="icon-responsive"/>
-                  </div>
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-            <MDBNavbarItem>
               <MDBNavbarLink>
-                <Link to="/practitionerSignUp" className="link fix">
+                <Link to="/about" className="link fix">
                 <div className="responsive-grey" onClick={() => setShowNav(!showNav)}>
-                  <p className="m-0">Join</p>
+                  <p className="m-0">About</p>
                   <img src={arrow} alt="arrow" className="icon-responsive"/>
                   </div>
                 </Link>
