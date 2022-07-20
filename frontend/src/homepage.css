@@ -177,6 +177,9 @@
 .fs-40-24 {
     font-size: 40px !important;
 }
+.fs-32-24 {
+    font-size: 32px !important;
+}
 .fs-24-18 {
     font-size: 24px !important;
 }
@@ -185,6 +188,9 @@
         font-size: 32px !important;
     }
     .fs-40-24 {
+        font-size: 24px !important;
+    }
+    .fs-32-24 {
         font-size: 24px !important;
     }
     .fs-24-18 {
@@ -378,6 +384,9 @@
     }
     .line-height-normal {
         line-height: 90%;
+    }
+    .line-height-loose {
+        line-height: normal;
     }
 }
 

@@ -5,7 +5,7 @@ import "../../practitionerlisting.css";
 import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardTitle, MDBCardText } from "mdb-react-ui-kit";
 import DownArrow from "../../img/down-arrow.png";
 import UpArrow from "../../img/up-arrow.png";
-import { getPractitionerUsers, reset } from "../../features/auth/authSlice";
+import { getPractitionerUsers } from "../../features/auth/authSlice";
 
 export const PractitionerListing = () => {
   const { practitionerUsers } = useSelector((state) => state.auth)
