@@ -174,12 +174,14 @@ body{
   align-items: center;
 }
 .navWrapper {
-  padding: 10px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 
   }
 @media (max-width: 600px) {
   .navWrapper {
-  padding: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   }
   .fix{
     display: block; 
@@ -934,11 +936,12 @@ span{
 
 .titlepractitioner {
   font-family: 'Abhaya Libre', serif;
+  font-size: 40px;
 }
 
 .textpractitioner {
   font-family: 'Karla', sans-serif;
-  font-size: 16px;
+  font-size: 24px;
 }
 @media(max-width: 568px){
   .conta-responsive-browser{
@@ -950,6 +953,11 @@ span{
   }
   .titlepractitioner {
    font-size: 24px;
+  }
+  .textpractitioner {
+    font-size: 18px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .purpleboxes{
     width: 350px;

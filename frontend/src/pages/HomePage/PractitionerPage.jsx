@@ -42,7 +42,7 @@ export const PractitionerPage = () => {
         <h3 className="text-center text-al fs-24-18 fw-bolder">
           We are on a mission to make it easier for practitioners to reach women
           who want to
-          <br />
+          <br className="mobile-view-hidden"/>
           take control of their pelvic health. We are actively building our
           network.
         </h3>

@@ -183,6 +183,9 @@
 .fs-24-18 {
     font-size: 24px !important;
 }
+.fs-20-18 {
+    font-size: 20px !important;
+}
 @media(max-width: 768px){
     .fs-58-32 {
         font-size: 32px !important;
@@ -194,6 +197,9 @@
         font-size: 24px !important;
     }
     .fs-24-18 {
+        font-size: 18px !important;
+    }
+    .fs-20-18 {
         font-size: 18px !important;
     }
 }
