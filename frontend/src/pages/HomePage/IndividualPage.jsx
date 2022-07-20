@@ -88,13 +88,7 @@ export function IndividualPage() {
                 >
                   <MDBCardBody className="d-flex align-items-center justify-content-center">
                     <MDBCardText className="text-center text-al ">
-                      <span className="fs-32 text-dark"></span>
-                      <br />
-                      <span className="fs-32 text-dark">
-                      Yoga Instructors
-                        <br />
-
-                      </span>
+                      <span className="fs-32 text-dark ">Yoga Instructors</span>
                     </MDBCardText>
                   </MDBCardBody>
                 </MDBCard>
@@ -108,13 +102,8 @@ export function IndividualPage() {
                 >
                   <MDBCardBody className="d-flex align-items-center justify-content-center">
                     <MDBCardText className="text-center text-al">
-                      <span className="fs-32 text-dark">1 in 3</span>
-                      <br />
-                      <span className="fs-16 text-dark">
-                        women experience
-                        <br />
-                        urinary incontinence
-                      </span>
+                      <span className="fs-32 text-dark">Pilates Instructors</span>
+                     
                     </MDBCardText>
                   </MDBCardBody>
                 </MDBCard>
@@ -128,13 +117,8 @@ export function IndividualPage() {
                 >
                   <MDBCardBody className="d-flex align-items-center justify-content-center">
                     <MDBCardText className="text-center text-al">
-                      <span className="fs-32 text-dark">50%</span>
-                      <br />
-                      <span className="fs-16 text-dark">
-                        postmenopausal women
-                        <br />
-                        have vaginal atrophy
-                      </span>
+                      <span className="fs-32 text-dark">Physical Therapy</span>
+                     
                     </MDBCardText>
                   </MDBCardBody>
                 </MDBCard>
@@ -148,13 +132,50 @@ export function IndividualPage() {
                 >
                   <MDBCardBody className="d-flex align-items-center justify-content-center">
                     <MDBCardText className="text-center text-al">
-                      <span className="fs-32 text-dark">7 Years</span>
-                      <br />
-                      <span className="fs-16 text-dark">
-                        average amount of
-                        <br />
-                        time to be diagnosed
-                      </span>
+                      <span className="fs-32 text-dark">Pain Management</span>
+                    </MDBCardText>
+                  </MDBCardBody>
+                </MDBCard>
+              </div>
+            </MDBCol>
+            <MDBCol md="3">
+              <div className="d-flex banner-2-circle-1">
+                <MDBCard
+                  className="brand-bg-purple-2 perfect-circle"
+
+                >
+                  <MDBCardBody className="d-flex align-items-center justify-content-center">
+                    <MDBCardText className="text-center text-al ">
+                      <span className="fs-32 text-dark ">Health Coach</span>
+                    </MDBCardText>
+                  </MDBCardBody>
+                </MDBCard>
+              </div>
+            </MDBCol>
+            <MDBCol md="3">
+              <div className="d-flex banner-2-circle-2">
+                <MDBCard
+                  className="brand-bg-purple-2 perfect-circle"
+                  
+                >
+                  <MDBCardBody className="d-flex align-items-center justify-content-center">
+                    <MDBCardText className="text-center text-al">
+                      <span className="fs-32 text-dark">Gynecologist</span>
+                     
+                    </MDBCardText>
+                  </MDBCardBody>
+                </MDBCard>
+              </div>
+            </MDBCol>
+            <MDBCol md="3">
+              <div className="d-flex banner-2-circle-1">
+                <MDBCard
+                  className="brand-bg-purple-2 perfect-circle"
+
+                >
+                  <MDBCardBody className="d-flex align-items-center justify-content-center">
+                    <MDBCardText className="text-center text-al ">
+                      <span className="fs-32 text-dark ">And more</span>
                     </MDBCardText>
                   </MDBCardBody>
                 </MDBCard>
