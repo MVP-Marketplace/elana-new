@@ -19,7 +19,7 @@ export const PractitionerListing = () => {
 
 
 
-  const [filterPractitionerValue, setFilterPractitionerValue] = useState("")
+  const [filterPractitionerValue, setFilterPractitionerValue] = useState([])
   const [filterAppointmentValue, setFilterAppointmentValue] = useState("")
   const [practitioners, setPractitioners] = useState([])
 
@@ -35,8 +35,13 @@ export const PractitionerListing = () => {
 
   // Filter functionality when choosing Category
   useEffect(()=> {
-    if(filterPractitionerValue !== "" ){
-      let newArray = practitionerUsers.filter((item, index) => item.areaOfSpecialty === filterPractitionerValue )
+    if(filterPractitionerValue.length > 0){
+      let newArray = []
+      filterPractitionerValue.map(item => {
+        let info = practitionerUsers.filter((data, index) => item === data.areaOfSpecialty )
+        newArray.push(...info)
+      })
+      console.log(newArray)
       setPractitioners(newArray)
     } else {
       setPractitioners(practitionerUsers)
@@ -177,14 +182,17 @@ export const PractitionerListing = () => {
             {button1 && (
               <div className="mb-4">
                 {practitionerTypes.map((item, index) => {
+                  let found = filterPractitionerValue.find(data => data.includes(item))
                   return (
                     <div key={index} className="d-flex align-items-center p-2">
-                      <input type="checkbox" checked={filterPractitionerValue === item} className="checkbox-squer m-0" onChange={()=> {
-                        if(filterPractitionerValue !== item){
-                          setFilterPractitionerValue(item)
-                          setFilterAppointmentValue('')
+                      <input type="checkbox" checked={found} className="checkbox-squer m-0" onChange={()=> {
+                        
+                        if(found){
+                          let newArray = filterPractitionerValue.filter(data => data !== item)
+                          setFilterPractitionerValue(newArray)
+                          // setFilterAppointmentValue('')
                         } else {
-                          setFilterPractitionerValue('')
+                          setFilterPractitionerValue([...filterPractitionerValue, item])
                         }
                       }} />
                       <p className="m-0 ms-2">{item}</p>
@@ -278,7 +286,7 @@ export const PractitionerListing = () => {
           </MDBCol>
         </MDBRow>
       </div>
-      <div className="listing-banner-3 p-5">
+      {/* <div className="listing-banner-3 p-5">
         <div className="d-flex justify-content-between">
           <h3>Additional Resources</h3>
           <h3>Browse More</h3>
@@ -325,7 +333,7 @@ export const PractitionerListing = () => {
             </MDBCard>
           </MDBCol>
         </MDBRow>
-      </div>
+      </div> */}
     </div>
   );
 };
