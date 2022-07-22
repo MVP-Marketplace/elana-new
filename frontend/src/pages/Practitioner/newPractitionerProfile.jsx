@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 // import {logout, reset} from "../../features/auth/authSlice"
 // import {useNavigate} from "react-router-dom";
 // import {useDispatch} from "react-redux"
@@ -47,16 +48,13 @@ export function NewPractitionerProfile() {
   // const dispatch = useDispatch()
  
   const {user} = useSelector((state)=> state.auth)
+  const navigate = useNavigate()
 
-
-
-
-
-//   const onLogout = () => {
-//     dispatch(logout())
-//     dispatch(reset())
-//     navigate('/')
-// }
+  useEffect(()=> {
+    if(!user){
+      navigate('/practitionerLogin')
+    }
+  },[])
 
   return (
     <div>
@@ -74,7 +72,12 @@ export function NewPractitionerProfile() {
                   src={pen}
                   onClick={toggleShow}
                   className="m-auto "
-                ></img>
+                  ></img>
+                  <div className="center-p">
+
+                  <p className="comming-soon-text">Upload <br/> Photo  <br/> &  <br/> Video Bio</p>
+                  </div>
+
 
                 <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
                   <MDBModalDialog className="boxmodal modal-lg">
@@ -424,7 +427,10 @@ export function NewPractitionerProfile() {
           <div className="">
             <div className="availability mb-4">
               <h4 className="mx-3 mb-3 pt-2">Availability</h4>
-              <div className="availability-box"></div>
+              <div className="availability-box center-p">
+                <p className="text-maring">Appointment booking calendar</p>
+                <p className="comming-soon-text">coming soon!</p>
+              </div>
             </div>
 
             <div className="policy">

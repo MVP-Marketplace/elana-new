@@ -27,6 +27,21 @@
     height: auto;
     border-radius: 15px;
 }
+
+.bg-profile-input-certifications{
+  margin-bottom: 35px;
+}
+.center-p{
+  text-align: center;
+}
+.comming-soon-text{
+  color: gray;
+  font-size: 15px;
+}
+.text-maring{
+  margin-top: 25px;
+}
+
 @media screen and (max-width: 600px) {
     .fisrt-secction-profile {
       width: 300px;

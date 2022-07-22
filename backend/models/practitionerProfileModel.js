@@ -35,10 +35,6 @@ const practitionerProfileSchema = mongoose.Schema({
         type: String,
         required: false
     },
-    subSpecialites: {
-        type: String,
-        required: false
-    },
     yearsOfExperience: {
         type: String,
         required: false

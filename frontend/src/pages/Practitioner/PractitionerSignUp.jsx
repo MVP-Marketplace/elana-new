@@ -40,9 +40,24 @@ export function PractitionerSignUp() {
     "Yoga Instructor",
   ];
 
+  const appointmentTypes = [
+    "Bladder & Bowel Incontinence",
+    "Bladder Pain",
+    "Constipation",
+    "Endometriosis",
+    "Menopause & Perimenopause",
+    "Painful Sex",
+    "Pelvic Organ Prolapse",
+    "Postpartum Recovery",
+    "Proactive Pelvic Care",
+    "Separated Abs",
+    "Vaginoplasty Prep and Recovery"
+  ]
+
   const [centredModal, setCentredModal] = useState(false);
   const toggleShow = () => setCentredModal(!centredModal);
   const [done, setDone] = useState(false);
+  const [checked, setChecked] = useState (false);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -53,6 +68,8 @@ export function PractitionerSignUp() {
     password: "",
     licensingCredentials: "",
     areaOfSpecialty: "",
+    subSpecialty: "",
+    location: "",
   });
 
   const {
@@ -64,6 +81,9 @@ export function PractitionerSignUp() {
     password,
     licensingCredentials,
     areaOfSpecialty,
+    subSpecialty,
+    location
+
   } = formData;
 
   const navigate = useNavigate();
@@ -86,15 +106,15 @@ export function PractitionerSignUp() {
 
   useEffect(()=>{
     const checkdata = (data)=>{
-      if(data.password == "" || data.email == "" || data.firstName==""|| data.lastName == "" || data.licensingCredentials == "" || data.areaOfSpecialty == ""){
+      if(data.password === "" || data.email === "" || data.firstName === ""|| data.lastName === "" || data.licensingCredentials === "" || data.areaOfSpecialty === "" || data.location === "" || data.subSpecialty === "" || checked === false){
         setDone(false) 
       } else{
         setDone(true)
       }
       
         }
-        checkdata(formData)
-  }, [formData])
+      checkdata(formData)
+  }, [formData, checked])
 
   const onChange = (e) => {
     setFormData((prevState) => ({
@@ -118,6 +138,8 @@ export function PractitionerSignUp() {
         password,
         licensingCredentials,
         areaOfSpecialty,
+        subSpecialty,
+        location,
       };
 
       dispatch(register(practitionerUserData));
@@ -253,13 +275,12 @@ export function PractitionerSignUp() {
             </div>
           </div>
 
-
-          <div className="row">
-            <div className="inputdrop col-sm col-md-12 ">
+          <div className="d-flex justify-content-evenly m-1 row">
+            <div className="col-sm ">
               <label className="labelsingup text-muted">Licensing Credentials</label>
               <MDBInput
                 type="text"
-                className="form-control input-responsive-new"
+                className="form-control col-sm mdb"
                 id="form1"
                 name="licensingCredentials"
                 value={licensingCredentials}
@@ -268,6 +289,36 @@ export function PractitionerSignUp() {
               />
             </div>
 
+            <div className="col-sm ">
+              <label className="labelsingup text-muted">Location </label>
+              <MDBInput
+                type="text"
+                className="form- mdb"
+                id="form1"
+                name="location"
+                value={location}
+                onChange={onChange}
+                required
+              />
+            </div>
+          </div>
+
+          
+
+
+          <div className="row">
+            {/* <div className="inputdrop col-sm col-md-12 ">
+              <label className="labelsingup text-muted">Licensing Credentials</label>
+              <MDBInput
+                type="text"
+                className="form-control input-responsive-new"
+                id="form1"
+                name="subSpecialty"
+                value={subSpecialty}
+                onChange={onChange}
+                required
+              />
+            </div> */}
             <div className="inputdrop col-sm col-md-12">
               <label className="labelsingup text-muted">Area of Specialty</label>
               <div class="input-group">
@@ -291,12 +342,36 @@ export function PractitionerSignUp() {
                 </select>
               </div>
             </div>
+
+            <div className="inputdrop col-sm col-md-12">
+              <label className="labelsingup text-muted">Sub Specialty</label>
+              <div class="input-group">
+                <select
+                  class="form-select"
+                  id="inputGroupSelect04"
+                  aria-label="Example select with button addon"
+                  name="subSpecialty"
+                  value={subSpecialty}
+                  onChange={onChange}
+                  required
+                >
+                  <option value="0" className="text-muted">
+                    -select one-
+                  </option>
+                  {appointmentTypes.map((type, index) => {
+                   return <option key={index} value={type} className="text-muted">
+                      {type}
+                    </option>
+                  })}
+                </select>
+              </div>
+            </div>
           </div>
         </div>
 
 
         <div className="text-center center-responsive-checkbox">
-          <input type="checkbox" className="checkbox-round m-2"></input>
+          <input type="checkbox" onChange={()=> setChecked(!checked)}className="checkbox-round m-2"></input>
           <span>
             By creating an account, you have read and agree to our{" "}
             <span>Terms</span> and <span>Privacy Policy</span>

@@ -44,16 +44,16 @@ export const HomePage = () => {
             className="d-flex align-items-center justify-content-end"
             md="6"
           >
-            <div className="pt-2 pb-3">
+            <div className="pt-4 pb-4">
               <h1 className="px-5 text-position banner-1-h1">
                 Elana is your partner
-                <br />
-                in pelvic care
+                <br className="mobile-view-hidden"/>
+                {" "}in pelvic care
               </h1>
               <h5 className="px-5 text-position banner-1-h3 fw-lighter">
                 We connect you to pelvic care options, so you
-                <br />
-                feel confident from the inside out.
+                <br className="mobile-view-hidden"/>
+                {" "}feel confident from the inside out.
               </h5>
               <div className="px-5 text-end">
               <Link to='/IndividualPage' className="hidden"><MDBBtn className="brand-bg-purple border-0 mx-2 w-50">LEARN MORE</MDBBtn></Link>
@@ -73,12 +73,12 @@ export const HomePage = () => {
         <h1 className="fs-24 text-al text-center text-bold">
           We’re so glad you’re here.{" "}
         </h1>
-        <h3 className="fs-16 text-ka text-center pb-3">
+        <h3 className="fs-18 text-ka text-center pb-3">
           Take a look into how Elana can help you:
         </h3>
         <div className="d-flex justify-content-center">
         <Link to='/IndividualPage'>
-          <button className="button-6 border-0 text-white border-curve-6 blue-hover fs-12">
+          <button className="button-6 border-0 text-white border-curve-6 blue-hover fs-14">
             LEARN MORE ABOUT INDIVIDUAL CARE
           </button>
           </Link>
@@ -88,7 +88,7 @@ export const HomePage = () => {
       {/* Homepage Banner 2 - Title with infocircles */}
       <div className="homepage-banner-2">
         <h1 className="banner-2-h1 pt-5 px-1 text-center">
-          Pelvic issues are way more common than you think
+          Pelvic issues are way<br className="desktop-view-hidden" />{" "}more common than you think
         </h1>
         <div className="py-5">
           <MDBRow className="d-flex justify-content-evenly">
@@ -99,7 +99,7 @@ export const HomePage = () => {
 
                 >
                   <MDBCardBody className="d-flex align-items-center justify-content-center">
-                    <MDBCardText className="text-center text-al ">
+                    <MDBCardText className="text-center text-al line-height-normal">
                       <span className="fs-32 text-dark">1 in 6</span>
                       <br />
                       <span className="fs-16 text-dark">
@@ -119,7 +119,7 @@ export const HomePage = () => {
                   
                 >
                   <MDBCardBody className="d-flex align-items-center justify-content-center">
-                    <MDBCardText className="text-center text-al">
+                    <MDBCardText className="text-center text-al line-height-normal">
                       <span className="fs-32 text-dark">1 in 3</span>
                       <br />
                       <span className="fs-16 text-dark">
@@ -139,7 +139,7 @@ export const HomePage = () => {
                   
                 >
                   <MDBCardBody className="d-flex align-items-center justify-content-center">
-                    <MDBCardText className="text-center text-al">
+                    <MDBCardText className="text-center text-al line-height-normal">
                       <span className="fs-32 text-dark">50%</span>
                       <br />
                       <span className="fs-16 text-dark">
@@ -159,7 +159,7 @@ export const HomePage = () => {
                   
                 >
                   <MDBCardBody className="d-flex align-items-center justify-content-center">
-                    <MDBCardText className="text-center text-al">
+                    <MDBCardText className="text-center text-al line-height-normal">
                       <span className="fs-32 text-dark">7 Years</span>
                       <br />
                       <span className="fs-16 text-dark">
@@ -181,21 +181,20 @@ export const HomePage = () => {
 
       {/* Homepage Banner 3 - Card Categories */}
       <div className="homepage-banner-3">
-        <h1 className="text-center text-al fs-40 pt-5">
+        <h1 className="text-center text-al fs-40-24 pt-5">
           Embrace your Pelvic Power
         </h1>
-        <h3 className="text-center text-al fs-24 p-3 fw-lighter">
+        <h3 className="text-center text-al fs-24-18 p-3 fw-lighter">
           Elana makes it easy to find the right treatment or simply optimise
           your pelvic health.
-          <br />
-          Your partner in pelvic care.
+          <br className="mobile-view-hidden" />
+          {" "}Your partner in pelvic care.
         </h3>
-        <div className="p-5">
+        <div className="category-cards">
           <MDBRow around>
             <MDBCol className="d-flex justify-content-center py-4" md="4" sm="6">
               <MDBCard
                 className="border-curve-10 homepage-cards"
-                style={{ height: "15rem", width: "15rem" }}
               >
                 <MDBCardBody className="d-flex align-items-center justify-content-center">
                   <MDBCardTitle className="text-center fs-24">
@@ -209,7 +208,6 @@ export const HomePage = () => {
             <MDBCol className="d-flex justify-content-center py-4" md="4" sm="6">
               <MDBCard
                 className="border-curve-10 homepage-cards"
-                style={{ height: "15rem", width: "15rem" }}
               >
                 <MDBCardBody className="d-flex align-items-center justify-content-center">
                   <MDBCardTitle className="text-center fs-24">
@@ -223,7 +221,6 @@ export const HomePage = () => {
             <MDBCol className="d-flex justify-content-center py-4" md="4" sm="6">
               <MDBCard
                 className="border-curve-10 homepage-cards"
-                style={{ height: "15rem", width: "15rem" }}
               >
                 <MDBCardBody className="d-flex align-items-center justify-content-center">
                   <MDBCardTitle className="text-center fs-24">
@@ -235,7 +232,6 @@ export const HomePage = () => {
             <MDBCol className="d-flex justify-content-center py-4" md="4" sm="6">
               <MDBCard
                 className="border-curve-10 homepage-cards"
-                style={{ height: "15rem", width: "15rem" }}
               >
                 <MDBCardBody className="d-flex align-items-center justify-content-center">
                   <MDBCardTitle className="text-center fs-24">
@@ -247,7 +243,6 @@ export const HomePage = () => {
             <MDBCol className="d-flex justify-content-center py-4" md="4" sm="6">
               <MDBCard
                 className="border-curve-10 homepage-cards"
-                style={{ height: "15rem", width: "15rem" }}
               >
                 <MDBCardBody className="d-flex align-items-center justify-content-center">
                   <MDBCardTitle className="text-center fs-24">
@@ -260,7 +255,6 @@ export const HomePage = () => {
             <MDBCol className="d-flex justify-content-center py-4" md="4" sm="6">
               <MDBCard
                 className="border-curve-10 homepage-cards"
-                style={{ height: "15rem", width: "15rem" }}
               >
                 <MDBCardBody className="d-flex align-items-center justify-content-center">
                   <MDBCardTitle className="text-center fs-24">
@@ -334,7 +328,7 @@ export const HomePage = () => {
           </MDBCard>
           <MDBCard
             className=" border-purple p-2 perfect-circle-2"
-            style={{ maxWidth: "14rem" }}
+            style={{ maxWidth: "10.5rem" }}
           >
             <MDBCardBody className="d-flex align-items-center justify-content-center">
               <MDBCardText className="text-center brand-purple fs-16">
@@ -352,10 +346,10 @@ export const HomePage = () => {
         <MDBRow>
           <MDBCol md="6" className="d-flex align-items-center div-position">
             <div className="p-5">
-              <h1 className="px-3 text-position text-al fs-24">
-                We’d love to hear from you! You can reach our team at:
+              <h1 className="px-3 text-position text-al fs-24-18">
+                We’d love to hear from you!<br className="desktop-view-hidden" />{" "}You can reach our team at:
               </h1>
-              <h5 className="px-3 text-position text-al fs-32">
+              <h5 className="px-3 text-position text-al fs-24-18">
                 hello@elana.health
               </h5>
             </div>
@@ -370,11 +364,11 @@ export const HomePage = () => {
 
       {/* Homepage Banner 6 - Call to action (email) */}
       <div className="homepage-banner-6 p-5">
-        <h1 className="px-5 text-center text-al fs-24">
+        <h1 className=" text-center text-al fs-24-18">
           Connect with the ELANA community, we’ll only send you the important
           stuff.
         </h1>
-        <h3 className="px-5 text-center text-al fs-24">
+        <h3 className=" text-center text-al fs-24-18">
           Get updates and the latest info on pelvic care delivered to your
           inbox.
         </h3>

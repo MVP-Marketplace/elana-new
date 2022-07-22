@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
-  MDBContainer,
   MDBNavbar,
   MDBNavbarBrand,
   MDBNavbarToggler,
@@ -14,7 +13,6 @@ import { Link } from "react-router-dom";
 import Logo from "../img/LogoName.png";
 import "../index.css";
 import {logout, reset} from "../features/auth/authSlice"
-import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux"
 import { useSelector } from "react-redux";
 import arrow from "../img/Link.png"
@@ -22,19 +20,12 @@ import arrow from "../img/Link.png"
 
 export const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
-
-  const navigate = useNavigate()
   const dispatch = useDispatch()
  
   const {user} = useSelector((state)=> state.auth)
 
 
-  useEffect(()=> {
-    if(!user){
-      navigate('/practitionerLogin')
-    }
-  },[])
-
+ 
 
   const onLogout = () => {
     dispatch(logout())
@@ -43,8 +34,8 @@ export const Navbar = () => {
 
 
   return (
-    <MDBNavbar expand="lg" className="d-flex navWrapper py-4 border-bottom">
-      <MDBContainer fluid>
+    <MDBNavbar expand="lg" className="d-flex navWrapper border-bottom">
+      {/* <MDBContainer fluid> */}
 
         <Link to="/">
           <MDBNavbarBrand>
@@ -82,21 +73,23 @@ export const Navbar = () => {
                 </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink>
-                <Link to="/about" className="link fix">
-                <div className="responsive-grey" onClick={() => setShowNav(!showNav)}>
-                  <p className="m-0">About</p>
-                  <img src={arrow} alt="arrow" className="icon-responsive"/>
-                  </div>
-                </Link>
-              </MDBNavbarLink>
-            </MDBNavbarItem>
+            
             <MDBNavbarItem>
               <MDBNavbarLink>
                 <Link to="/choosingACategory" className="link fix">
                 <div className="responsive-grey" onClick={() => setShowNav(!showNav)}>
                   <p className="m-0">Browse</p>
+                  <img src={arrow} alt="arrow" className="icon-responsive"/>
+                  </div>
+                </Link>
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+           
+            <MDBNavbarItem>
+              <MDBNavbarLink>
+                <Link to="/practitionerSignUp" className="link fix">
+                <div className="responsive-grey" onClick={() => setShowNav(!showNav)}>
+                  <p className="m-0">Join</p>
                   <img src={arrow} alt="arrow" className="icon-responsive"/>
                   </div>
                 </Link>
@@ -119,25 +112,10 @@ export const Navbar = () => {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink className="move-r">
-              <div className="responsive-grey margin-top-responsive" onClick={() => setShowNav(!showNav)}>
-                <a
-                  className="link2 d-flex align-items-center fix"
-                  href="https://www.elana.health/post/what-is-pelvic-wellness-and-why-does-it-matter"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <p className="m-0">What is pelvic health?</p>
-                </a>
-                <img src={arrow} alt="arrow" className="icon-responsive"/>
-                  </div>
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-            <MDBNavbarItem>
               <MDBNavbarLink>
-                <Link to="/practitionerSignUp" className="link fix">
+                <Link to="/about" className="link fix">
                 <div className="responsive-grey" onClick={() => setShowNav(!showNav)}>
-                  <p className="m-0">Join</p>
+                  <p className="m-0">About</p>
                   <img src={arrow} alt="arrow" className="icon-responsive"/>
                   </div>
                 </Link>
@@ -160,7 +138,7 @@ export const Navbar = () => {
           </MDBNavbarNav>
         </MDBCollapse>
 
-      </MDBContainer>
+      {/* </MDBContainer> */}
     </MDBNavbar>
   );
 };
