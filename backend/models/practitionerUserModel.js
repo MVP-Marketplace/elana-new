@@ -3,50 +3,51 @@ const mongoose = require('mongoose')
 const practitionerUserSchema = mongoose.Schema({
     firstName: {
         type: String,
-        required: true
+        required: false
     },
     lastName: {
         type: String,
-        required: true
+        required: false
     },
     practiceName: {
         type: String,
-        required: true
+        required: false
     },
     practiceNumber: {
         type: String,
-        required: true
+        required: false
     },
     email: {
         type: String,
-        required: true,
-        unique: true
+        required: false,
+        unique: false
     },
     password: {
         type: String,
-        required: true
+        required: false
     },
     licensingCredentials: {
         type: String,
-        required: true
+        required: false
     },
     areaOfSpecialty: {
         type: String,
-        required: true
+        required: false
     },
     subSpecialty: {
         type: String,
-        required: true
+        required: false
     },
     location: {
         type: String,
-        required: true
+        required: false
     },
     profile: {
         type: mongoose.Schema.Types.ObjectId,
         required: false,
         ref: 'PractitionerProfile'
     }
+    
 })
 
 module.exports = mongoose.model('PractitionerUser', practitionerUserSchema)

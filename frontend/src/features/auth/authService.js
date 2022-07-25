@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 //API_URL needs to be whatver the server route is
-const API_URL = 'https://elana-test-server.herokuapp.com/api/practitionerUsers/'
+const API_URL = 'http://localhost:3001/api/practitionerUsers/'
 
 // Register user
 const register = async (userData) => {

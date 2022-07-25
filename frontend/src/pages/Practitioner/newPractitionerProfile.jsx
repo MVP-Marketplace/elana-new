@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 // import {logout, reset} from "../../features/auth/authSlice"
 // import {useNavigate} from "react-router-dom";
-// import {useDispatch} from "react-redux"
+import {createPractitionerProfile} from "../../features/practitionerProfiles/practitionerProfileSlice"
+import {useDispatch} from "react-redux"
 import pen from "../../img/Edit.png";
 import camera from "../../img/camera.png";
 import trash from "../../img/trash.png";
@@ -28,7 +29,7 @@ export function NewPractitionerProfile() {
   const [basicModal, setBasicModal] = useState(false);
   const [basicModalLast, setBasicModalLast] = useState(false);
   const [basicModaltwo, setBasicModaltwo] = useState(false);
-  const [firstProfile, setFirstProfile] = useState({ firstName: "", PracticesName: "", YourSpecialty: "", SubSpecialties: "", YearsOfExperience: "", education: "" });
+  const [firstProfile, setFirstProfile] = useState({ firstName: "", PracticesName: "", YourSpecialty: "", SubSpecialties: "", YearsOfExperience: "", education: "" , aboutMe: "",});
   const [showbuttons, setShowButtons] = useState(false);
   const [showbuttonstwo, setShowButtonsTwo] = useState(false);
   const [showbuttonsthree, setShowButtonsThree] = useState(false)
@@ -45,9 +46,10 @@ export function NewPractitionerProfile() {
   };
 
   // const navigate = useNavigate()
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
  
   const {user} = useSelector((state)=> state.auth)
+  console.log(user)
   const navigate = useNavigate()
 
   useEffect(()=> {
@@ -55,6 +57,12 @@ export function NewPractitionerProfile() {
       navigate('/practitionerLogin')
     }
   },[])
+
+  const sendProfile = (e) => {
+    e.preventDefault()
+
+    dispatch(createPractitionerProfile(firstProfile));
+}
 
   return (
     <div>
@@ -133,7 +141,7 @@ export function NewPractitionerProfile() {
                         <br></br>
                       </MDBModalBody>
 
-                      <MDBBtn className="buttonmainpage me-5 mb-5 p-2 px-5 buttonmodalresponsive">
+                      <MDBBtn className="buttonmainpage me-5 mb-5 p-2 px-5 buttonmodalresponsive" >
                         Save
                       </MDBBtn>
                     </MDBModalContent>
@@ -271,7 +279,13 @@ export function NewPractitionerProfile() {
                       </MDBModalBody>
 
 
-                      <MDBBtn className="buttonmainpage mb-3 me-5" onClick={toggleShowtwo}>
+                      <MDBBtn className="buttonmainpage mb-3 me-5" 
+
+                       onClick={()=>{
+                        toggleShowtwo()
+                        dispatch(createPractitionerProfile(firstProfile,user.token))
+                      }}
+                      >
                         Save
                       </MDBBtn>
                     </MDBModalContent>
@@ -280,15 +294,15 @@ export function NewPractitionerProfile() {
               </div>
               <div className="ms-4 mt-2">
                 <h6>Practice Name</h6>
-                <p>area 1</p>
+                <p>{user && user.practiceName}</p>
                 <h6>Specialty</h6>
-                <p>area 1</p>
+                <p>{user && user.areaOfSpecialty}</p>
                 <h6>Sub-Specialties</h6>
-                <p>area 1</p>
-                <h6>Years of Experience</h6>
-                <p>area 1</p>
+                <p>{user && user.subSpecialty}</p>
+                {/* <h6>Years of Experience</h6>
+                <p>2 yeast</p>
                 <h6>Education</h6>
-                <p>area 1</p>
+                <p>area 1</p> */}
               </div>
             </div>
 
@@ -301,10 +315,13 @@ export function NewPractitionerProfile() {
           <div>
             <div className="bg-profile-input mb-5">
               <h4 className="mx-3 mb-3 pt-2">About me</h4>
-              <input className="input-profile" onClick={() => setShowButtons(!showbuttons)}></input>
+              <input className="input-profile" onClick={() => setShowButtons(!showbuttons)} onChange={handleChange} value={firstProfile.aboutMe} name="aboutMe"></input>
               {showbuttons && 
               <div className="d-flex bg-purple-modal">
-               <div> <button className="square_btn-modal margin-right-button me-2">save</button></div>
+               <div> <button type="submit" className="square_btn-modal margin-right-button me-2" onClick={()=>{
+                        setShowButtons(!showbuttons)
+                      }}
+                      onSubmit={sendProfile}>save</button></div>
                 <div><button className="square_btn-modal ">Cancel</button></div>
                 </div>}
             </div>

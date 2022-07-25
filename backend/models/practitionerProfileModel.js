@@ -47,6 +47,10 @@ const practitionerProfileSchema = mongoose.Schema({
         type: String,
         required: false
     },
+    image:{
+        type: String,
+        required: false
+    }
 })
 
 module.exports = mongoose.model('PractitionerProfile', practitionerProfileSchema)
