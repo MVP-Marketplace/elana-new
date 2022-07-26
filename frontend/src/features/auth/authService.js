@@ -36,6 +36,8 @@ const getPractitionerUsers = async () => {
   return response.data
 }
 
+
+
 const authService = {
   register,
   logout,

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 // import {logout, reset} from "../../features/auth/authSlice"
 // import {useNavigate} from "react-router-dom";
-import {createPractitionerProfile} from "../../features/practitionerProfiles/practitionerProfileSlice"
+import {createPractitionerProfile, updatePractitionerProfile} from "../../features/practitionerProfiles/practitionerProfileSlice"
 import {useDispatch} from "react-redux"
 import pen from "../../img/Edit.png";
 import camera from "../../img/camera.png";
@@ -33,6 +33,9 @@ export function NewPractitionerProfile() {
   const [showbuttons, setShowButtons] = useState(false);
   const [showbuttonstwo, setShowButtonsTwo] = useState(false);
   const [showbuttonsthree, setShowButtonsThree] = useState(false)
+  const [fileInputState, setFileInputState] = useState("")
+  const [selectedFile, setSelectedFile] = useState("")
+  const [previewSource, setPreviewSource] = useState("")
 
 
 
@@ -63,6 +66,30 @@ export function NewPractitionerProfile() {
 
     dispatch(createPractitionerProfile(firstProfile));
 }
+
+  const handleFile = (e) =>{
+  const file = e.target.files[0]
+  previewFile(file)
+}
+
+  const previewFile = (file) =>{
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.onloadend = () =>{
+    setPreviewSource(reader.result);
+  }
+  }
+
+  const handleSubmitFile = (e)=>{
+    console.log('sumbittting')
+  e.preventDefault();
+  if(!previewSource) return; 
+  uploadImage(previewSource)
+  }
+
+  const uploadImage = async (base64encodedImage) =>{
+  console.log(base64encodedImage)
+  }
 
   return (
     <div>
@@ -104,7 +131,7 @@ export function NewPractitionerProfile() {
                           necessary).
                         </p>
                         <div className="mt-2 bg-responsive">
-                          <MDBCol className="" sm="">
+                          {/* <MDBCol className="" sm="">
                             <img
                               alt=""
                               src={camera}
@@ -119,8 +146,21 @@ export function NewPractitionerProfile() {
                               onClick={toggleShow}
                               className="m-5 "
                             ></img>
+                          </MDBCol> */}
+                          <MDBCol className="" sm="">
+                            <div>
+                              <form onSubmit={handleSubmitFile}>
+                                <input type="file" name="image" onChange={handleFile} value={fileInputState}></input>
+                                <button type="submit" onClick={
+                                  dispatch(updatePractitionerProfile('62e00b0dac65bfe9e61333a4'))
+                                }> submit </button>
+                              </form>
+                              {previewSource && (
+                                <img src={previewSource} alt="choosen" style={{height: "200px"}}></img>
+                              )}
+                            </div>
                           </MDBCol>
-                          <MDBCol sm="">
+                          {/* <MDBCol sm="">
                             <img
                               alt=""
                               src={trash}
@@ -136,7 +176,7 @@ export function NewPractitionerProfile() {
                               onClick={toggleShow}
                               className="m-5 "
                             ></img>
-                          </MDBCol>
+                          </MDBCol> */}
                         </div>
                         <br></br>
                       </MDBModalBody>
