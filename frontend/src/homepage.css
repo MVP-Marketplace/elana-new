@@ -394,3 +394,15 @@ input:-ms-input-placeholder { /* Internet Explorer 10-11 */
 input::placeholder {
     overflow: visible;
   }
+
+.a-tag{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 6px;
+}
+.brand-bg-purple-a {
+    background: #7F6FEA;
+    width: 250px;
+    border-radius: 3px;
+}

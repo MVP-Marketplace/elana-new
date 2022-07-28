@@ -266,9 +266,11 @@ export const HomePage = () => {
           </MDBRow>
         </div>
         <div className="px-5 pb-5 d-flex justify-content-center">
-        <Link to='/ChoosingACategory'>
+        {/* <Link to='/ChoosingACategory'>
         <MDBBtn className="brand-bg-purple-1 border-0 mx-2">LEARN MORE</MDBBtn>
-          </Link>
+          </Link> */}
+          <a href="https://www.elana.health/post/what-is-pelvic-health" className="brand-bg-purple-a border-0 mx-2 a-tag">What is pelvic health?</a>
+          
         </div>
       </div>
 

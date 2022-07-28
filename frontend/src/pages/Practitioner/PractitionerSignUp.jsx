@@ -41,17 +41,9 @@ export function PractitionerSignUp() {
   ];
 
   const appointmentTypes = [
-    "Bladder & Bowel Incontinence",
-    "Bladder Pain",
-    "Constipation",
-    "Endometriosis",
-    "Menopause & Perimenopause",
-    "Painful Sex",
-    "Pelvic Organ Prolapse",
-    "Postpartum Recovery",
-    "Proactive Pelvic Care",
-    "Separated Abs",
-    "Vaginoplasty Prep and Recovery"
+   "Virtual",
+   "In Person" 
+   
   ]
 
   const [centredModal, setCentredModal] = useState(false);
@@ -346,7 +338,7 @@ export function PractitionerSignUp() {
             </div>
 
             <div className="inputdrop col-sm col-md-12">
-              <label className="labelsingup text-muted">Sub Specialty</label>
+              <label className="labelsingup text-muted">Appointment Type</label>
               <div class="input-group">
                 <select
                   class="form-select"
