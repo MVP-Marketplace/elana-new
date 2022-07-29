@@ -29,7 +29,7 @@ export function NewPractitionerProfile() {
   const [basicModal, setBasicModal] = useState(false);
   const [basicModalLast, setBasicModalLast] = useState(false);
   const [basicModaltwo, setBasicModaltwo] = useState(false);
-  const [firstProfile, setFirstProfile] = useState({ firstName: "", PracticesName: "", YourSpecialty: "", SubSpecialties: "", YearsOfExperience: "", education: "" , aboutMe: "",});
+  const [firstProfile, setFirstProfile] = useState({ firstName: "", PracticesName: "", YourSpecialty: "", SubSpecialties: "", YearsOfExperience: "", education: "" , aboutMe: "",instagram:"", linkedin: "", facebook: ""});
   const [showbuttons, setShowButtons] = useState(false);
   const [showbuttonstwo, setShowButtonsTwo] = useState(false);
   const [showbuttonsthree, setShowButtonsThree] = useState(false)
@@ -304,7 +304,65 @@ export function NewPractitionerProfile() {
                               />
                             </div>
                           </div>
-                          <p className="ms-5">Do you provide telehealth services?</p>
+                          <div className="div-grid m-1">
+                            <div className="col-sm ">
+                              <label className="labelsingup text-muted whitespace">
+                                Intagram
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb  input-size"
+                                id="form1"
+                                name="instagram"
+                                value={firstProfile.instagram}
+                                onChange={handleChange}
+                              />
+                            </div>
+
+                            <div className="col-sm labelresponsive-right">
+                              <label className="labelsingup text-muted whitespace">
+                                Linkedin
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb  input-size"
+                                id="form1"
+                                name="linkedin"
+                                value={firstProfile.linkedin}
+                                onChange={handleChange}
+                              />
+                            </div>
+                          </div>
+                          <div className="div-grid m-1">
+                            <div className="col-sm ">
+                              <label className="labelsingup text-muted whitespace">
+                                Facebook
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb  input-size"
+                                id="form1"
+                                name="facebook"
+                                value={firstProfile.facebook}
+                                onChange={handleChange}
+                              />
+                            </div>
+
+                            <div className="col-sm labelresponsive-right not-show">
+                              <label className="labelsingup text-muted whitespace">
+                                Linkedin
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb  input-size"
+                                id="form1"
+                                // name="education"
+                                // value={firstProfile.education}
+                                // onChange={handleChange}
+                              />
+                            </div>
+                          </div>
+                          <p className="">Do you provide telehealth services?</p>
                           <div className="d-flex ">
                             <div className="">
                               <label>yes</label>
@@ -343,6 +401,11 @@ export function NewPractitionerProfile() {
                 <p>2 yeast</p>
                 <h6>Education</h6>
                 <p>area 1</p> */}
+                <div className="d-flex">
+                <div className="me-3"><a className="a-link-profile" href="https://www.instagram.com/elana.health/"><i className="fab fa-instagram"/></a></div>
+                <div className="me-3"><a className="a-link-profile" href="https://www.facebook.com/helloelana/"><i className="fab fa-facebook-square"/></a></div>
+								<div className="me-3"><a className="a-link-profile" href="https://www.linkedin.com/company/elanahealth/"><i className="fab fa-linkedin"/></a></div>
+                </div>
               </div>
             </div>
 

@@ -46,6 +46,20 @@ export function PractitionerSignUp() {
    
   ]
 
+  const subSpecialtyArray = [
+    "Bladder & Bowel Incontinence",
+    "Bladder Pain",
+    "Constipation",
+    "Endometriosis",
+    "Menopause & Perimenopause",
+    "Painful Sex",
+    "Pelvic Organ Prolapse",
+    "Postpartum Recovery",
+    "Proactive Pelvic Care",
+    "Separated Abs",
+    "Vaginoplasty Prep and Recovery"
+  ]
+
   const [centredModal, setCentredModal] = useState(false);
   const toggleShow = () => setCentredModal(!centredModal);
   const [done, setDone] = useState(false);
@@ -58,8 +72,8 @@ export function PractitionerSignUp() {
     practiceNumber: "",
     email: "",
     password: "",
-    licensingCredentials: "",
-    areaOfSpecialty: "",
+    credentials: "",
+    specialty: "",
     subSpecialty: "",
     location: "",
  
@@ -72,8 +86,8 @@ export function PractitionerSignUp() {
     practiceNumber,
     email,
     password,
-    licensingCredentials,
-    areaOfSpecialty,
+    credentials,
+    specialty,
     subSpecialty,
     location,
     
@@ -100,7 +114,7 @@ export function PractitionerSignUp() {
 
   useEffect(()=>{
     const checkdata = (data)=>{
-      if(data.password === "" || data.email === "" || data.firstName === ""|| data.lastName === "" || data.licensingCredentials === "" || data.areaOfSpecialty === "" || data.location === "" || data.subSpecialty === "" || checked === false){
+      if(data.password === "" || data.email === "" || data.firstName === ""|| data.lastName === "" || data.credentials === "" || data.specialty === "" || data.location === "" || data.subSpecialty === "" || checked === false){
         setDone(false) 
       } else{
         setDone(true)
@@ -130,8 +144,8 @@ export function PractitionerSignUp() {
         practiceNumber,
         email,
         password,
-        licensingCredentials,
-        areaOfSpecialty,
+        credentials,
+        specialty,
         subSpecialty,
         location,
       };
@@ -276,8 +290,8 @@ export function PractitionerSignUp() {
                 type="text"
                 className="form-control col-sm mdb"
                 id="form1"
-                name="licensingCredentials"
-                value={licensingCredentials}
+                name="credentials"
+                value={credentials}
                 onChange={onChange}
                 required
               />
@@ -320,8 +334,8 @@ export function PractitionerSignUp() {
                   class="form-select"
                   id="inputGroupSelect04"
                   aria-label="Example select with button addon"
-                  name="areaOfSpecialty"
-                  value={areaOfSpecialty}
+                  name="specialty"
+                  value={specialty}
                   onChange={onChange}
                   required
                 >
@@ -330,6 +344,30 @@ export function PractitionerSignUp() {
                   </option>
                   {practitionerTypes.map((type, index) => {
                    return <option key={index} value={type} className="text-muted">
+                      {type}
+                    </option>
+                  })}
+                </select>
+              </div>
+            </div>
+
+            <div className="inputdrop col-sm col-md-12">
+              <label className="labelsingup text-muted">Sub-Specialty</label>
+              <div class="input-group">
+                <select
+                  class="form-select"
+                  id="inputGroupSelect04"
+                  aria-label="Example select with button addon"
+                  name="subSpecialty"
+                  value={subSpecialty}
+                  onChange={onChange}
+                  required
+                >
+                  <option value="0" className="text-muted">
+                    -select one-
+                  </option>
+                  {subSpecialtyArray.map((type, index) => {
+                   return <option key={index} value={type} className="text-muted" type="checkbox">
                       {type}
                     </option>
                   })}

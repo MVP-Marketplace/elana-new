@@ -212,7 +212,7 @@ padding-right: 55px;
 }
 
 .button-disable{
-  background-color: #E3E2E8;
+  background-color: #d39bcb ;
   padding: 5px;
   color: black;
   border-radius: 8px;
@@ -224,4 +224,11 @@ padding-right: 55px;
   .margin{
     margin-left: 0px;
   }
+}
+.a-link-profile{
+  color: black;
+  font-size: 40px;
+}
+.not-show{
+  display: none;
 }

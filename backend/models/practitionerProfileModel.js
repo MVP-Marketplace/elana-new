@@ -50,6 +50,18 @@ const practitionerProfileSchema = mongoose.Schema({
     image:{
         type: String,
         required: false
+    },
+    facebookUrl : {
+        type: String,
+        required: false
+    },
+    instagramUrl : {
+        type: String,
+        required: false
+    },
+    linkedinUrl : {
+        type: String,
+        required: false
     }
 })
 

@@ -359,6 +359,9 @@
 .mobile-view-hidden {
     display: block;
 }
+.line-height-normal {
+    line-height: 90%;
+}
 @media(max-width: 768px){
     .desktop-view-hidden{
         display: block;
@@ -406,3 +409,6 @@ input::placeholder {
     width: 250px;
     border-radius: 3px;
 }
+.whitespace {
+    white-space: nowrap;
+  }
