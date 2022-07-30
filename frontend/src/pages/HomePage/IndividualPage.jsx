@@ -46,6 +46,7 @@ export function IndividualPage() {
             of managing your pelvic health, how, and when, it suits you.
           </h4>
         </div>
+          <a href="https://www.elana.health/post/what-is-pelvic-health" className="brand-bg-purple-a2 border-0 mx-2 a-tag p-2">What is pelvic health?</a>
       </div>
       <div className="d-flex row">
         <div className="col-sm-12 col-md-6 p-0">

@@ -212,10 +212,14 @@ padding-right: 55px;
 }
 
 .button-disable{
-  background-color: #d39bcb ;
+  background-color: #EAE8FB ;
   padding: 5px;
   color: black;
-  border-radius: 8px;
+  border: 1px solid #EAE8FB;
+  border-radius: 3px;
+  height: 35px;
+  margin: auto;
+  width: auto;
 }
 .margin{
   margin-left: 170px;
