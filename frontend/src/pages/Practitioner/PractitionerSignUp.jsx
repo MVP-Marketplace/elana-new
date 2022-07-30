@@ -404,9 +404,9 @@ export function PractitionerSignUp() {
 
         <div className="text-center center-responsive-checkbox">
           <input type="checkbox" onChange={()=> setChecked(!checked)}className="checkbox-round m-2"></input>
-          <span>
+          <span className="span-register">
             By creating an account, you have read and agree to our{" "}
-            <span>Terms</span> and <span>Privacy Policy</span>
+            <a className="a-tag-register" onClick={()=> navigate('/Terms')}>Terms</a> and <a className="a-tag-register" onClick={()=> navigate('/PrivacyPolicy')}>Privacy Policy</a>
           </span>
           <div className="text-center">
             <button onClick={function () { toggleShow(); onSubmit() }} className={done ? "buttonmainpage": "button-disable"} disabled={!done}>CONTINUE</button>

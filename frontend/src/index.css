@@ -723,12 +723,21 @@ display: none;
 .mdb{
   max-width: 200px;
 }
+.a-tag-register{
+  color:#7F6FEA;
+  text-decoration: none;
+}
+.span-register{
+  color: black;
+  font-family: 'Karla', sans-serif;  
+  font-size: 12px
+}
 
 .bgwhite {
   background-color: white;
   width: 670px;
   border-radius: 14px;
-  height: 636px;
+  height: 650px;
 }
 
 .smallLetters{
