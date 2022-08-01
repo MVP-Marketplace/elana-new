@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { MDBCol, MDBRow } from 'mdb-react-ui-kit';
 import '../../index.css'
+import '../../homepage.css'
 import Categories from "../../img/Categories.png";
 import image1 from "../../img/image1.png";
 import image2 from "../../img/image2.png";
@@ -23,7 +24,7 @@ export function ChoosingACategory() {
        <br/>
         <div className="text-center row">
             <h2 className="titlepractitioner col-sm-12 text-center">Browse Pelvic Health</h2>
-            <p className="textpractitioner col-sm-12">Choose a category from below that best matches your current symptoms and needs. <br />
+            <p className="textpractitioner col-sm-12">Choose a category from below that best matches your current symptoms and needs. <br className="mobile-view-hidden"/>
                 This will assist you in finding a provider who can help you.  </p>
         </div>
         

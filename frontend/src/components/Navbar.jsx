@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
-  MDBContainer,
   MDBNavbar,
   MDBNavbarBrand,
   MDBNavbarToggler,
@@ -14,7 +13,6 @@ import { Link } from "react-router-dom";
 import Logo from "../img/LogoName.png";
 import "../index.css";
 import {logout, reset} from "../features/auth/authSlice"
-import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux"
 import { useSelector } from "react-redux";
 import arrow from "../img/Link.png"
@@ -36,7 +34,7 @@ export const Navbar = () => {
 
 
   return (
-    <MDBNavbar expand="lg" className="d-flex navWrapper py-4 border-bottom">
+    <MDBNavbar expand="lg" className="d-flex navWrapper border-bottom">
       {/* <MDBContainer fluid> */}
 
         <Link to="/">

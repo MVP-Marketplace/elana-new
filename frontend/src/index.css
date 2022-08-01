@@ -174,12 +174,14 @@ body{
   align-items: center;
 }
 .navWrapper {
-  padding: 10px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 
   }
 @media (max-width: 600px) {
   .navWrapper {
-  padding: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   }
   .fix{
     display: block; 
@@ -952,11 +954,12 @@ span{
 
 .titlepractitioner {
   font-family: 'Abhaya Libre', serif;
+  font-size: 40px;
 }
 
 .textpractitioner {
   font-family: 'Karla', sans-serif;
-  font-size: 16px;
+  font-size: 24px;
 }
 @media(max-width: 568px){
   .conta-responsive-browser{
@@ -968,6 +971,11 @@ span{
   }
   .titlepractitioner {
    font-size: 24px;
+  }
+  .textpractitioner {
+    font-size: 18px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .purpleboxes{
     width: 350px;
@@ -1443,26 +1451,63 @@ input{
 
 /* Font Size */
 .fs-58 {
-  font-size: 58px;
+  font-size: 58px !important;
 }
+
 .fs-40 {
-  font-size: 40px;
+  font-size: 40px !important;
 }
 
 .fs-32 {
-  font-size: 32px;
+  font-size: 32px !important;
 }
 
 .fs-24 {
-  font-size: 24px;
+  font-size: 24px !important;
 }
 
 .fs-20 {
-  font-size: 20px;
+  font-size: 20px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
 }
 
 .fs-16 {
-  font-size: 16px;
+  font-size: 16px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.fs-58-32 {
+  font-size: 58px !important;
+}
+
+.fs-40-24 {
+  font-size: 40px !important;
+}
+
+.fs-24-18 {
+  font-size: 24px !important;
+}
+
+@media(max-width: 768px){
+  .fs-58-32 {
+      font-size: 32px !important;
+  }
+  .fs-40-24 {
+      font-size: 24px !important;
+  }
+  .fs-24-18 {
+      font-size: 18px !important;
+  }
 }
 
 /* Text Styling */
