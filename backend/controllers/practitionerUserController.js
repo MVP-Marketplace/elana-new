@@ -18,7 +18,8 @@ const registerPractitionerUser = asyncHandler(async (req,res) => {
         licensingCredentials, 
         areaOfSpecialty,
         subSpecialty,
-        location
+        location,
+       
     } = req.body
 
     if ( 
@@ -31,7 +32,7 @@ const registerPractitionerUser = asyncHandler(async (req,res) => {
         !licensingCredentials || 
         !areaOfSpecialty ||
         !subSpecialty ||
-        !location
+        !location 
         ) {
         res.status(400)
         throw new Error('Please add all fields')
@@ -45,7 +46,7 @@ const registerPractitionerUser = asyncHandler(async (req,res) => {
         throw new Error('Practitioner user already existys')
     }
 
-     //Hash Password
+    //  Hash Password
      const salt = await bcrypt.genSalt(10)
      const hashedPassword = await bcrypt.hash(password, salt)
 
@@ -74,8 +75,9 @@ const registerPractitionerUser = asyncHandler(async (req,res) => {
             practiceName: practitionerUser.practiceName,
             subSpecialty: practitionerUser.subSpecialty,
             location: practitionerUser.location,
-            token: generateToken(practitionerUser._id)
-        })
+            token: generateToken(practitionerUser._id)}
+            
+        )
     } else {
         res.status(400)
         throw new Error('Invalid practitioner user data')
@@ -93,7 +95,7 @@ const loginPractitionerUser = asyncHandler(async (req,res) => {
     } = req.body
 
     //Check for a practitioner user email
-    const practitionerUser = await PractitionerUser.findOne({email})
+    const practitionerUser = await PractitionerUser.findOne({email}).populate('profile')
 
     if (practitionerUser && (await bcrypt.compare(password, practitionerUser.password))) {
         res.json({
@@ -106,7 +108,7 @@ const loginPractitionerUser = asyncHandler(async (req,res) => {
             practiceName: practitionerUser.practiceName,
             subSpecialty: practitionerUser.subSpecialty,
             location: practitionerUser.location,
-            token: generateToken(practitionerUser._id)
+            token: generateToken(practitionerUser._id),
         })
     } else {
         res.status(400)

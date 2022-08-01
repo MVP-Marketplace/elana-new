@@ -32,7 +32,8 @@ const createPractitionerProfile = asyncHandler(async (req, res) => {
         subSpecialites: req.body.subSpecialites,
         yearsOfExperience: req.body.yearsOfExperience,
         education: req.body.education,
-        telehealthProvided: req.body.telehealthProvided
+        telehealthProvided: req.body.telehealthProvided,
+        image: req.body.image
     })
 
     // Connect practitionerUser to practitionerProfile
@@ -102,6 +103,8 @@ const deletePractitionerProfile = asyncHandler(async (req, res) => {
 
     res.status(200).json({ id: req.params.id })
 })
+
+
 
 module.exports = {
     getPractitionerProfiles, 
