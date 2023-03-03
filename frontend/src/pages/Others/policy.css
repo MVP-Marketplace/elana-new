@@ -1,0 +1,46 @@
+h2 {
+    font-family: "Abhaya Libre ExtraBold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+.smalldisclaimer2 {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    
+    width: 716px;
+    height: 38px;
+    margin-top: 89px;
+    top: 4661px;
+    margin-left: 265px;
+    margin-bottom: 100px;
+}
+
+
+
+.privacyContain {
+    
+    
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+
+}
+
+.smallprnt{
+    color: #7F6FEA;
+
+}

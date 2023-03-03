@@ -1,0 +1,76 @@
+.text-center-profile-userview{
+    text-align: start;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+.bg-profile-input-two{
+    
+        width: 500px;
+        height: auto;
+        background-color: #EAE8FB;
+        border-radius: 15px;
+    
+}
+.text-ka {
+    font-family: 'Karla', sans-serif;
+}
+.text-al {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 24px;
+}
+
+.policy-user{
+    background-color: #EAE8FB;
+    width: 270px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.bg-profile-input-certifications{
+  margin-bottom: 35px;
+}
+.center-p{
+  text-align: center;
+}
+.comming-soon-text{
+  color: gray;
+  font-size: 15px;
+}
+.text-maring{
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .fisrt-secction-profile {
+      width: 300px;
+      /* margin-left: 95px; */
+    }
+    .bg-profile-input-two{
+      width: 300px;
+      /* margin-left: 95px; */
+    }
+   
+    .availability{
+      width: 300px;
+      margin-right: 95px;
+      margin-left: 85px;
+      margin-top: 20px;
+    }
+    .policy-user{
+      width: 300px;
+      margin-left:85px;
+    }
+    .certification{
+      width: 300px;
+      margin-left: 85px;
+    }
+    .container-profile{
+      flex-direction: column;
+      align-items: center;
+    }
+    .second-secction-profile{
+      margin-right: 0px;
+    }
+  }

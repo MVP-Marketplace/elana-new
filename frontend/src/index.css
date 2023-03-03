@@ -1,0 +1,1539 @@
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* About Page CSS  ********************************/
+
+.headerText {
+  font-family: 'Abhaya Libre ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 57px;
+  align-items: center;
+  text-align: center;
+  color: #7F6FEA;
+  margin: 70px auto;
+}
+
+.missionContainer {
+  width: 1150px;
+  height: 157px;
+  margin: 0 auto;
+}
+
+.missionText {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 47px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Abhaya Libre ExtraBold';
+  position: absolute;
+  width: 1150px;
+  height: 157px;
+  top: 195px;
+}
+
+.headerText2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 48px;
+  color: #7F6FEA;
+  font-family: 'Abhaya Libre', serif;
+  line-height: 57px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.ourStoryText {
+  font-family: 'Abhaya Libre ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.ourStoryText2 {
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 auto;
+  width: 1149px;
+  height: 348px;
+}
+
+.OurStoryContainer {
+  background: #EAE8FB;
+  width: 100%;
+  height: 565px;
+  margin: 150px 0;
+
+}
+
+.meetTheTeamHeader {
+  text-align: center;
+  font-weight: 800;
+  font-size: 48px;
+  color: #7F6FEA;
+  font-family: 'Abhaya Libre', serif;
+  line-height: 57px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: -30px auto;
+}
+
+.meetTheTeamContainer {
+  width: 100%;
+  height: 33%;
+}
+
+.teamPics {
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.pic1,
+.pic2,
+.pic3,
+.pic4 {
+  border-radius: 24px;
+  border: 0.25px solid rgba(87, 85, 85, 0.9);
+  width: 230px;
+  height: 217px;
+}
+
+.names {
+  font-family: 'Abhaya Libre ExtraBold 800';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.titles {
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+/* NavBar Page CSS  ******************************************************/
+
+.link {
+  color: #7F6FEA;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+
+}
+.link2{
+  color: #7F6FEA;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+
+}
+
+.form {
+  margin-right: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fix{
+  display: flex; 
+  align-items: center;
+}
+.navWrapper {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  }
+@media (max-width: 600px) {
+  .navWrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  }
+  .fix{
+    display: block; 
+  
+  }
+} 
+
+/* NavBar Page CSS  ******************************************************/
+
+.listingButton {
+  position: absolute;
+  width: 52px;
+  height: 20px;
+  left: 212px;
+  top: 170px;
+  display: flex;
+  align-items: flex-start;
+}
+
+span {
+  content: "\2039";
+}
+
+@media (max-width: 600px) {
+  .textresponsive {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2vw;
+  }
+}  
+.listingHeader {
+  font-family: 'Abhaya Libre ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 57px;
+  display: flex;
+  align-items: flex-end;
+  color: #7F6FEA;
+}
+
+.listingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  position: absolute;
+  width: 1216px;
+  height: 138px;
+  left: 212px;
+  top: 246px;
+
+}
+@media(max-width: 579px){
+  .listingContainer { width: 90%; margin-top: 200px; margin-left: 0px; margin-right: 100px;}
+}
+
+.listingText1 {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  width: 1216px;
+  height: 30px;
+  justify-content: flex-start
+}
+
+.listingText2 {
+
+  width: 1216px;
+  height: 30px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+}
+
+.filterByContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  position: absolute;
+  width: 280px;
+  height: 330px;
+  left: 212px;
+  top: 550px;
+}
+
+.filterDataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  position: absolute;
+  width: 792px;
+  height: 943px;
+  left: 628px;
+  top: 575px;
+}
+
+.person {
+  width: 792px;
+  height: 226px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: rgba(234, 232, 251, 1);
+}
+
+.resourcesContainer {
+  position: absolute;
+  width: 1440px;
+  height: 480px;
+  left: 0px;
+  top: 1696px;
+}
+
+.resourcesText {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 200px;
+}
+
+.browseButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 110px;
+  height: 20px;
+  right: 20px;
+  top: 45px;
+}
+
+.bottomContainer {
+  position: absolute;
+  width: 1316px;
+  height: 190px;
+  left: 130px;
+  right: 55px;
+  top: 101px;
+}
+
+.purple {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+  list-style-type: none;
+}
+
+.purpleBox1,
+.purpleBox2,
+.purpleBox3,
+.purpleBox4 {
+  width: 280px;
+  height: 190px;
+  background: #BCB5E8;
+  border-radius: 8px;
+}
+
+
+.ARh3 {
+  font-family: 'Abhaya Libre ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #252A2E;
+}
+
+.ARp {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: #252A2E;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+ .icon-responsive{
+  display: none;
+} 
+.margin-top-responsive{
+  margin-top: 0;
+}
+
+@media(max-width: 579px){
+  .responsive-grey{ background-color: #E3E2E8;
+  color: #252A2E;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #252A2E;
+  width: 230px;
+  }
+ 
+  .margin-top-responsive{
+    margin-top: 25px;
+  }
+  .link2{
+    color: black;
+    margin-bottom: 10px;
+    margin: 0;
+  }
+  .move-r{
+    margin-left: 17px;
+  }
+  .icon-responsive{
+    display: block;
+  } 
+}
+
+
+
+/*Listing Page CSS  ******************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+.logo {
+  width: auto;
+  margin-left: 112px;
+}
+.last-nav-item {
+  margin-right: 112px
+}
+@media(max-width:1100px) {
+  .logo {
+    width: auto;
+    margin-left: 20px;
+  }
+  .last-nav-item {
+    margin-right: 20px
+  }
+}
+@media(max-width:991px) {
+  .logo {
+    width: auto;
+    margin-left: 0px;
+  }
+  .last-nav-item {
+    margin-right: 0px
+  }
+}
+
+
+
+.link {
+  color: #7F6FEA;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-family: 'Karla', sans-serif;
+
+}
+.link-individual {
+  color: #7F6FEA;
+  font-family: 'Karla', sans-serif;
+}
+
+.form {
+  margin-right: 112px;
+}
+
+/* PatienLandingPage */
+
+.individual-page-banner-3 {
+  background: #E3E2E8;
+}
+@media (max-width: 600px) {
+  .individual-page-banner-3 {
+    background-color: #FFFFFF;
+  }
+}  
+
+.bgpurple {
+  background-color: #EAE8FB;
+  width: 100%;
+  height: 260px;
+text-align: center;
+}
+
+.intro {
+  text-align: center;
+  font-family: 'Abhaya Libre', serif;
+  color: black;
+  display:flex;
+}
+
+.title1 {
+  font-family: 'Abhaya Libre', serif;
+  color: black;
+}
+.title3{
+  font-family: 'Abhaya Libre', serif;
+  color: black;
+}
+.bggrey {
+  background-color: #E3E2E8;
+  width: 100%;
+  height: 230px;
+}
+.brand-bg-purple-a2 {
+  background: #7F6FEA;
+  width: 220px;
+  border-radius: 3px;
+  margin: 25px;
+  display: inline-block;
+}
+@media (max-width: 600px) {
+  .bggrey {
+    background-color: white;
+  }
+}  
+
+.list {
+  font-family: 'Karla', sans-serif;
+}
+.w-res{
+  width: 100%;
+}
+.title-res{
+ margin-top: 10px;
+  padding: 15px;
+}
+
+@media (max-width: 500px) {
+  .introtitle {
+    margin-bottom: 25px;
+    font-size: 20px;
+    padding: 5px;
+  }
+  .title-res{
+    font-size: 24px;
+   padding: 0px;
+  }
+  .bgpurple{
+    padding: 25px;
+    width: 100%;
+  }
+  .w-res{
+    width: 98%;
+  }
+}  
+@media (max-width: 500px) {
+  .title1 {
+    font-size: 20px;
+    white-space: nowrap;
+    
+  }
+}  
+@media (max-width: 500px) {
+  .title2 {
+    font-size: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}  
+
+.buttonmainpage {
+  background-color: #7F6FEA;
+  border: 1px solid #7F6FEA;
+  border-radius: 3px;
+  height: 35px;
+  margin: auto;
+  width: auto;
+  color: white;
+}
+.buttonmainpageindividual {
+  background-color: #7F6FEA;
+  border: 1px solid #7F6FEA;
+  border-radius: 9px;
+  padding:12px;
+  color: white;
+  justify-content: center;
+}
+.center-div-button {
+   display: block;
+}
+@media (max-width: 765px) {
+  .center-div-button {
+    display: flex;
+    justify-content: center;
+  }
+}  
+
+.blue-hover {
+  background-color: #7F6FEA;
+}
+.blue-hover:hover {
+  background-color: #0D6EFD;
+}
+
+.inputindividual{
+  max-width: 250px;
+  height: 36px;
+}
+
+/* footer */
+
+.footer-ori{
+  background-color: #7F6FEA;
+  align-items: center;
+}
+
+.footerlinks {
+  display: flex;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.textfoot {
+  white-space: nowrap;
+}
+
+.footerlink {
+  color: white;
+  margin-right: 15px;
+}
+
+.icon {
+  color: white;
+  font-size: 35px;
+  justify-content: end;
+}
+.a-link-footer{
+  color: white;
+}
+.footer-res{
+  align-items: center;
+}
+
+ @media (max-width: 579px){
+  .footer-res{
+     /* padding-left: 45px;  */
+    justify-content: space-evenly;
+    padding-top: 20px;
+  }
+  .icon{
+    justify-content: start;
+    padding-top: 10px;
+  }
+  .footerlinks{
+    display: grid;
+    padding-top: 25px;
+    margin-left: 10px;
+    padding-top: 25px;
+
+  }
+ .media-right{
+  margin-left: 20%;
+  }
+  .media-right1{
+    margin-left: 17%;
+    }
+    .media-right3{
+      margin-left: 25%;
+      }
+      .media-right4{
+        margin-left: 31%;
+        }
+  .media-left{
+    justify-content: start;
+  }
+  .a-link-footer{
+    padding-left: 10px;
+    font-size: 25px ;
+  }
+} 
+.padi{
+  padding: 30px;
+  margin-top: 35px;
+}
+.homepage-banner-9{
+display: none;
+}
+
+.margin-list {
+  margin-left: 5%;
+  margin-top: 2%;
+}
+@media(max-width: 765px){
+  .margin-list {
+    margin-left: 0;
+    margin-top: 0;
+    display: none;
+  }
+  .homepage-banner-9{
+    display: block;
+    background: #D3D3D3;
+    }
+    .padi{
+      padding: 0px;
+      margin-top:0px;
+    }
+}
+
+
+
+/* //////////singup */
+.signupGradient {
+  background-image: linear-gradient(to left top, #2ACDFA, #E927D3, #7F6FEA);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.signupGradientbg2 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to left top, #2ACDFA, #E927D3, #7F6FEA);
+  position: relative;
+}
+
+.mdb{
+  max-width: 200px;
+}
+.a-tag-register{
+  color:#7F6FEA;
+  text-decoration: none;
+}
+.span-register{
+  color: black;
+  font-family: 'Karla', sans-serif;  
+  font-size: 12px
+}
+
+.bgwhite {
+  background-color: white;
+  width: 670px;
+  border-radius: 14px;
+  height: 650px;
+}
+
+.smallLetters{
+  font-size: 10px;
+}
+
+.margin-left{
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+@media only screen and (max-width: 479px){
+  .bgwhite { width: 90%; height: 100%; }
+  .signupGradientbg2 {
+
+    height: 75vh;
+    
+  }
+}
+.inputlogin{
+  width: 280px;
+  height: 40px;
+}
+
+.bgwhite2 {
+  background-color: white;
+  border-radius: 14px;
+   height: 400px; 
+  width: 700px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+}
+.no-bigscreen{
+  display: none;
+}
+@media only screen and (max-width: 600px){
+  .bgwhite2 { width: 90%; margin-top: 35px; }
+}
+.Logores{
+  display: none;
+}
+@media only screen and (max-width: 600px){
+  .Logores { display: inline; }
+
+  .input-responsive{
+    margin-right: 15%;
+  }
+}
+@media (max-width:600px){
+  .no-responsive-view{
+    display: none;
+  }
+  .no-bigscreen{
+    display: block;
+  }
+  .input-responsive-new{
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+
+.checkbox-round {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid #7F6FEA;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: #7F6FEA;
+}
+
+.titlesingup {
+  font-family: 'Abhaya Libre', serif;
+  
+}
+ @media (min-width: 1200px) {
+  .titlesingup {
+    font-size: 30px;
+  }
+} 
+@media (max-width: 600px) {
+  .titlesingup {
+    font-size: 20px;
+  }
+} 
+
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+
+
+
+.labelsingup {
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  max-width: 9000px;
+}
+@media (max-width: 600px) {
+  .labelsingup {
+    font-size: 15px;
+  }
+} 
+
+.checkbox {
+  font-family: 'Karla', sans-serif;
+  font-size: 10px;
+}
+
+.inputsingup {
+  width: 220px;
+}
+
+.inputdrop {
+  width: 540px;
+  margin-left: 15px;
+  font-family: 'Karla', sans-serif;
+}
+.logonew{
+  width: 130px;
+  height: 30px;
+}
+
+@media (max-width: 600px) {
+  .inputdrop {
+    width: 210px;
+    font-family: 'Karla', sans-serif;
+  }
+  .margin-left{
+    margin-left: 0;
+  }
+  .logonew{
+    display:none;
+  }
+} 
+
+
+span{
+  color:#7F6FEA
+}
+
+
+@media (max-width: 600px) {
+  .logosingup {
+    display: none;
+  }
+} 
+.responsivediv{
+  margin-left: 180px;
+}
+@media (max-width: 600px) {
+  .responsivediv {
+    margin-left: 0;
+  }
+} 
+
+.pointer{
+  cursor: pointer;
+  color: #7F6FEA;
+}
+
+.pointer:hover{
+  cursor: pointer;
+  color: #D3D3D3;
+}
+
+
+
+/* /////Browser PractitionerCategories */
+
+.purpleboxes {
+  background-color: #EAE8FB;
+  width: 270px;
+  height: 120px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 14px;
+}
+
+.titlebox {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Abhaya Libre', serif;
+  margin-left: 15px;
+}
+
+.paragraphbox {
+  font-size: 10px;
+  font-family: 'Karla', sans-serif;
+  margin-left: 15px;
+}
+
+.purplecards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.iconback {
+  color: #7F6FEA;
+}
+
+
+.titlepractitioner {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 40px;
+}
+
+.textpractitioner {
+  font-family: 'Karla', sans-serif;
+  font-size: 24px;
+}
+@media(max-width: 568px){
+  .conta-responsive-browser{
+    margin-left: 45px;
+  }
+  .center-res{
+    flex-direction: column;
+    align-items: center;
+  }
+  .titlepractitioner {
+   font-size: 24px;
+  }
+  .textpractitioner {
+    font-size: 18px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .purpleboxes{
+    width: 350px;
+  }
+  .titlebox {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Abhaya Libre', serif;
+    margin-left: 15px;
+  }
+  .paragraphbox {
+    font-size: 12px;
+    font-family: 'Karla', sans-serif;
+    margin-left: 15px;
+  }
+  .m-responsive{
+    margin-left: 30px;
+  }
+  .icon-responsive3{
+    width: 80px;
+    height: 80px;
+  }
+  .icon-responsive2{
+    width: 60px;
+    height: 70px;
+    margin-top: 5px;
+  }
+}
+
+.see-all{
+ position: relative;
+}
+.see-all h2{
+  text-align: center;
+  position: relative;
+  top: 30%;
+  left: 50%;
+}
+
+/* CSS PractitionerProfilePage--------------------**********/
+.pp {
+  margin: 0 auto;
+  width: 1440px; 
+  height: 100vh ;
+  margin-bottom: 300px;
+}
+.ppConainer {
+  margin: 0 auto;
+  width: 1440px;
+  height: 1080px;
+  display: flex;
+flex-direction: row;
+justify-content: space-around;
+position: absolute;
+top: 280px;
+}
+
+
+ .moveR{
+   margin-left: 210px;
+   margin-top: 10px;
+ }
+ .buttonmodal{
+   background-color: #7F6FEA;
+  border: 1px solid #7F6FEA;
+  border-radius: 3px;
+  height: 40px;
+  margin: auto;
+  width: 125px;
+  color: white;
+ }
+.whitespace {
+  white-space: nowrap;
+}
+.ppHeader {
+display: flex;
+justify-content: flex-start;
+margin: 100px 50px;
+position: absolute;
+font-family: 'Abhaya Libre ExtraBold';
+font-style: normal;
+font-weight: 800;
+font-size: 48px;
+line-height: 57px;
+}
+
+.ppPerson {
+  width: 280px;;
+  height: 631px;
+  background-color: #EAE8FB;
+  border-radius: 10px;
+}
+
+.ppAbout {
+background-color: #EAE8FB;
+}
+
+.ppAvailability {
+  width: 280px;
+  height: 650px;
+  background-color: #EAE8FB;
+}
+
+.ppButton {
+  display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+margin: 110px 50px;
+float:right;
+cursor: pointer;
+border: none;
+color: #7F6FEA;
+background-color: white;
+}
+
+.ppImageBox {
+width: 200px;
+height: 200px;
+flex: none;
+order: 0;
+flex-grow: 0;
+border: solid 1px black;
+margin: 20px auto;
+}
+
+.ppProfile {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+float: right;
+padding: 0px;
+width: 236px;
+height: 349px;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.ppAbout {
+  
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+width: 544px;
+height: 183px;
+border-radius: 10px;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.ppAboutA {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  margin: 25px auto;
+  width: 544px;
+  height: 183px;
+  border-radius: 10px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: #EAE8FB;
+}
+
+.ppAboutB {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  border-radius: 10px;
+  width: 544px;
+  height: 183px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: #EAE8FB;
+  margin: 5px auto;
+}
+
+.ppAbout2 {  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  margin: 20px auto;
+  width: 544px;
+  height: 111px;
+  border-radius: 10px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: #EAE8FB;
+}
+
+.ppAboutbox {
+  width:470px;
+  height: 150px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ppAboutbox2 {
+  width:470px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+
+.ppMethodsbox {
+  width:225px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.ppCancelationbox2 {
+  width:220px;
+  height: 150px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ppInput3 {
+  width: 213px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.ppCertificationButton {
+    margin-left: 330px;
+    background-color: #EAE8FB;
+    border: none;
+    cursor: pointer;
+}
+
+.ppPaymentButton {
+  margin-left: 65px;
+  background-color: #EAE8FB;
+  border: none;
+  cursor: pointer;
+}
+
+.ppInput {
+  width: 462px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.ppAvailability {
+width: 280px;
+height: 282px;
+text-align: left;
+border-radius: 10px;
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.ppAbox {
+  width:225px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.ppApointmentCalender {
+
+width:225px;
+height: 180px;
+margin: 10px auto;
+border: solid 1px black;
+}
+
+.ppCancellation {
+  /* Card */
+
+border-radius: 10px;
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+margin: 20px auto;
+width: 280px;
+height: 183px;
+background-color: #EAE8FB;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.ppPayment {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+padding: 0px;
+gap: 10px;
+border-radius: 10px;
+width: 280px;
+height: 111px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+background-color: #EAE8FB;
+}
+
+.ppText {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ppd {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+}
+
+.bgmodal{
+  background-color: #EAE8FB ;
+}
+.boxmodal{
+  border-radius: 25px;
+}
+::-webkit-input-placeholder {
+  margin: 50px;
+}
+@media only screen and (max-width: 679px){
+  .ppConainer { width: 100%; }
+}
+@media only screen and (max-width: 667px) {
+  .pp .ppConainer{
+     display: table-row;
+     vertical-align: top;
+     text-align:center;
+     padding: 20px;
+     padding-left: 100px;
+     padding-top: 20px;
+    }
+    .ppPerson{
+      margin-bottom: 25px;
+      width: 300px;
+    }
+
+ }
+ @media only screen and (max-width: 667px) {
+
+
+  .ppAbout{
+    width: 300px;
+  }
+  .ppAboutA{
+    width: 300px;
+  }
+  .ppAboutB{
+    width: 300px;
+  }
+  .ppAbout2{
+    width: 300px;
+  }
+  .ppInput{
+    width: 280px;
+    margin-left: 10px;
+  }
+ 
+  .ppAvailability{
+    margin-top: 580px;
+    width: 300px;
+  }
+  .ppCancellation{
+    width: 300px;
+  }
+  .ppPayment{
+    width: 300px;
+  }
+  .resmodal{
+    width: 300px;
+  }
+  .ppHeader{
+    margin-bottom: 1000px;
+  }
+ }
+
+ .bg-responsive{
+  display: flex;
+  justify-content: center;
+ }
+@media(max-width:667px){
+  .bg-responsive{
+    display: grid;
+    align-items: center;
+   }
+   .boxmodal{
+    width: 350px;
+   }
+   .buttonmodalresponsive{
+    margin-right: 65px;
+   }
+}
+@media only screen and (max-width: 609px){
+  .boxmodalresponsive { width: 90%; height: 100vh;}
+}
+.div-grid{
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 609px){
+  .div-grid {display: grid; }
+}
+@media (max-width: 400px){
+  .bgmodal{
+    width: 350px;
+  }
+}
+
+.input-size{
+width: 900px;
+}
+.labelresponsive-right{
+  margin-left: 150px;
+}
+@media (max-width: 709px){
+  .labelresponsive-right{
+    margin-left: 0px;
+  }
+}
+
+input{
+  resize: vertical;}
+
+/* Font Size */
+.fs-58 {
+  font-size: 58px !important;
+}
+
+.fs-40 {
+  font-size: 40px !important;
+}
+
+.fs-32 {
+  font-size: 32px !important;
+}
+
+.fs-24 {
+  font-size: 24px !important;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.fs-58-32 {
+  font-size: 58px !important;
+}
+
+.fs-40-24 {
+  font-size: 40px !important;
+}
+
+.fs-24-18 {
+  font-size: 24px !important;
+}
+
+@media(max-width: 768px){
+  .fs-58-32 {
+      font-size: 32px !important;
+  }
+  .fs-40-24 {
+      font-size: 24px !important;
+  }
+  .fs-24-18 {
+      font-size: 18px !important;
+  }
+}
+
+/* Text Styling */
+
+.text-al {
+  font-family: 'Abhaya Libre', serif; 
+}
+
+.text-ka {
+  font-family: 'Karla', sans-serif;  
+}
+
+@media(max-width:800px){
+  ul {
+    text-align: center;
+  }
+  li {
+    display: grid
+  }
+}
+
+.center-text-responsive {
+  text-align: left;
+}
+@media(max-width:800px){
+  .center-text-responsive {
+    text-align: center;
+  }
+}
