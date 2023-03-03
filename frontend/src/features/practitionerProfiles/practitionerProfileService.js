@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'https://elana-test-server.herokuapp.com/api/practitionerProfiles/'
+const API_URL = 'http://localhost:3001/api/practitionerProfiles/'
 
 // Create new practitioner profile
 const createPractitionerProfile = async (practitionerProfileData, token) => {

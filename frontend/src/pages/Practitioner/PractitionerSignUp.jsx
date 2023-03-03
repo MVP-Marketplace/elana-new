@@ -41,6 +41,12 @@ export function PractitionerSignUp() {
   ];
 
   const appointmentTypes = [
+   "Virtual",
+   "In Person" 
+   
+  ]
+
+  const subSpecialtyArray = [
     "Bladder & Bowel Incontinence",
     "Bladder Pain",
     "Constipation",
@@ -66,10 +72,11 @@ export function PractitionerSignUp() {
     practiceNumber: "",
     email: "",
     password: "",
-    licensingCredentials: "",
-    areaOfSpecialty: "",
+    credentials: "",
+    specialty: "",
     subSpecialty: "",
     location: "",
+ 
   });
 
   const {
@@ -79,10 +86,11 @@ export function PractitionerSignUp() {
     practiceNumber,
     email,
     password,
-    licensingCredentials,
-    areaOfSpecialty,
+    credentials,
+    specialty,
     subSpecialty,
-    location
+    location,
+    
 
   } = formData;
 
@@ -106,7 +114,7 @@ export function PractitionerSignUp() {
 
   useEffect(()=>{
     const checkdata = (data)=>{
-      if(data.password === "" || data.email === "" || data.firstName === ""|| data.lastName === "" || data.licensingCredentials === "" || data.areaOfSpecialty === "" || data.location === "" || data.subSpecialty === "" || checked === false){
+      if(data.password === "" || data.email === "" || data.firstName === ""|| data.lastName === "" || data.credentials === "" || data.specialty === "" || data.location === "" || data.subSpecialty === "" || checked === false){
         setDone(false) 
       } else{
         setDone(true)
@@ -136,8 +144,8 @@ export function PractitionerSignUp() {
         practiceNumber,
         email,
         password,
-        licensingCredentials,
-        areaOfSpecialty,
+        credentials,
+        specialty,
         subSpecialty,
         location,
       };
@@ -282,8 +290,8 @@ export function PractitionerSignUp() {
                 type="text"
                 className="form-control col-sm mdb"
                 id="form1"
-                name="licensingCredentials"
-                value={licensingCredentials}
+                name="credentials"
+                value={credentials}
                 onChange={onChange}
                 required
               />
@@ -326,8 +334,8 @@ export function PractitionerSignUp() {
                   class="form-select"
                   id="inputGroupSelect04"
                   aria-label="Example select with button addon"
-                  name="areaOfSpecialty"
-                  value={areaOfSpecialty}
+                  name="specialty"
+                  value={specialty}
                   onChange={onChange}
                   required
                 >
@@ -344,7 +352,31 @@ export function PractitionerSignUp() {
             </div>
 
             <div className="inputdrop col-sm col-md-12">
-              <label className="labelsingup text-muted">Sub Specialty</label>
+              <label className="labelsingup text-muted">Sub-Specialty</label>
+              <div class="input-group">
+                <select
+                  class="form-select"
+                  id="inputGroupSelect04"
+                  aria-label="Example select with button addon"
+                  name="subSpecialty"
+                  value={subSpecialty}
+                  onChange={onChange}
+                  required
+                >
+                  <option value="0" className="text-muted">
+                    -select one-
+                  </option>
+                  {subSpecialtyArray.map((type, index) => {
+                   return <option key={index} value={type} className="text-muted" type="checkbox">
+                      {type}
+                    </option>
+                  })}
+                </select>
+              </div>
+            </div>
+
+            <div className="inputdrop col-sm col-md-12">
+              <label className="labelsingup text-muted">Appointment Type</label>
               <div class="input-group">
                 <select
                   class="form-select"
@@ -372,9 +404,9 @@ export function PractitionerSignUp() {
 
         <div className="text-center center-responsive-checkbox">
           <input type="checkbox" onChange={()=> setChecked(!checked)}className="checkbox-round m-2"></input>
-          <span>
+          <span className="span-register">
             By creating an account, you have read and agree to our{" "}
-            <span>Terms</span> and <span>Privacy Policy</span>
+            <a className="a-tag-register" onClick={()=> navigate('/Terms')}>Terms</a> and <a className="a-tag-register" onClick={()=> navigate('/PrivacyPolicy')}>Privacy Policy</a>
           </span>
           <div className="text-center">
             <button onClick={function () { toggleShow(); onSubmit() }} className={done ? "buttonmainpage": "button-disable"} disabled={!done}>CONTINUE</button>
@@ -387,7 +419,7 @@ export function PractitionerSignUp() {
                     <h1>Woohoo</h1>
                     <p>Your registration is complete. Please, check your email for confirmation information.</p>
                     <p>Next, let’s set up your profile.</p>
-                    <Link to="/newPractitionerProfile"><button className="buttonmainpage">CREATE PROFILE</button></Link>
+                     <Link to="/newPractitionerProfile"><button className="buttonmainpage">CREATE PROFILE</button></Link> 
                   </MDBModalBody>
                 </MDBModalContent>
               </MDBModalDialog>

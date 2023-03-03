@@ -101,8 +101,8 @@ export const HomePage = () => {
                   <MDBCardBody className="d-flex align-items-center justify-content-center">
                     <MDBCardText className="text-center text-al line-height-normal">
                       <span className="fs-32 text-dark">1 in 6</span>
-                      <br />
-                      <span className="fs-16 text-dark">
+                      <br/>
+                      <span className="fs-16 text-dark text-ka ">
                         women suffer from
                         <br />
                         painful sex
@@ -122,7 +122,7 @@ export const HomePage = () => {
                     <MDBCardText className="text-center text-al line-height-normal">
                       <span className="fs-32 text-dark">1 in 3</span>
                       <br />
-                      <span className="fs-16 text-dark">
+                      <span className="fs-16 text-dark text-ka ">
                         women experience
                         <br />
                         urinary incontinence
@@ -142,7 +142,7 @@ export const HomePage = () => {
                     <MDBCardText className="text-center text-al line-height-normal">
                       <span className="fs-32 text-dark">50%</span>
                       <br />
-                      <span className="fs-16 text-dark">
+                      <span className="fs-16 text-dark text-ka whitespace">
                         postmenopausal women
                         <br />
                         have vaginal atrophy
@@ -266,9 +266,11 @@ export const HomePage = () => {
           </MDBRow>
         </div>
         <div className="px-5 pb-5 d-flex justify-content-center">
-        <Link to='/ChoosingACategory'>
+        {/* <Link to='/ChoosingACategory'>
         <MDBBtn className="brand-bg-purple-1 border-0 mx-2">LEARN MORE</MDBBtn>
-          </Link>
+          </Link> */}
+          <a href="https://www.elana.health/post/what-is-pelvic-health" className="brand-bg-purple-a border-0 mx-2 a-tag">What is pelvic health?</a>
+          
         </div>
       </div>
 

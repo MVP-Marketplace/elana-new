@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 // import {logout, reset} from "../../features/auth/authSlice"
 // import {useNavigate} from "react-router-dom";
-// import {useDispatch} from "react-redux"
+import {createPractitionerProfile, updatePractitionerProfile} from "../../features/practitionerProfiles/practitionerProfileSlice"
+import {useDispatch} from "react-redux"
 import pen from "../../img/Edit.png";
 import camera from "../../img/camera.png";
 import trash from "../../img/trash.png";
@@ -28,10 +29,13 @@ export function NewPractitionerProfile() {
   const [basicModal, setBasicModal] = useState(false);
   const [basicModalLast, setBasicModalLast] = useState(false);
   const [basicModaltwo, setBasicModaltwo] = useState(false);
-  const [firstProfile, setFirstProfile] = useState({ firstName: "", PracticesName: "", YourSpecialty: "", SubSpecialties: "", YearsOfExperience: "", education: "" });
+  const [firstProfile, setFirstProfile] = useState({ firstName: "", PracticesName: "", YourSpecialty: "", SubSpecialties: "", YearsOfExperience: "", education: "" , aboutMe: "",instagram:"", linkedin: "", facebook: ""});
   const [showbuttons, setShowButtons] = useState(false);
   const [showbuttonstwo, setShowButtonsTwo] = useState(false);
   const [showbuttonsthree, setShowButtonsThree] = useState(false)
+  const [fileInputState, setFileInputState] = useState("")
+  const [selectedFile, setSelectedFile] = useState("")
+  const [previewSource, setPreviewSource] = useState("")
 
 
 
@@ -45,9 +49,10 @@ export function NewPractitionerProfile() {
   };
 
   // const navigate = useNavigate()
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
  
   const {user} = useSelector((state)=> state.auth)
+  console.log(user)
   const navigate = useNavigate()
 
   useEffect(()=> {
@@ -55,6 +60,36 @@ export function NewPractitionerProfile() {
       navigate('/practitionerLogin')
     }
   },[])
+
+  const sendProfile = (e) => {
+    e.preventDefault()
+
+    dispatch(createPractitionerProfile(firstProfile));
+}
+
+  const handleFile = (e) =>{
+  const file = e.target.files[0]
+  previewFile(file)
+}
+
+  const previewFile = (file) =>{
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.onloadend = () =>{
+    setPreviewSource(reader.result);
+  }
+  }
+
+  const handleSubmitFile = (e)=>{
+    console.log('sumbittting')
+  e.preventDefault();
+  if(!previewSource) return; 
+  uploadImage(previewSource)
+  }
+
+  const uploadImage = async (base64encodedImage) =>{
+  console.log(base64encodedImage)
+  }
 
   return (
     <div>
@@ -96,7 +131,7 @@ export function NewPractitionerProfile() {
                           necessary).
                         </p>
                         <div className="mt-2 bg-responsive">
-                          <MDBCol className="" sm="">
+                          {/* <MDBCol className="" sm="">
                             <img
                               alt=""
                               src={camera}
@@ -111,8 +146,21 @@ export function NewPractitionerProfile() {
                               onClick={toggleShow}
                               className="m-5 "
                             ></img>
+                          </MDBCol> */}
+                          <MDBCol className="" sm="">
+                            <div>
+                              <form onSubmit={handleSubmitFile}>
+                                <input type="file" name="image" onChange={handleFile} value={fileInputState}></input>
+                                <button type="submit" onClick={
+                                  dispatch(updatePractitionerProfile('62e00b0dac65bfe9e61333a4'))
+                                }> submit </button>
+                              </form>
+                              {previewSource && (
+                                <img src={previewSource} alt="choosen" style={{height: "200px"}}></img>
+                              )}
+                            </div>
                           </MDBCol>
-                          <MDBCol sm="">
+                          {/* <MDBCol sm="">
                             <img
                               alt=""
                               src={trash}
@@ -128,12 +176,12 @@ export function NewPractitionerProfile() {
                               onClick={toggleShow}
                               className="m-5 "
                             ></img>
-                          </MDBCol>
+                          </MDBCol> */}
                         </div>
                         <br></br>
                       </MDBModalBody>
 
-                      <MDBBtn className="buttonmainpage me-5 mb-5 p-2 px-5 buttonmodalresponsive">
+                      <MDBBtn className="buttonmainpage me-5 mb-5 p-2 px-5 buttonmodalresponsive" >
                         Save
                       </MDBBtn>
                     </MDBModalContent>
@@ -256,7 +304,65 @@ export function NewPractitionerProfile() {
                               />
                             </div>
                           </div>
-                          <p className="ms-5">Do you provide telehealth services?</p>
+                          <div className="div-grid m-1">
+                            <div className="col-sm ">
+                              <label className="labelsingup text-muted whitespace">
+                                Intagram
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb  input-size"
+                                id="form1"
+                                name="instagram"
+                                value={firstProfile.instagram}
+                                onChange={handleChange}
+                              />
+                            </div>
+
+                            <div className="col-sm labelresponsive-right">
+                              <label className="labelsingup text-muted whitespace">
+                                Linkedin
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb  input-size"
+                                id="form1"
+                                name="linkedin"
+                                value={firstProfile.linkedin}
+                                onChange={handleChange}
+                              />
+                            </div>
+                          </div>
+                          <div className="div-grid m-1">
+                            <div className="col-sm ">
+                              <label className="labelsingup text-muted whitespace">
+                                Facebook
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb  input-size"
+                                id="form1"
+                                name="facebook"
+                                value={firstProfile.facebook}
+                                onChange={handleChange}
+                              />
+                            </div>
+
+                            <div className="col-sm labelresponsive-right not-show">
+                              <label className="labelsingup text-muted whitespace">
+                                Linkedin
+                              </label>
+                              <MDBInput
+                                type="text"
+                                className="form-control mdb  input-size"
+                                id="form1"
+                                // name="education"
+                                // value={firstProfile.education}
+                                // onChange={handleChange}
+                              />
+                            </div>
+                          </div>
+                          <p className="">Do you provide telehealth services?</p>
                           <div className="d-flex ">
                             <div className="">
                               <label>yes</label>
@@ -271,7 +377,13 @@ export function NewPractitionerProfile() {
                       </MDBModalBody>
 
 
-                      <MDBBtn className="buttonmainpage mb-3 me-5" onClick={toggleShowtwo}>
+                      <MDBBtn className="buttonmainpage mb-3 me-5" 
+
+                       onClick={()=>{
+                        toggleShowtwo()
+                        dispatch(createPractitionerProfile(firstProfile,user.token))
+                      }}
+                      >
                         Save
                       </MDBBtn>
                     </MDBModalContent>
@@ -280,15 +392,20 @@ export function NewPractitionerProfile() {
               </div>
               <div className="ms-4 mt-2">
                 <h6>Practice Name</h6>
-                <p>area 1</p>
+                <p>{user && user.practiceName}</p>
                 <h6>Specialty</h6>
-                <p>area 1</p>
+                <p>{user && user.areaOfSpecialty}</p>
                 <h6>Sub-Specialties</h6>
-                <p>area 1</p>
-                <h6>Years of Experience</h6>
-                <p>area 1</p>
+                <p>{user && user.subSpecialty}</p>
+                {/* <h6>Years of Experience</h6>
+                <p>2 yeast</p>
                 <h6>Education</h6>
-                <p>area 1</p>
+                <p>area 1</p> */}
+                <div className="d-flex">
+                <div className="me-3"><a className="a-link-profile" href="https://www.instagram.com/elana.health/"><i className="fab fa-instagram"/></a></div>
+                <div className="me-3"><a className="a-link-profile" href="https://www.facebook.com/helloelana/"><i className="fab fa-facebook-square"/></a></div>
+								<div className="me-3"><a className="a-link-profile" href="https://www.linkedin.com/company/elanahealth/"><i className="fab fa-linkedin"/></a></div>
+                </div>
               </div>
             </div>
 
@@ -301,10 +418,13 @@ export function NewPractitionerProfile() {
           <div>
             <div className="bg-profile-input mb-5">
               <h4 className="mx-3 mb-3 pt-2">About me</h4>
-              <input className="input-profile" onClick={() => setShowButtons(!showbuttons)}></input>
+              <input className="input-profile" onClick={() => setShowButtons(!showbuttons)} onChange={handleChange} value={firstProfile.aboutMe} name="aboutMe"></input>
               {showbuttons && 
               <div className="d-flex bg-purple-modal">
-               <div> <button className="square_btn-modal margin-right-button me-2">save</button></div>
+               <div> <button type="submit" className="square_btn-modal margin-right-button me-2" onClick={()=>{
+                        setShowButtons(!showbuttons)
+                      }}
+                      onSubmit={sendProfile}>save</button></div>
                 <div><button className="square_btn-modal ">Cancel</button></div>
                 </div>}
             </div>

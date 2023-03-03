@@ -20,7 +20,7 @@ export const About = () => {
         </div>
 
         <div className="about-banner-2 p-4">
-          <h1 className="text-center text-al fs-40-24 brand-purple">Our Story</h1>
+          <h1 className="text-center text-al fs-40-24 brand-purple">Our Story2</h1>
           <h3 className="text-center text-al fs-32-24 about-banner-2-h3">Here at Elana, pelvic care isn’t just business, it’s personal.​​</h3>
           <p className="text-center text-al fs-24-18 px-4 fs-light-1">Managing our own health at various chapters in our lives, we have seen and experienced first-hand some of the<br className="mobile-view-hidden"/>{" "}challenges when it comes to talking about intimate issues. Finding answers and feeling comfortable to talk openly<br className="mobile-view-hidden"/>{" "}about health problems can be hard even with people you trust. </p>
           <p className="text-center text-al fs-24-18 px-5 py-4 fs-light-1">Our journey started as two women, different countries, different ages, sharing our experiences of c-sections,<br className="mobile-view-hidden"/>{" "}postpartum complications, to the signs of perimenopause. From battling with extreme pelvic pain and complications,<br className="mobile-view-hidden"/>{" "}to feeling unprepared for the changes in a woman's health as we age, much of which, down to the lack of easily<br className="mobile-view-hidden"/>{" "}accessible information and knowing where to go for the right support. </p>
